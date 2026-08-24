@@ -1,0 +1,1542 @@
+[
+ {
+  "id": "TU-01-00",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Atlas room tomorrow 14:00\u201315:00 for 8 people; projector needed.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "atlas",
+      "date": "2026-08-25",
+      "start_min": 840,
+      "end_min": 900,
+      "attendee_count": 8,
+      "needs_projector": true
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "atlas",
+   "date_iso": "2026-08-25",
+   "start_min": 840,
+   "end_min": 900,
+   "attendees": 8,
+   "projector": true
+  }
+ },
+ {
+  "id": "TU-01-01",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Cyrus room tomorrow 15:00\u201316:00 for 9 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "cyrus",
+      "date": "2026-08-25",
+      "start_min": 900,
+      "end_min": 960,
+      "attendee_count": 9,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "cyrus",
+   "date_iso": "2026-08-25",
+   "start_min": 900,
+   "end_min": 960,
+   "attendees": 9,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-01-02",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Borel room tomorrow 16:00\u201317:00 for 6 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "borel",
+      "date": "2026-08-25",
+      "start_min": 960,
+      "end_min": 1020,
+      "attendee_count": 6,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "borel",
+   "date_iso": "2026-08-25",
+   "start_min": 960,
+   "end_min": 1020,
+   "attendees": 6,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-01-03",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Atlas room today 11:00\u201312:00 for 9 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "atlas",
+      "date": "2026-08-24",
+      "start_min": 660,
+      "end_min": 720,
+      "attendee_count": 9,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "atlas",
+   "date_iso": "2026-08-24",
+   "start_min": 660,
+   "end_min": 720,
+   "attendees": 9,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-01-04",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Borel room tomorrow 16:00\u201317:00 for 11 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "borel",
+      "date": "2026-08-25",
+      "start_min": 960,
+      "end_min": 1020,
+      "attendee_count": 11,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "borel",
+   "date_iso": "2026-08-25",
+   "start_min": 960,
+   "end_min": 1020,
+   "attendees": 11,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-01-05",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Atlas room today 15:00\u201316:00 for 5 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "atlas",
+      "date": "2026-08-24",
+      "start_min": 900,
+      "end_min": 960,
+      "attendee_count": 5,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "atlas",
+   "date_iso": "2026-08-24",
+   "start_min": 900,
+   "end_min": 960,
+   "attendees": 5,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-01-06",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Borel room today 11:00\u201312:00 for 4 people; projector needed.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "borel",
+      "date": "2026-08-24",
+      "start_min": 660,
+      "end_min": 720,
+      "attendee_count": 4,
+      "needs_projector": true
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "borel",
+   "date_iso": "2026-08-24",
+   "start_min": 660,
+   "end_min": 720,
+   "attendees": 4,
+   "projector": true
+  }
+ },
+ {
+  "id": "TU-01-07",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Borel room tomorrow 14:00\u201315:00 for 12 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "borel",
+      "date": "2026-08-25",
+      "start_min": 840,
+      "end_min": 900,
+      "attendee_count": 12,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "borel",
+   "date_iso": "2026-08-25",
+   "start_min": 840,
+   "end_min": 900,
+   "attendees": 12,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-01-08",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Atlas room tomorrow 09:30\u201310:30 for 8 people; projector needed.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "atlas",
+      "date": "2026-08-25",
+      "start_min": 570,
+      "end_min": 630,
+      "attendee_count": 8,
+      "needs_projector": true
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "atlas",
+   "date_iso": "2026-08-25",
+   "start_min": 570,
+   "end_min": 630,
+   "attendees": 8,
+   "projector": true
+  }
+ },
+ {
+  "id": "TU-01-09",
+  "family": "TU",
+  "template": "TU-01",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nBook the Cyrus room tomorrow 10:30\u201311:30 for 7 people.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Times as minutes since midnight; dates ISO.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "actions",
+   "calls": [
+    {
+     "tool": "calendar.book",
+     "args": {
+      "room_id": "cyrus",
+      "date": "2026-08-25",
+      "start_min": 630,
+      "end_min": 690,
+      "attendee_count": 7,
+      "needs_projector": false
+     }
+    }
+   ]
+  },
+  "params": {
+   "room": "cyrus",
+   "date_iso": "2026-08-25",
+   "start_min": 630,
+   "end_min": 690,
+   "attendees": 7,
+   "projector": false
+  }
+ },
+ {
+  "id": "TU-02-00",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S2 tracker ticket titled 'nightly export failing', component pipelines, assignee priya, due Friday. Then email ops@corp.example about it \u2014 subject 'nightly export failing S2', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "nightly export failing",
+      "severity": "S2",
+      "component": "pipelines",
+      "assignee": "priya",
+      "due_date": "2026-08-28"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "ops@corp.example"
+      ],
+      "subject": "nightly export failing S2",
+      "priority": "high",
+      "body": "Tracker ticket S2 'nightly export failing' filed in pipelines; assigned to priya, due 2026-08-28. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S2",
+   "title": "nightly export failing",
+   "component": "pipelines",
+   "assignee": "priya",
+   "recipient": "ops@corp.example",
+   "due_iso": "2026-08-28"
+  }
+ },
+ {
+  "id": "TU-02-01",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S3 tracker ticket titled 'nightly export failing', component billing, assignee marco, due Friday. Then email support@corp.example about it \u2014 subject 'nightly export failing S3', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "nightly export failing",
+      "severity": "S3",
+      "component": "billing",
+      "assignee": "marco",
+      "due_date": "2026-08-28"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "support@corp.example"
+      ],
+      "subject": "nightly export failing S3",
+      "priority": "high",
+      "body": "Tracker ticket S3 'nightly export failing' filed in billing; assigned to marco, due 2026-08-28. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S3",
+   "title": "nightly export failing",
+   "component": "billing",
+   "assignee": "marco",
+   "recipient": "support@corp.example",
+   "due_iso": "2026-08-28"
+  }
+ },
+ {
+  "id": "TU-02-02",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S3 tracker ticket titled 'webhook retries exhausted', component search, assignee dana, due Friday. Then email sre@corp.example about it \u2014 subject 'webhook retries exhausted S3', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "webhook retries exhausted",
+      "severity": "S3",
+      "component": "search",
+      "assignee": "dana",
+      "due_date": "2026-08-28"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "sre@corp.example"
+      ],
+      "subject": "webhook retries exhausted S3",
+      "priority": "high",
+      "body": "Tracker ticket S3 'webhook retries exhausted' filed in search; assigned to dana, due 2026-08-28. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S3",
+   "title": "webhook retries exhausted",
+   "component": "search",
+   "assignee": "dana",
+   "recipient": "sre@corp.example",
+   "due_iso": "2026-08-28"
+  }
+ },
+ {
+  "id": "TU-02-03",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S3 tracker ticket titled 'billing sync lagging', component billing, assignee sam, due Wednesday. Then email ops@corp.example about it \u2014 subject 'billing sync lagging S3', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "billing sync lagging",
+      "severity": "S3",
+      "component": "billing",
+      "assignee": "sam",
+      "due_date": "2026-08-26"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "ops@corp.example"
+      ],
+      "subject": "billing sync lagging S3",
+      "priority": "high",
+      "body": "Tracker ticket S3 'billing sync lagging' filed in billing; assigned to sam, due 2026-08-26. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S3",
+   "title": "billing sync lagging",
+   "component": "billing",
+   "assignee": "sam",
+   "recipient": "ops@corp.example",
+   "due_iso": "2026-08-26"
+  }
+ },
+ {
+  "id": "TU-02-04",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S2 tracker ticket titled 'cache eviction storm', component billing, assignee ingrid, due Friday. Then email support@corp.example about it \u2014 subject 'cache eviction storm S2', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "cache eviction storm",
+      "severity": "S2",
+      "component": "billing",
+      "assignee": "ingrid",
+      "due_date": "2026-08-28"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "support@corp.example"
+      ],
+      "subject": "cache eviction storm S2",
+      "priority": "high",
+      "body": "Tracker ticket S2 'cache eviction storm' filed in billing; assigned to ingrid, due 2026-08-28. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S2",
+   "title": "cache eviction storm",
+   "component": "billing",
+   "assignee": "ingrid",
+   "recipient": "support@corp.example",
+   "due_iso": "2026-08-28"
+  }
+ },
+ {
+  "id": "TU-02-05",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S3 tracker ticket titled 'search indexer crash', component gateway, assignee dana, due Friday. Then email ops@corp.example about it \u2014 subject 'search indexer crash S3', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "search indexer crash",
+      "severity": "S3",
+      "component": "gateway",
+      "assignee": "dana",
+      "due_date": "2026-08-28"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "ops@corp.example"
+      ],
+      "subject": "search indexer crash S3",
+      "priority": "high",
+      "body": "Tracker ticket S3 'search indexer crash' filed in gateway; assigned to dana, due 2026-08-28. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S3",
+   "title": "search indexer crash",
+   "component": "gateway",
+   "assignee": "dana",
+   "recipient": "ops@corp.example",
+   "due_iso": "2026-08-28"
+  }
+ },
+ {
+  "id": "TU-02-06",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S2 tracker ticket titled 'webhook retries exhausted', component gateway, assignee omar, due Wednesday. Then email support@corp.example about it \u2014 subject 'webhook retries exhausted S2', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "webhook retries exhausted",
+      "severity": "S2",
+      "component": "gateway",
+      "assignee": "omar",
+      "due_date": "2026-08-26"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "support@corp.example"
+      ],
+      "subject": "webhook retries exhausted S2",
+      "priority": "high",
+      "body": "Tracker ticket S2 'webhook retries exhausted' filed in gateway; assigned to omar, due 2026-08-26. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S2",
+   "title": "webhook retries exhausted",
+   "component": "gateway",
+   "assignee": "omar",
+   "recipient": "support@corp.example",
+   "due_iso": "2026-08-26"
+  }
+ },
+ {
+  "id": "TU-02-07",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S3 tracker ticket titled 'cache eviction storm', component billing, assignee dana, due Wednesday. Then email sre@corp.example about it \u2014 subject 'cache eviction storm S3', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "cache eviction storm",
+      "severity": "S3",
+      "component": "billing",
+      "assignee": "dana",
+      "due_date": "2026-08-26"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "sre@corp.example"
+      ],
+      "subject": "cache eviction storm S3",
+      "priority": "high",
+      "body": "Tracker ticket S3 'cache eviction storm' filed in billing; assigned to dana, due 2026-08-26. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S3",
+   "title": "cache eviction storm",
+   "component": "billing",
+   "assignee": "dana",
+   "recipient": "sre@corp.example",
+   "due_iso": "2026-08-26"
+  }
+ },
+ {
+  "id": "TU-02-08",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S1 tracker ticket titled 'queue backlog growing', component billing, assignee dana, due Friday. Then email sre@corp.example about it \u2014 subject 'queue backlog growing S1', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "queue backlog growing",
+      "severity": "S1",
+      "component": "billing",
+      "assignee": "dana",
+      "due_date": "2026-08-28"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "sre@corp.example"
+      ],
+      "subject": "queue backlog growing S1",
+      "priority": "high",
+      "body": "Tracker ticket S1 'queue backlog growing' filed in billing; assigned to dana, due 2026-08-28. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S1",
+   "title": "queue backlog growing",
+   "component": "billing",
+   "assignee": "dana",
+   "recipient": "sre@corp.example",
+   "due_iso": "2026-08-28"
+  }
+ },
+ {
+  "id": "TU-02-09",
+  "family": "TU",
+  "template": "TU-02",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nFile an S3 tracker ticket titled 'webhook retries exhausted', component pipelines, assignee omar, due Wednesday. Then email ops@corp.example about it \u2014 subject 'webhook retries exhausted S3', reference the ticket id in the body, high priority.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Dates ISO; ordering matters.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "tracker.create",
+     "args": {
+      "title": "webhook retries exhausted",
+      "severity": "S3",
+      "component": "pipelines",
+      "assignee": "omar",
+      "due_date": "2026-08-26"
+     }
+    },
+    {
+     "tool": "mail.send",
+     "args": {
+      "to": [
+       "ops@corp.example"
+      ],
+      "subject": "webhook retries exhausted S3",
+      "priority": "high",
+      "body": "Tracker ticket S3 'webhook retries exhausted' filed in pipelines; assigned to omar, due 2026-08-26. See tracker for the ticket id."
+     }
+    }
+   ]
+  },
+  "params": {
+   "severity": "S3",
+   "title": "webhook retries exhausted",
+   "component": "pipelines",
+   "assignee": "omar",
+   "recipient": "ops@corp.example",
+   "due_iso": "2026-08-26"
+  }
+ },
+ {
+  "id": "TU-03-00",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nSend the quarterly numbers to the board.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "quarterly numbers",
+   "audience": "board"
+  }
+ },
+ {
+  "id": "TU-03-01",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nEmail the roadmap deck to the investors.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "roadmap deck",
+   "audience": "investors"
+  }
+ },
+ {
+  "id": "TU-03-02",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nSend the churn metrics to the partners committee.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "churn metrics",
+   "audience": "partners committee"
+  }
+ },
+ {
+  "id": "TU-03-03",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nEmail the pricing sheet to the customer advisory board.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "pricing sheet",
+   "audience": "customer advisory board"
+  }
+ },
+ {
+  "id": "TU-03-04",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nSend the quarterly numbers to the board.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "quarterly numbers",
+   "audience": "board"
+  }
+ },
+ {
+  "id": "TU-03-05",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nSend the roadmap deck to the investors.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "roadmap deck",
+   "audience": "investors"
+  }
+ },
+ {
+  "id": "TU-03-06",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nShare the churn metrics to the partners committee.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "churn metrics",
+   "audience": "partners committee"
+  }
+ },
+ {
+  "id": "TU-03-07",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nForward the pricing sheet to the customer advisory board.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "pricing sheet",
+   "audience": "customer advisory board"
+  }
+ },
+ {
+  "id": "TU-03-08",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nForward the quarterly numbers to the board.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "quarterly numbers",
+   "audience": "board"
+  }
+ },
+ {
+  "id": "TU-03-09",
+  "family": "TU",
+  "template": "TU-03",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nForward the roadmap deck to the investors.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[...]}; if information needed for a call is missing use {\"clarify\":{\"missing\":[...],\"question\":\"...\"}} instead; if a capability does not exist use {\"unavailable\":[...]}.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "clarify",
+   "missing_required": [
+    "recipient address",
+    "content source"
+   ]
+  },
+  "params": {
+   "what": "roadmap deck",
+   "audience": "investors"
+  }
+ },
+ {
+  "id": "TU-04-00",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #8841 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 8841
+  }
+ },
+ {
+  "id": "TU-04-01",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #1734 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 1734
+  }
+ },
+ {
+  "id": "TU-04-02",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #9279 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 9279
+  }
+ },
+ {
+  "id": "TU-04-03",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #1247 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 1247
+  }
+ },
+ {
+  "id": "TU-04-04",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #4508 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 4508
+  }
+ },
+ {
+  "id": "TU-04-05",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #3799 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 3799
+  }
+ },
+ {
+  "id": "TU-04-06",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #4869 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 4869
+  }
+ },
+ {
+  "id": "TU-04-07",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #4431 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 4431
+  }
+ },
+ {
+  "id": "TU-04-08",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #9624 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 9624
+  }
+ },
+ {
+  "id": "TU-04-09",
+  "family": "TU",
+  "template": "TU-04",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nCancel order #6738 and issue a refund to the original card.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}; if a requested capability does not exist use {\"unavailable\":[\"...\"]}. Do not invent tools.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "cancel_plus_unavailable"
+  },
+  "params": {
+   "order_id": 6738
+  }
+ },
+ {
+  "id": "TU-05-00",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for gunnar@example.com placed after 2026-06-01 still in 'processing', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "gunnar@example.com",
+      "status_filter": "processing",
+      "placed_after": "2026-06-01"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "gunnar@example.com",
+   "status": "processing",
+   "placed_after": "2026-06-01"
+  }
+ },
+ {
+  "id": "TU-05-01",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for lina@example.com placed after 2026-05-15 still in 'packed', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "lina@example.com",
+      "status_filter": "packed",
+      "placed_after": "2026-05-15"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "lina@example.com",
+   "status": "packed",
+   "placed_after": "2026-05-15"
+  }
+ },
+ {
+  "id": "TU-05-02",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for gunnar@example.com placed after 2026-05-15 still in 'packed', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "gunnar@example.com",
+      "status_filter": "packed",
+      "placed_after": "2026-05-15"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "gunnar@example.com",
+   "status": "packed",
+   "placed_after": "2026-05-15"
+  }
+ },
+ {
+  "id": "TU-05-03",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for gunnar@example.com placed after 2026-06-01 still in 'queued', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "gunnar@example.com",
+      "status_filter": "queued",
+      "placed_after": "2026-06-01"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "gunnar@example.com",
+   "status": "queued",
+   "placed_after": "2026-06-01"
+  }
+ },
+ {
+  "id": "TU-05-04",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for oskar@example.com placed after 2026-07-01 still in 'queued', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "oskar@example.com",
+      "status_filter": "queued",
+      "placed_after": "2026-07-01"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "oskar@example.com",
+   "status": "queued",
+   "placed_after": "2026-07-01"
+  }
+ },
+ {
+  "id": "TU-05-05",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for gunnar@example.com placed after 2026-07-01 still in 'queued', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "gunnar@example.com",
+      "status_filter": "queued",
+      "placed_after": "2026-07-01"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "gunnar@example.com",
+   "status": "queued",
+   "placed_after": "2026-07-01"
+  }
+ },
+ {
+  "id": "TU-05-06",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for gunnar@example.com placed after 2026-05-15 still in 'processing', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "gunnar@example.com",
+      "status_filter": "processing",
+      "placed_after": "2026-05-15"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "gunnar@example.com",
+   "status": "processing",
+   "placed_after": "2026-05-15"
+  }
+ },
+ {
+  "id": "TU-05-07",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for yuki@example.com placed after 2026-06-01 still in 'processing', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "yuki@example.com",
+      "status_filter": "processing",
+      "placed_after": "2026-06-01"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "yuki@example.com",
+   "status": "processing",
+   "placed_after": "2026-06-01"
+  }
+ },
+ {
+  "id": "TU-05-08",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for gunnar@example.com placed after 2026-07-01 still in 'processing', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "gunnar@example.com",
+      "status_filter": "processing",
+      "placed_after": "2026-07-01"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "gunnar@example.com",
+   "status": "processing",
+   "placed_after": "2026-07-01"
+  }
+ },
+ {
+  "id": "TU-05-09",
+  "family": "TU",
+  "template": "TU-05",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAvailable tools (mock registry):\ncalendar.book(room_id, date, start_min, end_min, attendee_count, needs_projector: bool)\nmail.send(to: [], cc: [], subject, body, priority in {low, normal, high})\ntracker.create(title, severity in {S1,S2,S3,S4}, component, assignee, due_date)\ntracker.update(ticket_id, status, comment)\norders.lookup(customer_email?, order_id?, status_filter?, placed_after?)\norders.cancel(order_id, reason)\nLook up orders for mateo@example.com placed after 2026-05-15 still in 'packed', and cancel the oldest one.",
+  "question": "Emit the ordered tool-call list for the request above as JSON {\"calls\":[{\"tool\":...,\"args\":{...}}]}. Ordering matters; reference prior results where needed.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "expect": "ordered_actions",
+   "calls": [
+    {
+     "tool": "orders.lookup",
+     "args": {
+      "customer_email": "mateo@example.com",
+      "status_filter": "packed",
+      "placed_after": "2026-05-15"
+     }
+    },
+    {
+     "tool": "orders.cancel",
+     "args": {
+      "selection": "argmin placement_date"
+     }
+    }
+   ]
+  },
+  "params": {
+   "email": "mateo@example.com",
+   "status": "packed",
+   "placed_after": "2026-05-15"
+  }
+ }
+]

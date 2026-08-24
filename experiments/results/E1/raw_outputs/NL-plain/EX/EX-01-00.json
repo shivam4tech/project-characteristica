@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "EX",
+  "template": "EX-01",
+  "item_id": "EX-01-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 3780,
+  "conv_lat_ms": 0,
+  "score": 0.1429,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"a1_owner\": false, \"a1_action\": false, \"a1_deadline\": false, \"a1_priority\": true, \"a2_owner\": true, \"a2_action\": false, \"a2_constraint\": false, \"a3_owner\": false, \"a3_action\": false, \"a3_deadline\": false, \"a3_priority\": false, \"guard_target\": false, \"guard_condition\": false, \"guard_type\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 189,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "",
+   "p_in": 274,
+   "p_out": 2048,
+   "latency_ms": 3780,
+   "resp_id": "gen-1787578309-C7sN6p59NYkFXcxAdVEl",
+   "transport_retries": 7,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "EX",
+  "template": "EX-05",
+  "item_id": "EX-05-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 3,
+  "lat_total_ms": 30157,
+  "conv_lat_ms": 0,
+  "score": 0.1,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"category\": false, \"version\": false, \"symptom_condition\": false, \"tier\": false, \"seats\": false, \"deadline_day\": false, \"deadline_month\": true, \"mitigations_tried\": false, \"priority\": false, \"exec_visible\": false}",
+  "final_error": "",
+  "transport_fail": true,
+  "v_in": 0,
+  "v_out": 0,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10051,
+   "error": "<HTTPError 401: 'Unauthorized'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10053,
+   "error": "<HTTPError 401: 'Unauthorized'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 3,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10053,
+   "error": "<HTTPError 401: 'Unauthorized'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

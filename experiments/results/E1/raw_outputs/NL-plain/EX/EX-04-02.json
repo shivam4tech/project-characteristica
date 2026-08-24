@@ -1,0 +1,81 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "EX",
+  "template": "EX-04",
+  "item_id": "EX-04-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 3,
+  "lat_total_ms": 30154,
+  "conv_lat_ms": 0,
+  "score": 0.0625,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"ship_date\": false, \"pickup_start\": false, \"pickup_end\": false, \"cargo1_name\": false, \"cargo1_qty\": false, \"cargo1_unit\": false, \"cargo1_weight_each_kg\": false, \"cargo2_name\": false, \"cargo2_qty\": false, \"cargo2_unit\": false, \"cargo2_weight_total_kg\": false, \"handling_exclusion\": false, \"docs_deadline_date\": false, \"roll_to_date\": false, \"docs_filed_date\": false, \"condition_triggered\": true}",
+  "final_error": "",
+  "transport_fail": true,
+  "v_in": 0,
+  "v_out": 0,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10051,
+   "error": "<HTTPError 401: 'Unauthorized'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10053,
+   "error": "<HTTPError 401: 'Unauthorized'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 3,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10050,
+   "error": "<HTTPError 401: 'Unauthorized'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

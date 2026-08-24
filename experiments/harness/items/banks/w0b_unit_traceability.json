@@ -1,0 +1,3722 @@
+[
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-00",
+  "unit_id": "EX-01-00::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-01",
+  "unit_id": "EX-01-01::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-02",
+  "unit_id": "EX-01-02::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-03",
+  "unit_id": "EX-01-03::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-04",
+  "unit_id": "EX-01-04::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-05",
+  "unit_id": "EX-01-05::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-06",
+  "unit_id": "EX-01-06::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-07",
+  "unit_id": "EX-01-07::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-08",
+  "unit_id": "EX-01-08::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a1_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_owner"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a1_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a1_action"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a1_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a1_deadline"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a1_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a1_priority"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a2_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_owner"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a2_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a2_action"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a2_constraint",
+  "unit_type": "exclusion",
+  "checker_field": "a2_constraint"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a3_owner",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_owner"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a3_action",
+  "unit_type": "entity_ref",
+  "checker_field": "a3_action"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a3_deadline",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "a3_deadline"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::a3_priority",
+  "unit_type": "priority_preference",
+  "checker_field": "a3_priority"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::guard_target",
+  "unit_type": "entity_ref",
+  "checker_field": "guard_target"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::guard_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "guard_condition"
+ },
+ {
+  "item": "EX-01-09",
+  "unit_id": "EX-01-09::guard_type",
+  "unit_type": "modality",
+  "checker_field": "guard_type"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-00",
+  "unit_id": "EX-02-00::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-01",
+  "unit_id": "EX-02-01::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-02",
+  "unit_id": "EX-02-02::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-03",
+  "unit_id": "EX-02-03::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-04",
+  "unit_id": "EX-02-04::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-05",
+  "unit_id": "EX-02-05::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-06",
+  "unit_id": "EX-02-06::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-07",
+  "unit_id": "EX-02-07::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-08",
+  "unit_id": "EX-02-08::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::incident_id",
+  "unit_type": "entity_ref",
+  "checker_field": "incident_id"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::service",
+  "unit_type": "entity_ref",
+  "checker_field": "service"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::symptom",
+  "unit_type": "entity_ref",
+  "checker_field": "symptom"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::t_open",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "t_open"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::blast_region",
+  "unit_type": "entity_ref",
+  "checker_field": "blast_region"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::blast_share",
+  "unit_type": "quantity_unit",
+  "checker_field": "blast_share"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::rollback_deploy_id",
+  "unit_type": "entity_ref",
+  "checker_field": "rollback_deploy_id"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::rollback_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "rollback_time"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::suspected_cause",
+  "unit_type": "entity_ref",
+  "checker_field": "suspected_cause"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::status_page_time",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "status_page_time"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::enterprise_email_required",
+  "unit_type": "exclusion",
+  "checker_field": "enterprise_email_required"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::exception_company",
+  "unit_type": "entity_ref",
+  "checker_field": "exception_company"
+ },
+ {
+  "item": "EX-02-09",
+  "unit_id": "EX-02-09::exception_notify",
+  "unit_type": "exception_of_exclusion",
+  "checker_field": "exception_notify"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-00",
+  "unit_id": "EX-03-00::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-01",
+  "unit_id": "EX-03-01::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-02",
+  "unit_id": "EX-03-02::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-03",
+  "unit_id": "EX-03-03::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-04",
+  "unit_id": "EX-03-04::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-05",
+  "unit_id": "EX-03-05::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-06",
+  "unit_id": "EX-03-06::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-07",
+  "unit_id": "EX-03-07::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-08",
+  "unit_id": "EX-03-08::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::rent_due_day",
+  "unit_type": "quantity_unit",
+  "checker_field": "rent_due_day"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::fee_amount_usd",
+  "unit_type": "quantity_unit",
+  "checker_field": "fee_amount_usd"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::fee_trigger_days",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "fee_trigger_days"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::prohibition_paint",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_paint"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::prohibition_sublet",
+  "unit_type": "exclusion",
+  "checker_field": "prohibition_sublet"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::pet_weight_limit_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "pet_weight_limit_kg"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::consent_escape",
+  "unit_type": "modality",
+  "checker_field": "consent_escape"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::notice_hours",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "notice_hours"
+ },
+ {
+  "item": "EX-03-09",
+  "unit_id": "EX-03-09::notice_exception",
+  "unit_type": "modality",
+  "checker_field": "notice_exception"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-00",
+  "unit_id": "EX-04-00::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-01",
+  "unit_id": "EX-04-01::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-02",
+  "unit_id": "EX-04-02::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-03",
+  "unit_id": "EX-04-03::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-04",
+  "unit_id": "EX-04-04::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-05",
+  "unit_id": "EX-04-05::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-06",
+  "unit_id": "EX-04-06::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-07",
+  "unit_id": "EX-04-07::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-08",
+  "unit_id": "EX-04-08::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::ship_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "ship_date"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::pickup_start",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_start"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::pickup_end",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "pickup_end"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo1_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_name"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo1_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_qty"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo1_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo1_unit"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo1_weight_each_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo1_weight_each_kg"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo2_name",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_name"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo2_qty",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_qty"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo2_unit",
+  "unit_type": "entity_ref",
+  "checker_field": "cargo2_unit"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::cargo2_weight_total_kg",
+  "unit_type": "quantity_unit",
+  "checker_field": "cargo2_weight_total_kg"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::handling_exclusion",
+  "unit_type": "exclusion",
+  "checker_field": "handling_exclusion"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::docs_deadline_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_deadline_date"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::roll_to_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "roll_to_date"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::docs_filed_date",
+  "unit_type": "temporal_qualifier",
+  "checker_field": "docs_filed_date"
+ },
+ {
+  "item": "EX-04-09",
+  "unit_id": "EX-04-09::condition_triggered",
+  "unit_type": "modality",
+  "checker_field": "condition_triggered"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-00",
+  "unit_id": "EX-05-00::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-01",
+  "unit_id": "EX-05-01::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-02",
+  "unit_id": "EX-05-02::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-03",
+  "unit_id": "EX-05-03::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-04",
+  "unit_id": "EX-05-04::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-05",
+  "unit_id": "EX-05-05::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-06",
+  "unit_id": "EX-05-06::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-07",
+  "unit_id": "EX-05-07::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-08",
+  "unit_id": "EX-05-08::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::category",
+  "unit_type": "entity_ref",
+  "checker_field": "category"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::version",
+  "unit_type": "entity_ref",
+  "checker_field": "version"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::symptom_condition",
+  "unit_type": "conditional_constraint",
+  "checker_field": "symptom_condition"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::tier",
+  "unit_type": "entity_ref",
+  "checker_field": "tier"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::seats",
+  "unit_type": "quantity_unit",
+  "checker_field": "seats"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::deadline_day",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_day"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::deadline_month",
+  "unit_type": "designed_unknown_flag",
+  "checker_field": "deadline_month"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::mitigations_tried",
+  "unit_type": "entity_ref",
+  "checker_field": "mitigations_tried"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::priority",
+  "unit_type": "priority_preference",
+  "checker_field": "priority"
+ },
+ {
+  "item": "EX-05-09",
+  "unit_id": "EX-05-09::exec_visible",
+  "unit_type": "priority_preference",
+  "checker_field": "exec_visible"
+ }
+]

@@ -1,0 +1,845 @@
+GOTTFRIED vVILHELlVi LEIBNIZ
+
+
+Philosophical Papers arld
+        Letters
+
+A Selection Tmnslated and Edited. with an Introduction bT
+                                -                      "
+               LEROY E. LOEMKER
+
+
+
+                       VOLUME I
+
+
+
+
+                     (i)
+     THE UNIVERSITY OF CHICAGO PRESS
+               CHICAGO· ILLINOIS
+                                  1
+
+
+       DISSERTATION ON THE ART OF COMBINATIONS
+                         1666
+                            (Selections)
+
+     The Dissertatio de arte combinatoria, which Leibniz published
+in 1666, was an expansion of the dissertation and theses submitted
+for disputation the same year to qualify for a position in the philo­
+sophical faculty at Leipzig. The work contains the germ of the plan
+for a universal characteristic and logical calculus, which was to
+occupy his thinking for the rest of his life. That project is here con­
+ceived as a problem in the arithmetical combination of simple into
+complex concepts, Leibniz deriving basic theorems on permutation
+and combination and applying them to the classification of cases in
+logic, law, theology, and other fields of thought. His later judgment
+on the work was that in spite of its immaturity and its defects, es­
+pecially in mathematics, its basic purpose was sound.
+     Three introductory sections which supply the metaphysical
+and logical foundations of the work are given here. They are (1) a
+demonstration of the existence of God with which he prefaced the
+work; (II) the "corollaries" prepared for the disputation; and (III)
+the definitions introducing the work itself. The solution of the first
+two problems and several applications are also included.
+
+                               ***
+                                                      [G., IV, 32-33J
+
+                                  I
+        DEMONSTRATION OF THE EXISTENCE OF GOD
+                                1
+     Hypotheses [Praecognital:
+     1. Definition 1. God is an incorporeal substance of infinite
+
+                                 117
+118 / Mainz and Paris, 1666-76                                                             Dissertation on the Art of Combinations / 119
+power [virtusJ.                                                               9. which we may call!!.
+      2. Definition 2. I call substance whatever moves or is moved.          10. This is also moved, by No.6,
+      3. Definition 3. Infinite power is an original capacity [poten­        11. and what we have demonstrated about body A again applies,
+tia] to move the infinite. For power is the same as original capac­     so that
+ity; hence we say that secondary causes operate by virtue [virtusl           12. either we must sometime arrive at an incorporeal power,
+of the primary.                                                         as we showed in the case of A, in steps 1-7 of the proof, and there­
+      4. Postulate. Any number of things whatever may be taken si­      fore at God;
+ multaneously and yet be treated as one whole. If anyone makes bold          13. or in the infinite whole there exist bodies which move each
+ to deny this, I will prove it. The concept of parts is this: given a   other continuously.
+ plurality of beings all of which are understood to have something           14. All these taken together as one whole can be called f., by
+ in common; then, since it is inconvenient or impossible to enu­        No.4.
+ merate all of them every time, one name is thought of which takes           15. And since all the parts of f. are moved, by step 13,
+the place of all the parts in our reasoning, to make the expression          16. f itself is moved, by No.6,
+shorter. This is called the whole. But in any number of given things         17. and by some other being, by No.5,
+Whatever, even infinite, we can understand what is true of all,              18. namely, by an incorporeal being, since we have already
+since we can enumerate them all indiVidually, at least in an infi­      included all bodies, back to infinity, in f., by step 14. But we need
+nite time. It is therefore permissible to use one name in our rea­      something other than f., by 17 and 19,
+soning in place of all, and this will itself be a whole. 2                   19. which must have infinite power, by step No.3, since f.,
+      5. Axiom 1. If anything is moved, there is a mover.               which is moved by it, is infinite, by steps 13 and 14;
+      6. Axiom 2. Every moving body is being moved.                          20. and which is a substance, by No.2,
+      7. Axiom 3. If all its parts are moved, the whole is moved.            21. and therefore God, by No. 1.
+      8. Axiom 4. Every body whatsoever has an infinite number of                                            3
+                                                                             Therefore, God exists. Q.E.D.
+parts; or, as is commonly said, the continuum is infinitely divis­
+ible.                                                                                                   II
+    9. Observation. There is a moving body.                                                                                 4
+                                                                                      COROLLARIES FOR DISPUTATION
+    Proof r £ K e, <T , <; J:
+                                                                                                                            [G., IV, 41-43]
+    1. Body A is in motion, by hypothesis No.9.
+    2. Therefore there is something which moves it, by No.5,                 An Arithmetical Disputation on Complexions, which Mr. Gott­
+    3. and this is either incorporeal                                   fried Wilhelm Leibniz of Leipzig will hold in the famous university
+    4. because it is of infinite power) by No.3;                        of Leipzig, by permission of its distinguished philosophical faculty,
+    5. since A, which it moves, has infinite parts, by No.8;            on March 7, 1666.
+    6. and is a substance, by No.2.
+                                                                        I. Logic.
+    7. It is therefore God, by No. 1. Q.E.D.
+                                                                              1. There are two primary propositions. The first is the prin­
+    8. Or it is a body,
+                                                                        ciple of all theorems or necessary propositions: what is (so)
+120   Mainz and Paris, 1666-76                                                               Dissertation on the Art of Combinations / 121
+either is or is not (so), or conversely. The other is the basis of       of the earth; but neither is the contrary.
+all observations or contingent propositions: something exists.                  2. Since the most general difference between bodies is that
+      2. Perfect demonstrations are possible in all disciplines.         of density and rarity,7 the four primary qualities may obviously
+      3. If we regard the disciplines in themselves, they are all        be explained as follows: the humid is the rare, the Q!y is the
+theoretical; if their application, they are all practical. Those, how­   dense, the warm is the rarefying, and the cold is the condensing.
+ever, from which the application follows more immediately are            Everything rare is easily confined within external boundaries, but
+rightly called practical par excellence.                                 with difficulty within its own boundaries; everything dense, the con­
+      4. Although every method can be employed in every disci­           trary. In the rare, everything that rarefies facilitates the quicken­
+pline, as we follow the traces either of our ov.rn investigation or      ing of the homogeneous with respect to itself and the separation of
+of the producing nature in our treatment, it yet happens in the          the heterogenous; in the dense the way to this is blocked. A reason
+practical disciplines that the order of nature and that of knowledge     is thus supplied for the Aristotelian definitions. Nor does fire,
+coincides, because here the nature of the thing itself originates in     which seems to be rare but must actually be dry, provide an ex­
+our thought and production. For the end in view both moves us to         ception to this, for I reply that one thing is to be said about fire
+produce the means and leads us to know them, which is not true in        per se and another of fire which inheres in other bodies, for in this
+the matters which we can merely know but cannot also produce.            case it follows the nature of these bodies. Thus it is clear that a
+Moreover, although every method is allowed, not everyone is ex­          flame, which is nothing but burning air, must be :flUid just as is air
+pedient.                                                                 itself. On the other hand, the fire which consists of burning iron is
+      5. The end of logic is not the syllogism but simple contem­        like iron itself.
+plation. The proposition is, in fact, the means to this end, and the            3. It is a fiction that the force of the magnet is checked by
+syllogism is the means to the proposition.                               steel.
+n. Metaphysics.                                                          IV. Practical.
+      1. One infinite is greater than another. (Cardan, Pract.                 1. Justice (particular) is a virtue serving the mean in the <11­
+Arith., chap. 66, nn. 165 and 260. Seth Ward is said to dissent in       fections of one man toward another, the affections of enjoying and
+his Arithmetic of Infinites}                                             of harming, or those of good will and hate. The rule of the mean is
+      2. God is substance; creature is accident.                         !o gratify another (or myself) as long as this does not harm a third
+      3. A discipline concerning created beings in general is need­      person (or another). This must be noted in order to defend Aris­
+ed, but this is nowadays usually included in metaphysics.                totle against the cavil of Grotius, who speaks as follows in the Pro­
+      4. It is very improbable that the term cause expresses an          legomena of his de Jure belli et pacis (Sec. 4):
+unequivocal concept to cover efficient, material, formal, and final
+                                                                              That this principle (that virtue consists in the mean) cannot
+causes. For what is L'le word influx, more than a mere word? 6           correctly be assumed as universal is clear even in the case of jus­
+                                                                         tice. For since he (Aristotle) was unable to find the opposites of
+m. Physics.                                                              excess and defect in the affections and the actions which follow
+      1. Since we may observe that other cosmic bodies move              from them, he sought them both in the things themselves with which
+                                                                         justice is concerned. But this is obviously to leap from one genu~
+about their own axes, it is not absurd that the same should be true      of things to another, a fault which he rightly criticizes in others.
+122/ Mainz and Paris, 1666-76                                                                  Dissertation on the Art of Combinations / 123
+Grotius, namely, maintains that it is inconsistent to introduce in­        lation to it.s part.
+to the species of a classification something which is derived by                 3. Therefore, it is obvious that neither quality nor quantity
+another principle of classification; he calls this, not too philosoph­     nor relation is a being; it is their treatment in a signate actuality
+ically, "leaping over into another genus." Certainly the mean in af­       that belongs to metaphysics.
+fections is one thing, the mean in things another, and virtues are               4. Furthermore, every relation is either one of union or one
+habits, not of things but of minds. Therefore I show that justice is       of harmony [convenientiaJ. In union the things between which there
+also found in a moderation of the affections.                              is this relation are called parts, and taken together with their un­
+       2. Thrasymachus well says, in Plato's Republic, Book i, that        ion, a whole. This happens whenever we take many things simul­
+justice is what is useful to the more powerful. For in a proper and        taneously as one. By one we mean whatever we think of in one in­
+simple sense, God is more powerful than others. In an absolute             tellectual act, or at once. For example, we often grasp a number,
+sense one man is not more powerful than another, since it is pos­          however large, all at once in a kind of blind thought, namely, when
+sible for a strong man to be killed by a weak one. BeSides, useful­        we read figures on paper which not even the age of Methuselah
+ness to God is not a matter of profit but of honor. Therefore the          would suffice to count explicitly,
+glory of God is obViously the measure of all law. Anyone who con­                5. The concept of unity is abstracted from the concept of one
+sults the theologians, moralists, and writers on cases of conscience       being, and the whole itself, abstracted from unities, or the totality,
+will find that most of them base their arguments on this. Once this        is called number,lO Quantity is therefore the number of parts.
+principle is established as certain, therefore, the doctrine of jus­       Hence quantity and number obviously coincide in the thing itself,
+tice can be worked out scientifically. Until now this has not been         but quantity is sometimes interpreted extrinsically, as it were, in
+done. 9                                                                    a relation or ratio to another quantity, to aid us, namely, when the
+                                                                           number of parts is unknown.
+                                 ill                                                                                                    ll
+                                                                               6. This is the origin of the ingenious specious analysis
+                             Cum Deo!                                      which Descartes was the first to work out, and which Francis
+                                                                           Schotten and Erasmus Bartholin later organized into principles,
+                                                      [G., IV, 35-75J
+                                                                           the latter in what he calls the Elements of Universal Mathematics.
+       1. Metaphysics, to begin at the top, deals with being and with      Analysis is thus the science of ratios and proportions, or of un­
+the affections of being as well. Just as the affections of a natural       known quantity, while arithmetic is the science of known quantity,
+body are not themselves bodies, however, so the affections of a be­        or numbers. But the Scholastics falsely believed that number arises
+ing are not themselves beings.                                             only from the division of the continuum and cannot be applied to in­
+       2. An affection (or mode) of a being, moreover, is either           corporeal beings. For number is a kind of incorporeal figure, as it
+something absolute, which is called quality, or something relative,        were, which arises from the union of any beings whatever; for ex­
+and this latter is either the affection of a thing relative to its parts   ample, God, an angel, a man, and motion taken together are four.
+if it has any, that is, quantity, or that of one thing relative to an­           7. Since number is therefore something of greatest univer­
+other, relation. But if we speak more accurately and assume a part         sality, it rightly belongs to metaphysics, if you take metaphysics
+to be different from the whole, the quantity of a thing is also a re-      to be the science of those properties which are common to all
+124/ Mainz and Paris, 1666-76                                                                Dissertation on the Art of Combinations / 125
+
+classes of beings. For to speak accurately, mathematics (adopt­                                       Definitions
+ing this term now) is not one discipline but small parts taken out            1. Variation here means change of relation. For change may
+of different disciplines and dealing with the quantity of the objects    be one of substance, or of quantity, or of quality; still another kind
+belonging to each of them. These parts have rightly grown together       changes nothing in the thing but only its relation, its situs, its con­
+because of their cognate nature. For as arithmetic and analysis          junction with some other thing.
+deal with the quantity of beings, so geometry deals with the quan­             2. Variability is the quantity of all variations. For the limits
+tity of bodies, or of the space which is coextensive with bodies.        of powers taken in abstraction denote their quantity; so it is fre­
+Far be it from us, certainly, to destroy the social distribution of      quently said in mechanics that the power of one machine is double
+disciplines among the professions, which has followed convenience        that of another.
+in teaching rather than the order of nature.                                     3. Situs is the location of parts.
+       8. Furthermore, the whole itself (and thus number or total­               4. Situs is either absolute or relative; the former is that of
+ity) can be broken up into parts, smaller wholes as it were. This        the parts with respect to the whole, the latter that of parts to parts.
+is the basis of complexions, provided you understand that there          In the former the number of places is considered, and the distance
+are common parts in the different smaller wholes themselves. For         from the beginning and the end; in the latter neither the beginning
+example, let the whole be ABC; then AB, BC, and AC will be small­        nor the end is considered, but only the distance of one part from
+er wholes, its parts. And the disposition of the smallest parts, or       another part is viewed. Hence the former is expressed by a line or
+of the parts assumed to be smailest (that is, the unities) in rela­      by lines which do not inclose a figure or close upon themselves,
+tion to each other and to the whole can itself also be varied. Such       and best by a straight line; the latter is expressed by a line or lines
+a disposition is called ~tus.12                                           inclosing a figure, and best by a circle. In the former much consid­
+       9. So there arise two kinds of variation: complexion and           eration is given to priority and posteriority; in the latter, none. We
+situs. And viewed in themselves, both complexion and situs belong         will therefore do well to call the former order,
+to metaphysics, or to the science of whole and parts. If we look at               5. And the latter vicinity. The former is disposition; the lat­
+their variability, however, that is, at the quantity of variation, we     tel', composition. Thus by reason of order the following situses are
+must turn to numbers and to arithmetic. I am inclined to think that       different: abcd, bcda, cdab, dabc. But in vicinity there can be no
+the science of complexions pertains more to pure arithmetic, and                                                     b
+                                                                         variation but only situs, namely, this: ~ - .s;.. Thus when the very
+that of situs to an arithmetic of figure. For so we understand uni­                                                  d
+ties to produce a line. I want to note here in passing, however, that     witty Taubman was dean of the philosophlcal faculty at Wittenberg,
+unities can be arranged either in a straight line or in a circle or       he is said to have placed the names of Master's candidates on the
+some other closed line or lines which outline a figure. In the for­       public program in a circular arrangement, so that eager readers
+mer case they are in absolute situs or that of parts to the whole,        should not learn who held the position of "swine.,,14
+or order; in the latter they are in relative situs or that of parts to          6. We will usually mean the variability of order when we
+parts, or vicinity. In definitions 4 and 5, below, we shall tell how      take variations par excellence; for example, 4 things can be ar­
+these differ. Here these preliminary remarks will suffice to bring        ranged in 24 ways.15
+                                                                  13            7. The variability of a complex we call complexions; for ex­
+to light the discipline upon which our subject matter is based.
+126 / Mainz and Paris, 1666-76                                                             Dissertation on the Art of Combinations / 127
+ample, 4 things can be put together in 15 different ways.16            we owe the latter part of the first problem, and the second and
+       8. The number of varying things we shall call simply num­       fourth, to others; the rest we ourselves have discovered. We do
+ber; for example, 4 in the case proposed.                              not know who was the first to discover them. Schwenter (De lie. ,
+       9. A complexion is the union of a smaller whole within the      Book i, Sec. 1, prop. 32) says they exist in Jerome Cardan, John
+greater, as we have said in the introduction.                          Buteonis, and Nicolas Tartalea. But we have not found them in Car­
+     10. In order to determine a certain complexion, however, the      dan's Arithmetica practica, published in Milan in 1539. Christopher
+greater whole is to be divided into equal parts assumed as mini­       Clavius set forth especially clearly what has been found recently,
+rna (that is, parts now not to be considered as further divisible).    in his Commentarium in Sphaeram Joannis de Sacro Bosco, pub­
+Of these parts it is composed, and by the variation of them the com­                                        17
+                                                                       lished in Rome in 1585, pages 33 fL
+plexion or lesser whole may be varied. Because the lesser whole
+itself is greater or less according as more parts are included at                                  Problem 1
+any time, we call the number of parts or unities to be connected                   To Discover the Complexions for a Given
+together at one time the exponent, after the example of a geomet­                           Number and Exponent
+ric progression. For example, let the whole be ABCD. If the lesser
+                                                                             1. There are two ways of solving this problem, one for all
+whole is to consist of two parts, for example, AB, AC, AD, BC,
+                                                                       complexions, the other for com2nations only. The former is more
+BD, C:Q, the exponent will be 2; if of three parts, for example,
+                                                                       general, but the latter requires fewer data, namely, only the num­
+ABC, ABD, ACD, BCD, the exponent will be 3.
+                                                                       ber and the exponent, while the former also presupposes the discov­
+     11. We shall write the complexions with a given exponent as
+                                                                       ery of antecedent complexions. 18
+follows: if the exponent is 2, com2nation (combination); if 3,
+                                                                             2. We have developed the more general method; the special
+con3nation (conternation); if 4, con4nation; etc.
+                                                                       one is popularly known. The more general solution is this: Add
+     12. Complexions taken simplv are aU the complexions com­
+                                                                       the complexions of the number preceding the given number, by the
+puted for all exponents; for example, 15 of the number 4. These
+                                                                       given exponent and bv the PXpollPnt preceding it; the sum will be
+consist of 4 units, 6 com2nations, 4 con3nations, 1 con4nation.
+                                                                       the desired complexions. For example, let the given number be 4
+     13. A useful (useless) variation is one which can (cannot) oc­
+                                                                       and the exponent 3; add the 3 com2nations and the 1 con3nation of
+cur because of the nature of the subject matter; for example, the
+                                                                       the preceding number 3; (3 T 1 " 4). The sum 4 will be the answer.
+four [physical] elements can be com2ned six times, but two com2na­
+                                                                             3. But since the complexions of the preceding number are
+tions are useless, name ly, those in which the contraries fire and
+                                                                       required for this solution, Table ~ must be constructed. In it the
+water and the contraries air and earth are com2ned.
+                                                                       top line contains the numbers from 0 to 12 inclusive from left to
+                            Problems                                   right (we believe this is far enough, since it is easily extended);
+                                                                       the vertical line at the left contains the exponents from 0 to 12,
+     Three things should be considered: problems, theorems, and
+                                                                       reading from top to bottom; and the bottom line, from left to right,
+applications. We have added the application to individual problems
+                                                                       contains the total complexions [complexiones simpliciter]. The
+wherever it seemed worth while, and the theorems also. To some
+                                                                       lines between contain the complexions for the number given at the
+of the problems, however, we have added a demonstration. Of these,
+128/ Mainz and Paris, 1666-76                                                                     Dissertation on the Art of Combinations / 129
+
+head of the corresponding column and for the exponent given at                                            Problem IT
+          19
+the left.                                                                            To Discover the Complexions Taken Simply for a
+      4. The reason for this solution, and the basis of the table,                                   Given Number
+will be clear if we demonstrate that the complexions for a given
+                                                                                  Seek the given number among the exponents of a geometric
+number and exponent arise from the sum of the complexions of
+                                                                             progression with base 2; then the total of complexions sought will
+the preceding number \ for both the given and the preceding expo­
+                                                                             be the number or term of the progression whose exponent is the
+nents. Taking the given number as 5 and the given exponent as 3,
+                                                                             given number, minus 1. It is difficult to understand the reason or
+the antecedent number will be 4; it will have 4 con3nations and 6
+                                                                             demonstration for this, or to explain it if it is understood. The fact,
+com2nations, by Table ~. Now the number 5 has all the con3na­
+                                                                             however, is apparent from Table". For, when added together, and
+tions of the preceding number (since the part is contained in the
+                                                                             the sum added to unity, the particular complexions of a given num­
+whole), namely, 4, and it has besides as many con3nations as the
+                                                                             ber always constitute, when one is added, the term of that geomet­
+preceding number has com2nations, since the unit by which the
+                                                                             ric progression with base 2, whose exponent is the given number.
+number 5 exceeds 4, added to each of the individual com2nations
+                                                                             But if anyone is interested in seeking the reason for this, it will
+of 4, will make the same number of con3nations. Thus 6 + 4 = 10.
+                                                                             have to be found in the process of resolving used in the Practica
+Therefore the complexions for a given number, etc. Q.E.D.
+                                                                             italica, vom Zerfallen. This must be such that a given term of the
+                                                                             geometrical progression is separated into more parts by one than
+                                TABLE ~
+                                                                             there are units (Le., numbers) in its exponent. The first Df these
+         o 1 111        1   1   1   1    1    1     1     1        1         must always be equal to the last, the second to the next to the last,
+                                                                             the third to the third from the last, etc., until, if it is broken up in­
+         1 0 1 2 3      4 5 6       7n   8u 9m     lOb   11e      121'
+                                                                             to an equal number of parts, the exponent or number of things be­
+         20013          6 10 15     21   28 36      45    55       66
+                                                                             ing odd, the two parts in the middle \Ioill be equal (for example,
+         30001          4 10 20     35   56 84     120   165      220                 7
+                                                                             128 or 2 may be broken up into eight parts according to Table l',:
+         4 0 000        1 5 15      35   70 126    210   330      495
+                                                                             1,7,21,35,35,21,7,1); or, if the exponent is even and it must
+...,U1   5 0 000        0 1 6       21   56 126    252   462      792 ~
+ C                                                                     ::J   be broken into an odd number, the number left in the middle will
+ CJ      6: 0 0 0 0     0 0 1        7   28 84     210   462      924 .0                                                               8
+ §                                                                           have none corresponding to it (for example, 256 or 2 may be bro­
+ ~
+         710 0 0 0      0 0 0        1    8 36     120   330      792   §.   ken up into nine parts according to Table 1:'\: 1,8,28,56, 70,56,
+W         810 0 0 0     0 0 0        0    1   9     45   165      495 g
+                                                                       m     28, 8, 1). Someone may therefore think that this brings to light a
+          910000        0 0 0        0    0   1     10    55      220
+                                                                             new method which is absolute for solving problem 1; namely, by
+         10j 0 0 0 0    0 0 0        0    0   0      1    11       66
+            I                                                                breaking up the complexions taken simply, or the terms of a geo­
+         11iOOOO        0 0 0        0    0   0      0     1       12
+                                                                             metric progression with base 2, by a method discovered with the
+         12ioooo        0 0 0        0    0   0      0        0      1
+                                                                             aid of algebra. In fact, however, there are not sufficient data, and
+         * I 0 1. 3. 7. 15. 31. 63. 127. 255. 511. 1023. 2047. 4095.         the same number can be broken up in several ways yet according
+~ 1. 2. 4. 8. 16. 32. 64. 128. 256. 512. 1024. 2048. 4096.
+           ;
+                                                                             to the same form.
+
+     *The complexions taken simply (or the sum of the complexions
+of all given exponents), fdded to 1, equal the total of a geometric
+progression with base 2 .20 ...
+130 / Mainz and Paris, 1666-76                                                               Dissertation on the Art of Combinations / 131
+                 Application of Problems I and II                         plexions of three things:
+                                                                               Three 1nions: since contract may be in favor of only (1) the
+     Since everything which exists or which can be thought must
+                                                                          mandator; (2) the mandatory; or (3) a third person.
+be compounded of parts, either real or at least conceptual, what­
+                                                                               The same number of com2nations: (4) in favor of the manda­
+ever differs in kind must necessarily either differ in that it has
+                                                                          tor and mandatory; (5) of the mandator and a third person; or (6)
+other parts, hence the use of complexions; or by another situs,
+                                                                          of the mandatory and a third person.
+hence the use of dispositions. The former are judged by the diver­
+                                                                               One con3nation: (7) in favor of the mandator, the mandatory,
+sity of matter; the latter, by the diversity of form. With the aid of
+                                                                          and a third person all together.
+complexions, indeed, we may discover not only the species of things
+                                                                               Here the jurisconsults reject as useless that Inion in which
+but also their attributes. Thus almost the whole of the inventive
+                                                                          the contract is in favor of the mandatory alone, because this would
+part of logic is grounded in complexions-both that which concerns
+                                                                          be advice rather than a mandate. There remain thus six classes.
+simple terms and that which concerns complex terms; in a word,
+                                                                          Why they kept only five, omitting the con3nation, I do not know.
+both the doctrine of divisions and the doctrine of propositions; not
+                                                                               n. Aristotle (On Generation and Corruption, Book ii). with
+to mention how much we hope to illumine the analytic part of logic,
+                                                                          Ocellus Lucanus the Pythagorean, deduces the number of elements,
+or the logic of judgment, by a diligent examination of the modes
+                                                                          or of the mutable species of a simple body, from the number of pri'
+of the syllogism in Example VI.
+                                                                          mary qualities, of which he assumes there are four, but according
+     The use of complexions in divisions is threefold: (1) given the
+                                                                          to these laws: (1) that every element is to be a compound of two
+principle of one division, to discover its species; (2) given many
+                                                                          qualities and neither more nor less, and it is thus obvious that
+divisions of the same genus, to discover the species mixed from dif­
+                                                                          1nions, con3nations, and the con4nation are to be discarded and
+ferent divisions (this we will treat in Problem III, however); (3) giv­
+                                                                          only com2nations retained, of which there are six; and (2) that con­
+en the species, to discover the subaltern genera. Examples are
+                                                                          trary qualities can never enter into one com2nation and that there­
+scattered throughout all of philosophy, and we will show that they
+                                                                          fore two of the com2nations are useless because there are two con­
+are not lacking in jurisprudence. And in medicine every variety of
+                                                                          traries among these primary qualities. Hence there remain four
+compounded medicaments and pharmaceuticals is made by mixing
+                                                                          com2nations, the same as the number of elements .... Moreover,
+various ingredients, though the greatest care is necessary in choos­
+                                                                          as Aristotle derived the elements from these qualities, so Galen
+ing useful mixtures. First, therefore, we will give examples of spe­
+                                         21                               derived from them the four temperaments, the various mixtures
+cies to be discovered by this principle.
+                                                                          of which later medics have studied; all of whom Claudius Campen­
+     I. Among jurisconsults the follOWing division is proposed <Qt:.
+                                                                          sis opposed in the past century, in his Animadversiones naturales
+gests, Gaius,XVn, 1,2). A mandate is contracted in five ways: in
+favor of the mandator, of the mandator and mandatory, of a third          in Aristotelem et Galenum (Leyden, 1576) ....
+                                                                                IV. In wind organs we call a register, in German ein Zug, a
+person, of the mandator and a third person, of the mandatory and
+a third person. We shall seek out the adequacy of the division in         little shaft by whose opening the sound may be varied, not with re­
+this way: its basis is the question, for whom, or the person in           spect to the perceived melody or pitch itself, but in its basis in
+whose favor the contract is made; there are three of these, the man­      the pipe, so that sometimes a shaking, sometimes a whisper, is
+dator, the mandatory, and a third person. But there are seven com-        achieved. More than thirty of such qualities have been discovered
+132 / Mainz and Paris, 1666-76                                                              Dissertation on the Art of Combinations / 133
+by the industry of our contemporaries. Assume that there are in         toUe Rhetoric, Book i; Jacob Menochius, De arbitrariis judicum
+ some organs only twelve such simple effects; then there will be in     questionibus et causis, Book i, proem. 1).
+all about 4,095, as many as there are complexions taken simply of            Moreover, the art of forming cases is founded in our doctrine
+twelve things. So a great organist can vary his playing as he opens     of complexions. For as jurisprudence is similar to geometry in
+them together, sometimes many, sometimes a few, sometimes               other things, it is also similar in that both have elements and both
+these, sometimes those.                                                 have cases. The elements are simples; in geometry figures, a tri­
+     V. Thomas Hobbes, Elementa de corpore, Part I, chapter 5,          angle, circle, etc.; in jurisprudence an action, a promise, a sale,
+classifies the things for which there are terms built into a propo­     etc. Cases are complexions of these, which are infinitely variable
+sition, or, in his own terminology, the named things [nominata] for     in either field. Euclid composed the Elements of Geometry, the
+which there are names [nominal, into bodies (that is, substances,       elements of law are contained in the Corpus Juris, but in boL"
+since for him every substance is a body), accidents, phantasms,         works more complicated cases are added. The simple terms in
+and names. Thus a name is a name either of bodies, for example,         the law, however, out of the combinations of which the rest arise,
+man; or of accidents, for example, all abstractions, rationality,       and, as it were, the loci communes and highest genera, have been
+motion; or of phantasms, in which he includes space, time, all sen­     collected by Bernhard Lavintheta, a Franciscan monk, in his com­
+sible qualities, etc.; or of names, in which he includes second in­     mentary on the Ars magna of Lully (which see). To us it seems
+tentions. Since these are com2ned with each other in six ways,          thus: the terms from whose complexions there arises the diver­
+there arise the same number of kinds of propositions, and adding        sityof cases in the law are persons, things, acts, and rights ....
+to these the cases in which homogeneous terms may be com2ned                 The basis of terms is the same in theology, which is, as it
+(a body ascribed to body, accident to accident, phantasm to phan­       were, a kind of special jurisprudence, but fundamental for the same
+tasm, secondary concept to secondary concept), namely, four, the        reason as the others. For theology is a sort of public law which ap­
+total is ten. Qut of these Hobbes thinks that only homogeneous          plies in the Kingdom of God among men. Here the unfaithful are like
+terms can be usefully com2ned. If this is so, as the common phi­        rebels; the church is like good subjects; ecclesiastical persons,
+10sophy certainly also acknowledges, and abstract and concrete,         and indeed also the political magistrate, are like the subordinate
+accident and substance, primary and secondary concepts, are             magistrates; excommunication is like banishment; the teaching of
+wrongly predicated of each other, this will be useful for the art of    Sacred Scripture and the Word of God is like that of the laws and
+discovering propositions or for obserVing the selection of useful       their interpretation; that of the canon like the question of which of
+com2nations out of the uncountable mixture of things . . . .            the laws are authentic; that of fundamental errors like that of cap­
+     VTTT. The eighth application is in the fornlation of cases by      ital crimes; that of the Final Judgment and the Last Day like that
+the jurisconsults. For one cannot always wait for the lawmaker          of the judiciary process and the rendered judgment; that of the re­
+when a case arises, and it is more prudent to set up the best pos­      mission of sins like that of the pardoning power; that of eternal
+sible laws without defects, from the first, than to intrust their re­   punishment like that of capital punishment, etc ....
+striction and correction to fortune; not to mention the fact that, in
+any state whatsoever, a judicial matter is the better treated, the
+less is left to the decision of the judge (Plato Laws, Book ix; Aris-
+                                     Dissertatio de Arte Combinatoria,
+                                               cum Appendice.
+
+                                                  1666.
+
+
+
+...
+
+                                         Chapter 1.    Definitiones
+
+
+1. Variatio h. l. est mutatio relationis. Mutatio enim alia substantiae est, alia quantitatis, alia
+qualitatis; alia nihil in re mutat, sed solum respectum, situm, conjunctionem cum alio aliquo.
+
+2. Variabilitas est ipsa quantitatis omnium variationum. Termini enim potentiarum in abstracto
+sumti quantitatem earum denotant, ita enim in Mechanicis frequenter loquuntur, potentias
+machinarum duarum duplas esse invicem.
+
+3.    Situs est localitas partium.
+
+4. Situs est vel absolutus vel relatus: ille partium cum toto, hic partium ad partes. In illo
+spectantur numerus locorum et distantia ab initio et fine, in hoc neque initium neque finis
+intelligitur, sed spectatur tantum distantia partis a data parte. Hinc ille exprimitur linea aut lineis
+figuram non claudentibus neque in se redeuntibus, et optime linea recta; hic linea aut lineis figuram
+claudentibus, et optime circulo. In illo prioritatis et posterioritatis ratio habetur maxima, in hoc
+nulla. Illum igitur optime Ordinem dixeris;
+
+5.     Hunc vicinitatem, illum dispositionem, hunc compostitionem. Igitur ratione ordinis differunt
+situs sequentes: abcd. bcda. cdab. dabc. At in Vicinitate nulla variatio, sed unus situs esse
+intelligitur, hic nempe:
+Unde festivissimus Taubermannus, cum Decanus Facultatis philosophiae esset, dicitur Witebergae
+in publico programmate seriem candidatorum Magisterii circulari dispositione complexus, ne avidi
+lectores intelligerent, quis suillum locum teneret.
+
+6. Variabilitatem ordinis intelligemus fere, quando ponemus Variationes „κατ‘ εξοχην“ v. g. Res
+IV. possunt transponi modis 24.
+
+7. Variabilitatem complexionis dicimus Complexiones. v. g. Res IV. modis diversis 15. invicem
+conjugi possunt.
+
+8.    Numerum rerum variandarum dicemus simpliciter, Numerum, v. g. IV. in casu proposito.
+
+9.    Complexio, est unio minoris totius in majori, uti in prooemio declaravimus.
+10. Ut autem certa complexio determinetur, majus totum dividendum est in partes aequales
+sippositas ut minimas, (id est quae nunc quidem non ulterius dividantur) ex quibus componitur et
+quarum variatione variatur complexio seu totum minus; quia igitur totum ipsum minus, majus
+minusve est, prout plures partes una vice ingrediuntur; numerum simul ac semel conjungendarum
+partium, seu unitatum, dicemus Exponentem, exemplo progressionis geometricae, v. g. sit totum
+ABCD. Si tota minora constare debent ex 2. partibus, v. g. AB. AC. AD. BC. BD. CD. exponens
+erit 2. sin ex tribus, v. g. ABC. ABD. ACD. BCD. exponens erit 3.
+
+11. Dato exponente complexiones ita scribemus: si exponens erit 2. Com2nationem
+(combinationem); si 3. Con3nationem (conternationem); si 4. Con4nationem, etc.
+
+12. Complexiones simpliciter sunt omnes complexiones omnium exponentium computatae, v. g.
+15. (de 4. Numero) quae componuntur ex 4. (Unione) 6. (com2natione) 4. (con3natione) 1.
+(con4natione).
+
+13. Variatio utilis (inutilis), est quae propter materiam subjectam locum habere non potest; v. g. 4.
+Elementa com2nari possunt 6. modis; sed duae com2nationes sunt inutiles, nempe quibus
+contrariae Ignis, aqua, aër, terra com2nantur.
+
+14. Classis rerum est totum minus, constans ex rebus convenientibus in certo tertio, tanquam
+partibus; sic tamen ut reliquae classes contineant res contradistinctas. v. g. infra probl. 3. ubi de
+classibus opinionum circa summum bonum ex B. Augustino agemus.
+
+15. Caput Variationis est positio certarum partium; Forma variationis, omnium, quae in pluribus
+variationibus obtinet. v. infra probl. 7.
+
+16. Variationes communes sunt in quibus plura capita concurrunt, v. infr. probl. 8 et 9.
+
+17. Res homogena est quae est aeque dato loco ponibilis salvo capite. Monadica autem quae non
+habet homogeneam. v. probl. 7.
+
+18. Caput multiplicabile dicetur, cujus partes possunt variari.
+
+19. Res repetita est quae in eadem variatione saepius ponitur. v. probl. 6.
+
+20. Signo + designamus additionem, - subtractionem, ∩ multiplicationem, ∪ divisionem, f. facit,
+seu summam, = aequalitatem. In prioribus duobus et ultimo convenimus cum Cartesio,
+Algebraistis, aliisque: Alia signa habet Isaacus Barrowius in sua editione Euclidis, Cantabrig. 8vo,
+anno 1655.
+
+
+
+                                             Problemata.
+
+Tria sunt quae spectari debent: Problemata, Theoremata, usus; in singulis problematis usum
+adjecimus; sicubi operae pretium videbatur, et theotemata. Problematum autem quibusdam
+rationem solutionis addidimus. Ex iis partem posteriorem primi, secundum et quartum aliis
+debemus, reliqua ipsi eruimus. Quis illa primus detexerit eonem et Nicolaum Tartaleam extare
+dicit. In Cardani tamen practica Arithmetica quae pignoramus. Schwenterus Delic. 1. 1. Sect. 1.
+prop. 32. apud Hieronymum Cardanum, Johannem Butrodiit Mediolani anno 1539. nihil reperimus.
+Inprimis dilucide, quicquid dudum habetur, proposuit Christoph. Clavius in Com. supra Joh. de
+Sacro Bosco Sphaer. edit. Romae forma 4ta anno 1785 p. 33. seqq.
+
+
+
+                                             Probl. I.
+
+                        Dato numero et exponente complexiones invenire.
+
+
+
+Solutionis duo sunt modi, unus de omnibus complexionibus, alter de com2nationibus solum: ille
+quidem est generalior, hic vero pauciora requirit data, nempe numerum solum et exponentem; cum
+ille etiam praesupponat inventas complexiones antecedentes. Generaliorem modum nos deteximus,
+specialis est vulgatus. Solutio illius talis est: "„addantur complexiones exponentis antecedentis et
+dati de numero antecedenti, productum erunt complexiones quaesitae;“ v. g. est numerus datus 4,
+exponens datus 3. addantur de numero antecedente 3. com2nationes 3. est con3natio 1. (3+1. f. 4.)
+productum 4. erit quaesitum. Sed cum praerequirantur complexiones numeri antecedentis,
+construenda est tabula I. in qua linea suprema a sinistra dextrorsum continet Numeros, a 0 usque ad
+12. utrimque inclusive, satis enim esse duximus huc usque progredi, quam facile est continuare:
+linea extrema sinistra a summo deorsum continet Exponentes a 0. ad 12. linea infima a sinistra
+dextrorsum continet Complexiones simpliciter. Reliquae inter has lineae continent complexiones
+dato numero qui sibi in vertice directe respondet, et exponente qui e regione sinistra. Ratio
+solutionis, et fundamentum tabulae patebit, si demonstraverimus, Complexiones dati numeri et
+exponentis oriri ex summa complexionum de numero praecedenti exponentis et praecedentis et
+dati. Sit enim numerus datus 5, exponens datus 3. Erit numerus antecedens 4. is habet con3nationes
+4, per Tabulam I. com2nationes 6. Jam numerus 5. habet omnes con3nationes quas praecedens (in
+toto enim et pars continetur) nempe 4. et praeterea tot quot praecedens habet com2nationes, nova
+enim res qua numerus 5. excedit 4. addita singulis com2nationibus hujus, facit totidem novas
+con3nationes nempe 6.+ 4. f. 10. E. Complexiones dati numeri etc. Q.E.D.
+
+
+
+
+                                             Tabula I.
+
+  0    1      1     1      1     1      1      1     1      1      1      1       1      1
+  1    0      1     2      3     4      5      6     n      8u     9m     10e     11r    12i    C
+  2     0    0    1    3    6     10      15   21    28    36    45     55     66     o
+E 3     0    0    0    1    4     10      20   35    56    84    120    165    220    m
+x 4     0    0    0    0    1     5       15   35    70    126   210    330    495    p
+p 5     0    0    0    0    0     1       6    21    56    126   252    462    792    l
+o 6     0    0    0    0    0     0       1    7     28    84    210    462    924    e
+n 7     0    0    0    0    0     0       0    1     8     36    120    330    792    x
+e 8     0    0    0    0    0     0       0    0     1     9     45     165    495    i
+n 9     0    0    0    0    0     0       0    0     0     1     10     55     220    o
+t 10    0    0    0    0    0     0       0    0     0     0     1      11     66     n
+e 11    0    0    0    0    0     0       0    0     0     0     0      1      12     e
+s 12    0    0    0    0    0     0       0    0     0     0     0      0      1      s
+  *     0    1    3    7    15    31      63   127   255   511   1023   2047   4095
+  +     1    2    4    8    16    32      64   128   256   512   1024   2048   4096
+
+
+
+
+De Arte CombinatoriaStartseite
+
+        Mathematik, Naturwissenschaften
+
+        Leibniz
+
+
+
+
+Dissertatio de Arte Combinatoria,
+
+cum Appendice.
+
+1666.
+
+
+
+...
+
+Definitiones
+
+1.      Variatio h. l. est mutatio relationis. Mutatio enim alia substantiae est,
+
+alia quantitatis, alia qualitatis; alia nihil in re mutat, sed solum respectum,
+
+situm, conjunctionem cum alio aliquo.
+
+2.      Variabilitas est ipsa quantitatis omnium variationum. Termini enim
+potentiarum in abstracto sumti quantitatem earum denotant, ita enim in
+
+Mechanicis frequenter loquuntur, potentias machinarum duarum duplas esse
+
+invicem.
+
+3.     Situs est localitas partium.
+
+4.     Situs est vel absolutus vel relatus: ille partium cum toto, hic partium
+
+ad partes. In illo spectantur numerus locorum et distantia ab initio et fine, in
+
+hoc neque initium neque finis intelligitur, sed spectatur tantum distantia
+
+partis a data parte. Hinc ille exprimitur linea aut lineis figuram non
+
+claudentibus neque in se redeuntibus, et optime linea recta; hic linea aut
+
+lineis figuram claudentibus, et optime circulo. In illo prioritatis et
+
+posterioritatis ratio habetur maxima, in hoc nulla. Illum igitur optime Ordinem
+
+dixeris;
+
+5.      Hunc vicinitatem, illum dispositionem, hunc compostitionem. Igitur
+
+ratione ordinis differunt situs sequentes: abcd. bcda. cdab. dabc. At in
+
+Vicinitate nulla variatio, sed unus situs esse intelligitur, hic nempe:
+
+Unde festivissimus Taubermannus, cum Decanus Facultatis philosophiae esset,
+
+dicitur Witebergae in publico programmate seriem candidatorum Magisterii
+
+circulari dispositione complexus, ne avidi lectores intelligerent, quis suillum
+
+locum teneret.
+
+6.     Variabilitatem ordinis intelligemus fere, quando ponemus Variationes
+
+„&#954;&#945;&#964;‘ &#949;&#958;&#959;&#967;&#951;&#957;“ v. g. Res IV. possunt
+
+transponi modis 24.
+
+7.     Variabilitatem complexionis dicimus Complexiones. v. g. Res IV. modis
+
+diversis 15. invicem conjugi possunt.
+
+8.     Numerum rerum variandarum dicemus simpliciter, Numerum, v. g. IV. in casu
+
+proposito.
+
+9.     Complexio, est unio minoris totius in majori, uti in prooemio
+
+declaravimus.
+
+10.   Ut autem certa complexio determinetur, majus totum dividendum est in partes
+aequales sippositas ut minimas, (id est quae nunc quidem non ulterius
+
+dividantur) ex quibus componitur et quarum variatione variatur complexio seu
+
+totum minus; quia igitur totum ipsum minus, majus minusve est, prout plures
+
+partes una vice ingrediuntur; numerum simul ac semel conjungendarum partium, seu
+
+unitatum, dicemus Exponentem, exemplo progressionis geometricae, v. g. sit totum
+
+ABCD. Si tota minora constare debent ex 2. partibus, v. g. AB. AC. AD. BC. BD.
+
+CD. exponens erit 2. sin ex tribus, v. g. ABC. ABD. ACD. BCD. exponens erit 3.
+
+11.   Dato exponente complexiones ita scribemus: si exponens erit 2. Com2nationem
+
+(combinationem); si 3. Con3nationem (conternationem); si 4. Con4nationem, etc.
+
+12.   Complexiones simpliciter sunt omnes   complexiones omnium exponentium
+
+computatae, v. g. 15. (de 4. Numero) quae componuntur ex 4. (Unione) 6.
+
+(com2natione) 4. (con3natione) 1. (con4natione).
+
+13.   Variatio utilis (inutilis), est quae propter materiam subjectam locum
+
+habere non potest; v. g. 4. Elementa com2nari possunt 6. modis; sed duae
+
+com2nationes sunt inutiles, nempe quibus contrariae Ignis, aqua, aër, terra
+
+com2nantur.
+
+14.   Classis rerum est totum minus, constans ex rebus convenientibus in certo
+
+tertio, tanquam partibus; sic tamen ut reliquae classes contineant res
+
+contradistinctas. v. g. infra probl. 3. ubi de classibus opinionum circa summum
+
+bonum ex B. Augustino agemus.
+
+15.   Caput Variationis est positio certarum partium; Forma variationis, omnium,
+
+quae in pluribus variationibus obtinet. v. infra probl. 7.
+
+16.   Variationes communes sunt in quibus plura capita concurrunt, v. infr.
+
+probl. 8 et 9.
+
+17.   Res homogena est quae est aeque dato loco ponibilis salvo capite. Monadica
+
+autem quae non habet homogeneam. v. probl. 7.
+
+18.   Caput multiplicabile dicetur, cujus partes possunt variari.
+
+19.   Res repetita est quae in eadem variatione saepius ponitur. v. probl. 6.
+
+20.   Signo + designamus additionem, - subtractionem, Ç multiplicationem, È
+divisionem, f. facit, seu summam, = aequalitatem. In prioribus duobus et ultimo
+
+convenimus cum Cartesio, Algebraistis, aliisque: Alia signa habet Isaacus
+
+Barrowius in sua editione Euclidis, Cantabrig. 8vo, anno 1655.
+
+
+
+Problemata.
+
+Tria sunt quae spectari debent: Problemata, Theoremata, usus; in singulis
+
+problematis usum adjecimus; sicubi operae pretium videbatur, et theotemata.
+
+Problematum autem quibusdam rationem solutionis addidimus. Ex iis partem
+
+posteriorem primi, secundum et quartum aliis debemus, reliqua ipsi eruimus. Quis
+
+illa primus detexerit eonem et Nicolaum Tartaleam extare dicit. In Cardani tamen
+
+practica Arithmetica quae pignoramus. Schwenterus Delic. 1. 1. Sect. 1. prop.
+
+32. apud Hieronymum Cardanum, Johannem Butrodiit Mediolani anno 1539. nihil
+
+reperimus. Inprimis dilucide, quicquid dudum habetur, proposuit Christoph.
+
+Clavius in Com. supra Joh. de Sacro Bosco Sphaer. edit. Romae forma 4ta anno
+
+1785 p. 33. seqq.
+
+
+
+Probl. I.
+
+Dato numero et exponente complexiones invenire.
+
+
+
+Solutionis duo sunt modi, unus de omnibus complexionibus, alter de
+
+com2nationibus solum: ille quidem est generalior, hic vero pauciora requirit
+
+data, nempe numerum solum et exponentem; cum ille etiam praesupponat inventas
+
+complexiones antecedentes. Generaliorem modum nos deteximus, specialis est
+
+vulgatus. Solutio illius talis est: "„addantur complexiones exponentis
+
+antecedentis et dati de numero antecedenti, productum erunt complexiones
+
+quaesitae;“ v. g. est numerus datus 4, exponens datus 3. addantur de numero
+
+antecedente 3. com2nationes 3. est con3natio 1. (3+1. f. 4.) productum 4. erit
+
+quaesitum. Sed cum praerequirantur complexiones numeri antecedentis, construenda
+
+est tabula I. in qua linea suprema a sinistra dextrorsum continet Numeros, a 0
+usque ad 12. utrimque inclusive, satis enim esse duximus huc usque progredi,
+
+quam facile est continuare: linea extrema sinistra a summo deorsum continet
+
+Exponentes a 0. ad 12. linea infima a sinistra dextrorsum continet Complexiones
+
+simpliciter. Reliquae inter has lineae continent complexiones dato numero qui
+
+sibi in vertice directe respondet, et exponente qui e regione sinistra. Ratio
+
+solutionis, et fundamentum tabulae patebit, si demonstraverimus, Complexiones
+
+dati numeri et exponentis oriri ex summa complexionum de numero praecedenti
+
+exponentis et praecedentis et dati. Sit enim numerus datus 5, exponens datus 3.
+
+Erit numerus antecedens 4. is habet con3nationes 4, per Tabulam I. com2nationes
+
+6. Jam numerus 5. habet omnes con3nationes quas praecedens (in toto enim et pars
+
+continetur) nempe 4. et praeterea tot quot praecedens habet com2nationes, nova
+
+enim res qua numerus 5. excedit 4. addita singulis com2nationibus hujus, facit
+
+totidem novas con3nationes nempe 6.+ 4. f. 10. E. Complexiones dati numeri etc.
+
+Q.E.D.
+
+
+
+
+Tabula I.
+
+         0 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+         1 0 1 2 3 4 5 6 n 8u 9m 10e 11r 12i C
+
+         20 0 1361015212836455566o
+
+     E3000141020355684120165220m
+
+     x4000015153570126210330495p
+
+     p500000162156126252462792l
+
+     o6000000172884210462924e
+
+     n700000001836120330792x
+
+     e8000000001945165495i
+
+     n900000000011055220o
+
+     t10000000000011166n
+e1100000000000112e
+
+s120000000000001s
+
+*0137153163127255511102320474095
+
++1248163264128256512102420484096
+
+
+
+
+St.-Michaels-Gymnasium Metten
+
+metten_gym@degnet.de
+

@@ -1,0 +1,1183 @@
+           OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+Leibniz: Dissertation on
+  Combinatorial Art
+OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+            LEIBNIZ FROM OXFORD
+         This series presents new translations of works by
+           G. W. Leibniz with introductions and notes,
+               for a broad philosophical readership.
+           Leibniz: Dissertation on Combinatorial Art
+        Translated with introduction and commentary by
+       Massimo Mugnai, Han van Ruler, and Martin Wilson
+                Leibniz: Discourse on Metaphysics
+         Translated with introduction and commentary by
+                    Gonzalo Rodriguez-Pereyra
+                        OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+ Leibniz: Dissertation
+on Combinatorial Art
+  Translated with introduction and commentary by
+  MASSIMO MUGNAI, HAN VAN RULER,
+        AND MARTIN WILSON
+
+
+
+
+                1
+OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+                              3
+                    Great Clarendon Street, Oxford, OX2 6DP,
+                                United Kingdom
+       Oxford University Press is a department of the University of Oxford.
+    It furthers the University’s objective of excellence in research, scholarship,
+   and education by publishing worldwide. Oxford is a registered trade mark of
+         Oxford University Press in the UK and in certain other countries
+          © Massimo Mugnai, Han van Ruler, and Martin Wilson 2020
+                The moral rights of the authors have been asserted
+                          First Edition published in 2020
+                                   Impression: 1
+    All rights reserved. No part of this publication may be reproduced, stored in
+    a retrieval system, or transmitted, in any form or by any means, without the
+ prior permission in writing of Oxford University Press, or as expressly permitted
+    by law, by licence or under terms agreed with the appropriate reprographics
+  rights organization. Enquiries concerning reproduction outside the scope of the
+  above should be sent to the Rights Department, Oxford University Press, at the
+                                     address above
+               You must not circulate this work in any other form
+            and you must impose this same condition on any acquirer
+      Published in the United States of America by Oxford University Press
+      198 Madison Avenue, New York, NY 10016, United States of America
+                  British Library Cataloguing in Publication Data
+                                   Data available
+                Library of Congress Control Number: 2019949395
+                            ISBN 978–0–19–883795–4
+                             Printed and bound by
+                     CPI Group (UK) Ltd, Croydon, CR0 4YY
+      Links to third party websites are provided by Oxford in good faith and
+    for information only. Oxford disclaims any responsibility for the materials
+           contained in any third party website referenced in this work.
+                                      OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+                                Preface
+
+History is bound to cherish the youthful work of a later genius, especially if
+its themes anticipate those of masterpieces to come. In the case of Leibniz’s
+Dissertatio de arte combinatoria (1666), however, scholarship has been
+curiously reserved in dealing with this particular travail de jeunesse.
+Although studies by such eminent Leibniz specialists as Louis Couturat
+(1868–1914), Karl Dürr (1875–1928), and Eberhard Knobloch have added
+much to the interpretation of Leibniz’s ﬁrst publication in print, a critical
+edition of the Dissertatio has thus far been wanting, no doubt due to its
+arduous phrasing, its wide-ranging subject matter, as well as its complex
+overall theme.
+    All of these factors make Leibniz’s De arte combinatoria (henceforth
+DAC) a text that is not easy to edit. Working on the present edition,
+moreover, the editors came across many further obscurities complicating
+an annotated rendition of the work. Its mix of languages and subject matters
+is only a minor hurdle in comparison to the strenuous way in which Leibniz
+at times gives expression to the ideas contained in it, which, for instance,
+may include descriptions in Latin of complex mathematical operations.
+Another problem encountered was to ﬁnd the many texts by authors cited
+in the DAC, a difﬁculty that was enhanced by Leibniz’s recurrent habit of
+quoting authors indirectly—and on occasion incorrectly.
+    The wealth of materials in De arte combinatoria and the dense argumen-
+tation it contains did not impede Martin Wilson to work on an English
+translation of the text over a period of many years, until he ﬁnally suggested
+to prepare it for publication in the wake of the appearance of Arnold
+Geulincx’s Ethics in 2006, a project on which he and Han van Ruler had
+been working together.¹ Finding numerous puzzling details in Leibniz’s text
+and a multitude of references unaccounted for in the extant secondary
+literature, it would take Martin Wilson and Han van Ruler some further
+years of textual and bibliographical investigations to come up with a rea-
+sonably reliable translation. At this point, Massimo Mugnai joined Martin
+
+
+  ¹ Geulincx (2006).
+      OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+vi   
+
+and Han and the project began to take the shape of an edition aiming not
+only to satisfy the requirements of the inner circle of Leibniz’s scholars but a
+larger spectrum of readers interested in Leibniz’s philosophy and the origins
+of the combinatorial calculus in general. This implied not only the obvious
+task of preparing an intelligible translation of the DAC, but even that of
+explaining the many difﬁcult passages of the text. As a corollary to this task,
+it became indispensable to ﬁnd all writings and authors mentioned by
+Leibniz, some of them very obscure or almost unknown, and to equip the
+text with a rich apparatus of footnotes.
+   Thus, the annotated translation that lies before you is the product of a
+collective enterprise in which Martin Wilson has been the principal trans-
+lator of Leibniz’s text. Massimo Mugnai and Han van Ruler have revised and
+edited the translation to produce the text as it now stands, and jointly
+contributed to its annotation. Han has taken care of the largest part of the
+footnotes, whereas Massimo, besides preparing the Latin version of the DAC
+here included, has provided the main text with an Introduction, aiming to
+situate in its historical context this early work of Leibniz and to present the
+main results contained in it.
+   In the process of the collaborative work on the project, Martin Wilson
+was sadly found missing for a period, due to a stroke he suffered on 1 March,
+2011. Though quickly regaining most of his colourful personality, Martin
+has not been able to fully recover. The editors would like to express their
+gratitude to Astley Nursing Home in Worcestershire, England, for the care
+they have given Martin ever since, as well as to Barry Sweeting, who has been
+acting as Martin’s representative and became a good friend.
+   The editors are also grateful to Matthias Armgardt, Albrecht Heeffer,
+Franco Montanari, Jan Papy, Horst Pfefferl, Wolfgang Schlosser, and
+Andrew Weeks for their helpful comments on some questions of detail.
+Richard Arthur, Vincenzo De Risi, Enrico Giusti, Enrico Pasini, and Monica
+Ugaglia have read a ﬁrst draft of the Introduction, ﬁnding mistakes and
+kindly suggesting amendments. A special word of thanks is due to Mariano
+Giaquinta and Eberhard Knobloch for their generous advice on many
+technical questions.
+   Working on the annotation of the DAC during years in which there has
+been a stupendous increase in the number of electronic sources available
+online, Han van Ruler was nonetheless pleased to be helped by the coopera-
+tive staff of a huge number of libraries still important for their treasures—
+Leiden University Library, the Herzog August Bibliothek Wolfenbüttel, the
+British Library, and the Bibliothèque Nationale de France in particular.
+                                      OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+                                                                    vii
+
+Besides expressing his debt to the staff of these and many other libraries, he
+also wishes to thank Atsuko Fukuoka, Iqbal Faridi, and Peter Guttner, as
+well as Patrick Masereel and Vincent de Keijzer for their hospitality in
+Wolfenbüttel, London, and Paris over the years.
+   Finally, the editors are grateful to Maria Rosa Antognazza and Paolo
+Mancosu for their constant encouragement and to Peter Momtchiloff of
+Oxford University Press, whose conﬁdence and dedication have given an
+enormous spurt to the realization of this long-term project.
+
+                                           Massimo Mugnai, Han van Ruler
+                                                      Firenze and Leiden
+OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+                                         OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+                          On this Edition
+
+The Latin text here presented of Leibniz’s Dissertatio de arte combinatoria is
+faithful to the original publication of the DAC (Leipzig: Fick and Seubold,
+1666), the full title of which reads:
+
+  Dissertatio De Arte Combinatoria, In qua Ex Arithmeticae fundamentis
+  Complicationum ac Transpositionum Doctrina novis praeceptis extruitur,
+  & usus ambarum per universum scientiarum orbem ostenditur; nova etiam
+  Artis Meditandi, Seu Logicae Inventionis semina sparguntur. Praeﬁxa est
+  Synopsis totius Tractatus, & additamenti loco Demonstratio Existentiae Dei
+  ad Mathematicam certitudinem exacta.
+
+In a new, ameliorated edition, the text of the DAC was reproduced by Carl
+Immanuel Gerhardt (1816–99) in volume IV of his edition of Die philoso-
+phische Schriften von Gottfried Wilhelm Leibniz (Berlin: Weidmann, 1880 /
+Hildesheim: Georg Olms, 1960), 27–104.
+   In the text below, however, the reader will ﬁnd references in square
+brackets (in bold) to the 1666 edition and also square brackets (in italics)
+to the page numbers of the Akademie-edition of the DAC:
+
+  Gottfried Wilhelm Leibniz, Sämtliche Schriften und Briefe herausgegeben von
+  der Deutschen Akademie der Wissenschaften zu Berlin, Sechste Reihe, Erster
+  Band, Darmstadt: Reichl, 1930 / Berlin Akademie Verlag, 163–230.
+
+In the translation here presented, Leibniz’s typography has been followed
+almost literally, even if the structure of individual sentences has been
+adapted in such ways as to yield a readable English text.
+   In dealing with typos, omissions, miscalculations, and mistaken refer-
+ences in the 1666 original, as well as with Leibniz’s recurrent inclusion of
+Greek and German words into the Latin text, consistency in referring to
+these has not been an aim in itself. Obvious editorial interventions will be
+marked by the use of square brackets in the text of the translation.
+   In choosing case by case whether simply to copy the original or to make
+editorial interventions, it has been the editors’ intention to offer an intuitively
+      OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+x     
+
+understandable account of what the author must have had in mind. Latin text,
+translation, and annotations will hopefully provide the reader with sufﬁcient
+materials to do the same and reconstruct the mathematical and philosophical
+objectives Leibniz set himself when writing the DAC.
+   As far as the editors know, besides the present edition there is only
+one entire translation of the DAC into a modern language: G. W. Leibniz,
+Dissertación de arte combinatoria, translated by Manuel A. Correia, in
+G. W. Leibniz, Obras ﬁlosóﬁcas y cientiﬁcas. Escritos Matemáticos, (ed.)
+Mary Sol de Mora Charles (Granada: Editorial Comares), 2015, vol. 7B,
+547–643. A previous translation into Catalan was edited, again by Manuel
+Correia, in 1992.
+
+
+                               Quotation marks
+
+In what follows, double quotation marks have generally been used for
+quotations, and single quotation marks for highlighting (the use of ) speciﬁc
+concepts or expressions. Double quotation marks, however, may occasion-
+ally also point out odd or unusual expressions.
+   In the footnotes, double quotation marks are also used for quotations in
+Latin, but quotations of Latin verse and references to (the use of) Latin
+concepts and expression are generally given in italics.
+   Finally, Leibniz himself uses double quotation marks to indicate the
+solutions he offers to the problems dealt with in the DAC—a custom that
+the editors have chosen to copy in the translation.
+
+
+                                   References
+
+Next to page number references (after ‘:’) and references to volumes (‘vol.’,
+‘vols’), the reader will also ﬁnd references to the signature marks (‘sig.’, ‘sigg.’),
+which are found especially in the front matter of early-modern prints, as well as,
+where applicable, to columns rather than pages (‘col.’, ‘cols’).
+
+
+                                 Abbreviations
+
+A list of bibliographical abbreviations and abbreviated titles for
+reference works occurring in the notes to both the Introduction and the
+Translation of the DAC, may be found in sections A. (Leibniz Works) and
+D. (Abbreviations) of the Bibliography, pp. 287 and 301–2, below.
+                                 OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+
+
+
+
+                          Contents
+
+Introduction                                                        1
+A Dissertation on Combinatorial Art                               58
+Text and Translation                                              62
+
+Bibliography                                                     287
+Index                                                            303
+OUP CORRECTED PROOF – FINAL, 21/4/2020, SPi
+                                              OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                Introduction
+
+                 1 The project for the ‘characteristic art’
+
+Leibniz was twenty years old when the Dissertation on Combinatorial Art
+(henceforth DAC) was ﬁrst published. As he would later write: “the booklet
+was composed when the author was still young, in the year 1665, and was
+edited at Leipzig in the year 1666”.¹ The work expanded the text of a
+dissertation he had defended earlier that same year at the Leipzig Faculty
+of Philosophy, aiming for a university position. This ﬁrst embryonic form of
+the Dissertation was entitled Disputatio Arithmetica de complexionibus
+(‘Arithmetical Disputation on Complexions’) and contained the ﬁrst part
+of the 1666 work, from Cum Deo (“With God’s Help”) through to the end of
+section 8 of the ﬁrst problem.²
+   At the time, Leibniz was not particularly well trained in mathematics, as
+he was to admit later on the occasion of a re-edition of the DAC. When,
+indeed, the DAC was published again without the author’s permission by the
+Frankfurt book dealer Cröker in 1690, this provoked a reaction on Leibniz’s
+part, who wrote a short notice in the Acta Eruditorum.³ As he writes there,
+the booklet was “not sufﬁciently polished” and no longer agreed with the
+ideas he held “at present” (1691). Moreover, the book left something to be
+desired:
+
+    . . . some problems concerning numbers could have been solved in a far
+   better way and the solutions are susceptible of more accurate proofs. At the
+   time, indeed, [the author] had only a vague idea of higher mathematics and
+   thus, unaware of the discoveries of others and not sufﬁciently acquainted
+
+
+   ¹ GP 4: 103. The original (see below, note 4) has ‘1668’.
+   ² Cf. A VI, 1: 170–5. The Arithmetical Disputation included four more corollaries (A VI, 1:
+228–30). The entire title of the Arithmetical Disputation was: Disputatio Arithmetica de Com-
+plexionibus, Quam in Illustri Academia Lipsiensi Indultu Amplissimae Facultatis Philosophicae
+pro loco in ea obtinendo prima vice habebit M. Gotifredus Guilielmus Leibnuzius Lipsiensis,
+J. U. Baccal. D. 7. Martii Anno 1666. H. L. Q. C. Lipsiae, Literis Sporelianis.
+   ³ Cf. Knobloch (1974: 412).
+       OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+2    
+
+    with mathematical analysis, he was able to produce something of his own
+    on the basis of a hasty reﬂection ( . . . )⁴
+
+Despite this, however, Leibniz also notes that “the booklet” contains “many
+new meditations” that he does not regret, concerning the “art of discovery”
+(ars inveniendi) and the “excellent” idea of an alphabet of human thoughts.
+   The ‘art of discovery’ and the alphabet of human thoughts are two issues
+strongly connected with one another. They both pertain to the discipline of
+logic, for which Leibniz manifested a genuine interest from an early age
+onwards. According to an autobiographical passage included in a text prob-
+ably written in the year 1682, Leibniz, when he was “not yet twelve”, was
+ﬁlling “sheets of paper with wonderful meditations about logic, attempting
+to overcome the subtleties of the scholastics.”⁵ In the same vein, in a text
+composed during the years 1683–5, he writes:
+
+    As a boy I learned logic, and having already developed the habit of digging
+    more deeply into the reasons for what I was taught, I raised the following
+    question with my teachers. Seeing that there are categories for the simple
+    terms by which concepts are ordered, why should there not also be
+    categories for complex terms, by which truths may be ordered? I was
+    then unaware that geometricians do this very thing when they demonstrate
+    and order propositions according to their dependence upon each other. It
+    seemed to me however that this could be achieved universally if we ﬁrst
+    had the true categories for simple terms and if, to obtain these, we set up
+    something new in the nature of an alphabet of thoughts, or a catalogue of
+    the highest genera or of those we assume to be highest, such as a, b, c, d, e, f,
+    out of whose combination inferior concepts may be formed.⁶
+
+Later on, the idea of building an ‘alphabet of thoughts’ evolved into a very
+complex project, which remained a central topic among Leibniz’s philo-
+sophical interests until the end of his life: the composition of a ‘universal
+characteristic’, or ‘characteristic art’ (ars characteristica).
+  The Latin word character has the same meaning as the English words
+‘mark’, ‘sign’; and with the expression ars characteristica, Leibniz refers to
+
+
+   ⁴ Leibniz’s notice was published in the Acta Eruditorum (Leipzig) of the year 1691 (pp. 63–4,
+cf. GP 4: 103–4) and has been recently republished in Leibniz, Essais, vol. III: 995–6.
+   ⁵ GP 7: 126. For “the age of twelve”, see what G. H. Parkinson writes in Logical Papers, p. x, n. 4,
+where, relying on Fischer-Kabitz (1920: 712), he considers it an exaggeration on Leibniz’s part.
+   ⁶ L: 229 (A VI, 4: 538).
+                                             OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                ‘ ’                     3
+
+a system of symbols denoting concepts and propositions, on which one
+may operate according to certain rules to discover new truths and to ﬁnd
+proofs for the old ones. To construct the characteristic, two fundamental
+steps were needed: 1) performing an analysis of all human concepts, so that
+we may have a complete list of all simple concepts; 2) recombining the
+simple concepts, thus generating all possible complex concepts and all
+possible truths. Step (1) requires that we dispose of a general inventory of
+all known concepts and truths, and this motivated Leibniz to plan a further
+step: 3) the construction of a general encyclopedia of human knowledge.
+Leibniz’s optimistic project is that of analysing each complex concept in its
+component parts, until we reach the simple, primitive ones. At the ﬁrst stage
+of the project, clearly witnessed by the DAC, Leibniz takes for granted (in
+accordance with the Lullist tradition) that we human beings could attain the
+ﬁrst, simple concepts corresponding to the properties of God. Later on,
+however, around 1686, Leibniz states that, even though we cannot reach
+the simple concepts, we may stop our analysis at a certain point and consider
+as simple, i.e. primitive, those concepts that we cannot further analyse. Thus,
+in this case the simple concepts are simple for us, not absolutely.⁷
+    Once the encyclopedia were constructed, however, the problem would
+still remain of ﬁnding the rules to perform the analysis and re-combination
+of the concepts; and it is for this reason that Leibniz adds another stage to
+the previous ones: 4) the constitution of the so-called ‘general science’
+(scientia generalis).
+    Leibniz thinks of the general science in terms of a very abstract discipline,
+i.e. as a kind of ‘meta-science’, which was to investigate the various methods
+and procedures (deductive and inductive, logical and empirical) internal to
+each scientiﬁc ﬁeld and displayed by people involved in their respective
+research activities. Of course, the study of logic would play a pre-eminent
+role in this general science and it is therefore no wonder that Leibniz, in the
+period from 1676 to 1690, developed a series of essays on the logical
+calculus. These essays were aimed at ﬁnding the general rules and principles
+governing any kind of logical inference, and may be considered as the ﬁrst
+successful attempt, in Western culture, to develop an algebraic treatment of
+logic before George Boole’s seminal work.⁸
+
+
+  ⁷ Cf., for instance, A VI, 4A: 742, 746, 964.
+  ⁸ Boole (1847). On Leibniz’s logical writings and Boolean algebras, see Castañeda (1990);
+Swoyer (1994); Lenzen (2004); Mugnai (2010); Malink-Vasudevan (2016), and the debate
+between Mugnai and Malink-Vasudevan (2017).
+      OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+4   
+
+   Almost in the same period as his inquiries on logical calculus, Leibniz
+applied himself to the task of determining the main features of the so-called
+‘rational grammar’ (grammatica rationalis), which, according to his inten-
+tions, should constitute a fundamental tool toward the construction of a
+‘universal language’.
+   In some texts, Leibniz seems to identify ‘universal language’ and ‘charac-
+teristic art’: he models the characteristic on the example of a natural lan-
+guage based on a grammar reduced to its essential elements. In general,
+however, Leibniz thinks of the construction of a universal language as a step
+toward the constitution of the universal characteristic, which, as we have
+seen, presupposes a large-scale program with lots of elements besides the
+universal language, including the encyclopedia, the general science, the
+logical calculus, etc.
+   If we compare what Leibniz writes in the DAC with the project for the
+characteristic art as it emerges in the years following his stay in Paris (March
+1672–October 1676), it is not difﬁcult to ﬁnd in the 1666 work many seeds of
+the future developments. From the DAC, indeed, the project for the char-
+acteristic art inherits the following, fundamental ideas:
+
+    1) An analysis of concepts is needed to reach the ﬁrst, simple concepts;
+    2) By means of a synthetic procedure, complementary to that of
+       analysis, all possible complex concepts may be derived out of the
+       simple ones;
+    3) The process of synthesis can be performed by combining the concepts,
+       simple and complex, on the basis of the rules of logic;
+    4) If we assign to each simple concept a symbol of an alphabet, we may
+       unambiguously represent in symbolic form any complex concept
+       whatsoever;
+    5) Given that any elementary truth can be expressed combining two
+       concepts corresponding, respectively, to a subject and a predicate, the
+       process of combining the simple concepts will generate all possible
+       truths, constituting the basis of the art of discovery;
+    6) If we employ numbers to represent concepts, we may make logical
+       inferences simply operating on numbers, as in an arithmetical calcu-
+       lus, instead of operating directly on concepts.
+
+To appreciate the novelty and originality of Leibniz’s project, as it is
+articulated in the DAC, however, we have to dwell a little on the cultural
+background against which these ideas were conceived.
+                                                 OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                     ‘’                             5
+
+   2 ‘Lullism’ in the seventeenth century: art of memory and
+       ﬁrst steps towards the creation of an encyclopedia
+
+In the ﬁrst half of the ﬁfteenth century, humanists strongly reacted against
+scholasticism in general and to scholastic logic in particular, which they
+tended to consider as a discipline emblematic of a philosophical attitude that
+was preoccupied primarily with frivolous topics and exclusively devoted to
+produce sophistries. With the rediscovery of the works of Euclid and the
+publication of texts by authors of late antiquity such as Heron of Alexandria
+and Pappus, the standard of rigorous reasoning ceased to be identiﬁed with
+Aristotle’s Organon.
+   This does not mean, however, that, during the middle ages, Euclid’s
+Elements were unknown. In the ﬁrst half of the twelfth century Adelard of
+Bath translated into Latin an Arabic manuscript of the Elements. Adelard’s
+edition was followed by several other translations made from Arabic sources
+and by the translation made by Gerardo da Cremona. In the thirteenth
+century, Campano da Novara prepared a text of Euclid’s work, which was
+later employed by Luca Pacioli and Nicolò Tartaglia for their editions.
+Medieval commentaries on the Elements, however, with the exception of
+those belonging to the Arabic tradition, were usually quite poor. In the
+second half of the sixteenth century, the Elements were translated into
+modern languages.⁹ In the same period, Greek manuscripts began to circu-
+late in Europe and Bartolomeo Zamberti translated the Elements into Latin
+directly from the Greek (1505), thus opening a new era in the philological
+reception of the text. In 1533 Simon Grynaeus published the editio princeps
+of the Greek text. In this sense it seems proper to speak of a ‘rediscovery’ of
+Euclid in the Western World.¹⁰
+   Books on logic from the ﬁfteenth and sixteenth century often expressed
+the need to develop old-fashioned logical matters according to the method
+followed by mathematicians. In the introduction to his treatise on logic (ﬁrst
+published in 1492), Girolamo Savonarola (1452–98), for example, criticizes
+the obscurity that characterized the traditional way of teaching logic and
+states that he aims to offer a synthesis of the entire dialectic ‘according to
+the usual practice of mathematicians’.¹¹ Thus, it is no wonder that Jacob
+
+   ⁹ Into Italian (1543), German (1562), French (1564), English (1570), Spanish (1576), and
+Dutch (1606).
+  ¹⁰ See De Risi (2016).
+  ¹¹ Savonarola (1982: 3) complains that many people abstain from studying logic because of
+the intrinsic difﬁculties of the discipline, “the obscurity of Aristotle’s books and the sophistries
+       OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+6   
+
+Pelletier (1515–82), more than ﬁfty years after Savonarola’s logic, in his
+introduction to the Latin translation of the Elements (1557),¹² writes that
+“every proof which leads us to truth is geometrical in character”, and
+that “we are not able to distinguish the true from the false if we have not
+previously been well acquainted with Euclid.”¹³ From the beginning of the
+sixteenth century onwards, even though in many cases logic continued to
+be taught along traditional lines, authors on the subject of logic start raising
+the issue of its relationships with mathematics.
+   In antiquity and in medieval times, logic and mathematics had been
+considered as two quite independent disciplines.¹⁴ Even though it is prob-
+able that Aristotle elaborated his theory of syllogisms drawing inspiration
+from contemporary ideas in mathematics, and even though Stoic arguments
+were employed by later commentators to justify certain theorems in Euclid’s
+Elements, the idea of reducing logic to a calculus seems to have been
+conceived for the ﬁrst time in the period between the second half of the
+sixteenth and the ﬁrst half of the seventeenth century.¹⁵ Pierre de la Ramée
+(1515–72), for instance, claims that the Greek word for ‘syllogism’ properly
+means a calculus or a computation and Thomas Hobbes in his Computatio
+sive Logica plainly identiﬁes the act of thinking with that of performing an
+addition or a subtraction: “By ratiocination, I mean computation. Now, to
+compute is either to collect the sum of many things that are added together,
+or to know what remains when one thing is taken out of another. Ratiocin-
+ation, therefore, is the same with addition and subtraction.”¹⁶ Clearly,
+Hobbes’s idea that logical operations simply amount to adding or subtract-
+ing concepts, was too naïve to permit any interesting development in the
+direction of a logical calculus. Yet, the claim that reasoning is the same as
+computing was quite new and invited people to create stronger relationships
+between logic, understood as the discipline which dictates the canon for
+correct reasoning, and mathematics.
+
+
+and obscurity” which afﬂict the language of (scholastic) logicians. To these he opposes the
+clarity and simplicity to which mathematicians are accustomed. This contraposition is typical of
+the humanist thinkers and, as far as I know, there is no trace of it in logic handbooks written
+before the ﬁfteenth century.
+
+  ¹² The translation concerned the ﬁrst six books only.
+  ¹³ Pelletier (1557: 12).     ¹⁴ Cf. Muller (1981); Acerbi (2010: 15–86).
+  ¹⁵ On the relationships between logic and mathematics in the seventeenth century, see
+Mugnai (2010).
+  ¹⁶ Hobbes (1839a: 3). We ﬁnd an analogous claim concerning syllogism in Gassendi (1658,
+vol. 1: 34).
+                                              OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                  ‘’                         7
+
+   Another important consequence of re-introducing Euclid’s works in
+Western culture was that together with these works even some ancient
+commentaries on the Elements (like Pappus’s commentary, for instance;
+fourth century ), were to become widely known. Relying on Pappus, the
+astronomer and mathematician Christopher Clavius (1538–1612) accord-
+ingly contributed to an increasing interest in the distinction between ana-
+lysis and synthesis among philosophers and mathematicians.¹⁷
+   Roughly speaking, given a certain mathematical problem, analysis was
+usually described as a method for going backwards from the problem to
+some general principles that were involved in it and which could constitute a
+basis for ﬁnding a solution. Synthesis was the opposite: from the principles to
+the solution. Analysis was intended as a kind of heuristic process, whereas
+synthesis was devised as a method for proving theorems starting from ﬁrst
+principles and axioms. Thus, analysis and synthesis were viewed as two
+essential tools for the project of renewing logic both as an art of judgment
+(ars iudicandi) and as an art of discovery (ars inveniendi).
+   The processes of analysis and synthesis played an essential role in
+another project characterizing the cultural climate at the beginning of
+the seventeenth century: the project of the creation of a universal language.
+This project, in turn, was linked to the old tradition of so-called Lullism,
+from the medieval thinker Ramon Lull (1232–1316), who is credited as a
+founding father of combinatory and as a source for Leibniz’s ideas on
+combinatorial art.¹⁸
+   In his Ultimate General Art (Ars Magna, 1305), Ramon Lull proposes a
+program the main features of which may be summarized as follows. Once
+you have the ﬁrst concepts, which he believes are nine in number and
+correspond to the properties of God (Goodness, Power, Wisdom, Truth,
+Glory, etc.), Lull proposes the construction of a machinery composed by
+concentric discs of paper rotating around a rigid axle. Each disc (properly a
+circle) is divided into nine sectors and in each sector a letter is typed
+representing a concept. The outer disc is ﬁxed and contains the letters
+representing the ﬁrst concepts from the combination of which all others
+are generated. The inner circles, which contain letters of other general
+concepts, different from those corresponding to the divine properties, may
+each revolve in opposite direction with respect to the others. Moving the
+inner circles and keeping the outer one ﬁxed, the ‘artist’, i.e. the expert or
+
+
+  ¹⁷ For the development of the concept of analysis in Western philosophy, see Beaney (2016).
+  ¹⁸ On Lull’s art and logic, see Bonner (2007).
+       OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+8   
+
+master of the art, could create all possible combinations of the letters printed
+in the sectors. With two circles, he might give rise to all possible combin-
+ations of two letters; with three circles to all possible combinations of three
+letters, etc. Lull’s idea was that using this device systematically, one could
+reproduce all complex concepts of all created things.¹⁹ Lull considered the
+General Art as a tool for producing true knowledge and believed that simply
+manipulating a few discs of paper and combining their inscribed letters
+one could discover new truths in every ﬁeld of human knowledge. His
+aim was that of creating a general theory of the principles of all sciences: a
+kind of ‘science of all sciences’, the nature of which was not merely formal
+and which situated itself in a terrain intermediate between logic and
+metaphysics.²⁰
+   Starting from the second half of the sixteenth century, a renewed interest
+in Lullism was largely motivated by the reaction against traditional ways of
+teaching (Aristotelian) scholastic logic. The latter seemed too formal and too
+remote from real life to be of any interest, whereas the Lullian Art, which
+appeared to be playing with concepts of real properties and was hunting for
+truths concerning real beings, was more promising in the eyes of people who
+attempted to give a practical orientation to philosophy.
+
+
+      3 The project for the creation of a universal language
+
+As we have seen, Lull employed letters of the Latin alphabet to represent
+concepts, but other signs or characters could also be invented to denote the
+‘primitive concepts’. One can, for instance, devise some set of particularly
+simple signs, easy to be manipulated and remembered, and then generate,
+according to certain rules, the complex conﬁgurations corresponding to all
+complex concepts. In this way, each concept could be associated with a kind
+of ‘picture’, explicitly representing the degree of complexity of the concept
+itself. This latter is a typical example of what, at the beginning of the
+seventeenth century was considered a project for the construction of a
+universal language. The connection with the Art of Ramon Lull was not a
+necessary requisite for the project: many authors, however, were driven to
+associate the two because of contingent analogies, mainly grounded on the
+
+
+  ¹⁹ This is a quite simpliﬁed account of Lull’s art: for a more accurate explanation, see Bonner
+(2007).
+  ²⁰ Cf. Bonner (2007: 127) and Chapter 5 in particular.
+                                             OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                              9
+
+recourse to the methods of analysis and synthesis. This is the case, for
+example, with Seth Ward (1617–89), Savilian Professor of astronomy at
+Oxford, who had an interest in Lull’s theories and gave a very clear expos-
+ition of the project for a universal language:
+
+   [ . . . ] for all Discourses being resolved in sentences, those into words,
+   words signifying either simple notions or being resolvable into simple
+   notions, it is manifest, that if all the sorts of simple notions be found
+   out, and have Symbols assigned to them, those will be extremely few in
+   respect of the other, (which are indeed Characters of words, such as Tullius
+   Tiro’s)²¹ the reason of their composition easily known, and the most com-
+   pounded ones at once will be comprehended, and yet will represent to the
+   very eye all the elements of their composition, and so deliver the natures
+   of things: and exact discourses may be made demonstratively without any
+   other pains than is used in the operations of specious Analytics.²²
+
+‘Specious analytics’ (analytica speciosa) is a name also employed by
+Leibniz in the DAC to designate the algebra introduced by François Viète
+(1540–1605); the term speciosa, a derivation of species, alluding to the
+possibility of dealing simultaneously with several things of the same kind.
+As Seth Ward stresses, the creation of a universal language requires ﬁrst that
+we are able to decompose our complex concepts into their component parts.
+To execute this task, however, we need something like a register of all (or at
+least of the most important) complex concepts. Once this register was ready,
+it would contain the greatest part of human knowledge all at once. It is from
+this idea that the project for the construction of an encyclopedia took its
+origin, an encyclopedia that would contain the entire knowledge acquired by
+human beings in the course of the centuries. Thus, in the period considered,
+Lullism, the search for a universal language and the project for constructing
+an encyclopedia were three different, but fairly interconnected subjects,
+pursued by a considerable number of philosophers in Europe. Amongst
+these, Johann Heinrich Alsted (1588–1638), the celebrated author of a huge
+encyclopedia in seven volumes (Herborn 1630), and an author well-known
+to the young Leibniz, played a very inﬂuential role.²³
+
+  ²¹ Marcus Tullius Tiro (ﬁrst century ) was ﬁrst a slave and then a freeman of Cicero who
+invented the ‘Tironian notes’, the ﬁrst Latin shorthand system.
+  ²² Ward (1654: 21).
+  ²³ On Alsted’s inﬂuence on the young Leibniz, see Loemker (1961); Mugnai (1973). For an
+exhaustive account of the relationships between Alsted and Leibniz on matters related to
+       OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+10    
+
+   As Alsted writes in his Clavis Artis Lullianae et verae logicae (A Key for the
+Lullian Art and the True Logic, 1609), Lullism was poorly represented in
+Germany at the time, whereas it was ﬂourishing in Spain, France, and Italy.
+In Italy, in particular, many philosophers (here called speculatores, ‘specu-
+lators’) applied themselves intensively to the study of this art, becoming a
+kind of addict to it in the course of doing so.²⁴ Alsted calls Ramon Lull “a
+mathematician and a cabbalist”²⁵ and praises him for the use of letters of the
+alphabet to denote concepts, as well as for his recourse to mathematical
+symbols like circles. He considers the former as valid aids to memory and
+the latter as tools on which the teaching of any science is based.²⁶
+   In comparison with other texts devoted to the same topic (Bruno’s works
+included), Alsted’s Clavis constitutes a rare example of clarity and concise-
+ness: it gives a terse account of how Lull’s art works and weds the Lullian
+combinatory with some features borrowed from the reformed logic pro-
+posed by Pierre de la Ramée (1515–72), thereby giving rise to a logical
+system mainly oriented at the development of topical arguments, i.e. argu-
+ments conceived with the purpose of ruling dialectical disputes.²⁷
+
+
+                         4 Atomism and ‘immeation’
+
+Compared with the works of authors belonging to the tradition of Lullism,
+the DAC differentiates itself ﬁrst of all because of the emphasis put on the
+theory of syllogism, then for the attempt to extend the combinatorial
+calculus to any kind of matter. Finally, even though Leibniz’s mathematical
+training was not very developed at the time, an intense mathematical ﬂavour
+that can hardly be found among the followers of Ramon Lull emanates from
+the DAC.
+   According to the image of the world that we get reading the DAC,
+everything having a complex structure is a whole which can be decomposed
+into lesser wholes and these latter, in turn, into their least components parts
+
+
+religion, see Antognazza-Hotson (1999); on Alsted’s encyclopaedism and the ‘second Reforma-
+tion’ in Germany, see Hotson (2000). On Lullism, the encyclopedic projects and the universal
+language, see Rossi (2006).
+
+  ²⁴ Alsted (1609: 19).       ²⁵ Alsted (1609: 20).
+  ²⁶ Alsted (1609: 21). For a further development of the doctrine, the reader of the Clavis is
+invited to consult the commentaries to the Art written by Giordano Bruno.
+  ²⁷ On the relationships between Ramus’s doctrines and the Herborn encyclopedists (on
+Ramus’s philosophy in general), see Ong (2004).
+                                         OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                                ‘’             11
+
+(atoms or some molecular aggregates of some sort). By a simple process of
+the combination of the parts, one may, in turn, re-compose the whole. The
+same procedure can be applied to non-material things as well: to concepts,
+for example, propositions, geometrical ﬁgures, and numbers. Thus, combin-
+atory applied to mereology, the doctrine of wholes and parts, becomes a kind
+of all-purpose tool in Leibniz’s hands; a tool that allows one to reveal the
+intimate secrets of nature:
+
+  Since all things that exist, or can be thought, may be said to be made up of
+  parts, either real or at least conceptual, whatever differs in kind must
+  necessarily differ either in parts, and here lie the Applications of Complex-
+  ions, or by a different situs, hence the application of Dispositions.²⁸
+
+The system of variations elaborated in the DAC, Leibniz observes, “leads the
+mind that yields to it almost through all inﬁnity, and embraces at once the
+harmony of the world, the inner workings of things, and the series of
+forms.”²⁹ Introducing the seventh specimen, devoted to the application of
+combinatory to geometrical ﬁgures, Leibniz emphatically writes:
+
+  With these complications, not only can geometry be enriched by an inﬁnite
+  number of new Theorems, as every complication brings into being a new,
+  compound ﬁgure, by the contemplation of whose properties we may devise
+  new theorems and new demonstrations; but (if it is indeed true that great
+  things are made up of little things, whether you call them atoms or
+  molecules) we also have a unique way of penetrating into the arcana of
+  nature. This is because the more one has perceived of the parts of a thing,
+  the parts of its parts, and their shapes and arrangements, the more
+  perfectly one can be said to know the thing. The structure of these ﬁgures
+  is ﬁrst to be investigated abstractly, in plane and solid geometry: after
+  which, when you enter upon natural history and the question of being,
+  that is, upon the question of the real constitution of bodies, the vast
+  portals of Physics will stand open, and the character of the elements, the
+  origin and mixture of the qualities, the origin of mixtures, the mixing of
+  those mixtures, and everything that formerly lay hidden in darkness will
+  be revealed.³⁰
+
+
+
+  ²⁸ DAC: 93 (A VI, 1: 177).    ²⁹ DAC: 133 (A VI, 1: 187).
+  ³⁰ DAC: 135 (A VI, 1: 187).
+        OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+12     
+
+Later in life, Leibniz would come back to the fact that, for a brief period in
+his youth, he had favoured atomism. That he had done so, is quite in
+agreement with the parenthetical remark made in the passage above,
+which shows no prejudice against atoms as the least components of natural
+bodies.³¹ Leibniz’s atomism, however, is wedded in the DAC with a meta-
+physical doctrine centered on the notion of immeation or perichoresis,
+according to which everything is related with everything on the basis of
+the two relations of similarity and dissimilarity. ‘Perichoresis’ is the trans-
+literation into English of a Greek word meaning ‘circle’ or the effect of
+revolving, which was employed in theology “to explain the relation of
+‘coherence’ of the three persons of the Trinity”.³² The Latin word ‘immeatio’
+was coined to translate ‘perichoresis’ and according to Johann Heinrich
+Bisterfeld, Leibniz’s main source on this issue, it was meant to designate
+“the varied concourse, combination and complication of relations”.³³ In the
+DAC, Leibniz praises Bisterfeld’s work:
+
+     I shall ﬁnally and brieﬂy summon everything that can be culled from the
+     metaphysical doctrine of the relations of Being to Being in order to form
+     Places out of the different kinds of relation, and appropriate maxims
+     characteristic of each of them, out of the theorems. I believe that I have
+     seen this done, in more than just the summary fashion of encyclopaedists,
+     by Johann Heinrich Bisterfeld in his Universal Lamp, or Epitome of the Art
+     of Meditating, published in Leiden, 1657, which is entirely based on what
+     he calls immeation and perichoresis, that is to say, the universal likeness
+     of all things in all things, as well as the universal unlikeness of all things to
+     all things, the principles of which are Relations. Anyone who reads that
+     book will gain an increasing understanding of how to apply the art of
+     complication.³⁴
+
+Thus, Leibniz deeply modiﬁes the account of the world usually associated
+with atomistic doctrine, which was based on the aggregation and disaggre-
+gation of atoms governed by mere chance, without any trace of intrinsic
+
+  ³¹ On Leibniz’s atomism, see Garber (2009: 62–70, 81–2); Arthur (2016).
+  ³² Antognazza (1999: 50).
+  ³³ Bisterfeld (1657a; 185–6) (Antognazza’s translation; Cf. Antognazza (1999: 50)). As Maria
+Rosa Antognazza remarks, Bisterfeld, in his recognition of the universal analogy with Trinity,
+“was certainly not alone. Rather he was working within a long tradition rooted in Augustinian
+thought.” Ideas similar to those of Bisterfeld are to be found in Alsted and in “that other and still
+more illustrious student of Alsted: Jan Amos Comenius.” (Antognazza 1999: 52).
+  ³⁴ DAC: 70.
+                                                OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                ’                                   13
+
+ﬁnalism. To this view he substitutes the picture of a world composed of
+beings connected by a net of reciprocal relations that generate a mutual
+union and communion analogous to that of the three persons in the holy
+Trinity. This picture was clearly meant to avoid the materialistic and
+atheistic consequences implicit in genuine atomistic theories as, for example,
+the view displayed by Lucretius in his poem On the nature of things. It is not
+difﬁcult to see the existence of a latent conﬂict between Leibniz’s acceptance
+of atomism on the one hand, and his agreement to a metaphysics motivated
+by religious issues and inﬂuenced by a philosophy largely inspired by
+doctrines of Neo-platonic origins on the other.³⁵ As soon as the conﬂict
+came to light, in the years immediately following the edition of the DAC,
+Leibniz decided to abandon the atomistic theory, but in a certain sense he
+never stopped ﬂirting with it: when he attempts to explain to his contem-
+poraries his hypothesis of the monads, he uses the expression ‘formal atom’
+to characterize what he properly intends to denote with the word ‘monad’.³⁶
+As formerly in the DAC, in his mature thought Leibniz attempts to reconcile
+an atomistic perspective with an anti-materialistic metaphysics.
+
+
+    5 Themes from the DAC in Leibniz’s mature philosophy
+
+Besides the presence of some ideas that will constitute a substantive part of
+the project for the characteristic art later on, and besides an inclination to
+mix atomism with a strongly anti-materialistic perspective, we ﬁnd in the
+DAC other items clearly recognizable in Leibniz’s mature works as well.
+Among them, the following are particularly worth mentioning:
+
+   1) The notion of blind thought;
+   2) The distinction between propositions that are eternally true and proposi-
+      tions the truth of which is founded “not on essence but on existence”;
+   3) A detailed and systematic treatment of the theory of the syllogism.
+
+Leibniz calls ‘blind thought’ (cogitatio caeca) any thought that is developed
+essentially by means of words or other symbols. Such a thought is blind
+
+   ³⁵ On the inﬂuence of Neoplatonic doctrines on Leibniz’s thought, see Mercer (2000).
+   ³⁶ Cf., for instance, what Leibniz writes in the New System of the Nature of Substances and
+Their Communication (1695): “So, in order to get to these real unities I had to have recourse to a
+formal atom, what might be called a real and animated point, or to an atom of substance, which
+must contain some kind of form or activity in order to make a complete being” (Philosophical
+Texts: 143).
+        OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+14     
+
+because by employing words or any other kind of symbols, we do not see our
+own thoughts, which remain concealed behind a curtain of material signs,
+spoken or written or whatever.
+   The category of blind thought plays a prominent role in Leibniz’s mature
+philosophy. Even early on during his stay in Paris, Leibniz emphasizes the fact
+that human beings cannot grasp directly by an act of intuition any thought
+beyond a certain degree of complexity.³⁷ In other words, we are forced to take
+recourse to symbols to formulate and to express concepts or thoughts sufﬁ-
+ciently complex. We need a language, or at least something like a language,
+not only to communicate, but even to develop our own thoughts.³⁸
+   The idea that some kind of material tool is necessary for thinking is
+pervasive in Leibniz’s philosophy and strictly connected with the opinion
+according to which, with the only exception of God, all spiritual beings (even
+the angels) are associated with a body (even though a very ‘thin’ one).
+According to the Platonic tradition, Leibniz thinks that this ‘bodily part’
+prevents any kind of spiritual beings from being directly acquainted with
+ideas and thoughts in their ‘purity’, as it were.
+   The distinction between propositions that are eternally true and proposi-
+tions the truth of which is founded “not on essence but on existence”
+foreshadows the distinction between ‘truths of reason’ and ‘truths of fact’
+as it is expressed, for example, in the New Essays (1702).³⁹ In the DAC, the
+propositions “that are eternally true” are synonymous with “theorems”, i.e.
+“propositions that hold not because of the will of God, but by their very
+nature”, and are contrasted with “singular propositions” like “Augustus was
+emperor of the Romans” and with “observations”, i.e. “universal proposi-
+tions whose truth is founded not on essence but on existence”.⁴⁰ In a slightly
+different form, we ﬁnd the same distinction in the so-called Monadology:
+
+     There are two kinds of truths, those of reasoning and those of fact. Truths
+     of reasoning are necessary and their opposite is impossible, while those of
+     fact are contingent and their opposite is possible. When a truth is necessary
+     one can ﬁnd its reason through analysis, resolving it into ever more simple
+     ideas and truths until one reaches primitives.⁴¹
+
+
+
+  ³⁷ Cf., for instance, A VI, 3: 462.
+  ³⁸ This does not exclude the possibility that, in certain peculiar cases, we may have direct
+acquaintance with some ideas or truths, see Mugnai (2014).
+  ³⁹ Cf., for instance, NE: 446.      ⁴⁰ DAC: 177 (A VI, 1: 199).
+  ⁴¹ Monadology, section 33 (transl. Rescher 1991: 120).
+                                              OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                ’                               15
+
+In the New Essays, Leibniz explicitly considers the distinction between
+propositions of reason and propositions of fact as ‘his own’,⁴² and in the
+same vein as in the DAC, he writes that propositions of fact “can also
+become general, in a way; but that is by induction or observation, so that
+what we have is only a multitude of similar facts [ . . . ]”. General proposi-
+tions of reason, instead, “are necessary”.⁴³
+   Finally, the DAC emphasizes Leibniz’s precocious interest in the theory
+of syllogism. Even though Leibniz in 1686 had worked out a logical
+calculus, which was supposed to include the traditional syllogistic theory,
+he never stopped investigating the logical mechanisms governing the
+syllogistic doctrine of Aristotelian origin. It is quite remarkable that late
+in his life, only one year before his death, Leibniz devoted himself to
+writing an essay on the syllogistic ﬁgures, aiming to give a new rigorous
+foundation to traditional syllogistic theory.⁴⁴ In the New Essays we ﬁnd an
+apology for the syllogism:
+
+   It must be admitted that the scholastic syllogistic form is not much
+   employed in the world, and that if anyone tried to use it seriously
+   the result would be prolixity and confusion. And yet – would you believe
+   it – I hold that the invention of the syllogistic form is one of the ﬁnest,
+   and indeed one of the most important, to have been made by the human
+   mind. It is a kind of universal mathematics whose importance is too little
+   known. It can be said to include an art of infallibility, provided that one
+   knows how to use it and gets the chance to do so – which sometimes one
+   does not.⁴⁵
+
+Many years before the New Essays, when he began to write the ﬁrst texts on
+logical calculus, Leibniz elaborated a very general notion of logically valid
+arguments, which includes the traditional syllogisms as a particular case.
+This point, too, is clearly stated in the New Essays:
+
+   But it must be grasped that by ‘formal arguments’ I mean not only the
+   scholastic manner of arguing, which they use in the colleges, but also any
+
+
+   ⁴² “The distinction you draw appears to amount to mine, between ‘propositions of fact’ and
+‘propositions of reason’.” (NE: 446).
+   ⁴³ NE: 446.
+   ⁴⁴ This essay has recently been published by Wolfgang Lenzen in Schriften (2019: 428–43).
+A partial edition of it appeared in the Leibniz Review, vol. 20, 2010: 117–35.
+   ⁴⁵ NE: 478.
+        OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+16     
+
+     reasoning in which the conclusion is reached by virtue of the form, with no
+     need for anything to be added. So: a sorites, some other sequence of
+     syllogisms in which repetition is avoided, even a well drawn-up statement
+     of accounts, an algebraic calculation, an inﬁnitesimal analysis – I shall
+     count all of these as formal arguments, more or less, because in each of
+     them the form of reasoning has been demonstrated in advance so that one
+     is sure of not going wrong with it.⁴⁶
+
+
+We have thus, with a ‘broad brush’, given a picture of the cultural back-
+ground against which Leibniz conceived the DAC; it is time now to enter
+into some details concerning the main topics discussed in this work.
+
+
+
+             6 The ﬁrst two problems and their solutions
+
+Leibniz begins the Dissertation with the clear statement that his investiga-
+tion properly belongs to metaphysics.⁴⁷ Metaphysics, indeed, “is concerned
+ﬁrst with Being, and then with the affections of Being”;⁴⁸ and it is on these
+latter that the doctrine of combinations rests. Leibniz does not say expli-
+citly what he means by the words ‘being’ (Latin: ens) and ‘affection’
+(affectio, modus), but tacitly assumes some familiarity on the part of the
+reader with these terms and writes that just as affections of bodies (colour,
+weight, and ﬁgure) are not themselves bodies, so the affections of a being
+are not beings.
+   According to the scholastic doctrine (inspired by Aristotle’s Categories),
+Leibniz considers the totality of the affections as divided into three main
+categories: quality, quantity, and relation. A quality is an “absolute affection
+(or mode)” of a being; a quantity is a relative affection “which holds between
+a thing and one of its parts”; a relation is an affection, which holds between a
+thing and some other thing. If metaphysics is understood as the discipline
+that investigates “what is common to all kind of Beings”, then quality,
+
+
+
+
+   ⁴⁶ Ibidem.
+   ⁴⁷ As Eberhard Knobloch observes: “Leibniz [ . . . ] spoke of the “ars combinatoria”, a
+philosophical term to which he attached different meanings in the course of his life, but
+which always embraced more than what we call combinatorics today and was not even
+restricted to mathematical problems.” (Knobloch 1974: 410)
+   ⁴⁸ DAC: 69 (A VI, 1: 170).
+                                              OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                                      17
+
+quantity, and relation, because they concern the most general affections of
+all things, belong to metaphysics as well.
+   After introducing these three categories, Leibniz recognizes two kinds of
+relations: unity and agreement. We have a relation of unity, when several
+things are put together to form a whole: in this case, the things forming the
+whole are called parts. Leibniz seems to have quite a general idea of a whole,
+as something that obtains by simply juxtaposing or adding things together: it
+does not necessarily presuppose some kind of intrinsic link among the
+parts.⁴⁹ Moreover, Leibniz does not limit himself to considering material
+wholes only: on the contrary, he admits any kind of wholes, even immaterial
+ones, such as a piece of music or a poetical work. He is quite reticent about
+the relation of agreement, probably because it does not play an important
+role in the art of combinations. In later texts, written after the edition of the
+DAC, the relation of agreement (Lat. convenientia) seems to be not much
+different from similarity under some respect. Thus, for example, two ‘things’
+agree if they have properties (colour or shape) that are similar or if they
+share a similar structure.⁵⁰
+   Given a whole, it can be divided into lesser parts and these parts can be
+rearranged in different ways. Thus, for instance, let a whole consist of A, B,
+and C. The lesser wholes “are its parts AB, BC, and AC; and the disposition
+of the smallest parts, or what are taken as the smallest parts (that is, Unities),
+can be varied both in relation to each other and to the whole”.⁵¹ Leibniz calls
+variation the change of relations (including change of order) amongst the
+parts of a given whole (what we now call permutation); and complexion, the
+“union of a lesser whole within a greater whole” (what we now call combin-
+ation). Loosely speaking, a complexion is the grouping of the elements of
+some domain of things (abstract or material), according to a given number:
+thus, for example, given a domain of four elements, we have six complexions
+of two elements out of them. To indicate that a domain (a whole) made of x
+elements must be decomposed into complexions each of n elements, Leibniz
+uses the notation ‘xn’ (where ‘x’ is the number of the things belonging to the
+intended domain). The disposition of the parts in relation to each other and
+to the whole is called situs.
+
+
+
+   ⁴⁹ Around 1686, Leibniz will assume that a part should be ‘homogeneous’ to its whole; see,
+for instance, A VI, 4B: 1671 (discussion with Fardella (1690)): “because a part is always
+homogeneous with the whole”.
+   ⁵⁰ Cf. A VI, 4A: 336: “A relation of agreement is either of similarity or dissimilarity.”
+   ⁵¹ DAC: 73 (A VI, 1: 171).
+        OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+18     
+
+  After introducing the main notions on which the combinatorial art
+should rest, Leibniz proposes a list of problems preceded by a short pre-
+amble, which explains how he intends to develop his investigation:
+
+     There are three things that have to be considered: Problems, Theorems, and
+     Applications. To some of the problems I have appended an application and,
+     where it seemed worthwhile, theorems. Moreover, to some of the problems
+     I have added an explanation of the solution.⁵²
+
+Thus, Leibniz considers a totality of twelve problems and a variety of
+applications, ranging from the theory of syllogism to some puzzles typical
+of recreational mathematics as, for instance, how many ways a given number
+of persons could sit down at one table in some order or other. Problems 1–3
+concern combinations, whereas problems 4–12 are centred on permuta-
+tions. The chapters are of different length and some of them quite dispro-
+portionate, when compared to others. As Knobloch remarks:
+
+     The longest chapter (problem 2) alone takes up 28 pages of the Academy
+     edition, while the shortest ﬁlls a mere 2 1/2 lines. On the other hand, the
+     ﬁnal paragraph following the formulation of the 12th problem refers
+     to all of the last 6 problems, whereas the second chapter includes part
+     of the ﬁrst.⁵³
+
+Among the applications, the most interesting ones from a philosophical
+point of view are those concerning logic and the syllogism, and it is on these
+that we will concentrate in these introductory remarks.
+   The ﬁrst problem (PROBLEM I) tackled by Leibniz is:⁵⁴
+
+     (I) given a number with its corresponding exponent, to ﬁnd the
+         complexions.
+
+Leibniz offers two solutions: one concerning the general case, when the
+exponent is any number whatsoever, the other involving the particular
+case with exponent 2. The ﬁrst solution sounds quite cumbersome:
+
+
+
+   ⁵² Cf. DAC: 79 (A VI, 1: 173).        ⁵³ Knobloch (1974: 412).
+   ⁵⁴ To distinguish the main problems into which the DAC is articulated from the problems
+internal to the various applications, we write in capitals the ﬁrst.
+                                               OUP CORRECTED PROOF – FINAL, 28/4/2020, SPi
+
+
+
+
+                                                        19
+
+   Let the number of complexions of the preceding exponent with the
+   preceding number be added to the number of complexions of the given
+   exponent with the preceding number; the result will be the required
+   number of complexions.⁵⁵
+
+To understand Leibniz’s words, let us put the number of complexions = ‘C’;
+the number of ‘things’ to be combined = ‘n ’; and the number of the
+exponent = k. In this case, ‘nk ’ denotes all complexions of k elements out
+of n things. If we suppose n = 5 and k = 3, then ‘5³’ denotes all complexions
+(combinations) of 3 elements that can be made out of 5 elements. Leibniz’s
+proposed solution corresponds to the formula:
+                                    
+          n            n1           n1
+ F1 C           ¼ C           þC
+          k            k1             k
+As this formula shows, the total number of complexions of k elements out
+of n ‘things’ is determined by adding the number of complexions of k−1
+elements out of n−1 things to the number of complexions of n elements out of
+n−1 things. To stick to our example, to calculate the number of complexions
+of three elements out of ﬁve things, we must: a) calculate the number of
+complexions of two elements out of four things; b) calculate the number
+of complexions of three elements out of four things; and, ﬁnally; c) add
+together these two numbers. In this case, however, to determine the number
+of complexions of k elements out of n things, we need to know the number of
+complexions of n−1 things: as Leibniz remarks, to ﬁnd the complexions,
+“the complexions of the preceding number are a prerequisite”.⁵⁶
+   After having expressed in words the content of (F1), Leibniz proceeds to
+construct a table devised as a tool to ﬁnd all possible complexions of k
+elements out of n ‘things’, for k and n comprised between the numbers 1
+and 12.⁵⁷ It is to this table that Leibniz constantly refers, when he proposes
+the solutions to the combinatorial problems formulated in the DAC.
+
+
+
+  ⁵⁵ Cf. DAC: 81 (A VI, 1: 174).
+  ⁵⁶ DAC: 83 (A VI, 1: 174). The total number of complexions can be found in a more general
+and direct way applying the formula (unknown to Leibniz at the time of the DAC):
+                                       n         n!
+                                    Cð Þ ¼              :
+                                       k     k!ðk  1Þ!
+   ⁵⁷ As a matter of fact, however, the column with the number of ‘things’ starts with ‘0’, even
+though, as Knobloch (1974: 413) remarks, Leibniz “explicitly excludes combinations of no
+elements since he gives the number of all possible combinations as 2n– 1”.
+

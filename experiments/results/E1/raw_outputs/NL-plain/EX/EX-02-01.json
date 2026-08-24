@@ -1,0 +1,67 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "EX",
+  "template": "EX-02",
+  "item_id": "EX-02-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 2,
+  "lat_total_ms": 13955,
+  "conv_lat_ms": 0,
+  "score": 0.8462,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"incident_id\": true, \"service\": true, \"symptom\": true, \"t_open\": true, \"blast_region\": true, \"blast_share\": false, \"rollback_deploy_id\": true, \"rollback_time\": true, \"suspected_cause\": true, \"status_page_time\": true, \"enterprise_email_required\": true, \"exception_company\": true, \"exception_notify\": false}",
+  "final_error": "",
+  "transport_fail": true,
+  "v_in": 0,
+  "v_out": 0,
+  "f_tok": 85,
+  "r_in": 339,
+  "r_out": 914,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10400,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 85
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "incident_id: PagerDuty #4920\nservice: auth-service\nsymptom: timing out\nt_open: 2026-08-13 11:05 UTC\nblast_region: EU\nblast_share: ~13%\nrollback_deploy_id: 2026-08-12.9\nrollback_time: 2026-08-13 11:24 UTC\nsuspected_cause: cache stampede on session lookup\nstatus_page_time: 2026-08-13 10:58 UTC\nenterprise_email_required: No\nexception_company: Osaka Freight\nexception_notify: account manager",
+   "p_in": 339,
+   "p_out": 914,
+   "latency_ms": 3555,
+   "resp_id": "gen-1787579843-oTSmymMFwQFIynWkyJyh",
+   "transport_retries": 5,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-01",
+  "item_id": "EX-01-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 2932,
+  "conv_lat_ms": 0,
+  "score": 0.5714,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"a1_owner\": true, \"a1_action\": true, \"a1_deadline\": false, \"a1_priority\": true, \"a2_owner\": false, \"a2_action\": true, \"a2_constraint\": false, \"a3_owner\": true, \"a3_action\": false, \"a3_deadline\": false, \"a3_priority\": true, \"guard_target\": true, \"guard_condition\": true, \"guard_type\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 182,
+  "v_out": 135,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"a1_owner\":\"Priya\",\"a1_action\":\"rerun the load-test\",\"a1_deadline\":\"2026-08-28\",\"a1_priority\":\"UNKNOWN\",\"a2_owner\":\"Marta\",\"a2_action\":\"tell the client\",\"a2_constraint\":\"do NOT promise a date in that note\",\"a3_owner\":\"Sam\",\"a3_action\":\"drafts the migration plan\",\"a3_deadline\":\"2026-09-01\",\"a3_priority\":\"low urgency\",\"guard_target\":\"the staging cluster\",\"guard_condition\":\"until Priya's tests pass\",\"guard_type\":\"do not touch\"}}",
+   "p_in": 571,
+   "p_out": 135,
+   "latency_ms": 2932,
+   "resp_id": "gen-1787572320-Of8zXblgue5JBW9el6Qv",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

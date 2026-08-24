@@ -1,0 +1,3604 @@
+[
+ {
+  "id": "CP-01-00",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 10); Borel(cap 4, quiet room); Cyrus(cap 8, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 7 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 2 people; a quiet room is preferred (soft).\n(d) Incident retro, 6 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 10,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Borel",
+     "cap": 4,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Cyrus",
+     "cap": 8,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 7,
+   "ppl_c": 2,
+   "ppl_d": 6,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-01",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 10); Borel(cap 5, quiet room); Cyrus(cap 7, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 6 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 2 people; a quiet room is preferred (soft).\n(d) Incident retro, 5 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 10,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Borel",
+     "cap": 5,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Cyrus",
+     "cap": 7,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 6,
+   "ppl_c": 2,
+   "ppl_d": 5,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-02",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 12, quiet room); Borel(cap 4); Cyrus(cap 8, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 8 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 3 people; a quiet room is preferred (soft).\n(d) Incident retro, 5 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 12,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Borel",
+     "cap": 4,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Cyrus",
+     "cap": 8,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 8,
+   "ppl_c": 3,
+   "ppl_d": 5,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-03",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 10); Borel(cap 3, quiet room); Cyrus(cap 8, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 8 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 2 people; a quiet room is preferred (soft).\n(d) Incident retro, 9 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 10,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Borel",
+     "cap": 3,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Cyrus",
+     "cap": 8,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 8,
+   "ppl_c": 2,
+   "ppl_d": 9,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-04",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 10); Borel(cap 3, quiet room); Cyrus(cap 9, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 9 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 2 people; a quiet room is preferred (soft).\n(d) Incident retro, 8 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 10,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Borel",
+     "cap": 3,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Cyrus",
+     "cap": 9,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 9,
+   "ppl_c": 2,
+   "ppl_d": 8,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-05",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 8, quiet room); Borel(cap 3); Cyrus(cap 7, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 5 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 3 people; a quiet room is preferred (soft).\n(d) Incident retro, 5 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 8,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Borel",
+     "cap": 3,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Cyrus",
+     "cap": 7,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 5,
+   "ppl_c": 3,
+   "ppl_d": 5,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-06",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 10, quiet room); Borel(cap 6); Cyrus(cap 6, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 4 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 2 people; a quiet room is preferred (soft).\n(d) Incident retro, 5 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 10,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Borel",
+     "cap": 6,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Cyrus",
+     "cap": 6,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 4,
+   "ppl_c": 2,
+   "ppl_d": 5,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-07",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 10, quiet room); Borel(cap 5); Cyrus(cap 8, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 7 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 4 people; a quiet room is preferred (soft).\n(d) Incident retro, 6 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 10,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Borel",
+     "cap": 5,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Cyrus",
+     "cap": 8,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 7,
+   "ppl_c": 4,
+   "ppl_d": 6,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-08",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 9); Borel(cap 3, quiet room); Cyrus(cap 7, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 6 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 2 people; a quiet room is preferred (soft).\n(d) Incident retro, 8 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 9,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Borel",
+     "cap": 3,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Cyrus",
+     "cap": 7,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 6,
+   "ppl_c": 2,
+   "ppl_d": 8,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-01-09",
+  "family": "CP",
+  "template": "CP-01",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nRooms: Atlas(cap 8, quiet room); Borel(cap 4); Cyrus(cap 9, projector). Bookable grid 09:00\u201317:00 in 30-min slots; lunch 12:00\u201313:00 is blacked out. Schedule:\n(a) Sprint review, 9 people, needs a projector, 90 minutes; the organizer is unavailable the 15 minutes right before it (prep buffer).\n(b) 1:1 Maya/Sam, 30 minutes; neither Maya nor Sam is available 09:00\u201311:00.\n(c) Vendor call, 4 people; a quiet room is preferred (soft).\n(d) Incident retro, 6 people; must start after the sprint review ends.",
+  "question": "Produce a scheduling artifact: one line per meeting as 'meeting=<name> room=<name> start=HH:MM end=HH:MM' for meetings a-d, satisfying every hard constraint. Meetings may run in parallel only in different rooms.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_dur_a",
+     "hard": true
+    },
+    {
+     "id": "h2_projector_a",
+     "hard": true
+    },
+    {
+     "id": "h3_capacity",
+     "hard": true
+    },
+    {
+     "id": "h4_lunch",
+     "hard": true
+    },
+    {
+     "id": "h5_org_buffer",
+     "hard": true
+    },
+    {
+     "id": "h6_avail_b",
+     "hard": true
+    },
+    {
+     "id": "h7_precedence_d",
+     "hard": true
+    },
+    {
+     "id": "h8_grid",
+     "hard": true
+    },
+    {
+     "id": "h9_complete",
+     "hard": true
+    },
+    {
+     "id": "s1_quiet_c",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "rooms": [
+    {
+     "name": "Atlas",
+     "cap": 8,
+     "projector": false,
+     "quiet": true
+    },
+    {
+     "name": "Borel",
+     "cap": 4,
+     "projector": false,
+     "quiet": false
+    },
+    {
+     "name": "Cyrus",
+     "cap": 9,
+     "projector": true,
+     "quiet": false
+    }
+   ],
+   "ppl_a": 9,
+   "ppl_c": 4,
+   "ppl_d": 6,
+   "dur_a": 90,
+   "buffer": 15,
+   "blk_start": 540,
+   "blk_end": 660
+  }
+ },
+ {
+  "id": "CP-02-00",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,3 pts), T2(python+sql,5 pts), T3(sql,2 pts), T4(rust,8 pts), T5(any skill,1 pts). Engineers: Ana(python, sql, capacity 6 pts), Ben(rust, python, capacity 11 pts), Chao(sql, rust, capacity 5 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 3,
+    "T2": 5,
+    "T3": 2,
+    "T4": 8,
+    "T5": 1
+   },
+   "caps": {
+    "Ana": 6,
+    "Ben": 11,
+    "Chao": 5
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-01",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,2 pts), T2(python+sql,7 pts), T3(sql,5 pts), T4(rust,4 pts), T5(any skill,5 pts). Engineers: Ana(python, sql, capacity 7 pts), Ben(rust, python, capacity 7 pts), Chao(sql, rust, capacity 9 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 2,
+    "T2": 7,
+    "T3": 5,
+    "T4": 4,
+    "T5": 5
+   },
+   "caps": {
+    "Ana": 7,
+    "Ben": 7,
+    "Chao": 9
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-02",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,2 pts), T2(python+sql,5 pts), T3(sql,2 pts), T4(rust,3 pts), T5(any skill,6 pts). Engineers: Ana(python, sql, capacity 8 pts), Ben(rust, python, capacity 8 pts), Chao(sql, rust, capacity 8 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 2,
+    "T2": 5,
+    "T3": 2,
+    "T4": 3,
+    "T5": 6
+   },
+   "caps": {
+    "Ana": 8,
+    "Ben": 8,
+    "Chao": 8
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-03",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,3 pts), T2(python+sql,5 pts), T3(sql,4 pts), T4(rust,6 pts), T5(any skill,3 pts). Engineers: Ana(python, sql, capacity 8 pts), Ben(rust, python, capacity 7 pts), Chao(sql, rust, capacity 9 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 3,
+    "T2": 5,
+    "T3": 4,
+    "T4": 6,
+    "T5": 3
+   },
+   "caps": {
+    "Ana": 8,
+    "Ben": 7,
+    "Chao": 9
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-04",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,7 pts), T2(python+sql,7 pts), T3(sql,5 pts), T4(rust,7 pts), T5(any skill,3 pts). Engineers: Ana(python, sql, capacity 10 pts), Ben(rust, python, capacity 12 pts), Chao(sql, rust, capacity 12 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 7,
+    "T2": 7,
+    "T3": 5,
+    "T4": 7,
+    "T5": 3
+   },
+   "caps": {
+    "Ana": 10,
+    "Ben": 12,
+    "Chao": 12
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-05",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,4 pts), T2(python+sql,8 pts), T3(sql,5 pts), T4(rust,3 pts), T5(any skill,1 pts). Engineers: Ana(python, sql, capacity 8 pts), Ben(rust, python, capacity 8 pts), Chao(sql, rust, capacity 8 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 4,
+    "T2": 8,
+    "T3": 5,
+    "T4": 3,
+    "T5": 1
+   },
+   "caps": {
+    "Ana": 8,
+    "Ben": 8,
+    "Chao": 8
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-06",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,8 pts), T2(python+sql,4 pts), T3(sql,4 pts), T4(rust,3 pts), T5(any skill,2 pts). Engineers: Ana(python, sql, capacity 6 pts), Ben(rust, python, capacity 9 pts), Chao(sql, rust, capacity 7 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 8,
+    "T2": 4,
+    "T3": 4,
+    "T4": 3,
+    "T5": 2
+   },
+   "caps": {
+    "Ana": 6,
+    "Ben": 9,
+    "Chao": 7
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-07",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,4 pts), T2(python+sql,5 pts), T3(sql,2 pts), T4(rust,7 pts), T5(any skill,6 pts). Engineers: Ana(python, sql, capacity 10 pts), Ben(rust, python, capacity 10 pts), Chao(sql, rust, capacity 7 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 4,
+    "T2": 5,
+    "T3": 2,
+    "T4": 7,
+    "T5": 6
+   },
+   "caps": {
+    "Ana": 10,
+    "Ben": 10,
+    "Chao": 7
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-08",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,5 pts), T2(python+sql,4 pts), T3(sql,4 pts), T4(rust,7 pts), T5(any skill,3 pts). Engineers: Ana(python, sql, capacity 8 pts), Ben(rust, python, capacity 8 pts), Chao(sql, rust, capacity 8 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 5,
+    "T2": 4,
+    "T3": 4,
+    "T4": 7,
+    "T5": 3
+   },
+   "caps": {
+    "Ana": 8,
+    "Ben": 8,
+    "Chao": 8
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-02-09",
+  "family": "CP",
+  "template": "CP-02",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAssign five tickets to engineers. Tickets: T1(python,3 pts), T2(python+sql,4 pts), T3(sql,2 pts), T4(rust,5 pts), T5(any skill,8 pts). Engineers: Ana(python, sql, capacity 8 pts), Ben(rust, python, capacity 9 pts), Chao(sql, rust, capacity 7 pts). HARD: every ticket assigned exactly once; skill matches; per-person point loads stay within capacity; T4 goes to Ben or Chao only; T1 completes before T3 starts (give an execution order of the tickets). SOFT, ranked lexicographically: 1) T2 early in the execution order, 2) even load balance across engineers, 3) minimize per-person context switches.",
+  "question": "Produce the allocation artifact as JSON with keys 'assign' (ticket->person) and 'order' (execution order list of ticket ids).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_skills",
+     "hard": true
+    },
+    {
+     "id": "h2_coverage",
+     "hard": true
+    },
+    {
+     "id": "h3_caps",
+     "hard": true
+    },
+    {
+     "id": "h4_t1_before_t3",
+     "hard": true
+    },
+    {
+     "id": "h5_t4_restriction",
+     "hard": true
+    },
+    {
+     "id": "s1_t2_early",
+     "hard": false
+    },
+    {
+     "id": "s2_balance",
+     "hard": false
+    },
+    {
+     "id": "s3_low_switching",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "tickets": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "ticket_skills": {
+    "T1": [
+     "python"
+    ],
+    "T2": [
+     "python",
+     "sql"
+    ],
+    "T3": [
+     "sql"
+    ],
+    "T4": [
+     "rust"
+    ],
+    "T5": []
+   },
+   "points": {
+    "T1": 3,
+    "T2": 4,
+    "T3": 2,
+    "T4": 5,
+    "T5": 8
+   },
+   "caps": {
+    "Ana": 8,
+    "Ben": 9,
+    "Chao": 7
+   },
+   "eng_skills": {
+    "Ana": [
+     "python",
+     "sql"
+    ],
+    "Ben": [
+     "rust",
+     "python"
+    ],
+    "Chao": [
+     "sql",
+     "rust"
+    ]
+   },
+   "t4_allowed": [
+    "Ben",
+    "Chao"
+   ],
+   "early_pos": 1,
+   "balance_gap": 2,
+   "max_tickets_pp": 2
+  }
+ },
+ {
+  "id": "CP-03-00",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v2.7.0: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v2.7.0 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The current changelog draft does NOT mention pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": false,
+   "version": "v2.7.0"
+  }
+ },
+ {
+  "id": "CP-03-01",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v1.8.4: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v1.8.4 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The changelog currently mentions pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": true,
+   "version": "v1.8.4"
+  }
+ },
+ {
+  "id": "CP-03-02",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v3.6.9: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v3.6.9 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The current changelog draft does NOT mention pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": false,
+   "version": "v3.6.9"
+  }
+ },
+ {
+  "id": "CP-03-03",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v5.7.2: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v5.7.2 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The changelog currently mentions pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": true,
+   "version": "v5.7.2"
+  }
+ },
+ {
+  "id": "CP-03-04",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v4.0.8: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v4.0.8 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The current changelog draft does NOT mention pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": false,
+   "version": "v4.0.8"
+  }
+ },
+ {
+  "id": "CP-03-05",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v2.4.4: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v2.4.4 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The changelog currently mentions pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": true,
+   "version": "v2.4.4"
+  }
+ },
+ {
+  "id": "CP-03-06",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v1.3.3: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v1.3.3 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The current changelog draft does NOT mention pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": false,
+   "version": "v1.3.3"
+  }
+ },
+ {
+  "id": "CP-03-07",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v3.8.4: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v3.8.4 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The changelog currently mentions pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": true,
+   "version": "v3.8.4"
+  }
+ },
+ {
+  "id": "CP-03-08",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v3.7.1: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v3.7.1 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The current changelog draft does NOT mention pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": false,
+   "version": "v3.7.1"
+  }
+ },
+ {
+  "id": "CP-03-09",
+  "family": "CP",
+  "template": "CP-03",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nRelease checklist for v2.9.1: Cut the release branch only after all merge-window PRs have landed. A migration dry-run against a staging snapshot must precede tagging. Tag v2.9.1 only if the dry-run is clean; otherwise fix forward and retry the dry-run once (maximum one retry). Publish release notes after tagging. Do NOT announce publicly before the support playbook is updated. Legal sign-off is needed only if the changelog mentions pricing; The changelog currently mentions pricing.",
+  "question": "Produce the plan artifact: an ordered list of steps (one step per line) that executes this checklist correctly, including any conditional handling.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_branch_first",
+     "hard": true
+    },
+    {
+     "id": "h2_dry_before_tag",
+     "hard": true
+    },
+    {
+     "id": "h3_retry_bound",
+     "hard": true
+    },
+    {
+     "id": "h4_notes_after_tag",
+     "hard": true
+    },
+    {
+     "id": "h5_announce_after_playbook",
+     "hard": true
+    },
+    {
+     "id": "h6_legal_conditional",
+     "hard": true
+    },
+    {
+     "id": "h7_tag_gate",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "pricing_in_changelog": true,
+   "version": "v2.9.1"
+  }
+ },
+ {
+  "id": "CP-04-00",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 8 dinner guests (A, B, C, D, E, F, G, H) around a round table with 8 seats, seat 1 through seat 8; seats 8 and 1 are adjacent. The host, A, is fixed at seat 1. HARD: A is not adjacent to B; C is not adjacent to D; E must be adjacent to F. SOFT: G prefers not to sit beside H.",
+  "question": "Produce the seating artifact: the guest order for seats 1..8 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    },
+    {
+     "id": "s1_GH_pref",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 8,
+   "host": "A",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+   ],
+   "pairs": {
+    "AB": [
+     "A",
+     "B"
+    ],
+    "CD": [
+     "C",
+     "D"
+    ],
+    "EF": [
+     "E",
+     "F"
+    ],
+    "GH": [
+     "G",
+     "H"
+    ]
+   }
+  }
+ },
+ {
+  "id": "CP-04-01",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 7 dinner guests (A, B, C, D, E, F, G) around a round table with 7 seats, seat 1 through seat 7; seats 7 and 1 are adjacent. The host, F, is fixed at seat 1. HARD: F is not adjacent to C; A is not adjacent to D; E must be adjacent to G.",
+  "question": "Produce the seating artifact: the guest order for seats 1..7 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 7,
+   "host": "F",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+   ],
+   "pairs": {
+    "AB": [
+     "F",
+     "C"
+    ],
+    "CD": [
+     "A",
+     "D"
+    ],
+    "EF": [
+     "E",
+     "G"
+    ],
+    "GH": null
+   }
+  }
+ },
+ {
+  "id": "CP-04-02",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 6 dinner guests (A, B, C, D, E, F) around a round table with 6 seats, seat 1 through seat 6; seats 6 and 1 are adjacent. The host, F, is fixed at seat 1. HARD: F is not adjacent to E; B is not adjacent to C; D must be adjacent to A.",
+  "question": "Produce the seating artifact: the guest order for seats 1..6 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 6,
+   "host": "F",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "pairs": {
+    "AB": [
+     "F",
+     "E"
+    ],
+    "CD": [
+     "B",
+     "C"
+    ],
+    "EF": [
+     "D",
+     "A"
+    ],
+    "GH": null
+   }
+  }
+ },
+ {
+  "id": "CP-04-03",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 6 dinner guests (A, B, C, D, E, F) around a round table with 6 seats, seat 1 through seat 6; seats 6 and 1 are adjacent. The host, F, is fixed at seat 1. HARD: F is not adjacent to A; B is not adjacent to E; C must be adjacent to D.",
+  "question": "Produce the seating artifact: the guest order for seats 1..6 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 6,
+   "host": "F",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "pairs": {
+    "AB": [
+     "F",
+     "A"
+    ],
+    "CD": [
+     "B",
+     "E"
+    ],
+    "EF": [
+     "C",
+     "D"
+    ],
+    "GH": null
+   }
+  }
+ },
+ {
+  "id": "CP-04-04",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 7 dinner guests (A, B, C, D, E, F, G) around a round table with 7 seats, seat 1 through seat 7; seats 7 and 1 are adjacent. The host, E, is fixed at seat 1. HARD: E is not adjacent to A; G is not adjacent to D; B must be adjacent to C.",
+  "question": "Produce the seating artifact: the guest order for seats 1..7 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 7,
+   "host": "E",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+   ],
+   "pairs": {
+    "AB": [
+     "E",
+     "A"
+    ],
+    "CD": [
+     "G",
+     "D"
+    ],
+    "EF": [
+     "B",
+     "C"
+    ],
+    "GH": null
+   }
+  }
+ },
+ {
+  "id": "CP-04-05",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 10 dinner guests (A, B, C, D, E, F, G, H, I, J) around a round table with 10 seats, seat 1 through seat 10; seats 10 and 1 are adjacent. The host, E, is fixed at seat 1. HARD: E is not adjacent to C; A is not adjacent to B; J must be adjacent to H. SOFT: D prefers not to sit beside F.",
+  "question": "Produce the seating artifact: the guest order for seats 1..10 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    },
+    {
+     "id": "s1_GH_pref",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 10,
+   "host": "E",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J"
+   ],
+   "pairs": {
+    "AB": [
+     "E",
+     "C"
+    ],
+    "CD": [
+     "A",
+     "B"
+    ],
+    "EF": [
+     "J",
+     "H"
+    ],
+    "GH": [
+     "D",
+     "F"
+    ]
+   }
+  }
+ },
+ {
+  "id": "CP-04-06",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 10 dinner guests (A, B, C, D, E, F, G, H, I, J) around a round table with 10 seats, seat 1 through seat 10; seats 10 and 1 are adjacent. The host, D, is fixed at seat 1. HARD: D is not adjacent to J; A is not adjacent to I; E must be adjacent to F. SOFT: B prefers not to sit beside C.",
+  "question": "Produce the seating artifact: the guest order for seats 1..10 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    },
+    {
+     "id": "s1_GH_pref",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 10,
+   "host": "D",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J"
+   ],
+   "pairs": {
+    "AB": [
+     "D",
+     "J"
+    ],
+    "CD": [
+     "A",
+     "I"
+    ],
+    "EF": [
+     "E",
+     "F"
+    ],
+    "GH": [
+     "B",
+     "C"
+    ]
+   }
+  }
+ },
+ {
+  "id": "CP-04-07",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 9 dinner guests (A, B, C, D, E, F, G, H, I) around a round table with 9 seats, seat 1 through seat 9; seats 9 and 1 are adjacent. The host, H, is fixed at seat 1. HARD: H is not adjacent to B; A is not adjacent to C; E must be adjacent to G. SOFT: I prefers not to sit beside D.",
+  "question": "Produce the seating artifact: the guest order for seats 1..9 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    },
+    {
+     "id": "s1_GH_pref",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 9,
+   "host": "H",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+   ],
+   "pairs": {
+    "AB": [
+     "H",
+     "B"
+    ],
+    "CD": [
+     "A",
+     "C"
+    ],
+    "EF": [
+     "E",
+     "G"
+    ],
+    "GH": [
+     "I",
+     "D"
+    ]
+   }
+  }
+ },
+ {
+  "id": "CP-04-08",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 8 dinner guests (A, B, C, D, E, F, G, H) around a round table with 8 seats, seat 1 through seat 8; seats 8 and 1 are adjacent. The host, A, is fixed at seat 1. HARD: A is not adjacent to G; H is not adjacent to E; C must be adjacent to B. SOFT: D prefers not to sit beside F.",
+  "question": "Produce the seating artifact: the guest order for seats 1..8 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    },
+    {
+     "id": "s1_GH_pref",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 8,
+   "host": "A",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+   ],
+   "pairs": {
+    "AB": [
+     "A",
+     "G"
+    ],
+    "CD": [
+     "H",
+     "E"
+    ],
+    "EF": [
+     "C",
+     "B"
+    ],
+    "GH": [
+     "D",
+     "F"
+    ]
+   }
+  }
+ },
+ {
+  "id": "CP-04-09",
+  "family": "CP",
+  "template": "CP-04",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nSeat 6 dinner guests (A, B, C, D, E, F) around a round table with 6 seats, seat 1 through seat 6; seats 6 and 1 are adjacent. The host, E, is fixed at seat 1. HARD: E is not adjacent to B; A is not adjacent to C; F must be adjacent to D.",
+  "question": "Produce the seating artifact: the guest order for seats 1..6 as one line, e.g. 'seating: G, A, ...' (guest at seat 1 first).",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_all_seated_once",
+     "hard": true
+    },
+    {
+     "id": "h2_host_seat1",
+     "hard": true
+    },
+    {
+     "id": "h3_not_adj_AB",
+     "hard": true
+    },
+    {
+     "id": "h4_not_adj_CD",
+     "hard": true
+    },
+    {
+     "id": "h5_adj_EF",
+     "hard": true
+    }
+   ]
+  },
+  "params": {
+   "n_guests": 6,
+   "host": "E",
+   "guests": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "pairs": {
+    "AB": [
+     "E",
+     "B"
+    ],
+    "CD": [
+     "A",
+     "C"
+    ],
+    "EF": [
+     "F",
+     "D"
+    ],
+    "GH": null
+   }
+  }
+ },
+ {
+  "id": "CP-05-00",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac12,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac4,000; training \u2264 25% of the total (\u2264 \u20ac3,000); events + tooling combined \u2264 \u20ac5,000; the four lines must sum to exactly \u20ac12,000; no single line may exceed \u20ac6,000 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac1,500; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac5,000.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 12000,
+   "infra_floor": 4000,
+   "training_cap": 3000,
+   "ev_tool_cap": 5000,
+   "veto_cap": 6000,
+   "training_pref": 1500,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-01",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac19,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac6,300; training \u2264 25% of the total (\u2264 \u20ac4,800); events + tooling combined \u2264 \u20ac8,000; the four lines must sum to exactly \u20ac19,000; no single line may exceed \u20ac9,500 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac2,400; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac7,300.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 19000,
+   "infra_floor": 6300,
+   "training_cap": 4800,
+   "ev_tool_cap": 8000,
+   "veto_cap": 9500,
+   "training_pref": 2400,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-02",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac20,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac6,600; training \u2264 25% of the total (\u2264 \u20ac5,000); events + tooling combined \u2264 \u20ac8,400; the four lines must sum to exactly \u20ac20,000; no single line may exceed \u20ac10,000 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac2,500; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac7,600.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 20000,
+   "infra_floor": 6600,
+   "training_cap": 5000,
+   "ev_tool_cap": 8400,
+   "veto_cap": 10000,
+   "training_pref": 2500,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-03",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac18,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac5,900; training \u2264 25% of the total (\u2264 \u20ac4,500); events + tooling combined \u2264 \u20ac7,600; the four lines must sum to exactly \u20ac18,000; no single line may exceed \u20ac9,000 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac2,200; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac6,900.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 18000,
+   "infra_floor": 5900,
+   "training_cap": 4500,
+   "ev_tool_cap": 7600,
+   "veto_cap": 9000,
+   "training_pref": 2200,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-04",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac10,500 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac3,500; training \u2264 25% of the total (\u2264 \u20ac2,600); events + tooling combined \u2264 \u20ac4,400; the four lines must sum to exactly \u20ac10,500; no single line may exceed \u20ac5,200 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac1,300; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac4,500.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 10500,
+   "infra_floor": 3500,
+   "training_cap": 2600,
+   "ev_tool_cap": 4400,
+   "veto_cap": 5200,
+   "training_pref": 1300,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-05",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac19,500 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac6,400; training \u2264 25% of the total (\u2264 \u20ac4,900); events + tooling combined \u2264 \u20ac8,200; the four lines must sum to exactly \u20ac19,500; no single line may exceed \u20ac9,800 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac2,400; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac7,400.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 19500,
+   "infra_floor": 6400,
+   "training_cap": 4900,
+   "ev_tool_cap": 8200,
+   "veto_cap": 9800,
+   "training_pref": 2400,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-06",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac19,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac6,300; training \u2264 25% of the total (\u2264 \u20ac4,800); events + tooling combined \u2264 \u20ac8,000; the four lines must sum to exactly \u20ac19,000; no single line may exceed \u20ac9,500 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac2,400; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac7,300.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 19000,
+   "infra_floor": 6300,
+   "training_cap": 4800,
+   "ev_tool_cap": 8000,
+   "veto_cap": 9500,
+   "training_pref": 2400,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-07",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac9,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac3,000; training \u2264 25% of the total (\u2264 \u20ac2,200); events + tooling combined \u2264 \u20ac3,800; the four lines must sum to exactly \u20ac9,000; no single line may exceed \u20ac4,500 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac1,100; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac4,000.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 9000,
+   "infra_floor": 3000,
+   "training_cap": 2200,
+   "ev_tool_cap": 3800,
+   "veto_cap": 4500,
+   "training_pref": 1100,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-08",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac8,000 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac2,600; training \u2264 25% of the total (\u2264 \u20ac2,000); events + tooling combined \u2264 \u20ac3,400; the four lines must sum to exactly \u20ac8,000; no single line may exceed \u20ac4,000 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac1,000; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac3,600.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 8000,
+   "infra_floor": 2600,
+   "training_cap": 2000,
+   "ev_tool_cap": 3400,
+   "veto_cap": 4000,
+   "training_pref": 1000,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ },
+ {
+  "id": "CP-05-09",
+  "family": "CP",
+  "template": "CP-05",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nAllocate \u20ac13,500 across four budget lines: infra, tooling, training, events. HARD constraints: infra \u2265 \u20ac4,500; training \u2264 25% of the total (\u2264 \u20ac3,400); events + tooling combined \u2264 \u20ac5,700; the four lines must sum to exactly \u20ac13,500; no single line may exceed \u20ac6,800 (lead veto). SOFT preferences, ranked lexicographically: 1) training \u2265 \u20ac1,700; 2) leave at least \u20ac250 of unused events+tooling headroom; 3) keep infra headroom small \u2014 infra \u2264 \u20ac5,500.",
+  "question": "Produce the allocation artifact as JSON: exactly the four keys infra, tooling, training, events with euro amounts as numbers summing to the total.",
+  "field_ids": [],
+  "field_aliases": {},
+  "units": {},
+  "gold": {
+   "constraints": [
+    {
+     "id": "h1_sum_exact",
+     "hard": true
+    },
+    {
+     "id": "h2_infra_floor",
+     "hard": true
+    },
+    {
+     "id": "h3_training_cap",
+     "hard": true
+    },
+    {
+     "id": "h4_ev_tool_cap",
+     "hard": true
+    },
+    {
+     "id": "h5_veto",
+     "hard": true
+    },
+    {
+     "id": "s1_training_pref",
+     "hard": false
+    },
+    {
+     "id": "s2_events_headroom",
+     "hard": false
+    },
+    {
+     "id": "s3_infra_headroom",
+     "hard": false
+    }
+   ]
+  },
+  "params": {
+   "total": 13500,
+   "infra_floor": 4500,
+   "training_cap": 3400,
+   "ev_tool_cap": 5700,
+   "veto_cap": 6800,
+   "training_pref": 1700,
+   "headroom_min": 250,
+   "infra_headroom": 1000
+  }
+ }
+]

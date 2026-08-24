@@ -1,0 +1,152 @@
+{
+ "experiment": "E1 efficiency/fidelity pilot (CE-01/P3)",
+ "prereg": "experiments/E1_PRE_REGISTRATION.md (FROZEN)",
+ "decision_record": "experiments/E1_DECISION_RECORD.md",
+ "decisions": {
+  "D-1": "oracle OMITTED",
+  "D-2": "AMENDED per experiments/E1_AMENDMENT_1.md (W0f' 2026-08-24): highest-capability OpenRouter :free model verifiably serving at run time, selected ONCE -> z-ai/glm-5.2:free; free-tier account (is_free_tier=true); converter=executor preserved (D-4)",
+  "D-3": "paraphrase deferred to E2",
+  "D-4": "converter model == executor model"
+ },
+ "model_id": "z-ai/glm-5.2:free",
+ "tokenizer_id": "o200k_base (tiktoken; glm-5.2 server tokenizer approximated for F/V split only; authoritative counts are provider usage fields)",
+ "price_vector": {
+  "p_in_usd_per_token": 0.0,
+  "p_out_usd_per_token": 0.0
+ },
+ "price_source_url": "https://openrouter.ai/api/v1/models",
+ "price_retrieval_date": "2026-08-24",
+ "price_live_check_2026-08-24": {
+  "prompt": 0.0,
+  "completion": 0.0,
+  "source": "https://openrouter.ai/api/v1/models (:free tier publishes $0/$0)"
+ },
+ "decoding": {
+  "temperature_primary": 0.0,
+  "temperature_modules_T0.7": [
+   101,
+   102,
+   103,
+   104,
+   105
+  ],
+  "max_tokens": 2048,
+  "repair_limit": 2
+ },
+ "seeds": {
+  "bank_gen": 20260824,
+  "bootstrap": 20260824,
+  "H2": [
+   101,
+   102,
+   103,
+   104,
+   105
+  ],
+  "replication": [
+   201,
+   202,
+   203
+  ]
+ },
+ "N_values": [
+  1,
+  10,
+  25,
+  100
+ ],
+ "N_conv_values": [
+  1,
+  10
+ ],
+ "primary_N": [
+  1,
+  25
+ ],
+ "delta_F1": {
+  "EX": 3.0,
+  "CP": 4.0,
+  "TU": 3.0
+ },
+ "delta_F3": 0.9,
+ "arms": [
+  "NL-plain",
+  "NL-opt",
+  "JSON",
+  "CSIR-SIR"
+ ],
+ "families": [
+  "EX",
+  "CP",
+  "TU"
+ ],
+ "fblock_token_counts_o200k": {
+  "F_NLp": 85,
+  "F_NLo": 449,
+  "F_js": 389,
+  "F_conv": 1368,
+  "F_exec": 295
+ },
+ "fblock_cap_check": {
+  "NL-plain": {
+   "tokens": 85,
+   "cap": 120,
+   "within": true
+  },
+  "NL-opt": {
+   "tokens": 449,
+   "cap": 450,
+   "within": true
+  },
+  "JSON": {
+   "tokens": 389,
+   "cap": 700,
+   "within": true
+  },
+  "CSIR-SIR::conv": {
+   "tokens": 1368,
+   "cap": 1400,
+   "within": true
+  },
+  "CSIR-SIR::exec": {
+   "tokens": 295,
+   "cap": 350,
+   "within": true
+  }
+ },
+ "asset_sha256": {
+  "fblocks.py": "d7bd4766435f0b0a2bf98826e88961a7c4323bd4bc6b77c8a956161d1c05aab1",
+  "config.py": "351e842040e62203f0bf2ef7d8405a8737fc988c9c38cc4b409ac1e54dc60ea8",
+  "checkers.py": "8a91d9b1b87a33907bfcfc71d8b53db055b09c1d3211e908664ac85223691b8a",
+  "items_ex_items.py": "05031687d078e8b5fad4a9c7583380300d1017c74cfa93649b3ab75aed51a4e1",
+  "items_cp_items.py": "bd7c700c5a073d492d977eb6c0edf980e20c7e0a69b2de29b1a722788479baad",
+  "items_tu_items.py": "4f719b5f1993760c8a3b9de2a625c54dc38dd60e6184c2aef9859efc456067d6",
+  "items_build_banks.py": "7fdcef0ef5cd50c405aae409cc7fc35ddc29a46ac55f901c271d791969978916",
+  "runner.py": "8bbe911e911268efe696c49812c894809ab8cc173c3a348d527863ca01e32b25",
+  "banks_ex_bank.json": "fa763cd84513800647574b7ec0a9397ddffc872b3796f83b9c6733cdc41ab034",
+  "banks_cp_bank.json": "70646a5ac49759faad5d75c4982452d40073dcdfa6b86b4957bf49679a7e832a",
+  "banks_tu_bank.json": "1d39750d0d5b9fbcb7c6658bc8d092228dd8c32c544c93fbea1286c70457618e"
+ },
+ "manifest_written_utc": "2026-08-24T11:52:00.367800+00:00",
+ "smoke_declaration": "W0e smoke UNSCORED, excluded from all statistics by pre-declaration",
+ "transport": "OpenRouter /chat/completions with operator credential from Hermes auth store",
+ "amendment_1": {
+  "ref": "experiments/E1_AMENDMENT_1.md",
+  "countersignature": "W0f' 2026-08-24",
+  "free_tier": true,
+  "selection_rule_applied_once": true,
+  "selection_record": {
+   "universe": "18 ids ending ':free' from GET /api/v1/models at 2026-08-24 ~18:05 IST",
+   "ranking_basis": "independent benchmark standing (Artificial Analysis Intelligence Index) where documented; harness-accessibility; scale/tier as tiebreak",
+   "ranking": "z-ai/glm-5.2:free (AA index 53) > thinkingmachines/inkling:free (41; HTTP 403 'only available on agentic harnesses' via plain-API transport => not verifiably serving) > nvidia/nemotron-3-ultra-550b-a55b:free (38); others: no documented capability evidence or small/specialist class",
+   "serving_verification": "live probe call on z-ai/glm-5.2:free succeeded (after transient upstream HTTP 429s, success on retry; usage.cost=0); probes logged as plumbing, excluded from all statistics",
+   "first_probe_utc": "2026-08-24T12:3xZ"
+  }
+ },
+ "dev8_pacing": {
+  "max_workers": 2,
+  "rate_min_interval_s": 3.05,
+  "retry_429_max": 8,
+  "checkpoint_resume": "run_batch skips completed (arm,item,rep) on restart"
+ }
+}

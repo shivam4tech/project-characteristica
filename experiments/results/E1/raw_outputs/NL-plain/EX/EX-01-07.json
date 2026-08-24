@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "EX",
+  "template": "EX-01",
+  "item_id": "EX-01-07",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 2429,
+  "conv_lat_ms": 0,
+  "score": 0.7143,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"a1_owner\": true, \"a1_action\": true, \"a1_deadline\": true, \"a1_priority\": true, \"a2_owner\": false, \"a2_action\": true, \"a2_constraint\": false, \"a3_owner\": true, \"a3_action\": false, \"a3_deadline\": true, \"a3_priority\": true, \"guard_target\": true, \"guard_condition\": true, \"guard_type\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 190,
+  "v_out": 832,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "a1_owner: Sanne\na1_action: rerun the perf suite\na1_deadline: 2026-08-26\na1_priority: UNKNOWN\na2_owner: Someone\na2_action: tell the client\na2_constraint: do NOT promise a date in that note\na3_owner: Chen\na3_action: drafts the comms plan\na3_deadline: next week (2026-08-31)\na3_priority: low urgency\nguard_target: staging cluster\nguard_condition: until Sanne's tests pass\nguard_type: Nobody touches",
+   "p_in": 275,
+   "p_out": 832,
+   "latency_ms": 2429,
+   "resp_id": "gen-1787578727-J37t31glk4l5vZLocaQr",
+   "transport_retries": 7,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

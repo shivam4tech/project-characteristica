@@ -1,0 +1,4601 @@
+[
+ {
+  "id": "EX-01-00",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Priya, you own the rerun the load-test before Thursday. Someone must tell the client \u2014 but do NOT promise a date in that note. Sam drafts the migration plan next week, low urgency. Nobody touches the staging cluster until Priya's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Priya",
+    "a1_action": "rerun the load-test",
+    "a1_deadline": "2026-08-27",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Sam",
+    "a3_action": "draft the migration plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Priya tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-01",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Diego, you own the rerun the load-test before Thursday. Someone must tell the client \u2014 but do NOT promise a date in that note. Omar drafts the comms plan next week, low urgency. Nobody touches the staging cluster until Diego's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Diego",
+    "a1_action": "rerun the load-test",
+    "a1_deadline": "2026-08-27",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Omar",
+    "a3_action": "draft the comms plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Diego tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-02",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Diego, you own the rerun the load-test before Friday. Someone must tell the client \u2014 but do NOT promise a date in that note. Sanne drafts the rollback plan next week, low urgency. Nobody touches the staging cluster until Diego's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Diego",
+    "a1_action": "rerun the load-test",
+    "a1_deadline": "2026-08-28",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Sanne",
+    "a3_action": "draft the rollback plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Diego tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-03",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Diego, you own the rerun the load-test before Friday. Someone must tell the client \u2014 but do NOT promise a date in that note. Tomas drafts the capacity plan next week, low urgency. Nobody touches the staging cluster until Diego's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Diego",
+    "a1_action": "rerun the load-test",
+    "a1_deadline": "2026-08-28",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Tomas",
+    "a3_action": "draft the capacity plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Diego tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-04",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Diego, you own the refresh the dashboards before Friday. Someone must tell the client \u2014 but do NOT promise a date in that note. Hana drafts the capacity plan next week, low urgency. Nobody touches the staging cluster until Diego's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Diego",
+    "a1_action": "refresh the dashboards",
+    "a1_deadline": "2026-08-28",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Hana",
+    "a3_action": "draft the capacity plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Diego tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-05",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Aiko, you own the rerun the load-test before Thursday. Someone must tell the client \u2014 but do NOT promise a date in that note. Kwame drafts the comms plan next week, low urgency. Nobody touches the staging cluster until Aiko's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Aiko",
+    "a1_action": "rerun the load-test",
+    "a1_deadline": "2026-08-27",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Kwame",
+    "a3_action": "draft the comms plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Aiko tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-06",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Diego, you own the refresh the dashboards before Wednesday. Someone must tell the client \u2014 but do NOT promise a date in that note. Tomas drafts the capacity plan next week, low urgency. Nobody touches the staging cluster until Diego's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Diego",
+    "a1_action": "refresh the dashboards",
+    "a1_deadline": "2026-08-26",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Tomas",
+    "a3_action": "draft the capacity plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Diego tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-07",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Sanne, you own the rerun the perf suite before Wednesday. Someone must tell the client \u2014 but do NOT promise a date in that note. Chen drafts the comms plan next week, low urgency. Nobody touches the staging cluster until Sanne's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Sanne",
+    "a1_action": "rerun the perf suite",
+    "a1_deadline": "2026-08-26",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Chen",
+    "a3_action": "draft the comms plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Sanne tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-08",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Sanne, you own the rerun the perf suite before Tuesday. Someone must tell the client \u2014 but do NOT promise a date in that note. Tomas drafts the rollback plan next week, low urgency. Nobody touches the staging cluster until Sanne's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Sanne",
+    "a1_action": "rerun the perf suite",
+    "a1_deadline": "2026-08-25",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Tomas",
+    "a3_action": "draft the rollback plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Sanne tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-01-09",
+  "family": "EX",
+  "template": "EX-01",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nMarta: the beta launch slipped again. Hana, you own the refresh the dashboards before Wednesday. Someone must tell the client \u2014 but do NOT promise a date in that note. Priya drafts the migration plan next week, low urgency. Nobody touches the staging cluster until Hana's tests pass.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): a1_owner, a1_action, a1_deadline, a1_priority, a2_owner, a2_action, a2_constraint, a3_owner, a3_action, a3_deadline, a3_priority, guard_target, guard_condition, guard_type.",
+  "field_ids": [
+   "a1_owner",
+   "a1_action",
+   "a1_deadline",
+   "a1_priority",
+   "a2_owner",
+   "a2_action",
+   "a2_constraint",
+   "a3_owner",
+   "a3_action",
+   "a3_deadline",
+   "a3_priority",
+   "guard_target",
+   "guard_condition",
+   "guard_type"
+  ],
+  "field_aliases": {},
+  "units": {
+   "a1_owner": "entity_ref",
+   "a1_action": "entity_ref",
+   "a1_deadline": "temporal_qualifier",
+   "a1_priority": "priority_preference",
+   "a2_owner": "entity_ref",
+   "a2_action": "entity_ref",
+   "a2_constraint": "exclusion",
+   "a3_owner": "entity_ref",
+   "a3_action": "entity_ref",
+   "a3_deadline": "temporal_qualifier",
+   "a3_priority": "priority_preference",
+   "guard_target": "entity_ref",
+   "guard_condition": "conditional_constraint",
+   "guard_type": "modality"
+  },
+  "gold": {
+   "fields": {
+    "a1_owner": "Hana",
+    "a1_action": "refresh the dashboards",
+    "a1_deadline": "2026-08-26",
+    "a1_priority": null,
+    "a2_owner": null,
+    "a2_action": "tell the client",
+    "a2_constraint": "no date promise",
+    "a3_owner": "Priya",
+    "a3_action": "draft the migration plan",
+    "a3_deadline": "2026-08-31",
+    "a3_priority": "low",
+    "guard_target": "staging cluster",
+    "guard_condition": "Hana tests pass",
+    "guard_type": "negated modification"
+   },
+   "specs": {
+    "a1_owner": {
+     "type": "txt"
+    },
+    "a1_action": {
+     "type": "txt"
+    },
+    "a1_deadline": {
+     "type": "date"
+    },
+    "a1_priority": {
+     "type": "txt",
+     "unk_gold": true
+    },
+    "a2_owner": {
+     "type": "txt"
+    },
+    "a2_action": {
+     "type": "txt"
+    },
+    "a2_constraint": {
+     "type": "txt"
+    },
+    "a3_owner": {
+     "type": "txt"
+    },
+    "a3_action": {
+     "type": "txt"
+    },
+    "a3_deadline": {
+     "type": "date",
+     "window": [
+      "2026-08-24",
+      "2026-08-31"
+     ]
+    },
+    "a3_priority": {
+     "type": "txt"
+    },
+    "guard_target": {
+     "type": "txt"
+    },
+    "guard_condition": {
+     "type": "txt"
+    },
+    "guard_type": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-00",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4412 opened 2026-08-14 09:12 UTC: checkout-service returning 502s for ~8% of EU traffic since 08:56 UTC. On-call J. Okafor rolled back deploy 2026-08-13.7 at 09:36 UTC; error rate at baseline by 09:45 UTC. Suspected cause: uncached config reload in gateway v2.4.1. Status page updated 08:56 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Nordika GmbH must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4412",
+    "service": "checkout-service",
+    "symptom": "returning 502s",
+    "t_open": "2026-08-14 09:12 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.08,
+    "rollback_deploy_id": "2026-08-13.7",
+    "rollback_time": "2026-08-14 09:36 UTC",
+    "suspected_cause": "uncached config reload in gateway v2.4.1",
+    "status_page_time": "2026-08-14 08:56 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Nordika GmbH",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-01",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4920 opened 2026-08-13 11:05 UTC: auth-service timing out for ~13% of EU traffic since 10:58 UTC. On-call J. Okafor rolled back deploy 2026-08-12.9 at 11:24 UTC; error rate at baseline by 11:30 UTC. Suspected cause: cache stampede on session lookup. Status page updated 10:58 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Osaka Freight must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4920",
+    "service": "auth-service",
+    "symptom": "timing out",
+    "t_open": "2026-08-13 11:05 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.13,
+    "rollback_deploy_id": "2026-08-12.9",
+    "rollback_time": "2026-08-13 11:24 UTC",
+    "suspected_cause": "cache stampede on session lookup",
+    "status_page_time": "2026-08-13 10:58 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Osaka Freight",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-02",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4233 opened 2026-08-18 14:33 UTC: auth-service throwing 500s for ~6% of EU traffic since 14:23 UTC. On-call J. Okafor rolled back deploy 2026-08-17.7 at 14:50 UTC; error rate at baseline by 15:03 UTC. Suspected cause: disk latency on the log volume. Status page updated 14:23 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Helios Energy must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4233",
+    "service": "auth-service",
+    "symptom": "throwing 500s",
+    "t_open": "2026-08-18 14:33 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.06,
+    "rollback_deploy_id": "2026-08-17.7",
+    "rollback_time": "2026-08-18 14:50 UTC",
+    "suspected_cause": "disk latency on the log volume",
+    "status_page_time": "2026-08-18 14:23 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Helios Energy",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-03",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4229 opened 2026-08-14 09:40 UTC: checkout-service throwing 500s for ~11% of EU traffic since 09:26 UTC. On-call J. Okafor rolled back deploy 2026-08-13.7 at 09:58 UTC; error rate at baseline by 10:06 UTC. Suspected cause: connection-pool exhaustion after deploy. Status page updated 09:26 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Helios Energy must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4229",
+    "service": "checkout-service",
+    "symptom": "throwing 500s",
+    "t_open": "2026-08-14 09:40 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.11,
+    "rollback_deploy_id": "2026-08-13.7",
+    "rollback_time": "2026-08-14 09:58 UTC",
+    "suspected_cause": "connection-pool exhaustion after deploy",
+    "status_page_time": "2026-08-14 09:26 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Helios Energy",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-04",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4986 opened 2026-08-11 14:05 UTC: search-api returning 502s for ~2% of EU traffic since 13:48 UTC. On-call J. Okafor rolled back deploy 2026-08-10.4 at 14:21 UTC; error rate at baseline by 14:27 UTC. Suspected cause: disk latency on the log volume. Status page updated 13:48 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Quill & Co must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4986",
+    "service": "search-api",
+    "symptom": "returning 502s",
+    "t_open": "2026-08-11 14:05 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.02,
+    "rollback_deploy_id": "2026-08-10.4",
+    "rollback_time": "2026-08-11 14:21 UTC",
+    "suspected_cause": "disk latency on the log volume",
+    "status_page_time": "2026-08-11 13:48 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Quill & Co",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-05",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4152 opened 2026-08-18 15:05 UTC: profile-api dropping connections for ~2% of EU traffic since 14:50 UTC. On-call J. Okafor rolled back deploy 2026-08-17.11 at 15:21 UTC; error rate at baseline by 15:31 UTC. Suspected cause: uncached config reload in gateway v2.4.1. Status page updated 14:50 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Nordika GmbH must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4152",
+    "service": "profile-api",
+    "symptom": "dropping connections",
+    "t_open": "2026-08-18 15:05 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.02,
+    "rollback_deploy_id": "2026-08-17.11",
+    "rollback_time": "2026-08-18 15:21 UTC",
+    "suspected_cause": "uncached config reload in gateway v2.4.1",
+    "status_page_time": "2026-08-18 14:50 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Nordika GmbH",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-06",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4490 opened 2026-08-17 13:05 UTC: media-proxy dropping connections for ~8% of EU traffic since 12:51 UTC. On-call J. Okafor rolled back deploy 2026-08-16.11 at 13:27 UTC; error rate at baseline by 13:34 UTC. Suspected cause: retry storm from a misconfigured client. Status page updated 12:51 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Vantor Systems must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4490",
+    "service": "media-proxy",
+    "symptom": "dropping connections",
+    "t_open": "2026-08-17 13:05 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.08,
+    "rollback_deploy_id": "2026-08-16.11",
+    "rollback_time": "2026-08-17 13:27 UTC",
+    "suspected_cause": "retry storm from a misconfigured client",
+    "status_page_time": "2026-08-17 12:51 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Vantor Systems",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-07",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4030 opened 2026-08-17 09:05 UTC: checkout-service returning 502s for ~3% of EU traffic since 08:50 UTC. On-call J. Okafor rolled back deploy 2026-08-16.11 at 09:29 UTC; error rate at baseline by 09:41 UTC. Suspected cause: connection-pool exhaustion after deploy. Status page updated 08:50 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Nordika GmbH must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4030",
+    "service": "checkout-service",
+    "symptom": "returning 502s",
+    "t_open": "2026-08-17 09:05 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.03,
+    "rollback_deploy_id": "2026-08-16.11",
+    "rollback_time": "2026-08-17 09:29 UTC",
+    "suspected_cause": "connection-pool exhaustion after deploy",
+    "status_page_time": "2026-08-17 08:50 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Nordika GmbH",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-08",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4015 opened 2026-08-18 07:12 UTC: ledger-api throwing 500s for ~7% of EU traffic since 07:03 UTC. On-call J. Okafor rolled back deploy 2026-08-17.1 at 07:34 UTC; error rate at baseline by 07:40 UTC. Suspected cause: uncached config reload in gateway v2.4.1. Status page updated 07:03 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Bluepine Retail must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4015",
+    "service": "ledger-api",
+    "symptom": "throwing 500s",
+    "t_open": "2026-08-18 07:12 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.07,
+    "rollback_deploy_id": "2026-08-17.1",
+    "rollback_time": "2026-08-18 07:34 UTC",
+    "suspected_cause": "uncached config reload in gateway v2.4.1",
+    "status_page_time": "2026-08-18 07:03 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Bluepine Retail",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-02-09",
+  "family": "EX",
+  "template": "EX-02",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nPagerDuty #4666 opened 2026-08-18 11:33 UTC: billing-worker returning 502s for ~4% of EU traffic since 11:17 UTC. On-call J. Okafor rolled back deploy 2026-08-17.8 at 11:53 UTC; error rate at baseline by 12:02 UTC. Suspected cause: disk latency on the log volume. Status page updated 11:17 UTC. No enterprise email required per runbook \u00a74 \u2014 except the account manager for Vantor Systems must be notified directly.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): incident_id, service, symptom, t_open, blast_region, blast_share, rollback_deploy_id, rollback_time, suspected_cause, status_page_time, enterprise_email_required, exception_company, exception_notify.",
+  "field_ids": [
+   "incident_id",
+   "service",
+   "symptom",
+   "t_open",
+   "blast_region",
+   "blast_share",
+   "rollback_deploy_id",
+   "rollback_time",
+   "suspected_cause",
+   "status_page_time",
+   "enterprise_email_required",
+   "exception_company",
+   "exception_notify"
+  ],
+  "field_aliases": {},
+  "units": {
+   "incident_id": "entity_ref",
+   "service": "entity_ref",
+   "symptom": "entity_ref",
+   "t_open": "temporal_qualifier",
+   "blast_region": "entity_ref",
+   "blast_share": "quantity_unit",
+   "rollback_deploy_id": "entity_ref",
+   "rollback_time": "temporal_qualifier",
+   "suspected_cause": "entity_ref",
+   "status_page_time": "temporal_qualifier",
+   "enterprise_email_required": "exclusion",
+   "exception_company": "entity_ref",
+   "exception_notify": "exception_of_exclusion"
+  },
+  "gold": {
+   "fields": {
+    "incident_id": "4666",
+    "service": "billing-worker",
+    "symptom": "returning 502s",
+    "t_open": "2026-08-18 11:33 UTC",
+    "blast_region": "EU",
+    "blast_share": 0.04,
+    "rollback_deploy_id": "2026-08-17.8",
+    "rollback_time": "2026-08-18 11:53 UTC",
+    "suspected_cause": "disk latency on the log volume",
+    "status_page_time": "2026-08-18 11:17 UTC",
+    "enterprise_email_required": false,
+    "exception_company": "Vantor Systems",
+    "exception_notify": true
+   },
+   "specs": {
+    "incident_id": {
+     "type": "txt"
+    },
+    "service": {
+     "type": "txt"
+    },
+    "symptom": {
+     "type": "txt"
+    },
+    "t_open": {
+     "type": "datetime"
+    },
+    "blast_region": {
+     "type": "enum"
+    },
+    "blast_share": {
+     "tol_rel": 0.25
+    },
+    "rollback_deploy_id": {
+     "type": "txt"
+    },
+    "rollback_time": {
+     "type": "datetime"
+    },
+    "suspected_cause": {
+     "type": "txt"
+    },
+    "status_page_time": {
+     "type": "datetime"
+    },
+    "enterprise_email_required": {
+     "type": "bool"
+    },
+    "exception_company": {
+     "type": "txt"
+    },
+    "exception_notify": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-00",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the first day of each month. Late payments incur a $45 fee after a 5-day grace period. Tenant may not paint, sublet, or keep pets exceeding 20 kg without written consent. Landlord must give 24 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 1,
+    "fee_amount_usd": 45,
+    "fee_trigger_days": 5,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 20,
+    "consent_escape": true,
+    "notice_hours": 24,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-01",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the fifth day of each month. Late payments incur a $45 fee after a 5-day grace period. Tenant may not paint, sublet, or keep pets exceeding 15 kg without written consent. Landlord must give 48 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 5,
+    "fee_amount_usd": 45,
+    "fee_trigger_days": 5,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 15,
+    "consent_escape": true,
+    "notice_hours": 48,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-02",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the first day of each month. Late payments incur a $135 fee after a 6-day grace period. Tenant may not paint, sublet, or keep pets exceeding 15 kg without written consent. Landlord must give 48 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 1,
+    "fee_amount_usd": 135,
+    "fee_trigger_days": 6,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 15,
+    "consent_escape": true,
+    "notice_hours": 48,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-03",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the fifth day of each month. Late payments incur a $135 fee after a 3-day grace period. Tenant may not paint, sublet, or keep pets exceeding 30 kg without written consent. Landlord must give 12 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 5,
+    "fee_amount_usd": 135,
+    "fee_trigger_days": 3,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 30,
+    "consent_escape": true,
+    "notice_hours": 12,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-04",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the fifth day of each month. Late payments incur a $95 fee after a 5-day grace period. Tenant may not paint, sublet, or keep pets exceeding 30 kg without written consent. Landlord must give 24 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 5,
+    "fee_amount_usd": 95,
+    "fee_trigger_days": 5,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 30,
+    "consent_escape": true,
+    "notice_hours": 24,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-05",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the third day of each month. Late payments incur a $180 fee after a 3-day grace period. Tenant may not paint, sublet, or keep pets exceeding 40 kg without written consent. Landlord must give 48 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 3,
+    "fee_amount_usd": 180,
+    "fee_trigger_days": 3,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 40,
+    "consent_escape": true,
+    "notice_hours": 48,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-06",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the fourth day of each month. Late payments incur a $155 fee after a 3-day grace period. Tenant may not paint, sublet, or keep pets exceeding 25 kg without written consent. Landlord must give 24 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 4,
+    "fee_amount_usd": 155,
+    "fee_trigger_days": 3,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 25,
+    "consent_escape": true,
+    "notice_hours": 24,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-07",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the fourth day of each month. Late payments incur a $185 fee after a 4-day grace period. Tenant may not paint, sublet, or keep pets exceeding 35 kg without written consent. Landlord must give 24 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 4,
+    "fee_amount_usd": 185,
+    "fee_trigger_days": 4,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 35,
+    "consent_escape": true,
+    "notice_hours": 24,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-08",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the first day of each month. Late payments incur a $200 fee after a 7-day grace period. Tenant may not paint, sublet, or keep pets exceeding 35 kg without written consent. Landlord must give 24 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 1,
+    "fee_amount_usd": 200,
+    "fee_trigger_days": 7,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 35,
+    "consent_escape": true,
+    "notice_hours": 24,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-03-09",
+  "family": "EX",
+  "template": "EX-03",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nTenant shall remit rent on the fifth day of each month. Late payments incur a $60 fee after a 5-day grace period. Tenant may not paint, sublet, or keep pets exceeding 40 kg without written consent. Landlord must give 12 hours' notice before entry, except in emergencies.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): rent_due_day, fee_amount_usd, fee_trigger_days, prohibition_paint, prohibition_sublet, pet_weight_limit_kg, consent_escape, notice_hours, notice_exception.",
+  "field_ids": [
+   "rent_due_day",
+   "fee_amount_usd",
+   "fee_trigger_days",
+   "prohibition_paint",
+   "prohibition_sublet",
+   "pet_weight_limit_kg",
+   "consent_escape",
+   "notice_hours",
+   "notice_exception"
+  ],
+  "field_aliases": {},
+  "units": {
+   "rent_due_day": "quantity_unit",
+   "fee_amount_usd": "quantity_unit",
+   "fee_trigger_days": "temporal_qualifier",
+   "prohibition_paint": "exclusion",
+   "prohibition_sublet": "exclusion",
+   "pet_weight_limit_kg": "quantity_unit",
+   "consent_escape": "modality",
+   "notice_hours": "temporal_qualifier",
+   "notice_exception": "modality"
+  },
+  "gold": {
+   "fields": {
+    "rent_due_day": 5,
+    "fee_amount_usd": 60,
+    "fee_trigger_days": 5,
+    "prohibition_paint": true,
+    "prohibition_sublet": true,
+    "pet_weight_limit_kg": 40,
+    "consent_escape": true,
+    "notice_hours": 12,
+    "notice_exception": "emergencies"
+   },
+   "specs": {
+    "rent_due_day": {},
+    "fee_amount_usd": {},
+    "fee_trigger_days": {},
+    "prohibition_paint": {
+     "type": "bool"
+    },
+    "prohibition_sublet": {
+     "type": "bool"
+    },
+    "pet_weight_limit_kg": {},
+    "consent_escape": {
+     "type": "bool"
+    },
+    "notice_hours": {},
+    "notice_exception": {
+     "type": "txt"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-00",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8841 ships Monday 2026-08-24. Contents: 12 crates of tile at 240 kg each, one pallet of grout, 380 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "tile",
+    "cargo1_qty": 12,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 240,
+    "cargo2_name": "grout",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 380,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-01",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8422 ships Monday 2026-08-24. Contents: 15 crates of marble slabs at 300 kg each, one pallet of grout, 700 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "marble slabs",
+    "cargo1_qty": 15,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 300,
+    "cargo2_name": "grout",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 700,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-02",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8423 ships Monday 2026-08-24. Contents: 17 crates of steel fittings at 140 kg each, one pallet of packaging stock, 520 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "steel fittings",
+    "cargo1_qty": 17,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 140,
+    "cargo2_name": "packaging stock",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 520,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-03",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8497 ships Monday 2026-08-24. Contents: 19 crates of marble slabs at 320 kg each, one pallet of sand, 700 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "marble slabs",
+    "cargo1_qty": 19,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 320,
+    "cargo2_name": "sand",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 700,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-04",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8381 ships Monday 2026-08-24. Contents: 18 crates of marble slabs at 460 kg each, one pallet of sand, 240 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "marble slabs",
+    "cargo1_qty": 18,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 460,
+    "cargo2_name": "sand",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 240,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-05",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8702 ships Monday 2026-08-24. Contents: 7 crates of steel fittings at 500 kg each, one pallet of sand, 560 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "steel fittings",
+    "cargo1_qty": 7,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 500,
+    "cargo2_name": "sand",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 560,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-06",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8646 ships Monday 2026-08-24. Contents: 17 crates of lumber at 540 kg each, one pallet of grout, 320 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "lumber",
+    "cargo1_qty": 17,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 540,
+    "cargo2_name": "grout",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 320,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-07",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8787 ships Monday 2026-08-24. Contents: 17 crates of marble slabs at 380 kg each, one pallet of sand, 480 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "marble slabs",
+    "cargo1_qty": 17,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 380,
+    "cargo2_name": "sand",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 480,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-08",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8588 ships Monday 2026-08-24. Contents: 16 crates of lumber at 340 kg each, one pallet of sand, 620 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "lumber",
+    "cargo1_qty": 16,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 340,
+    "cargo2_name": "sand",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 620,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-04-09",
+  "family": "EX",
+  "template": "EX-04",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\n(1) Dana, warehouse: \"Order #8869 ships Monday 2026-08-24. Contents: 16 crates of lumber at 400 kg each, one pallet of sealant, 460 kg. Do not stack pallets.\" (2) Marco, freight: \"Carrier pickup window 10:00\u201312:00 local. If customs docs are not filed by Friday 2026-08-21 17:00 UTC, roll the shipment to Monday 2026-08-31.\" (3) Dana: \"Customs invoice filed 2026-08-19.\"",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): ship_date, pickup_start, pickup_end, cargo1_name, cargo1_qty, cargo1_unit, cargo1_weight_each_kg, cargo2_name, cargo2_qty, cargo2_unit, cargo2_weight_total_kg, handling_exclusion, docs_deadline_date, roll_to_date, docs_filed_date, condition_triggered.",
+  "field_ids": [
+   "ship_date",
+   "pickup_start",
+   "pickup_end",
+   "cargo1_name",
+   "cargo1_qty",
+   "cargo1_unit",
+   "cargo1_weight_each_kg",
+   "cargo2_name",
+   "cargo2_qty",
+   "cargo2_unit",
+   "cargo2_weight_total_kg",
+   "handling_exclusion",
+   "docs_deadline_date",
+   "roll_to_date",
+   "docs_filed_date",
+   "condition_triggered"
+  ],
+  "field_aliases": {},
+  "units": {
+   "ship_date": "temporal_qualifier",
+   "pickup_start": "temporal_qualifier",
+   "pickup_end": "temporal_qualifier",
+   "cargo1_name": "entity_ref",
+   "cargo1_qty": "quantity_unit",
+   "cargo1_unit": "entity_ref",
+   "cargo1_weight_each_kg": "quantity_unit",
+   "cargo2_name": "entity_ref",
+   "cargo2_qty": "quantity_unit",
+   "cargo2_unit": "entity_ref",
+   "cargo2_weight_total_kg": "quantity_unit",
+   "handling_exclusion": "exclusion",
+   "docs_deadline_date": "temporal_qualifier",
+   "roll_to_date": "temporal_qualifier",
+   "docs_filed_date": "temporal_qualifier",
+   "condition_triggered": "modality"
+  },
+  "gold": {
+   "fields": {
+    "ship_date": "2026-08-24",
+    "pickup_start": "10:00",
+    "pickup_end": "12:00",
+    "cargo1_name": "lumber",
+    "cargo1_qty": 16,
+    "cargo1_unit": "crates",
+    "cargo1_weight_each_kg": 400,
+    "cargo2_name": "sealant",
+    "cargo2_qty": 1,
+    "cargo2_unit": "pallet",
+    "cargo2_weight_total_kg": 460,
+    "handling_exclusion": "no pallet stacking",
+    "docs_deadline_date": "2026-08-21",
+    "roll_to_date": "2026-08-31",
+    "docs_filed_date": "2026-08-19",
+    "condition_triggered": false
+   },
+   "specs": {
+    "ship_date": {
+     "type": "date"
+    },
+    "pickup_start": {
+     "type": "time"
+    },
+    "pickup_end": {
+     "type": "time"
+    },
+    "cargo1_name": {
+     "type": "txt"
+    },
+    "cargo1_qty": {},
+    "cargo1_unit": {
+     "type": "enum"
+    },
+    "cargo1_weight_each_kg": {},
+    "cargo2_name": {
+     "type": "txt"
+    },
+    "cargo2_qty": {},
+    "cargo2_unit": {
+     "type": "enum"
+    },
+    "cargo2_weight_total_kg": {},
+    "handling_exclusion": {
+     "type": "txt"
+    },
+    "docs_deadline_date": {
+     "type": "date"
+    },
+    "roll_to_date": {
+     "type": "date"
+    },
+    "docs_filed_date": {
+     "type": "date"
+    },
+    "condition_triggered": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-00",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 0,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot export invoices. Since upgrading to 3.2.1 last week, the feature spins forever on records over ~50 pages. Enterprise plan, ~200 seats. This blocks our month-end close, due on the 28th. Tried clearing cache and switching from Safari to Chrome. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "export-bug",
+    "version": "3.2.1",
+    "symptom_condition": "pages > 50",
+    "tier": "Enterprise",
+    "seats": 200,
+    "deadline_day": 28,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "switching from safari to chrome"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-01",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 1,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot render statements. Since upgrading to v4.8.6 last week, the feature spins forever on records over ~45 pages. Enterprise plan, ~300 seats. This blocks our month-end close, due on the 20th. Tried clearing cache and trying incognito mode. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "statement-bug",
+    "version": "4.8.6",
+    "symptom_condition": "pages > 45",
+    "tier": "Enterprise",
+    "seats": 300,
+    "deadline_day": 20,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "trying incognito mode"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-02",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 2,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot sync contacts. Since upgrading to v2.0.5 last week, the feature spins forever on records over ~75 pages. Enterprise plan, ~250 seats. This blocks our month-end close, due on the 23th. Tried updating drivers and switching browsers. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "sync-bug",
+    "version": "2.0.5",
+    "symptom_condition": "pages > 75",
+    "tier": "Enterprise",
+    "seats": 250,
+    "deadline_day": 23,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "updating drivers",
+     "switching browsers"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-03",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 3,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot import orders. Since upgrading to v3.6.5 last week, the feature spins forever on records over ~50 pages. Enterprise plan, ~100 seats. This blocks our month-end close, due on the 27th. Tried . Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "import-bug",
+    "version": "3.6.5",
+    "symptom_condition": "pages > 50",
+    "tier": "Enterprise",
+    "seats": 100,
+    "deadline_day": 27,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "restarting the app"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-04",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 4,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot generate reports. Since upgrading to v3.4.6 last week, the feature spins forever on records over ~30 pages. Enterprise plan, ~400 seats. This blocks our month-end close, due on the 28th. Tried clearing cache and switching from Safari to Chrome. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "reporting-bug",
+    "version": "3.4.6",
+    "symptom_condition": "pages > 30",
+    "tier": "Enterprise",
+    "seats": 400,
+    "deadline_day": 28,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "switching from safari to chrome"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-05",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 5,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot export invoices. Since upgrading to v2.6.9 last week, the feature spins forever on records over ~65 pages. Enterprise plan, ~400 seats. This blocks our month-end close, due on the 25th. Tried clearing cache and switching from Safari to Chrome. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "export-bug",
+    "version": "2.6.9",
+    "symptom_condition": "pages > 65",
+    "tier": "Enterprise",
+    "seats": 400,
+    "deadline_day": 25,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "switching from safari to chrome"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-06",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 6,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot sync contacts. Since upgrading to v2.6.2 last week, the feature spins forever on records over ~75 pages. Enterprise plan, ~250 seats. This blocks our month-end close, due on the 20th. Tried clearing cache and switching from Safari to Chrome. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "sync-bug",
+    "version": "2.6.2",
+    "symptom_condition": "pages > 75",
+    "tier": "Enterprise",
+    "seats": 250,
+    "deadline_day": 20,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "switching from safari to chrome"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-07",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 7,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot sync contacts. Since upgrading to v2.0.1 last week, the feature spins forever on records over ~65 pages. Enterprise plan, ~250 seats. This blocks our month-end close, due on the 28th. Tried clearing cache and trying incognito mode. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "sync-bug",
+    "version": "2.0.1",
+    "symptom_condition": "pages > 65",
+    "tier": "Enterprise",
+    "seats": 250,
+    "deadline_day": 28,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "trying incognito mode"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-08",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 8,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot generate reports. Since upgrading to v3.2.1 last week, the feature spins forever on records over ~40 pages. Enterprise plan, ~150 seats. This blocks our month-end close, due on the 20th. Tried updating drivers and switching browsers. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "reporting-bug",
+    "version": "3.2.1",
+    "symptom_condition": "pages > 40",
+    "tier": "Enterprise",
+    "seats": 150,
+    "deadline_day": 20,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "updating drivers",
+     "switching browsers"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ },
+ {
+  "id": "EX-05-09",
+  "family": "EX",
+  "template": "EX-05",
+  "idx": 9,
+  "source_text": "Today is 2026-08-24 (Monday).\nSubject: Cannot import orders. Since upgrading to v2.1.9 last week, the feature spins forever on records over ~80 pages. Enterprise plan, ~250 seats. This blocks our month-end close, due on the 22th. Tried clearing cache and switching from Safari to Chrome. Please treat as urgent \u2014 our CEO is asking.",
+  "question": "Produce the extraction answer artifact for the source above. Emit exactly these field ids, one per line as 'field_id: value' (lists comma-separated; use UNKNOWN where the source does not determine a value): category, version, symptom_condition, tier, seats, deadline_day, deadline_month, mitigations_tried, priority, exec_visible.",
+  "field_ids": [
+   "category",
+   "version",
+   "symptom_condition",
+   "tier",
+   "seats",
+   "deadline_day",
+   "deadline_month",
+   "mitigations_tried",
+   "priority",
+   "exec_visible"
+  ],
+  "field_aliases": {},
+  "units": {
+   "category": "entity_ref",
+   "version": "entity_ref",
+   "symptom_condition": "conditional_constraint",
+   "tier": "entity_ref",
+   "seats": "quantity_unit",
+   "deadline_day": "designed_unknown_flag",
+   "deadline_month": "designed_unknown_flag",
+   "mitigations_tried": "entity_ref",
+   "priority": "priority_preference",
+   "exec_visible": "priority_preference"
+  },
+  "gold": {
+   "fields": {
+    "category": "import-bug",
+    "version": "2.1.9",
+    "symptom_condition": "pages > 80",
+    "tier": "Enterprise",
+    "seats": 250,
+    "deadline_day": 22,
+    "deadline_month": null,
+    "mitigations_tried": [
+     "clearing cache",
+     "switching from safari to chrome"
+    ],
+    "priority": "urgent",
+    "exec_visible": true
+   },
+   "specs": {
+    "category": {
+     "type": "txt"
+    },
+    "version": {
+     "type": "txt"
+    },
+    "symptom_condition": {
+     "type": "txt"
+    },
+    "tier": {
+     "type": "txt"
+    },
+    "seats": {
+     "tol_rel": 0.25
+    },
+    "deadline_day": {},
+    "deadline_month": {
+     "unk_gold": true
+    },
+    "mitigations_tried": {
+     "type": "list"
+    },
+    "priority": {
+     "type": "txt"
+    },
+    "exec_visible": {
+     "type": "bool"
+    }
+   }
+  },
+  "params": {}
+ }
+]
