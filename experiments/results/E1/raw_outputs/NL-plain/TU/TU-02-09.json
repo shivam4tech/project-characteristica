@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-09",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 33455,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 293,
+  "v_out": 1250,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"webhook retries exhausted\",\n        \"severity\": \"S3\",\n        \"component\": \"pipelines\",\n        \"assignee\": \"omar\",\n        \"due_date\": \"2026-08-26\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"ops@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"webhook retries exhausted S3\",\n        \"body\": \"An S3 ticket has been filed for exhausted webhook retries.\n\nTicket ID: {{tracker_create.ticket_id}}\nTitle: webhook retries exhausted\nSeverity: S3\nComponent: pipelines\nAssignee: omar\nDue date: 2026-08-26\n\nPlease follow up as needed.\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details captured and resolved:\n\n1. **Ordering**: `tracker.create` must come first because the email body is required to reference the ticket id, which only exists after the ticket is created.\n2. **Due date**: Today is Monday 2026-08-24, so \"due Wednesday\" resolves to **2026-08-26** (ISO).\n3. **Severity**: S3, per explicit instruction; component `pipelines`; assignee `omar`.\n4. **Email**: recipient `ops@corp.example`, subject exactly `webhook retries exhausted S3`, priority `high`. No cc was specified, so `cc` is an empty list.\n5. **Ticket id**: Not specified anywhere in the source \u2014 it is generated at runtime by `tracker.create`. Rather than guessing an id, the email body uses the placeholder `{{tracker_create.ticket_id}}`, which must be substituted with the actual returned ticket id from call #1 before sending.",
+   "p_in": 378,
+   "p_out": 1250,
+   "latency_ms": 33455,
+   "resp_id": "gen-1787607856-UpAbZdlpJ55AMPpggvdx",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

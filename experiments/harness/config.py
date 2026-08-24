@@ -53,9 +53,9 @@ ARMS = ["NL-plain", "NL-opt", "JSON", "CSIR-SIR"]
 N_ITEMS_PER_TEMPLATE = 10   # 5 templates x 10 = 50 items/family
 
 REPAIR_LIMIT = 2            # <=2 repair re-prompts, metered as R / R_conv
-MAX_WORKERS = 2             # paced for :free tier (DEV-8, pre-first-scored-call)
+MAX_WORKERS = 4             # raised from 2 (2026-08-25 max-effort directive): ox-alpha serves fast & cheap; quota headroom verified
 BATCH_FLUSH = 10            # incremental write granularity (decision record #1)
-RATE_MIN_INTERVAL_S = 3.05  # client-side throttle: <=~19.7 requests/min (DEV-8)
+RATE_MIN_INTERVAL_S = 1.55  # raised from 3.05 with MAX_WORKERS=4 (2026-08-25): ~38 req/min ceiling, still client-side throttled
 RETRY_429_MAX = 8           # transport-class retries for HTTP 429 w/ 20 s backoff (DEV-8)
 
 def ensure_dirs():

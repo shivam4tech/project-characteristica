@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-02",
+  "item_id": "EX-02-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 16211,
+  "conv_lat_ms": 0,
+  "score": 0.6154,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"incident_id\": true, \"service\": true, \"symptom\": true, \"t_open\": false, \"blast_region\": true, \"blast_share\": false, \"rollback_deploy_id\": true, \"rollback_time\": false, \"suspected_cause\": true, \"status_page_time\": false, \"enterprise_email_required\": true, \"exception_company\": true, \"exception_notify\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 315,
+  "v_out": 577,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"incident_id\":\"4015\",\"service\":\"ledger-api\",\"symptom\":\"throwing 500s\",\"t_open\":\"07:12\",\"blast_region\":\"EU\",\"blast_share\":7,\"rollback_deploy_id\":\"2026-08-17.1\",\"rollback_time\":\"07:34\",\"suspected_cause\":\"uncached config reload in gateway v2.4.1\",\"status_page_time\":\"07:03\",\"enterprise_email_required\":false,\"exception_company\":\"Bluepine Retail\",\"exception_notify\":\"account manager\"}}",
+   "p_in": 704,
+   "p_out": 577,
+   "latency_ms": 16211,
+   "resp_id": "gen-1787603963-PpyTSWghFPlGsPa0awZb",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

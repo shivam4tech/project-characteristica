@@ -1,0 +1,56 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 56467,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 4, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 1793,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [],\n  \"clarify\": {\n    \"missing\": [\n      \"Investor email addresses (required for mail.send 'to' field)\",\n      \"Location or shareable link for the roadmap deck (nothing in the source identifies the deck or where it is hosted)\"\n    ],\n    \"question\": \"Who are the investors (email addresses), and how should the roadmap deck be shared? Note that mail.send accepts only to/cc/subject/body/priority and has no attachment parameter, so the deck must be referenced via a link or pasted content.\"\n  },\n  \"unavailable\": [\n    \"File/attachment transmission: no registered tool can attach or upload the roadmap deck \u2014 mail.send's signature (to, cc, subject, body, priority) contains no attachment parameter\"\n  ]\n}\n```\n\n**Reasoning:**\n- The request maps to `mail.send`, which exists as a capability, so no full substitution by `unavailable` alone is warranted.\n- **Missing information:** No investor email addresses are given anywhere in the source, so the required `to` field cannot be populated. Likewise, no deck file, path, or URL is identified.\n- **Capability gap:** Even with those details, the deck itself cannot be attached \u2014 `mail.send` has no attachment parameter, so the deck would need to be shared as a link or inline content.\n- No dates, quantities, or other constraints from the header are relevant to this request.",
+   "p_in": 354,
+   "p_out": 1793,
+   "latency_ms": 56467,
+   "resp_id": "gen-1787608050-GhWDWf27HtWLnJtwJwZG",
+   "transport_retries": 4,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "clarify",
+  "unavailable"
+ ]
+}

@@ -7,7 +7,7 @@
   "rep": "",
   "temperature": 0.0,
   "n_attempts": 1,
-  "lat_total_ms": 65517,
+  "lat_total_ms": 66305,
   "conv_lat_ms": 0,
   "score": 0.1,
   "gate_pass": false,
@@ -40,9 +40,9 @@
    "content": "",
    "p_in": 329,
    "p_out": 2048,
-   "latency_ms": 65517,
-   "resp_id": "gen-1787599900-R4T8oXBT6YbT1skheyyI",
-   "transport_retries": 3,
+   "latency_ms": 66305,
+   "resp_id": "gen-1787602697-fqVB0FoTijilh0rzPgdM",
+   "transport_retries": 1,
    "note": "",
    "f_tok": 85
   }

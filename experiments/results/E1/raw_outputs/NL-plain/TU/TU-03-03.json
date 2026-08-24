@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 60690,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 6, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"recipient email address(es) for the customer advisory board (needed for mail.send 'to'/'cc' lists)\",\n      \"the pricing sheet itself \u2014 its content or a reference to it; no available tool can retrieve or look up documents, so the sheet's contents must be supplied\"\n    ],\n    \"question\": \"Which email address(es) should receive the pricing sheet, and can you provide the sheet's content? Note that mail.send supports only plain-text bodies (to, cc, subject, body, priority) with no attachment parameter, so the sheet would need to be pasted into the email body unless another delivery method is specified.\"\n  },\n  \"unavailable\": [\n    \"file/attachment support in mail.send (signature is limited to to, cc, subject, body, priority)\",\n    \"any tool to retrieve, store, or look up documents such as the pricing sheet\"\n  ]\n}\n```\n\nNo `calendar.book`, `tracker.*`, or `orders.*` calls are relevant to this request, and no relative-date resolution (from 2026-08-24) is required. No tool call can be emitted until the recipient addresses and the",
+   "p_in": 356,
+   "p_out": 2048,
+   "latency_ms": 60690,
+   "resp_id": "gen-1787607939-swn2DMWpC1M8ELDBTiYb",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

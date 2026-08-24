@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 24623,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 261,
+  "v_out": 663,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\"calls\":[{\"tool\":\"calendar.book\",\"args\":{\"room_id\":\"Atlas\",\"date\":\"2026-08-24\",\"start_min\":660,\"end_min\":720,\"attendee_count\":9,\"needs_projector\":false}}]}\n```\n\nNotes on resolution:\n- Date: \"today\" resolved to 2026-08-24 per the header.\n- Times: 11:00 \u2192 660 minutes; 12:00 \u2192 720 minutes.\n- Attendees: 9.\n- Projector: not specified in the source material; defaulted to `false`. If a projector is actually needed, this call should be amended before execution.",
+   "p_in": 346,
+   "p_out": 663,
+   "latency_ms": 24623,
+   "resp_id": "gen-1787607664-gl9Pl7OkwT6gH8PM7FMW",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

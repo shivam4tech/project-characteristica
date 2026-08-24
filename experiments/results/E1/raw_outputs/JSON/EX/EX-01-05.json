@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-01",
+  "item_id": "EX-01-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 42355,
+  "conv_lat_ms": 0,
+  "score": 0.8571,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"a1_owner\": true, \"a1_action\": true, \"a1_deadline\": true, \"a1_priority\": true, \"a2_owner\": true, \"a2_action\": true, \"a2_constraint\": false, \"a3_owner\": true, \"a3_action\": true, \"a3_deadline\": true, \"a3_priority\": true, \"guard_target\": true, \"guard_condition\": true, \"guard_type\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 266,
+  "v_out": 1515,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"a1_owner\":\"Aiko\",\"a1_action\":\"rerun the load-test\",\"a1_deadline\":\"2026-08-27\",\"a1_priority\":\"UNKNOWN\",\"a2_owner\":\"UNKNOWN\",\"a2_action\":\"tell the client about the beta launch slip\",\"a2_constraint\":\"do NOT promise a date in the note\",\"a3_owner\":\"Kwame\",\"a3_action\":\"draft the comms plan\",\"a3_deadline\":\"2026-08-31\",\"a3_priority\":\"low\",\"guard_target\":\"staging cluster\",\"guard_condition\":\"until Aiko's load tests pass\",\"guard_type\":\"freeze\"}}",
+   "p_in": 655,
+   "p_out": 1515,
+   "latency_ms": 42355,
+   "resp_id": "gen-1787603874-IbAq0upC0F0bzBUQBQwm",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

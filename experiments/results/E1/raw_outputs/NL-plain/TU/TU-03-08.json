@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 64625,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 3, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"unavailable\": [\n    \"Retrieval of quarterly financial figures: no tool in the registry provides financial/reporting data (orders.lookup only queries customer orders by email/order ID/status/placed-after date, not financial aggregates)\",\n    \"Forwarding an existing email or document: no mail-read/forward capability exists (mail.send only composes new messages)\"\n  ],\n  \"clarify\": {\n    \"missing\": [\n      \"Recipient address(es): mail.send requires a 'to' list, and the board members' email addresses are not provided\",\n      \"The quarterly numbers themselves: they are not contained in the source and cannot be fetched with any available tool,",
+   "p_in": 354,
+   "p_out": 2048,
+   "latency_ms": 64625,
+   "resp_id": "gen-1787608000-0vBJav4e4nS789RXXLf1",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "outcome": {
+  "arm": "CSIR-SIR",
+  "family": "EX",
+  "template": "EX-04",
+  "item_id": "EX-04-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 3,
+  "lat_total_ms": 98977,
+  "conv_lat_ms": 40926,
+  "score": 0.8125,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"ship_date\": true, \"pickup_start\": false, \"pickup_end\": false, \"cargo1_name\": true, \"cargo1_qty\": true, \"cargo1_unit\": true, \"cargo1_weight_each_kg\": true, \"cargo2_name\": true, \"cargo2_qty\": true, \"cargo2_unit\": true, \"cargo2_weight_total_kg\": true, \"handling_exclusion\": false, \"docs_deadline_date\": true, \"roll_to_date\": true, \"docs_filed_date\": true, \"condition_triggered\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 3156,
+  "v_out": 2048,
+  "f_tok": 295,
+  "r_in": 3471,
+  "r_out": 1736,
+  "k_in": 1726,
+  "k_out": 1667,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 1,
+  "f_conv_tok": 1368,
+  "f_exec_tok": 295,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "convert",
+   "idx": 1,
+   "block": "CSIR-SIR::conv",
+   "ok": true,
+   "content": "{\"csir_version\":\"0.1.0\",\"speech_act\":{\"type\":\"question\",\"span\":[0,470]},\"lexicon\":[{\"id\":\"t1\",\"term\":\"Dana\",\"tier\":\"B\",\"type\":\"person\",\"analysis_status\":\"opaque\",\"attestation_span\":[14,18]},{\"id\":\"t2\",\"term\":\"warehouse\",\"tier\":\"B\",\"type\":\"location\",\"analysis_status\":\"opaque\",\"attestation_span\":[19,28]},{\"id\":\"t3\",\"term\":\"Order #8702\",\"tier\":\"B\",\"type\":\"order_id\",\"analysis_status\":\"opaque\",\"attestation_span\":[30,41]},{\"id\":\"t4\",\"term\":\"crates of steel fittings\",\"tier\":\"B\",\"type\":\"cargo_item\",\"analysis_status\":\"opaque\",\"attestation_span\":[76,100]},{\"id\":\"t5\",\"term\":\"pallet of sand\",\"tier\":\"B\",\"type\":\"cargo_item\",\"analysis_status\":\"opaque\",\"attestation_span\":[124,138]},{\"id\":\"t6\",\"term\":\"Marco\",\"tier\":\"B\",\"type\":\"person\",\"analysis_status\":\"opaque\",\"attestation_span\":[196,201]},{\"id\":\"t7\",\"term\":\"freight\",\"tier\":\"B\",\"type\":\"role_or_location\",\"analysis_status\":\"opaque\",\"attestation_span\":[202,209]},{\"id\":\"t8\",\"term\":\"Carrier pickup window\",\"tier\":\"B\",\"type\":\"event_ref\",\"analysis_status\":\"opaque\",\"attestation_span\":[211,232]},{\"id\":\"t9\",\"term\":\"customs docs\",\"tier\":\"B\",\"type\":\"document_ref\",\"analysis_status\":\"opaque\",\"attestation_span\":[251,263]},{\"id\":\"t10\",\"term\":\"the shipment\",\"tier\":\"B\",\"type\":\"shipment_ref\",\"analysis_status\":\"opaque\",\"attestation_span\":[296,308]},{\"id\":\"t11\",\"term\":\"Customs invoice\",\"tier\":\"B\",\"type\":\"document_ref\",\"analysis_status\":\"opaque\",\"attestation_span\":[352,367]}],\"nodes\":[\n{\"id\":\"n1\",\"kind\":\"entity_ref\",\"ref\":\"t1\",\"spans\":[[14,18]]},\n{\"id\":\"n2\",\"kind\":\"entity_ref\",\"ref\":\"t2\",\"spans\":[[19,28]]},\n{\"id\":\"n3\",\"kind\":\"predicate\",\"term\":\"ship_order\",\"status\":\"asserted\",\"spans\":[[30,58]]},\n{\"id\":\"n4\",\"kind\":\"entity_ref\",\"ref\":\"t3\",\"spans\":[[30,41]]},\n{\"id\":\"n5\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"Monday 2026-08-24\",\"canonical\":\"2026-08-24\",\"unknown\":false,\"spans\":[[42,59]]},\n{\"id\":\"n6\",\"kind\":\"predicate\",\"term\":\"contain_cargo\",\"status\":\"asserted\",\"spans\":[[71,140]]},\n{\"id\":\"n7\",\"kind\":\"quantity_unit\",\"value\":7,\"unit\":\"crate\",\"spans\":[[72,80]]},\n{\"id\":\"n8\",\"kind\":\"entity_ref\",\"ref\":\"t4\",\"spans\":[[76,100]]},\n{\"id\":\"n9\",\"kind\":\"quantity_unit\",\"value\":500,\"unit\":\"kg\",\"spans\":[[104,116]]},\n{\"id\":\"n10\",\"kind\":\"predicate\",\"term\":\"weigh_each\",\"status\":\"asserted\",\"spans\":[[101,117]]},\n{\"id\":\"n11\",\"kind\":\"quantity_unit\",\"value\":1,\"unit\":\"pallet\",\"spans\":[[121,131]]},\n{\"id\":\"n12\",\"kind\":\"entity_ref\",\"ref\":\"t5\",\"spands\":[[124,138]],\"spans\":[[124,138]]},\n{\"id\":\"n13\",\"kind\":\"quantity_unit\",\"value\":560,\"unit\":\"kg\",\"spans\":[[139,146]]},\n{\"id\":\"n14\",\"kind\":\"predicate\",\"term\":\"weigh_total\",\"status\":\"asserted\",\"spans\":[[139,147]]},\n{\"id\":\"n15\",\"kind\":\"exclusion\",\"content\":{\"action\":\"stack_pallets\"},\"spans\":[[148,169]]},\n{\"id\":\"n16\",\"kind\":\"predicate\",\"term\":\"carrier_pickup\",\"status\":\"asserted\",\"spans\":[[211,240]]},\n{\"id\":\"n17\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"10:00\u201312:00 local\",\"canonical\":\"600-720\",\"unknown\":true,\"ask_user\":true,\"clarification\":\"'local' (chars 236-241): which timezone does 'local' refer to?\",\"spans\":[[233,241]]},\n{\"id\":\"n18\",\"kind\":\"predicate\",\"term\":\"file_customs_docs\",\"status\":\"queried\",\"spans\":[[245,263]]},\n{\"id\":\"n19\",\"kind\":\"entity_ref\",\"ref\":\"t9\",\"spans\":[[251,263]]},\n{\"id\":\"n20\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"Friday 2026-08-21 17:00 UTC\",\"canonical\":\"2026-08-21T17:00Z\",\"unknown\":false,\"spans\":[[267,294]]},\n{\"id\":\"n21\",\"kind\":\"constraint\",\"polarity\":\"hard\",\"content\":{\"condition\":\"docs_not_filed_by_deadline\",\"then_action\":\"roll_shipment_to_2026-08-31\"},\"spans\":[[245,341]]},\n{\"id\":\"n22\",\"kind\":\"predicate\",\"term\":\"roll_shipment\",\"status\":\"assumed\",\"spans\":[[296,341]]},\n{\"id\":\"n23\",\"kind\":\"entity_ref\",\"ref\":\"t10\",\"spans\":[[296,308]]},\n{\"id\":\"n24\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"Monday 2026-08-31\",\"canonical\":\"2026-08-31\",\"unknown\":false,\"spans\":[[312,329]]},\n{\"id\":\"n25\",\"kind\":\"predicate\",\"term\":\"file_invoice\",\"status\":\"asserted\",\"spans\":[[352,381]]},\n{\"id\":\"n26\",\"kind\":\"entity_ref\",\"ref\":\"t11\",\"spans\":[[352,367]]},\n{\"id\":\"n27\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"2026-08-19\",\"canonical\":\"2026-08-19\",\"unknown\":false,\"spans\":[[368,378]]},\n{\"id\":\"n28\",\"kind\":\"scope_marker\",\"mode\":\"exists\",\"spans\":[[245,250]]},\n{\"id\":\"n29\",\"kind\":\"output_shape\",\"shape\":\"field_id_value_lines\",\"spans\":[[383,470]]},\n{\"id\":\"n30\",\"kind\":\"speech_act\",\"act\":\"request_extraction_answer_artifact\",\"spans\":[[383,470]]}],\n\"edges\":[\n{\"rel\":\"hasArg\",\"from\":\"n3\",\"to\":\"n4\"},\n{\"rel\":\"modifies\",\"from\":\"n5\",\"to\":\"n3\"},\n{\"rel\":\"hasArg\",\"from\":\"n6\",\"to\":\"n8\"},\n{\"rel\":\"hasArg\",\"from\":\"n10\",\"to\":\"n9\"},\n{\"rel\":\"hasArg\",\"from\":\"n6\",\"to\":\"n12\"},\n{\"rel\":\"hasArg\",\"from\":\"n14\",\"to\":\"n13\"},\n{\"rel\":\"constrains\",\"from\":\"n21\",\"to\":\"n22\"},\n{\"rel\":\"orderedBefore\",\"from\":\"n20\",\"to\":\"n22\"},\n{\"rel\":\"modifies\",\"from\":\"n24\",\"to\":\"n22\"},\n{\"rel\":\"hasArg\",\"from\":\"n25\",\"to\":\"n26\"},\n{\"rel\":\"modifies\",\"from\":\"n27\",\"to\":\"n25\"},\n{\"rel\":\"quantifiesOver\",\"from\":\"n28\",\"to\":\"n18\"},\n{\"rel\":\"requestsOutput\",\"from\":\"n29\",\"to\":\"n30\"},\n{\"rel\":\"excludes\",\"from\":\"n15\",\"to\":\"n6\"},\n{\"rel\":\"modifies\",\"from\":\"n17\",\"to\":\"n16\"}]}",
+   "p_in": 1726,
+   "p_out": 1667,
+   "latency_ms": 40926,
+   "resp_id": "gen-1787607948-5xgxubsLREH5kggv7jO5",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 1368
+  },
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "CSIR-SIR::exec",
+   "ok": true,
+   "content": "",
+   "p_in": 3451,
+   "p_out": 2048,
+   "latency_ms": 55541,
+   "resp_id": "gen-1787608010-cg60NGsM8FhRZ8cElpms",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 295
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "CSIR-SIR::exec",
+   "ok": true,
+   "content": "{\n  \"ship_date\": \"2026-08-24\",\n  \"pickup_start\": \"UNKNOWN\",\n  \"pickup_end\": \"UNKNOWN\",\n  \"cargo1_name\": \"crates of steel fittings\",\n  \"cargo1_qty\": 7,\n  \"cargo1_unit\": \"crate\",\n  \"cargo1_weight_each_kg\": 500,\n  \"cargo2_name\": \"pallet of sand\",\n  \"cargo2_qty\": 1,\n  \"cargo2_unit\": \"pallet\",\n  \"cargo2_weight_total_kg\": 560,\n  \"handling_exclusion\": \"stack_pallets\",\n  \"docs_deadline_date\": \"2026-08-21\",\n  \"roll_to_date\": \"2026-08-31\",\n  \"docs_filed_date\": \"2026-08-19\",\n  \"condition_triggered\": \"UNKNOWN\"\n}",
+   "p_in": 3471,
+   "p_out": 1736,
+   "latency_ms": 43436,
+   "resp_id": "gen-1787608066-7IrQS4L6DgyHOjKimUui",
+   "transport_retries": 0,
+   "note": "parse: no JSON object found",
+   "f_tok": 295
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

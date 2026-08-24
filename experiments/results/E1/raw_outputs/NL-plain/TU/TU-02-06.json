@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 25696,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 293,
+  "v_out": 1078,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"webhook retries exhausted\",\n        \"severity\": \"S2\",\n        \"component\": \"gateway\",\n        \"assignee\": \"omar\",\n        \"due_date\": \"2026-08-26\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"support@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"webhook retries exhausted S2\",\n        \"body\": \"An S2 tracker ticket has been filed for 'webhook retries exhausted' (component: gateway, assignee: omar, due: 2026-08-26). Ticket ID: {{TICKET_ID}}.\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details and gaps:\n\n- **Due date resolution:** Today is Monday 2026-08-24, so \"Wednesday\" resolves to **2026-08-26**.\n- **Ticket ID gap:** The source does not specify an actual ticket ID \u2014 `tracker.create` returns one at runtime. Since this is a static call list, the body uses the placeholder `{{TICKET_ID}}`, which must be replaced with the ID returned by the first call before sending. I did not invent a concrete ID.\n- **Unspecified fields:** No `cc` recipients were given, so `cc` is an empty list; no additional body content was specified beyond referencing the ticket ID.\n- **Ordering:** `tracker.create` must execute before `mail.send` because the email depends on the ticket ID.",
+   "p_in": 378,
+   "p_out": 1078,
+   "latency_ms": 25696,
+   "resp_id": "gen-1787607913-tXPDZywx7BmHGacp89XM",
+   "transport_retries": 6,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

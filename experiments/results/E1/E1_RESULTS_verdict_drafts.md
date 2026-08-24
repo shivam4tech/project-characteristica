@@ -1,3 +1,6 @@
+> **STATUS 01:35 IST 08-25:** SUPERSEDED — all three blocks are now INCORPORATED in `E1_RESULTS.md`
+> (header mixed-batch note, §8 H3 verdict, §8 H5 N/A note) on the Amendment-2 basis. Kept for provenance.
+
 # E1_RESULTS.md — prepared insertions for the completing session
 
 _Drafted 2026-08-25 ~01:30 IST (WS-E1EXEC wait/analysis pass). `make_results.py` does NOT emit

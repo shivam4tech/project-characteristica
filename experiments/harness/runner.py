@@ -331,7 +331,7 @@ def run_batch(mode, jobs, tag):
         if not jobs:
             print(f"[{tag}] nothing to do", flush=True)
             return
-    buf, done, lock = [], 0, threading.Lock()
+    buf, done, lock = [], 0, threading.RLock()  # DEV-9 fix (2026-08-25): was Lock(); emit() held lock then called _flush() which re-acquired -> permanent self-deadlock at BATCH_FLUSH boundary
     t_start = time.time()
     def work(j):
         time.sleep(random.uniform(0, 0.3))
@@ -549,7 +549,10 @@ def main():
         jobs.append({"arm": "CSIR-SIR", "item": banks["EX"][0], "rep": None, "temp": 0.0})
         run_batch("smoke", jobs, "SMOKE")
     elif a.mode == "primary":
-        run_batch("primary", jobs_primary(banks), "PRIMARY")
+        fams = [f for f in a.families.split(",") if f in CFG.FAMILIES] or list(CFG.FAMILIES)
+        js = [{"arm": ar, "item": it, "rep": None, "temp": 0.0}
+              for fam in fams for ar in CFG.ARMS for it in banks[fam]]
+        run_batch("primary", js, "PRIMARY")
     elif a.mode == "h2":
         run_batch("h2", jobs_h2(banks), "H2")
     elif a.mode == "repl":

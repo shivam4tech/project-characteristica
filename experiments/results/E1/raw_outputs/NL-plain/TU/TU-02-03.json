@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 28389,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 292,
+  "v_out": 1123,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"billing sync lagging\",\n        \"severity\": \"S3\",\n        \"component\": \"billing\",\n        \"assignee\": \"sam\",\n        \"due_date\": \"2026-08-26\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"ops@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"billing sync lagging S3\",\n        \"body\": \"Filed tracker ticket {{ticket_id}}: 'billing sync lagging' (severity S3, component billing, assignee sam, due 2026-08-26).\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on resolution and gaps:\n\n1. **Due date**: Today is Monday 2026-08-24, so \"due Wednesday\" resolves to **2026-08-26** (ISO).\n2. **Ordering**: `tracker.create` must come first because the email body must reference the ticket id, which is only produced by the create call. In the JSON above, `{{ticket_id}}` is a placeholder to be substituted with the actual ticket id returned by call 1 before sending.\n3. **Explicitly unspecified in the source** (not guessed beyond defaults):\n   - The **exact body wording** of the email \u2014 only \"reference the ticket id\" was required; the body above is a minimal fulfillment of that requirement.\n   - The **cc list** \u2014 no cc recipients were given, so it is left as an empty array.\n   - The **ticket id itself** \u2014 it does not exist until the tracker ticket is created; it cannot be known in advance.",
+   "p_in": 377,
+   "p_out": 1123,
+   "latency_ms": 28389,
+   "resp_id": "gen-1787607795-0MZCsLnQ76XcrRNDGn9o",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

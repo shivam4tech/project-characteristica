@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 41926,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 6, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 270,
+  "v_out": 1291,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"Recipient email address(es) for the 'partners committee' (required for mail.send 'to')\",\n      \"The churn metrics data/content itself (required for the mail.send 'body'; no available tool can retrieve or compute churn metrics)\",\n      \"Desired subject line and priority (optional defaults could be assumed, but not specified)\"\n    ],\n    \"question\": \"To send the churn metrics to the partners committee, I need: (1) the email address(es) of the partners committee, and (2) the churn metrics figures/content to include, since none of the available tools (calendar.book, mail.send, tracker.create/update, orders.lookup/cancel) can retrieve or calculate churn metrics. Please provide these so I can compose the mail.send call.\"\n  }\n}\n```",
+   "p_in": 355,
+   "p_out": 1291,
+   "latency_ms": 41926,
+   "resp_id": "gen-1787607937-Ijl0DNkLbT3pL8k66KG1",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 13839,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 264,
+  "v_out": 396,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"calendar.book\",\n      \"args\": {\n        \"room_id\": \"Atlas\",\n        \"date\": \"2026-08-25\",\n        \"start_min\": 570,\n        \"end_min\": 630,\n        \"attendee_count\": 8,\n        \"needs_projector\": true\n      }\n    }\n  ]\n}\n```\n\nNotes on derivation:\n- **Date**: Today is 2026-08-24, so \"tomorrow\" resolves to 2026-08-25.\n- **Times**: 09:30 \u2192 570 minutes; 10:30 \u2192 630 minutes.\n- **Attendees**: 8 people.\n- **Projector**: explicitly required \u2192 `true`.\n- No mail or tracker actions were requested.",
+   "p_in": 349,
+   "p_out": 396,
+   "latency_ms": 13839,
+   "resp_id": "gen-1787607711-ApzN3GCcxerlrrGMRWJh",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

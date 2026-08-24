@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 55568,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 7, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 270,
+  "v_out": 1779,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"Recipients: the email addresses (or distribution list) of the 'partners committee' \u2014 not specified anywhere in the source\",\n      \"Metric content: the actual churn metrics/figures to be shared (values, reporting period, format) \u2014 not provided\",\n      \"Delivery details: subject line, body text, any cc addresses, and priority for the message \u2014 not specified\"\n    ],\n    \"question\": \"To fulfill 'Share the churn metrics to the partners committee', please provide (1) the partners committee members' email addresses or distribution list, and (2) the churn metrics data itself or its source \u2014 no tool in the registry can compute or retrieve churn metrics, so the figures must be supplied before they can be sent via mail.send.\"\n  },\n  \"unavailable\": [\n    \"churn-metrics retrieval/computation: no analytics or reporting capability exists in the mock registry (only calendar.book, mail.send, tracker.create, tracker.update, orders.lookup, orders.cancel are available)\"\n  ]\n}\n```\n\nNotes on resolution:\n- Today's date (2026-08-24, Monday) does not affect this request \u2014 no date-dependent parameters (e.g., `due_date`, `date`) are involved.\n- The only plausible delivery mechanism is `mail.send`, but it cannot be called yet: both the recipient addresses and the metrics payload are missing.\n- `orders.lookup` cannot substitute for churn metrics \u2014 it returns order records by email/order ID/status/placement date, not retention/churn analytics, and no customer cohort or churn definition is provided.",
+   "p_in": 355,
+   "p_out": 1779,
+   "latency_ms": 55568,
+   "resp_id": "gen-1787607979-XpcSe3vCn9WzOpDLMGqn",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

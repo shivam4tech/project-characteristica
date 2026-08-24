@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 27469,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 4, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 893,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"Recipient email address(es) for 'the board' (mail.send requires a 'to' list)\",\n      \"Which quarter's numbers are meant \u2014 today is 2026-08-24, so the most recently completed quarter is Q2 2026 (Apr\u2013Jun 2026), but the current quarter Q3 2026 is still open\",\n      \"The actual quarterly figures/report content \u2014 no financial data appears anywhere in the source, and no available tool can retrieve it\",\n      \"Optional: CC recipients and desired priority (defaults assumed only if unspecified)\"\n    ],\n    \"question\": \"To send the quarterly numbers via mail.send, please provide: (1) the board members' email addresses, (2) confirmation of which quarter (e.g., Q2 2026, Apr\u2013Jun 2026), and (3) the figures themselves, since no quarterly data exists in the source and no analytics/reporting tool is available to fetch them.\"\n  }\n}\n```",
+   "p_in": 354,
+   "p_out": 893,
+   "latency_ms": 27469,
+   "resp_id": "gen-1787607956-XXfretnXVpRzH1Bfsli5",
+   "transport_retries": 5,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

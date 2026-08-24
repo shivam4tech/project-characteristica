@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 26950,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 293,
+  "v_out": 1023,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"nightly export failing\",\n        \"severity\": \"S2\",\n        \"component\": \"pipelines\",\n        \"assignee\": \"priya\",\n        \"due_date\": \"2026-08-28\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"ops@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"nightly export failing S2\",\n        \"body\": \"Filed S2 tracker ticket {{tracker.create[0].ticket_id}} titled 'nightly export failing' (component: pipelines, assignee: priya, due: 2026-08-28).\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details and assumptions:\n- **Due date resolution:** Today is Monday 2026-08-24, so \"due Friday\" resolves to **2026-08-28**.\n- **Ordering:** `tracker.create` must come first because the email body must reference the ticket id.\n- **Unspecified item flagged:** The actual ticket id is **not provided in the source** \u2014 it only exists after `tracker.create` returns. The body therefore uses the placeholder `{{tracker.create[0].ticket_id}}`, which must be substituted with the real returned ticket id at execution time.\n- **cc** was not specified, so it is emitted as an empty array per the tool signature.",
+   "p_in": 378,
+   "p_out": 1023,
+   "latency_ms": 26950,
+   "resp_id": "gen-1787607726-uslyQUcmOfoBzNramrli",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

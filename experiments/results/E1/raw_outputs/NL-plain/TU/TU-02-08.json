@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 28830,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 292,
+  "v_out": 1111,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"queue backlog growing\",\n        \"severity\": \"S1\",\n        \"component\": \"billing\",\n        \"assignee\": \"dana\",\n        \"due_date\": \"2026-08-28\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"sre@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"queue backlog growing S1\",\n        \"body\": \"Filed S1 tracker ticket 'queue backlog growing' (ticket id: {{calls[0].result.ticket_id}}). Component: billing. Assignee: dana. Due date: 2026-08-28.\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details captured and resolved:\n- **Ordering matters**: `tracker.create` must run first because the email body must reference the resulting ticket id.\n- **Relative date**: Today is Monday 2026-08-24, so \"due Friday\" resolves to **2026-08-28**.\n- **Ticket id**: Not specified in the source (it's assigned at runtime), so the body uses a placeholder `{{calls[0].result.ticket_id}}` that references the first call's result rather than guessing an ID.\n- **Unspecified fields**: No `cc` recipients were given, so `cc` is passed as an empty array per the schema.",
+   "p_in": 377,
+   "p_out": 1111,
+   "latency_ms": 28830,
+   "resp_id": "gen-1787607823-eQIV4q3ZIZz6eBoOq0XV",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

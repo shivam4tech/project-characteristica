@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-04",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 47777,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 3, \"cancel_ok\": false, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 268,
+  "v_out": 1566,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"4508\",\n        \"reason\": \"refund requested\"\n      }\n    }\n  ],\n  \"unavailable\": [\"orders.refund\"]\n}\n```\n\nNotes on how this was resolved:\n\n- **Cancellation**: `orders.cancel` exists and matches the request. Order ID `4508` taken verbatim from \"#4508\". The `reason` argument is required by the tool signature but was not explicitly specified by the requester; `\"refund requested\"` is used because it directly reflects the stated intent (\"issue a refund\") rather than an invented detail.\n- **Refund to original card**: No refund capability exists anywhere in the registry (only `calendar.book`, `mail.send`, `tracker.create`, `tracker.update`, `orders.lookup`, `orders.cancel`). This is therefore listed under `unavailable` as `orders.refund`. No substitute tool was invented, and no workaround calls (e.g., email or tracker ticket) were added since none were requested.\n- **No lookup performed**: `orders.lookup` was not included because verification of the order was not part of the request; if desired, it could be run first with `{\"order_id\": \"4508\"}`.",
+   "p_in": 353,
+   "p_out": 1566,
+   "latency_ms": 47777,
+   "resp_id": "gen-1787608154-1Wslr0wJ6tXmXFObwC0f",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

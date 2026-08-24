@@ -1,0 +1,55 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 36198,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 1241,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"9279\",\n        \"reason\": null\n      }\n    }\n  ],\n  \"unavailable\": [\n    \"refund to original card \u2014 no refund/payment-issuance tool exists in the registry\"\n  ]\n}\n```\n\nNotes on details and gaps:\n\n- **Cancellation**: `orders.cancel` covers cancelling order #9279 (passed as `\"9279\"`). No prior `orders.lookup` is needed since the order ID is given directly.\n- **Missing parameter**: `orders.cancel` requires a `reason`, but the request does not specify one. It is left as `null` rather than guessed \u2014 it must be supplied before the call can actually execute.\n- **Refund**: Explicitly unavailable. The registry contains only calendar booking, email, tracker, and order lookup/cancel tools; nothing issues refunds or touches payment cards. This part of the request cannot be fulfilled with the listed tools.\n- **No other actions implied**: The request mentions no notification email, tracker ticket, or scheduling, so none are added.",
+   "p_in": 354,
+   "p_out": 1241,
+   "latency_ms": 36198,
+   "resp_id": "gen-1787608185-MeNBpDvYDmaZAVr7LkWS",
+   "transport_retries": 4,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "unavailable"
+ ]
+}

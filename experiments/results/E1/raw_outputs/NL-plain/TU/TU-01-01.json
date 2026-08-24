@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 22969,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 261,
+  "v_out": 839,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"calendar.book\",\n      \"args\": {\n        \"room_id\": \"Cyrus\",\n        \"date\": \"2026-08-25\",\n        \"start_min\": 900,\n        \"end_min\": 960,\n        \"attendee_count\": 9,\n        \"needs_projector\": false\n      }\n    }\n  ]\n}\n```\n\nNotes on resolution and gaps:\n- **Date:** \"Tomorrow\" relative to today, 2026-08-24 (Monday), resolves to **2026-08-25**.\n- **Times:** 15:00\u201316:00 \u2192 **900\u2013960** minutes since midnight.\n- **Room / attendees:** Room \"Cyrus\", **9** attendees.\n- **Unspecified detail:** Whether a projector is needed is **not stated anywhere in the source or request**, yet `needs_projector` is a required boolean argument of `calendar.book`. I have set it to `false` as a neutral default rather than assuming one is needed \u2014 please confirm and re-issue with `true` if a projector is required.\n- No other actions (email, tracker tickets, order lookups/cancellations) are implied by the request.",
+   "p_in": 346,
+   "p_out": 839,
+   "latency_ms": 22969,
+   "resp_id": "gen-1787607709-YHM21efatibwbx3q9Znq",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

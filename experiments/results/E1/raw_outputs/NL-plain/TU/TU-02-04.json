@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-04",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 28793,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 291,
+  "v_out": 1150,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"cache eviction storm\",\n        \"severity\": \"S2\",\n        \"component\": \"billing\",\n        \"assignee\": \"ingrid\",\n        \"due_date\": \"2026-08-28\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"support@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"cache eviction storm S2\",\n        \"body\": \"An S2 tracker ticket titled 'cache eviction storm' has been filed (component: billing, assignee: ingrid, due: 2026-08-28). Ticket ID: {{tracker.create[0].ticket_id}}.\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details captured and resolved:\n\n- **Date resolution:** Today is Monday 2026-08-24, so \"due Friday\" resolves to **2026-08-28** (same week), formatted as ISO.\n- **Ordering:** `tracker.create` must execute before `mail.send`, because the email body must reference the ticket ID.\n- **Ticket ID dependency:** The actual ticket ID does not exist until the first call returns, so the body uses the placeholder `{{tracker.create[0].ticket_id}}` to be substituted at execution time. No literal ticket ID was provided in the source, so none was invented.\n- **Email fields:** Recipient `support@corp.example`, subject `'cache eviction storm S2'`, and priority `high` are taken directly from the request. `cc` was not specified, so it is set to an empty list rather than guessed.\n- **Unused tools:** No calendar booking or order lookup/cancellation is called for by this request, so none appear.",
+   "p_in": 376,
+   "p_out": 1150,
+   "latency_ms": 28793,
+   "resp_id": "gen-1787607759-cpcv9cXxe0EnOujdjfdk",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

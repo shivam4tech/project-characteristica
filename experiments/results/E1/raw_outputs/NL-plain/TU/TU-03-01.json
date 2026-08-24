@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 50465,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 7, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 1561,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"unavailable\": [\n    \"mail.send(to, cc, subject, body, priority) has no attachment/file parameter, so the roadmap deck file itself cannot be attached or transmitted\"\n  ],\n  \"clarify\": {\n    \"missing\": [\n      \"investor email addresses (recipients for mail.send 'to')\",\n      \"location/shareable link or content of the roadmap deck (no file source is provided)\"\n    ],\n    \"question\": \"Who are the investors (their email addresses) that should receive the roadmap deck? Also, since mail.send cannot attach files, please provide a shareable link to the deck (or its content) so it can be included in the message body.\"\n  }\n}\n```\n\nNotes on why no tool calls were emitted:\n- **Recipients:** \"the investors\" is never enumerated anywhere in the source; `mail.send` requires explicit `to` addresses.\n- **Capability gap:** the mock registry's `mail.send` accepts only `to`, `cc`, `subject`, `body`, and `priority` \u2014 there is no way to attach a deck file, so the request as literally stated (\"email the deck\") cannot be fulfilled even once recipients are known.\n- No calendar, tracker, or orders tools are relevant to this request, and no relative dates need resolving (today = 2026-08-24 is unused here).",
+   "p_in": 354,
+   "p_out": 1561,
+   "latency_ms": 50465,
+   "resp_id": "gen-1787607890-qKt8S411O0iNvPqdJwHB",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

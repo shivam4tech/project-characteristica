@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 18961,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 261,
+  "v_out": 709,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"calendar.book\",\n      \"args\": {\n        \"room_id\": \"Atlas\",\n        \"date\": \"2026-08-24\",\n        \"start_min\": 900,\n        \"end_min\": 960,\n        \"attendee_count\": 5,\n        \"needs_projector\": false\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- Date resolved from header: \"today\" = 2026-08-24.\n- Times converted to minutes since midnight: 15:00 \u2192 900, 16:00 \u2192 960.\n- **Unspecified input:** the request does not state whether a projector is needed. `needs_projector` is a required boolean in the tool signature, so `false` was used as the conservative default \u2014 confirm if a projector is actually required.\n- No other tools (mail, tracker, orders) are relevant to this request.",
+   "p_in": 346,
+   "p_out": 709,
+   "latency_ms": 18961,
+   "resp_id": "gen-1787607691-E9FO7GAVkrwEUS7pFbY0",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

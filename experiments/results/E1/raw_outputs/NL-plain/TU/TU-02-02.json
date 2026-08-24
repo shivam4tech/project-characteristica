@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 40692,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 294,
+  "v_out": 1212,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"webhook retries exhausted\",\n        \"severity\": \"S3\",\n        \"component\": \"search\",\n        \"assignee\": \"dana\",\n        \"due_date\": \"2026-08-28\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"sre@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"webhook retries exhausted S3\",\n        \"body\": \"Filed S3 tracker ticket 'webhook retries exhausted' (component: search, assignee: dana, due 2026-08-28). Ticket ID: {{tracker.create.result.ticket_id}}\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes on resolution:\n- **Due date**: Today is Monday 2026-08-24, so \"Friday\" resolves to **2026-08-28**.\n- **Ordering**: `tracker.create` must run first so its resulting ticket ID exists; the email body references that ID via the placeholder `{{tracker.create.result.ticket_id}}` since the actual ID is generated at runtime.\n- **Unspecified details**: No cc recipients were specified (emitted as empty list), and no specific email body wording was given beyond requiring the ticket-ID reference and subject line.",
+   "p_in": 379,
+   "p_out": 1212,
+   "latency_ms": 40692,
+   "resp_id": "gen-1787607743-33PMnIfuF0g7ZVCaD3BN",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

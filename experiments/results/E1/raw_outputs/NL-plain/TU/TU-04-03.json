@@ -1,0 +1,55 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 58677,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 268,
+  "v_out": 1540,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"1247\",\n        \"reason\": \"\"\n      }\n    }\n  ],\n  \"unavailable\": [\n    \"refund to original card\"\n  ]\n}\n```\n\nNotes on how this was derived:\n\n- **Cancellation:** `orders.cancel(order_id, reason)` exists in the registry, so the cancel half of the request is executable. Order ID taken from the request (\"#1247\").\n- **Cancellation reason:** Not specified anywhere in the source material. Per your instruction not to guess, an empty string is passed rather than an invented reason \u2014 flag this if a real reason is needed.\n- **Refund:** No refund/payment tool exists in the registry (the only tools are `calendar.book`, `mail.send`, `tracker.create`, `tracker.update`, `orders.lookup`, `orders.cancel`). Issuing a refund to the original card is therefore listed under `\"unavailable\"` rather than faked via `mail.send` (an email would only *notify*, not actually refund). The registry also gives no indication that cancellation triggers an automatic refund, so that cannot be assumed either.\n- **`orders.lookup`:** Not included, since the order ID is already supplied directly; adding a verification lookup was not requested.",
+   "p_in": 353,
+   "p_out": 1540,
+   "latency_ms": 58677,
+   "resp_id": "gen-1787608107-euiwPbh81FuFROFsoL4v",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "unavailable"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-07",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 48988,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 11, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1624,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"recipient email address(es) for the customer advisory board (no 'to'/'cc' addresses are specified anywhere in the source)\",\n      \"the pricing sheet itself \u2014 its content or a file/reference to forward (nothing about a pricing sheet appears in the source)\",\n      \"desired subject line and any message body text (not specified; defaults would otherwise have to be guessed)\"\n    ],\n    \"question\": \"Please provide (1) the customer advisory board's email address(es), and (2) the pricing sheet content or file to send. Also note: the registry's mail.send(to, cc, subject, body, priority) has no attachment parameter, so the sheet can only be forwarded by pasting its contents into the email body \u2014 please confirm that is acceptable, and provide the sheet text.\"\n  },\n  \"unavailable\": [\n    \"attaching/sending a file with an email \u2014 mail.send supports only to, cc, subject, body, and priority; there is no attachment capability in the mock registry\"\n  ]\n}\n```\n\nNotes on resolution:\n- No tool call was emitted because every required input for `mail.send` specific to this request (recipients, sheet content) is absent from the source.\n- No relative dates needed resolving; today's date (2026-08-24) is irrelevant to this request.\n- All other registry tools (calendar.book, tracker.*, orders.*) are unrelated to forwarding a document and were not used.",
+   "p_in": 356,
+   "p_out": 1624,
+   "latency_ms": 48988,
+   "resp_id": "gen-1787607984-kjlKq2LPFppskUhBwROB",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}
