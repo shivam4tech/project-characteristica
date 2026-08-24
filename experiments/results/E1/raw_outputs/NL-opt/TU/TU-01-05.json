@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 52675,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"why\": \"no book call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 268,
+  "v_out": 1692,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\"calls\":[{\"tool\":\"CLARIFY\",\"args\":{\"missing\":\"calendar.book: needs_projector (bool)\",\"note\":\"All other arguments are grounded in the source (room_id=Atlas, date=2026-08-24, start_min=900 [15:00], end_min=960 [16:00], attendee_count=5), but the request does not state whether the booking needs a projector, and the registry defines needs_projector as a required bool with no default. Per no-silent-guess rules, emitting CLARIFY instead of assuming false.\"}}]}\n```\n\nClarifying note: Once the requester confirms `needs_projector`, the resolved call is `calendar.book(room_id=\"Atlas\", date=\"2026-08-24\", start_min=900, end_min=960, attendee_count=5, needs_projector=<true|false>)`.",
+   "p_in": 717,
+   "p_out": 1692,
+   "latency_ms": 52675,
+   "resp_id": "gen-1787608473-9P579QB4hauzgut3vZji",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

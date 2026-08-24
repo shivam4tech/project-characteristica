@@ -1,0 +1,56 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 50399,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_sum_exact\": true, \"h2_infra_floor\": true, \"h3_training_cap\": true, \"h4_ev_tool_cap\": true, \"h5_veto\": true, \"s1_training_pref\": true, \"s2_events_headroom\": true, \"s3_infra_headroom\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 267,
+  "v_out": 1696,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"infra\":6900,\"tooling\":4200,\"training\":4400,\"events\":3500}",
+   "p_in": 656,
+   "p_out": 1696,
+   "latency_ms": 50399,
+   "resp_id": "gen-1787612509-EUys7bnPBu1o8l6LX6gZ",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "events",
+  "infra",
+  "tooling",
+  "training"
+ ]
+}

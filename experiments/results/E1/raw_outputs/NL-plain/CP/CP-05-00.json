@@ -1,0 +1,58 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 42637,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_sum_exact\": true, \"h2_infra_floor\": true, \"h3_training_cap\": true, \"h4_ev_tool_cap\": true, \"h5_veto\": true, \"s1_training_pref\": true, \"s2_events_headroom\": true, \"s3_infra_headroom\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 267,
+  "v_out": 1620,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"infra\": 5000,\n  \"tooling\": 2000,\n  \"training\": 2500,\n  \"events\": 2500\n}\n```\n\n**Verification against all constraints:**\n\nHard constraints:\n- Sum: 5000 + 2000 + 2500 + 2500 = **\u20ac12,000** exactly \u2713\n- infra \u2265 \u20ac4,000: 5000 \u2713\n- training \u2264 \u20ac3,000 (25%): 2500 \u2713\n- events + tooling \u2264 \u20ac5,000: 2500 + 2000 = 4500 \u2713\n- No line exceeds \u20ac6,000 (lead veto): max line is 5000 \u2713\n\nSoft preferences (lexicographic), all satisfied:\n1. training \u2265 \u20ac1,500: 2500 \u2713\n2. Unused events+tooling headroom \u2265 \u20ac250: 5000 \u2212 4500 = **\u20ac500** \u2713\n3. infra \u2264 \u20ac5,000: 5000 \u2713\n\nNote: the source specifies these soft preferences as thresholds rather than strict optimization targets, so any allocation meeting all three is valid; this one does so with round figures.",
+   "p_in": 352,
+   "p_out": 1620,
+   "latency_ms": 42637,
+   "resp_id": "gen-1787609913-K386UfDhMmRXT1epiIGG",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "events",
+  "infra",
+  "steps",
+  "tooling",
+  "training"
+ ]
+}

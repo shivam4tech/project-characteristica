@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-07",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 57728,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 299,
+  "v_out": 1709,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"cache eviction storm\",\n        \"severity\": \"S3\",\n        \"component\": \"billing\",\n        \"assignee\": \"dana\",\n        \"due_date\": \"2026-08-26\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"sre@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"cache eviction storm S3\",\n        \"body\": \"{{calls[0].result.ticket_id}}\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- \"due Wednesday\" resolved against header date 2026-08-24 (Monday) \u2192 2026-08-26.\n- `cc` was not specified in the source; emitted as empty list rather than fabricated addresses.\n- The email body must reference the ticket id, which does not exist until `tracker.create` returns; it is therefore emitted as the dependency placeholder `{{calls[0].result.ticket_id}}` (resolves to the id returned by call 1). Exact body wording beyond the ticket-id reference was unspecified in the source, so no additional prose was invented.\n- Ordering is mandatory: the ticket must be created before the email so its id can be referenced.",
+   "p_in": 748,
+   "p_out": 1709,
+   "latency_ms": 57728,
+   "resp_id": "gen-1787608677-fGTo988AS9regenBPfB1",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

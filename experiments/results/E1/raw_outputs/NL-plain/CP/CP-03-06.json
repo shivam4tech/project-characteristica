@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 71213,
+  "conv_lat_ms": 0,
+  "score": 0.4286,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 4, \"h1_branch_first\": true, \"h2_dry_before_tag\": false, \"h3_retry_bound\": false, \"h4_notes_after_tag\": false, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 238,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "**Plan artifact \u2014 v1.3.3 release checklist (resolved as of 2026-08-24, Monday)**\n\n1. Verify that all merge-window PRs have landed. Do not proceed until this is confirmed.\n2. Cut the release branch. (Permitted only after step 1 is complete.)\n3. Run the migration dry-run against a staging snapshot. (Required to precede tagging.)\n4. Evaluate the dry-run result:\n   - **If clean:** proceed to step 5.\n   - **If not clean:** fix forward, then re-run the migration dry-run against a staging snapshot exactly once (maximum one retry \u2014 no second retry is permitted).\n     - **If the retry is clean:** proceed to step 5.\n     - **If the retry is also not clean:** stop. The source specifies no action beyond the single",
+   "p_in": 323,
+   "p_out": 2048,
+   "latency_ms": 71213,
+   "resp_id": "gen-1787609636-Vjmrdv0QcokB9t2dNiIV",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "steps"
+ ]
+}

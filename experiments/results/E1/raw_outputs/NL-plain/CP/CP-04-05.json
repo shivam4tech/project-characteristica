@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "CP",
+  "template": "CP-04",
+  "item_id": "CP-04-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 34338,
+  "conv_lat_ms": 0,
+  "score": 0.5,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 2, \"h1_all_seated_once\": false, \"h2_host_seat1\": true, \"h3_not_adj_AB\": true, \"h4_not_adj_CD\": true, \"h5_adj_EF\": false, \"s1_GH_pref\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 242,
+  "v_out": 765,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "seating: E, A, C, J, H, B, F, I, D, G",
+   "p_in": 327,
+   "p_out": 765,
+   "latency_ms": 34338,
+   "resp_id": "gen-1787609853-EwYfpONjiUKO3cOCKZgo",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "seating"
+ ]
+}

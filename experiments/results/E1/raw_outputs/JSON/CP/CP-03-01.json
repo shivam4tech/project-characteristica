@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 20359,
+  "conv_lat_ms": 0,
+  "score": 0.8571,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 1, \"h1_branch_first\": true, \"h2_dry_before_tag\": true, \"h3_retry_bound\": false, \"h4_notes_after_tag\": true, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 235,
+  "v_out": 626,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"steps\":[\"Confirm all merge-window PRs have landed\",\"Cut the release branch\",\"Run a migration dry-run against a staging snapshot\",\"If the dry-run fails, fix forward and retry the dry-run once (maximum one retry)\",\"Tag v1.8.4 only if the dry-run is clean\",\"Obtain legal sign-off because the changelog mentions pricing\",\"Publish release notes after tagging\",\"Update the support playbook\",\"Announce publicly only after the support playbook is updated\"]}",
+   "p_in": 624,
+   "p_out": 626,
+   "latency_ms": 20359,
+   "resp_id": "gen-1787612177-RS5w3MkrGHQQ4TRLCkRk",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "steps"
+ ]
+}

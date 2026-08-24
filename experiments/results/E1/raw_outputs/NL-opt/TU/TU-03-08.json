@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 53982,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 9, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 276,
+  "v_out": 1566,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"mail.send(to): recipient email address(es) for \"the board\" \u2014 no board contact addresses appear in the source\",\n      \"mail.send(body): the quarterly numbers content itself \u2014 no figures, document, or attachment source is present in the source text\",\n      \"mail.send(subject): no subject line specified in the source\",\n      \"mail.send(priority): required enum value (low|normal|high) \u2014 source states no urgency level, so it cannot be assigned\"\n    ],\n    \"question\": \"Forwarding requires mail.send, but the following are undetermined: which board member email address(es) should receive it, what are the actual quarterly numbers (body content or attachment reference), what subject line should be used, and what priority (low/normal/high) applies?\"\n  }\n}\n```",
+   "p_in": 725,
+   "p_out": 1566,
+   "latency_ms": 53982,
+   "resp_id": "gen-1787608905-S5iNovt3g5K9HkMEKmDF",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 49292,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"sev\": true, \"title\": true, \"comp\": true, \"asg\": true, \"due\": true, \"ref\": true, \"prio\": true, \"to\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 299,
+  "v_out": 1573,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"nightly export failing\",\n        \"severity\": \"S3\",\n        \"component\": \"billing\",\n        \"assignee\": \"marco\",\n        \"due_date\": \"2026-08-28\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"support@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"nightly export failing S3\",\n        \"body\": \"Ticket $TICKET_ID: nightly export failing (component billing, assignee marco, due 2026-08-28).\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- `due_date` resolved from \"Friday\" against header date 2026-08-24 (Monday) \u2192 2026-08-28.\n- `$TICKET_ID` is a placeholder bound to the `ticket_id` returned by `calls[0]`; the actual id does not exist in the source and must not be fabricated, so no concrete value is emitted.\n- Ordering is mandatory: `mail.send` depends on the ticket id produced by `tracker.create`, so create must execute first.\n- `cc` is empty because the source specifies no CC recipients (schema-required field left empty, not invented).",
+   "p_in": 748,
+   "p_out": 1573,
+   "latency_ms": 49292,
+   "resp_id": "gen-1787608549-hYFyKZDj6UbVSTscIT3F",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

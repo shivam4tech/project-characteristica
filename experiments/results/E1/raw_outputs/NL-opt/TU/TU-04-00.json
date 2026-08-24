@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 70640,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"cancel_ok\": false, \"gap_signal\": false, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 276,
+  "v_out": 2048,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "",
+   "p_in": 725,
+   "p_out": 2048,
+   "latency_ms": 70640,
+   "resp_id": "gen-1787608951-zj5aW90NYo0VfGIuggpm",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

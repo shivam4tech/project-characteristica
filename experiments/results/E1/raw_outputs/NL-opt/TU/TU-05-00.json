@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 58392,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 278,
+  "v_out": 1671,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"placed_after\": \"2026-06-01\",\n        \"status_filter\": \"processing\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"$1.results[oldest_by_placed_date].order_id\",\n        \"reason\": \"UNKNOWN\"\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- Call 2 depends on call 1: `order_id` is the order from step 1's results with the earliest placement date (\"the oldest one\"); it cannot be resolved before the lookup executes.\n- `reason` for `orders.cancel` is not stated anywhere in the source \u2192 emitted as UNKNOWN rather than fabricated. If the registry rejects UNKNOWN reasons, CLARIFY: cancellation reason is missing.\n- No other tools, dates, or entities were implied by the source; none added.",
+   "p_in": 727,
+   "p_out": 1671,
+   "latency_ms": 58392,
+   "resp_id": "gen-1787609144-vyPEFc0yq5ToUeF4P2dO",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 53539,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 298,
+  "v_out": 1941,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"search indexer crash\",\n        \"severity\": \"S3\",\n        \"component\": \"gateway\",\n        \"assignee\": \"dana\",\n        \"due_date\": \"2026-08-28\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"ops@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"search indexer crash S3\",\n        \"body\": \"Filed S3 ticket 'search indexer crash' (component gateway, assignee dana, due 2026-08-28). Ticket id: {{calls[0].ticket_id}}\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- **due_date**: \"Friday\" resolved against header date 2026-08-24 (Monday) \u2192 2026-08-28.\n- **Ordering**: `mail.send` depends on `tracker.create` because the body must reference the ticket id. The ticket id does not exist until call 1 executes, so `{{calls[0].ticket_id}}` is a binding to call 1's result \u2014 not a fabricated value. If your executor cannot resolve cross-call bindings, treat call 2 as `CLARIFY: missing ticket_id for mail.send body` pending completion of call 1.\n- **cc**: `[]` \u2014 source specifies no CC recipients.\n- **priority**: `high` \u2014 explicitly stated in source (\"high priority\").\n- No exclusions, conditions, or priorities beyond those stated; no capability in the registry is unavailable for these two calls.",
+   "p_in": 747,
+   "p_out": 1941,
+   "latency_ms": 53539,
+   "resp_id": "gen-1787608668-KpeHzbDmM4NkoIyMJ2Ud",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

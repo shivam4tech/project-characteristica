@@ -1,0 +1,56 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 65912,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 4, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 276,
+  "v_out": 1585,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [],\n  \"clarify\": [\n    \"CLARIFY: orders.cancel(order_id=9279) cannot be emitted because its required argument 'reason' is not stated anywhere in the source.\"\n  ],\n  \"unavailable\": [\n    \"UNAVAILABLE: issuing a refund to the original card \u2014 no refund capability exists in the registry (only calendar.book, mail.send, tracker.create, tracker.update, orders.lookup, orders.cancel).\"\n  ]\n}\n```\n\nNotes (grounding):\n- Order ID `#9279` is grounded in the source; it maps to `order_id=9279`.\n- `orders.cancel` requires `reason` (no `?` marker \u21d2 mandatory), and no cancellation reason appears in the source, so per the rules the call is replaced by CLARIFY rather than fabricated.\n- No tool in the registry performs refunds, so the refund step is reported as UNAVAILABLE.\n- No other calls (lookup, mail, tracker, calendar) are implied by the request, so none are added.",
+   "p_in": 725,
+   "p_out": 1585,
+   "latency_ms": 65912,
+   "resp_id": "gen-1787608959-05lEtPuGkpIN8g7MtqPf",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "clarify",
+  "unavailable"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 48932,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1291,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"status_filter\": \"processing\",\n        \"placed_after\": \"2026-07-01\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"${calls[0].result: order_id of the entry with the earliest placed date}\",\n        \"reason\": \"${UNSPECIFIED}\"\n      }\n    }\n  ]\n}\n```\n\nNotes on what is resolved vs. unspecified:\n\n- **Call 1** fully matches the request: customer email `gunnar@example.com`, status filter `processing`, placed after `2026-07-01` (an absolute date, so no relative-date resolution was needed).\n- **Call 2 depends on Call 1's output**: the registry does not guarantee sort order, so the `order_id` must be taken from the lookup results by selecting the record with the earliest placed/placement timestamp. It cannot be hardcoded now.\n- **Cancellation reason is not specified anywhere in the source material.** The `orders.cancel` signature requires a `reason`, so a value must be obtained from the requester (or an approved default policy) before execution rather than guessed here.\n- No other tools (calendar, mail, tracker) are relevant to this request.",
+   "p_in": 356,
+   "p_out": 1291,
+   "latency_ms": 48932,
+   "resp_id": "gen-1787608424-Dz692tHBsRBppUupyTfk",
+   "transport_retries": 3,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

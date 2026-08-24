@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 49342,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1649,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"status_filter\": \"packed\",\n        \"placed_after\": \"2026-05-15\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"<<ref: calls[0].result -> the order with the earliest placed_date>>\",\n        \"reason\": \"<<NOT SPECIFIED in request -- placeholder pending confirmation>>\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details captured and gaps:\n\n- **Call 1** encodes every constraint from the request exactly: customer email `gunnar@example.com`, status `packed` (\"still in 'packed'\"), and `placed_after` 2026-05-15 (an absolute date, so no resolution against today's date of 2026-08-24 was needed). No other filters were specified, so none are added.\n- **Call 2** depends on Call 1's output: \"oldest\" means the returned order with the earliest placement date. Its `order_id` cannot be known until the lookup runs, hence the reference placeholder. If two or more results share the same earliest placement date, no tie-break rule was specified.\n- **Cancellation reason**: the request does not state why the order should be cancelled, but `orders.cancel` requires a `reason`. Rather than guessing (e.g., inventing \"customer changed mind\"), it is left as an explicit placeholder that must be filled in before execution.\n- No additional calls (email, tracker ticket, etc.) were requested, so none are included.",
+   "p_in": 356,
+   "p_out": 1649,
+   "latency_ms": 49342,
+   "resp_id": "gen-1787608284-In9zdidH1Z7OMGjapkir",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

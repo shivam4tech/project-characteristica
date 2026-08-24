@@ -1,0 +1,55 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-09",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 61472,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 1959,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "**Analysis**\n\n- Requested actions: (1) cancel order #6738, (2) issue a refund to the original card.\n- Registry check: `orders.cancel(order_id, reason)` exists \u2192 covers action 1. **No refund/payment tool exists** (`calendar.book`, `mail.send`, `tracker.create`, `tracker.update`, `orders.lookup`, `orders.cancel` only) \u2192 action 2 must be flagged as unavailable.\n- Unspecified detail: no cancellation reason is given anywhere in the source, so I am passing an empty string rather than inventing one.\n- Order ID normalized from \"#6738\" to \"6738\".\n- No dates/times/amounts/attendees apply to this request; today's date (2026\u201108\u201124) is not needed by any call.\n\n**Answer artifact**\n\n```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"6738\",\n        \"reason\": \"\"\n      }\n    }\n  ],\n  \"unavailable\": [\n    \"refund\"\n  ]\n}\n```\n\n**Explicit gaps**\n- Refund to original card: no matching tool in the registry \u2014 reported under `\"unavailable\"` rather than approximated with `mail.send` or `tracker.create`.\n- Cancellation reason: not specified in the source; supplied as `\"\"` instead of guessing.",
+   "p_in": 354,
+   "p_out": 1959,
+   "latency_ms": 61472,
+   "resp_id": "gen-1787608221-EadMQWw0U8eDTivSifQz",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "unavailable"
+ ]
+}

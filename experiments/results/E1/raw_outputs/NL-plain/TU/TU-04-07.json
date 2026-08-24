@@ -1,0 +1,55 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-07",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 59429,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 1813,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"4431\",\n        \"reason\": \"\"\n      }\n    }\n  ],\n  \"unavailable\": [\n    \"refund\"\n  ]\n}\n```\n\nNotes on how this was derived:\n\n- **Cancellation (doable):** `orders.cancel` exists in the registry and matches the request. Order ID `4431` comes directly from the request (\"#4431\"). The `reason` argument is required by the tool signature but **no cancellation reason is specified anywhere in the source**, so it is left as an empty string rather than invented.\n- **Refund to original card (not possible):** The mock registry contains only `calendar.book`, `mail.send`, `tracker.create`, `tracker.update`, `orders.lookup`, and `orders.cancel`. There is **no payment/refund tool** of any kind, so the refund portion of the request is reported under `\"unavailable\"` rather than faked with an unrelated tool.\n- **No lookup performed:** The request supplies a specific order ID, so a preliminary `orders.lookup` was not required; it could be added if order verification/status confirmation is desired before cancelling.\n- **No workaround steps emitted:** Actions like `tracker.create` (to log a manual refund follow-up) or `mail.send` (to notify a billing team) were *not* included because the request did not ask for them \u2014 flagging them here as possible human follow-ups instead.\n- No relative dates appear in the request, so today's date (2026-08-24) is not needed for any argument.",
+   "p_in": 354,
+   "p_out": 1813,
+   "latency_ms": 59429,
+   "resp_id": "gen-1787608223-EFV0qNpLhN8tH0W5qtQE",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "unavailable"
+ ]
+}

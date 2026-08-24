@@ -1,0 +1,56 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 87908,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 3, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 275,
+  "v_out": 1951,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [],\n  \"clarify\": [\n    \"orders.cancel(order_id=1247): required argument 'reason' has no value stated in the source \u2014 provide the cancellation reason before the call can be emitted\"\n  ],\n  \"unavailable\": [\n    \"refund to original card: no refund capability exists in the registry (available tools are calendar.book, mail.send, tracker.create, tracker.update, orders.lookup, orders.cancel)\"\n  ]\n}\n```\n\nNotes:\n- Order id resolved from \"#1247\" \u2192 `1247`; no other argument values were invented.\n- `orders.cancel` is held pending the missing `reason` (marked non-optional in the registry signature); no substitute tool (e.g., mail/tracker) was repurposed, since none performs refunds.",
+   "p_in": 724,
+   "p_out": 1951,
+   "latency_ms": 87908,
+   "resp_id": "gen-1787609015-kbWhzbV57hrlnhKCjowh",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "clarify",
+  "unavailable"
+ ]
+}

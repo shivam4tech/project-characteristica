@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-04",
+  "item_id": "TU-04-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 59785,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 5, \"cancel_ok\": true, \"gap_signal\": true, \"hallucination\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 275,
+  "v_out": 1759,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [],\n  \"clarify\": [\n    \"orders.cancel(order_id=\"1734\"): argument 'reason' is required by the registry signature (no '?' optional marker), but no cancellation reason is stated in the source \u2014 provide the reason to issue the call\"\n  ],\n  \"unavailable\": [\n    \"refund to original card\"\n  ]\n}\n```\n\nNotes (grounded in source):\n- Order cancellation maps to `orders.cancel`, and `order_id=\"1734\"` is fully determined from the request text (\"Cancel order #1734\"); however, `reason` is a required argument with no value present in the source, so per the no-fabrication rule the call is held pending clarification rather than emitted with an invented reason.\n- No tool in the mock registry performs refunds (`calendar.book`, `mail.send`, `tracker.create`, `tracker.update`, `orders.lookup`, `orders.cancel` only); therefore \"issue a refund to the original card\" is recorded as UNAVAILABLE, not approximated with an unrelated tool.",
+   "p_in": 724,
+   "p_out": 1759,
+   "latency_ms": 59785,
+   "resp_id": "gen-1787608913-irC0IwKEzXIKH91b6OoT",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

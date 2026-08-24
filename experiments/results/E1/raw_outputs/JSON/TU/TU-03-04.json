@@ -1,0 +1,55 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-04",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 14929,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 269,
+  "v_out": 226,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"clarify\":{\"missing\":[\"board member email addresses\",\"quarterly numbers content\"],\"question\":\"What email addresses should receive the quarterly numbers, and what are the figures to include in the message?\"}}",
+   "p_in": 658,
+   "p_out": 226,
+   "latency_ms": 14929,
+   "resp_id": "gen-1787609755-0NwEGni4dd6Tv3czFkcT",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "clarify"
+ ]
+}

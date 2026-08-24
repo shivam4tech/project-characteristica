@@ -1,0 +1,58 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 65550,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_sum_exact\": true, \"h2_infra_floor\": true, \"h3_training_cap\": true, \"h4_ev_tool_cap\": true, \"h5_veto\": true, \"s1_training_pref\": true, \"s2_events_headroom\": true, \"s3_infra_headroom\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 274,
+  "v_out": 1685,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"infra\": 6800,\n  \"tooling\": 3900,\n  \"training\": 4800,\n  \"events\": 4000\n}\n```\n\nConstraint check (all grounded in source):\n- Sum: 6800 + 3900 + 4800 + 4000 = 19,500 \u2713 (exact-total constraint met)\n- infra \u2265 \u20ac6,400: 6,800 \u2713\n- training \u2264 \u20ac4,900: 4,800 \u2713\n- events + tooling \u2264 \u20ac8,200: 7,900 \u2713\n- No line exceeds \u20ac9,800 (lead veto): max line = 6,800 \u2713\n\nSoft preferences (ranked lexicographically), all satisfied:\n1. training \u2265 \u20ac2,400: 4,800 \u2713\n2. Unused events+tooling headroom \u2265 \u20ac250: 8,200 \u2212 7,900 = \u20ac300 \u2713\n3. infra \u2264 \u20ac7,400: 6,800 \u2713",
+   "p_in": 723,
+   "p_out": 1685,
+   "latency_ms": 65550,
+   "resp_id": "gen-1787611208-B5h7taCRJEs19RGJidZf",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "events",
+  "infra",
+  "steps",
+  "tooling",
+  "training"
+ ]
+}

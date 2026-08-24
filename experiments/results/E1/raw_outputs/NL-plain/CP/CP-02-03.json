@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "CP",
+  "template": "CP-02",
+  "item_id": "CP-02-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 79910,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 5, \"h1_skills\": false, \"h2_coverage\": false, \"h3_caps\": false, \"h4_t1_before_t3\": false, \"h5_t4_restriction\": false, \"s1_t2_early\": false, \"s2_balance\": false, \"s3_low_switching\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 299,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "## Reasoning\n\n**Forced placements (skill constraints):**\n- T2 needs python **and** sql \u2192 only **Ana** qualifies. T2 \u2192 Ana (5 pts).\n- T4 (rust) must go to Ben or Chao.\n\n**Case analysis on T4:**\n- *T4 \u2192 Chao:* Then T1 (python) can't go to Ana (5+3=8 fills her, but then T3 (sql) has nowhere legal: Ana full, Chao at 6+4=10 > 9). Trying T1 \u2192 Ben instead: T3 must go to Ana (9 > 8 \u2717) or Chao (10 > 9 \u2717). **Infeasible.**\n- *T4 \u2192 Ben:* Ben reaches 6/7 and can't take any other ticket (all remaining are \u22653 pts). So T1 \u2192 Ana (3+5=8, exactly at capacity). Ana is now full, forcing T3 \u2192 Chao. T5 (any skill) can't go to Ana (full) or Ben (6+3=9 > 7), so T5 \u2192 Chao (4+3=7 \u2264 ",
+   "p_in": 384,
+   "p_out": 2048,
+   "latency_ms": 79910,
+   "resp_id": "gen-1787609325-oCVT1hLzyh4CA8swKqLR",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "steps"
+ ]
+}

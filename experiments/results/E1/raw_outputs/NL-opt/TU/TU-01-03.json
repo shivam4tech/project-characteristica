@@ -1,0 +1,55 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 70486,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 268,
+  "v_out": 1850,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\"calls\":[{\"tool\":\"calendar.book\",\"args\":{\"room_id\":\"Atlas\",\"date\":\"2026-08-24\",\"start_min\":660,\"end_min\":720,\"attendee_count\":9,\"needs_projector\":null}}],\"clarify\":[\"needs_projector is a required argument of calendar.book but is not specified in the source; confirm whether the Atlas booking on 2026-08-24 11:00\u201312:00 for 9 people needs a projector (true/false) before execution.\"]}\n```\n\nNote: `start_min`=660 (11:00) and `end_min`=720 (12:00); date resolved from header \"today is 2026-08-24\". No value was guessed for `needs_projector` \u2014 it is flagged for clarification rather than defaulted.",
+   "p_in": 717,
+   "p_out": 1850,
+   "latency_ms": 70486,
+   "resp_id": "gen-1787608445-ApPDLxCj2RMdOtQARQnW",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls",
+  "clarify"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 57824,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 3, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1689,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"lina@example.com\",\n        \"placed_after\": \"2026-05-15\",\n        \"status_filter\": \"packed\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"$step1.results | select(status == \"packed\") | min_by(placed_date) | .order_id\",\n        \"reason\": \"<NOT SPECIFIED IN REQUEST>\"\n      }\n    }\n  ]\n}\n```\n\nNotes on how this was constructed and what remains unresolved:\n\n- **Ordering:** `orders.lookup` must execute first because the target `order_id` for cancellation is unknown until its results return; the cancel call references those results rather than a literal ID.\n- **Oldest selection:** The registry does not guarantee the lookup returns results sorted by placement date, so the reference explicitly selects the order with the earliest `placed_date` among the returned 'packed' orders, rather than assuming index 0.\n- **Unspecified \u2014 cancel reason:** The request says only \"cancel the oldest one\" and gives no reason. Since `orders.cancel` requires a `reason`, a placeholder is used; a real reason must be supplied before execution (e.g., confirmed with the requester).\n- **Boundary ambiguity:** \"Placed after 2026-05-15\" does not specify whether the boundary is inclusive or exclusive; the date is passed through verbatim as `placed_after`.\n- **Empty-result contingency:** If the lookup returns no matching orders, the cancel call cannot be executed and the requester should be informed.",
+   "p_in": 356,
+   "p_out": 1689,
+   "latency_ms": 57824,
+   "resp_id": "gen-1787608303-AlwoA73OS8Qrhs6lU0tu",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

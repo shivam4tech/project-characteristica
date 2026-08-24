@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 51142,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 300,
+  "v_out": 1855,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"webhook retries exhausted\",\n        \"severity\": \"S2\",\n        \"component\": \"gateway\",\n        \"assignee\": \"omar\",\n        \"due_date\": \"2026-08-26\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"support@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"webhook retries exhausted S2\",\n        \"body\": \"{{call_1.ticket_id}}\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- `due_date`: \"Wednesday\" resolved against header date 2026-08-24 (Monday) \u2192 **2026-08-26**.\n- Ordering matters: `tracker.create` must execute before `mail.send`, because the email body must reference the ticket id.\n- `body`: the source specifies only that the body must reference the ticket id; no other body content is given, so the body is emitted as a runtime binding (`{{call_1.ticket_id}}`) to the ticket id returned by call 1 rather than fabricated prose.\n- `cc` is empty (no cc stated in source); `priority` is \"high\" as explicitly stated.",
+   "p_in": 749,
+   "p_out": 1855,
+   "latency_ms": 51142,
+   "resp_id": "gen-1787608634-qUKRGucmQjUM94tFWB7c",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

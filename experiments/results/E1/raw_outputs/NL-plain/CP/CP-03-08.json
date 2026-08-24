@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 84271,
+  "conv_lat_ms": 0,
+  "score": 0.4286,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 4, \"h1_branch_first\": false, \"h2_dry_before_tag\": false, \"h3_retry_bound\": true, \"h4_notes_after_tag\": false, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 238,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "**Plan artifact \u2014 Release checklist execution for v3.7.1**\n\n1. Verify",
+   "p_in": 323,
+   "p_out": 2048,
+   "latency_ms": 84271,
+   "resp_id": "gen-1787609737-v3RnQyGxv0HBsq4JYomS",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "steps"
+ ]
+}

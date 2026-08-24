@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-05",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 43019,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1271,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"status_filter\": \"queued\",\n        \"placed_after\": \"2026-07-01\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"${calls[0].result -> order_id of the record with the EARLIEST placed date among the queued results}\",\n        \"reason\": \"<<UNSPECIFIED IN SOURCE>>\"\n      }\n    }\n  ]\n}\n```\n\nNotes on how this was derived and what remains unresolved:\n\n1. **Call 1** uses exactly the constraints given: customer email `gunnar@example.com`, status filter `'queued'`, placed after `2026-07-01`. No other filters were specified.\n2. **Call 2 depends on Call 1**: the specific `order_id` cannot be known until the lookup returns, so it is expressed as a reference to the oldest (earliest-placed) result of Call 1. If multiple queued orders share the same earliest placed date, the source does not specify a tie-breaking rule \u2014 that would need clarification before executing.\n3. **`reason` is required by `orders.cancel` but is not specified anywhere in the source material**, so it is left as an explicit placeholder rather than guessed. A value (e.g., \"requested by customer\") must be supplied before the call can be executed.\n4. No dates needed resolution against today's header date (2026-08-24), since the only date in the request (`2026-07-01`) is already absolute.",
+   "p_in": 356,
+   "p_out": 1271,
+   "latency_ms": 43019,
+   "resp_id": "gen-1787608334-KbVVykjlk2HKWhgUkD5C",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

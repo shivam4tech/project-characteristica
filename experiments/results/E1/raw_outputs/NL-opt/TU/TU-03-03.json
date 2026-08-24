@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-03",
+  "item_id": "TU-03-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 45908,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 5, \"asked\": true, \"recip\": true, \"content\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 278,
+  "v_out": 1178,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"clarify\": {\n    \"missing\": [\n      \"mail.send.to: email address(es) of the 'customer advisory board' \u2014 no address or distribution list is given in the source\",\n      \"mail.send.body: the pricing sheet itself (content or attachment reference) \u2014 not present in the source\",\n      \"mail.send.subject: no subject line specified\",\n      \"mail.send.priority: no priority stated in the source (cannot be assigned without fabrication)\"\n    ],\n    \"question\": \"Please provide the customer advisory board's email address(es), the pricing sheet content/attachment, a subject line, and the desired priority (low/normal/high) so the mail.send call can be issued.\"\n  }\n}\n```\n\nNote: `mail.send` exists in the registry, so no `unavailable` entry applies; the request cannot be executed because every required argument of the call is undetermined in the source.",
+   "p_in": 727,
+   "p_out": 1178,
+   "latency_ms": 45908,
+   "resp_id": "gen-1787608862-J09ee66oKOAMMTV2SGrn",
+   "transport_retries": 3,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

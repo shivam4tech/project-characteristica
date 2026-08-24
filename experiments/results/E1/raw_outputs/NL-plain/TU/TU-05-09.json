@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-09",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 69966,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"mateo@example.com\",\n        \"placed_after\": \"2026-05-15\",\n        \"status_filter\": \"packed\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"$calls[0].result \u2192 the returned order with the earliest placed_date\",\n        \"reason\": \"Requester-directed cancellation of the oldest packed order\"\n      }\n    }\n  ]\n}\n```\n\nNotes on what is resolved vs. not specified in the source:\n\n**Resolved from the source:**\n- Customer email: `mateo@example.com`\n- Placed-after cutoff: `2026-05-15` (absolute date given; today's header date 2026-08-24 requires no conversion)\n- Status filter: `packed`\n- Ordering: the lookup must run first; the cancel depends on its result, hence the `$calls[0]` reference rather than a hardcoded ID.\n\n**Not specified in the source (stated explicitly rather than guessed):**\n1. **Which order is \"oldest\"** cannot be known until the lookup returns; the plan selects the result with the earliest `placed_date`. The lookup result schema and whether results are pre-sorted are not defined in the registry, so this selection is an assumption.\n2. **Tie-breaking**: if two or more returned orders share the same earliest placed date, no rule is given for choosing between them.\n3. **Cancellation reason**: the requester supplied none. A descriptive placeholder reason reflecting the request is used; substitute the actual reason if one exists.\n4. **Empty-result case**: if the",
+   "p_in": 356,
+   "p_out": 2048,
+   "latency_ms": 69966,
+   "resp_id": "gen-1787608375-3qgt5epVT1mtkodLxw3L",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

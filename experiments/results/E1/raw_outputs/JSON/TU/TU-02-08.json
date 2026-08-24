@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 16488,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"sev\": true, \"title\": true, \"comp\": true, \"asg\": true, \"due\": true, \"ref\": true, \"prio\": true, \"to\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 292,
+  "v_out": 423,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"calls\":[{\"tool\":\"tracker.create\",\"args\":{\"title\":\"queue backlog growing\",\"severity\":\"S1\",\"component\":\"billing\",\"assignee\":\"dana\",\"due_date\":\"2026-08-28\"}},{\"tool\":\"mail.send\",\"args\":{\"to\":[\"sre@corp.example\"],\"cc\":[],\"subject\":\"queue backlog growing S1\",\"body\":\"An S1 ticket has been filed for 'queue backlog growing' in component billing, assigned to dana, due 2026-08-28. Ticket ID: UNKNOWN.\",\"priority\":\"high\"}}]}",
+   "p_in": 681,
+   "p_out": 423,
+   "latency_ms": 16488,
+   "resp_id": "gen-1787609664-Rro2z4vQsRfBaIv484Pe",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

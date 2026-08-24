@@ -1,0 +1,82 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-02",
+  "item_id": "CP-02-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 3,
+  "lat_total_ms": 203569,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_skills\": true, \"h2_coverage\": true, \"h3_caps\": true, \"h4_t1_before_t3\": true, \"h5_t4_restriction\": true, \"s1_t2_early\": true, \"s2_balance\": true, \"s3_low_switching\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 299,
+  "v_out": 2048,
+  "f_tok": 389,
+  "r_in": 1430,
+  "r_out": 3918,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "",
+   "p_in": 688,
+   "p_out": 2048,
+   "latency_ms": 58362,
+   "resp_id": "gen-1787612013-x3ghTj0Wx9naTL2pPRCP",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "JSON",
+   "ok": true,
+   "content": "",
+   "p_in": 715,
+   "p_out": 2048,
+   "latency_ms": 69805,
+   "resp_id": "gen-1787612072-WtToQbpEZeXuouxvWuCv",
+   "transport_retries": 0,
+   "note": "parse: no JSON object found",
+   "f_tok": 389
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 3,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"assign\":{\"T1\":\"Ben\",\"T2\":\"Ana\",\"T3\":\"Ana\",\"T4\":\"Chao\",\"T5\":\"Ben\"},\"order\":[\"T2\",\"T1\",\"T5\",\"T3\",\"T4\"]}",
+   "p_in": 715,
+   "p_out": 1870,
+   "latency_ms": 75402,
+   "resp_id": "gen-1787612141-PgkUSFCqxFUGXCFq10eA",
+   "transport_retries": 0,
+   "note": "parse: no JSON object found",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "assign",
+  "order"
+ ]
+}

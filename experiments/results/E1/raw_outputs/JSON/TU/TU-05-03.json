@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 69859,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 894,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"calls\":[{\"tool\":\"orders.lookup\",\"args\":{\"customer_email\":\"gunnar@example.com\",\"status_filter\":\"queued\",\"placed_after\":\"2026-06-01\"}},{\"tool\":\"orders.cancel\",\"args\":{\"order_id\":\"$calls[0].results.oldest.order_id\",\"reason\":\"UNKNOWN\"}}]}",
+   "p_in": 660,
+   "p_out": 894,
+   "latency_ms": 69859,
+   "resp_id": "gen-1787610104-dg6g7yq491e310ftz6Vj",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-03",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 33362,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 952,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"status_filter\": \"queued\",\n        \"placed_after\": \"2026-06-01\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"<DEPENDS_ON_CALL_1: the order from the lookup result with the earliest placed date>\",\n        \"reason\": \"<NOT SPECIFIED IN SOURCE>\"\n      }\n    }\n  ]\n}\n```\n\nNotes on what cannot be fully resolved from the source:\n\n1. **`order_id` for the cancel call** \u2014 The request says to cancel \"the oldest one,\" but the actual order IDs are only known after `orders.lookup` returns. The second call must therefore be constructed at runtime by taking the returned queued orders and selecting the one with the earliest placement date (sort ascending by placed date, take the first). If the lookup returns zero matching orders, the cancel step has no valid target and should not be executed.\n2. **Cancellation `reason`** \u2014 `orders.cancel` requires a `reason` argument, but neither the source material nor the request specifies one. It is left explicitly marked as unspecified rather than guessed; you will need to supply it (e.g., \"customer requested cancellation\") before executing.\n3. **Tie-breaking** \u2014 If two or more queued orders share the same earliest placement date, the source does not define how to break the tie; that would need clarification.",
+   "p_in": 356,
+   "p_out": 952,
+   "latency_ms": 33362,
+   "resp_id": "gen-1787608293-N1DmTz4TmTTRujQ5x3Av",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 12378,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 371,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\"calls\":[{\"tool\":\"calendar.book\",\"args\":{\"room_id\":\"Atlas\",\"date\":\"2026-08-25\",\"start_min\":570,\"end_min\":630,\"attendee_count\":8,\"needs_projector\":true}}]}\n```\n\nNotes on grounding:\n- date=2026-08-25 (\"tomorrow\" resolved from header date 2026-08-24).\n- start_min=570 (09:30), end_min=630 (10:30).\n- attendee_count=8, needs_projector=true per source.\n- All required arguments are present in the source; no CLARIFY or UNAVAILABLE items.",
+   "p_in": 720,
+   "p_out": 371,
+   "latency_ms": 12378,
+   "resp_id": "gen-1787608537-pDKprBzPeb0IpKKVHI79",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

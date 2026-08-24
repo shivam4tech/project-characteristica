@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 41745,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1233,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"status_filter\": \"processing\",\n        \"placed_after\": \"2026-06-01\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"$calls[0].result.orders[oldest_by_placed_date].order_id\",\n        \"reason\": null\n      }\n    }\n  ]\n}\n```\n\nNotes on dependencies and gaps:\n\n1. **Call 2 depends on call 1**: `order_id` cannot be known until the lookup returns. It must be resolved from the lookup result by picking the order with the earliest placement date among those still in `processing`. If the lookup returns zero matching orders, the cancel call should be skipped entirely.\n2. **Unspecified value \u2014 cancellation reason**: The request does not state a reason for the cancellation, and `orders.cancel(order_id, reason)` takes a reason parameter. Rather than guessing, it is left as `null` above; a concrete reason must be supplied (or confirmed optional) before execution.\n3. **Tie-breaking**: If two or more orders share the same earliest placement date, the source material does not define a tie-breaker \u2014 this would need clarification rather than an arbitrary choice.",
+   "p_in": 356,
+   "p_out": 1233,
+   "latency_ms": 41745,
+   "resp_id": "gen-1787608298-UsBYiV636PgBqMNwBvGg",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

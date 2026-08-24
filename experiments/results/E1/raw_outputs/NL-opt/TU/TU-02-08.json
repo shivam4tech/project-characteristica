@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-08",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 49870,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 3, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 299,
+  "v_out": 1555,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\"calls\":[{\"tool\":\"tracker.create\",\"args\":{\"title\":\"queue backlog growing\",\"severity\":\"S1\",\"component\":\"billing\",\"assignee\":\"dana\",\"due_date\":\"2026-08-28\"}},{\"tool\":\"mail.send\",\"args\":{\"to\":[\"sre@corp.example\"],\"cc\":[],\"subject\":\"queue backlog growing S1\",\"body\":\"S1 ticket ${ticket_id}: queue backlog growing (component billing, assignee dana, due 2026-08-28).\",\"priority\":\"high\"}}]}\n```\n\nNotes:\n- due_date: \"Friday\" resolved against header date 2026-08-24 (Monday) \u2192 2026-08-28.\n- Ordering preserved: tracker.create executes before mail.send, per the source (\"File ... Then email\").\n- `${ticket_id}` in the mail body is a runtime reference to the ticket id returned by the first call. No literal ticket id exists in the source, so none was fabricated (rule 1); the dependency is recorded rather than guessed.\n- cc is emitted as an empty list to match the mail.send signature; the source specifies no cc recipients.",
+   "p_in": 748,
+   "p_out": 1555,
+   "latency_ms": 49870,
+   "resp_id": "gen-1787608685-rYcQdZ1JqOd70RcSQm1z",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

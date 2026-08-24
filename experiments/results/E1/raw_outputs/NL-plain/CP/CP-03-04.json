@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-04",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 60294,
+  "conv_lat_ms": 0,
+  "score": 0.8571,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 1, \"h1_branch_first\": true, \"h2_dry_before_tag\": true, \"h3_retry_bound\": false, \"h4_notes_after_tag\": true, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 238,
+  "v_out": 2048,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "**Plan artifact \u2014 v4.0.8 Release Checklist Execution** (resolved as of 2026-08-24)\n\n1. Verify that all merge-window PRs have landed. (Gate: do not proceed to Step 2 until every merge-window PR has landed.)\n2. Cut the release branch for v4.0.8.\n3. Run a migration dry-run against a staging snapshot. (Hard requirement: this must precede tagging.)\n4. IF the dry-run is clean \u2192 skip to Step 6.\n5. IF the dry-run is not clean \u2192 fix forward, then re-run the migration dry-run against a staging snapshot exactly once (maximum one retry permitted). IF the retry is clean \u2192 skip to Step 6. IF the retry is still not clean \u2192 STOP and escalate: the checklist allows no further retries and does **not specify** what action to take at this point (unspecified in source \u2014 do not guess).\n6. Tag v4.0.8.\n7. Publish the release notes. (Must occur after tagging.) Legal sign-off is **not required**, because the current changelog draft does not mention pricing. CONDITIONAL GUARD: if the changelog is revised to mention pricing at any point before publication, obtain legal sign-off first.\n8. Update the support playbook. (Must be fully completed before any public announcement.)\n9. Announce the release publicly. (FORBIDDEN until Step 8 is complete.)\n\n---\n\n**Explicitly noted gaps / clarifications (not guessed):**\n- **Failed final retry:** The source specifies \"maximum one retry\" but gives no instruction for what to do if the retried dry-run also fails (abort, escalate, extend the window, etc.). This is left unspecified and flagged in Step 5.\n- **Relative order of Steps 7 and 8:** The source constrains release notes to come *after tagging* and the announcement to come *after the playbook update*, but does not constrain the order of notes-publication versus playbook-update relative to each other. The order above satisfies all stated constraints.\n- **Dates/times/owners:** No specific deadlines, times",
+   "p_in": 323,
+   "p_out": 2048,
+   "latency_ms": 60294,
+   "resp_id": "gen-1787609583-OQNF1rPG31Nq55QNu8P1",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "steps"
+ ]
+}

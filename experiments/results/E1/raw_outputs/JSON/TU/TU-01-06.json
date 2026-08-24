@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 15004,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"room\": true, \"date\": true, \"start\": true, \"end\": true, \"count\": true, \"proj\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 266,
+  "v_out": 219,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"calls\":[{\"tool\":\"calendar.book\",\"args\":{\"room_id\":\"Borel\",\"date\":\"2026-08-24\",\"start_min\":660,\"end_min\":720,\"attendee_count\":4,\"needs_projector\":true}}]}",
+   "p_in": 655,
+   "p_out": 219,
+   "latency_ms": 15004,
+   "resp_id": "gen-1787609528-VRhglwrwvSRIkHDGwhL3",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

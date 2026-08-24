@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-02",
+  "item_id": "TU-02-09",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 48052,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 1, \"why\": \"missing call\"}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 300,
+  "v_out": 1701,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"tracker.create\",\n      \"args\": {\n        \"title\": \"webhook retries exhausted\",\n        \"severity\": \"S3\",\n        \"component\": \"pipelines\",\n        \"assignee\": \"omar\",\n        \"due_date\": \"2026-08-26\"\n      }\n    },\n    {\n      \"tool\": \"mail.send\",\n      \"args\": {\n        \"to\": [\"ops@corp.example\"],\n        \"cc\": [],\n        \"subject\": \"webhook retries exhausted S3\",\n        \"body\": \"Webhook retries exhausted \u2014 see ticket {{calls[0].ticket_id}}.\",\n        \"priority\": \"high\"\n      }\n    }\n  ]\n}\n```\n\nNotes:\n- \"due Wednesday\" resolved against header date Mon 2026-08-24 \u2192 next Wednesday = **2026-08-26**.\n- `{{calls[0].ticket_id}}` is a runtime placeholder bound to the ticket id returned by the first call; the email is sequenced after `tracker.create` precisely because its body requires that id. No user clarification needed \u2014 the value is produced by the pipeline itself, not missing from the source.\n- `cc` is empty (not specified in source); priority `high` is explicitly stated by the source, not inferred.",
+   "p_in": 749,
+   "p_out": 1701,
+   "latency_ms": 48052,
+   "resp_id": "gen-1787608763-wgMW7KEvx41V1EXbPDTZ",
+   "transport_retries": 3,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

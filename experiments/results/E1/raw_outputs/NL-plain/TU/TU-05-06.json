@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-plain",
+  "family": "TU",
+  "template": "TU-05",
+  "item_id": "TU-05-06",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 35581,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 271,
+  "v_out": 1217,
+  "f_tok": 85,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 85,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-plain",
+   "ok": true,
+   "content": "```json\n{\n  \"calls\": [\n    {\n      \"tool\": \"orders.lookup\",\n      \"args\": {\n        \"customer_email\": \"gunnar@example.com\",\n        \"placed_after\": \"2026-05-15\",\n        \"status_filter\": \"processing\"\n      }\n    },\n    {\n      \"tool\": \"orders.cancel\",\n      \"args\": {\n        \"order_id\": \"$calls[0].result.orders | sort_by(placed_date) asc | first | .order_id\",\n        \"reason\": \"<NOT SPECIFIED IN SOURCE>\"\n      }\n    }\n  ]\n}\n```\n\nNotes on details captured and gaps:\n\n- **Lookup parameters**: `customer_email` = gunnar@example.com (explicit), `placed_after` = 2026-05-15 (explicit absolute date \u2014 no relative-date resolution needed against today, 2026-08-24), `status_filter` = \"processing\" (explicit).\n- **Oldest selection**: The second call depends on the first call's results \u2014 `order_id` cannot be known statically. It references the lookup result sorted by placement date ascending, taking the earliest (oldest) matching order.\n- **Unspecified \u2014 cancel reason**: `orders.cancel` requires a `reason`, but the source material does not provide one. It is emitted as an explicit placeholder rather than guessed; it should be filled in (or confirmed with the requester) before execution.\n- **No extra calls**: The request asks only for lookup + cancel of the single oldest order. Any other matching orders are left untouched, and no email/tracker/calendar actions were requested, so none are included.",
+   "p_in": 356,
+   "p_out": 1217,
+   "latency_ms": 35581,
+   "resp_id": "gen-1787608339-NDmjb45COFyKh2M84OZf",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 85
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "calls"
+ ]
+}

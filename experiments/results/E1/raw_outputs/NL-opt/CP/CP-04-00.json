@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-04",
+  "item_id": "CP-04-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 30060,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_all_seated_once\": true, \"h2_host_seat1\": true, \"h3_not_adj_AB\": true, \"h4_not_adj_CD\": true, \"h5_adj_EF\": true, \"s1_GH_pref\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 245,
+  "v_out": 539,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "seating: A, E, F, B, G, C, H, D",
+   "p_in": 694,
+   "p_out": 539,
+   "latency_ms": 30060,
+   "resp_id": "gen-1787610956-wkkXMlQ0yPsKkJb2v5T4",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "seating"
+ ]
+}
