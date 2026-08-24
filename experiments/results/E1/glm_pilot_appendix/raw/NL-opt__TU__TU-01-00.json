@@ -1,0 +1,81 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "TU",
+  "template": "TU-01",
+  "item_id": "TU-01-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 3,
+  "lat_total_ms": 31008,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"n_calls\": 0, \"why\": \"no book call\"}",
+  "final_error": "",
+  "transport_fail": true,
+  "v_in": 0,
+  "v_out": 0,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10408,
+   "error": "<HTTPError 402: 'Payment Required'>",
+   "transport_retries": 3,
+   "note": "",
+   "f_tok": 449
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10296,
+   "error": "<HTTPError 402: 'Payment Required'>",
+   "transport_retries": 3,
+   "note": "",
+   "f_tok": 449
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 3,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10304,
+   "error": "<HTTPError 402: 'Payment Required'>",
+   "transport_retries": 3,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "outcome": {
+  "arm": "CSIR-SIR",
+  "family": "EX",
+  "template": "EX-01",
+  "item_id": "EX-01-00",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 2,
+  "lat_total_ms": 2694,
+  "conv_lat_ms": 7180,
+  "score": 0.3571,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"a1_owner\": false, \"a1_action\": false, \"a1_deadline\": false, \"a1_priority\": true, \"a2_owner\": false, \"a2_action\": false, \"a2_constraint\": false, \"a3_owner\": true, \"a3_action\": false, \"a3_deadline\": false, \"a3_priority\": true, \"guard_target\": true, \"guard_condition\": true, \"guard_type\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 2530,
+  "v_out": 109,
+  "f_tok": 295,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 1573,
+  "k_out": 1307,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 1,
+  "f_conv_tok": 1368,
+  "f_exec_tok": 295,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "convert",
+   "idx": 1,
+   "block": "CSIR-SIR::conv",
+   "ok": true,
+   "content": "{\"csir_version\":\"0.1.0\",\"speech_act\":{\"type\":\"instruction\",\"span\":[0,651]},\"lexicon\":[{\"id\":\"t1\",\"term\":\"Marta\",\"tier\":\"B\",\"type\":\"person\",\"analysis_status\":\"opaque\",\"attestation_span\":[0,5]},{\"id\":\"t2\",\"term\":\"beta launch\",\"tier\":\"B\",\"type\":\"project_event\",\"analysis_status\":\"opaque\",\"attestation_span\":[7,18]},{\"id\":\"t3\",\"term\":\"Priya\",\"tier\":\"B\",\"type\":\"person\",\"analysis_status\":\"opaque\",\"attestation_span\":[21,26]},{\"id\":\"t4\",\"term\":\"rerun\",\"tier\":\"B\",\"type\":\"action_verb\",\"analysis_status\":\"opaque\",\"attestation_span\":[38,43]},{\"id\":\"t5\",\"term\":\"load-test\",\"tier\":\"B\",\"type\":\"test_action\",\"analysis_status\":\"opaque\",\"attestation_span\":[48,57]},{\"id\":\"t6\",\"term\":\"Thursday\",\"tier\":\"B\",\"type\":\"date_reference\",\"analysis_status\":\"opaque\",\"attestation_span\":[64,72]},{\"id\":\"t7\",\"term\":\"client\",\"tier\":\"B\",\"type\":\"recipient\",\"analysis_status\":\"opaque\",\"attestation_span\":[103,109]},{\"id\":\"t8\",\"term\":\"Sam\",\"tier\":\"B\",\"type\":\"person\",\"analysis_status\":\"opaque\",\"attestation_span\":[157,160]},{\"id\":\"t9\",\"term\":\"migration plan\",\"tier\":\"B\",\"type\":\"document\",\"analysis_status\":\"opaque\",\"attestation_span\":[170,184]},{\"id\":\"t10\",\"term\":\"next week\",\"tier\":\"B\",\"type\":\"time_reference\",\"analysis_status\":\"opaque\",\"attestation_span\":[190,199]},{\"id\":\"t11\",\"term\":\"staging cluster\",\"tier\":\"B\",\"type\":\"environment\",\"analysis_status\":\"opaque\",\"attestation_span\":[228,243]}],\"nodes\":[{\"id\":\"n1\",\"kind\":\"predicate\",\"term\":\"rerun_load_test\",\"status\":\"asserted\",\"spans\":[[38,57]]},{\"id\":\"n2\",\"kind\":\"entity_ref\",\"ref\":\"t3\",\"spans\":[[21,26]]},{\"id\":\"n3\",\"kind\":\"entity_ref\",\"ref\":\"t5\",\"spans\":[[48,57]]},{\"id\":\"n4\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"before Thursday\",\"canonical\":null,\"unknown\":true,\"spans\":[[58,72]]},{\"id\":\"n5\",\"kind\":\"predicate\",\"term\":\"tell_client\",\"status\":\"asserted\",\"spans\":[[78,96]]},{\"id\":\"n6\",\"kind\":\"entity_ref\",\"ref\":\"t7\",\"spans\":[[103,109]]},{\"id\":\"n7\",\"kind\":\"exclusion\",\"content\":\"promise_a_date_in_note\",\"spans\":[[118,156]]},{\"id\":\"n8\",\"kind\":\"predicate\",\"term\":\"draft_migration_plan\",\"status\":\"asserted\",\"spans\":[[157,184]]},{\"id\":\"n9\",\"kind\":\"entity_ref\",\"ref\":\"t8\",\"spans\":[[157,160]]},{\"id\":\"n10\",\"kind\":\"entity_ref\",\"ref\":\"t9\",\"spans\":[[170,184]]},{\"id\":\"n11\",\"kind\":\"temporal_qualifier\",\"value_raw\":\"next week\",\"canonical\":null,\"unknown\":true,\"spans\":[[190,199]]},{\"id\":\"n12\",\"kind\":\"modality\",\"value\":\"low_urgency\",\"spans\":[[201,212]]},{\"id\":\"n13\",\"kind\":\"exclusion\",\"content\":\"touch_staging_cluster_until_priya_tests_pass\",\"spans\":[[214,277]]},{\"id\":\"n14\",\"kind\":\"predicate\",\"term\":\"pass_tests\",\"status\":\"asserted\",\"spans\":[[255,261]]},{\"id\":\"n15\",\"kind\":\"entity_ref\",\"ref\":\"t5\",\"spans\":[[255,261]]},{\"id\":\"n16\",\"kind\":\"entity_ref\",\"ref\":\"t11\",\"spans\":[[228,243]]},{\"id\":\"n17\",\"kind\":\"constraint\",\"polarity\":\"hard\",\"content\":{\"forbidden\":\"touch_staging_cluster\",\"until\":\"priya_tests_pass\"},\"spans\":[[214,277]]},{\"id\":\"n18\",\"kind\":\"predicate\",\"term\":\"owner_of_rerun_load_test\",\"status\":\"asserted\",\"spans\":[[21,57]]},{\"id\":\"n19\",\"kind\":\"predicate\",\"term\":\"owner_of_tell_client\",\"status\":\"asserted\",\"spans\":[[78,96]]},{\"id\":\"n20\",\"kind\":\"predicate\",\"term\":\"owner_of_draft_migration_plan\",\"status\":\"asserted\",\"spans\":[[157,184]]},{\"id\":\"n21\",\"kind\":\"output_shape\",\"shape\":\"field_id_lines\",\"spans\":[[294,651]]}],\"edges\":[{\"rel\":\"hasArg\",\"from\":\"n1\",\"to\":\"n2\"},{\"rel\":\"hasArg\",\"from\":\"n1\",\"to\":\"n3\"},{\"rel\":\"modifies\",\"from\":\"n4\",\"to\":\"n1\"},{\"rel\":\"hasArg\",\"from\":\"n5\",\"to\":\"n6\"},{\"rel\":\"excludes\",\"from\":\"n7\",\"to\":\"n5\"},{\"rel\":\"hasArg\",\"from\":\"n8\",\"to\":\"n9\"},{\"rel\":\"hasArg\",\"from\":\"n8\",\"to\":\"n10\"},{\"rel\":\"modifies\",\"from\":\"n11\",\"to\":\"n8\"},{\"rel\":\"modifies\",\"from\":\"n12\",\"to\":\"n8\"},{\"rel\":\"excludes\",\"from\":\"n13\",\"to\":\"n16\"},{\"rel\":\"hasArg\",\"from\":\"n14\",\"to\":\"n15\"},{\"rel\":\"hasArg\",\"from\":\"n14\",\"to\":\"n16\"},{\"rel\":\"constrains\",\"from\":\"n17\",\"to\":\"n16\"},{\"rel\":\"hasArg\",\"from\":\"n18\",\"to\":\"n2\"},{\"rel\":\"hasArg\",\"from\":\"n18\",\"to\":\"n1\"},{\"rel\":\"hasArg\",\"from\":\"n19\",\"to\":\"n6\"},{\"rel\":\"hasArg\",\"from\":\"n19\",\"to\":\"n5\"},{\"rel\":\"hasArg\",\"from\":\"n20\",\"to\":\"n9\"},{\"rel\":\"hasArg\",\"from\":\"n20\",\"to\":\"n8\"},{\"rel\":\"requestsOutput\",\"from\":\"n21\",\"to\":\"n18\"}]}",
+   "p_in": 1573,
+   "p_out": 1307,
+   "latency_ms": 7180,
+   "resp_id": "gen-1787572323-kkFWC5SywWw4k1evwao2",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 1368
+  },
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "CSIR-SIR::exec",
+   "ok": true,
+   "content": "{\"a1_owner\":\"Marta\",\"a1_action\":\"rerun load-test\",\"a1_deadline\":\"UNKNOWN\",\"a1_priority\":\"UNKNOWN\",\"a2_owner\":\"Priya\",\"a2_action\":\"tell client\",\"a2_constraint\":\"promise a date in note\",\"a3_owner\":\"Sam\",\"a3_action\":\"draft migration plan\",\"a3_deadline\":\"UNKNOWN\",\"a3_priority\":\"low_urgency\",\"guard_target\":\"touch staging cluster\",\"guard_condition\":\"until Priya tests pass\",\"guard_type\":\"hard\"}",
+   "p_in": 2825,
+   "p_out": 109,
+   "latency_ms": 2694,
+   "resp_id": "gen-1787572331-WWnBY6F8PepH8rq2NiGA",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 295
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}
