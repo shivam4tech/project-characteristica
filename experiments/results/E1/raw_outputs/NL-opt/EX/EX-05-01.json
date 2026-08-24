@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "EX",
+  "template": "EX-05",
+  "item_id": "EX-05-01",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 42331,
+  "conv_lat_ms": 0,
+  "score": 0.9,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"category\": false, \"version\": true, \"symptom_condition\": true, \"tier\": true, \"seats\": true, \"deadline_day\": true, \"deadline_month\": true, \"mitigations_tried\": true, \"priority\": true, \"exec_visible\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 250,
+  "v_out": 1433,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "category: statement rendering\nversion: v4.8.6\nsymptom_condition: feature spins forever on records over ~45 pages\ntier: Enterprise\nseats: ~300\ndeadline_day: 20\ndeadline_month: UNKNOWN (source states only \"the 20th\"; no month/year determined \u2014 note 2026-08-20 precedes the header date)\nmitigations_tried: clearing cache, incognito mode\npriority: urgent\nexec_visible: true",
+   "p_in": 699,
+   "p_out": 1433,
+   "latency_ms": 42331,
+   "resp_id": "gen-1787601001-frq1VS345IuwhdsTMLqr",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

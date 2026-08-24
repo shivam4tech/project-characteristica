@@ -1,5 +1,23 @@
 # E1 RESULTS — Efficiency/Fidelity Pilot (CE-01/P3)
 
+> ## ⚠ HANDOFF NOTE — MATRIX NOT COMPLETE (2026-08-25 01:30 IST, WS-E1EXEC wait/analysis pass)
+>
+> - **State:** scored matrix INCOMPLETE. Primary stage at **72/600** outcomes since the 22:28 IST
+>   restart (87 raw-output JSONs on disk across two passes; pace 0–19 items/h under z-ai/glm-5.2:free
+>   shared-pool congestion). `outcomes.csv` has **0 rows**; repl/H2/F3 stages never started.
+> - **Root cause found (evidence-based):** `runner.py` `emit()`→`_flush()` re-acquires the same
+>   non-reentrant `threading.Lock` (L347-356) ⇒ chain deadlocks permanently at `BATCH_FLUSH=10`;
+>   verified live (/proc: main thread futex-blocked, workers in socket poll). As frozen, the chain
+>   can never write the CSV its own resume/analysis depends on. Full timeline, evidence, and the
+>   Director decision menu (one-line RLock fix DEV-9; optional audited outcomes.csv rebuild from
+>   raw_outputs JSONs to salvage ~87–159 completed items) are in `INTERRUPTION_LOG.md` #3.
+> - **Verdicts:** none issued in this pass — no fixed-n data exist in analyzable form, and pre-reg
+>   forbids inventing verdicts. All tables below are the untouched pre-registered SKELETON.
+> - **Next steps:** 06:00 IST cron `characteristica-e1-analysis-resume` resumes supervision. After
+>   the authorized fix (+ optional rebuild) and a clean `make_results` run on complete data, insert
+>   the three prepared blocks from `E1_RESULTS_verdict_drafts.md` (mixed-batch header note; H3
+>   reuse-gating verdict; H5 paraphrase N/A note), then update STATUS.md WS-E1EXEC.
+
 **STATUS:** scored-run data collected under AMENDMENT-1 · analysis basis MEASUREMENT_PLAN §1.4 ONLY (§1.9 quarantined illustrative-only)
 
 **Amended model pin (D-2 per Amendment-1, countersigned W0f' 2026-08-24):** `z-ai/glm-5.2:free` — **OpenRouter `:free` tier (is_free_tier=true)**, selected ONCE at run time as the highest-capability :free model verifiably serving (selection record in manifest.json; AA Intelligence Index ranking: glm-5.2=53 > inkling=41[harness-gated 403] > nemotron-ultra=38). Used identically for ALL arms incl. converter (D-4 preserved). Amendment reference: experiments/E1_AMENDMENT_1.md.

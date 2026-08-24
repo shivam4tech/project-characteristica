@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "EX",
+  "template": "EX-04",
+  "item_id": "EX-04-02",
+  "rep": "",
+  "temperature": 0.0,
+  "n_attempts": 1,
+  "lat_total_ms": 33006,
+  "conv_lat_ms": 0,
+  "score": 0.9375,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"ship_date\": true, \"pickup_start\": true, \"pickup_end\": true, \"cargo1_name\": true, \"cargo1_qty\": true, \"cargo1_unit\": true, \"cargo1_weight_each_kg\": true, \"cargo2_name\": true, \"cargo2_qty\": true, \"cargo2_unit\": true, \"cargo2_weight_total_kg\": true, \"handling_exclusion\": false, \"docs_deadline_date\": true, \"roll_to_date\": true, \"docs_filed_date\": true, \"condition_triggered\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 348,
+  "v_out": 1152,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "ship_date: 2026-08-24\npickup_start: 10:00\npickup_end: 12:00\ncargo1_name: steel fittings\ncargo1_qty: 17\ncargo1_unit: crates\ncargo1_weight_each_kg: 140\ncargo2_name: packaging stock\ncargo2_qty: 1\ncargo2_unit: pallet\ncargo2_weight_total_kg: 520\nhandling_exclusion: stacking pallets\ndocs_deadline_date: 2026-08-21\nroll_to_date: 2026-08-31\ndocs_filed_date: 2026-08-19\ncondition_triggered: no",
+   "p_in": 797,
+   "p_out": 1152,
+   "latency_ms": 33006,
+   "resp_id": "gen-1787600822-g7eaO0JZLIo9BOHlsNLF",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

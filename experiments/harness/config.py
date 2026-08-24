@@ -23,7 +23,7 @@ RESULTS = REPO / "experiments" / "results" / "E1"
 # remaining ids have no documented capability evidence or are small/specialist.
 # z-ai/glm-5.2:free verified serving via live probe (transient upstream 429s,
 # success on retry; logged as plumbing, excluded from statistics).
-MODEL_ID = "z-ai/glm-5.2:free"
+MODEL_ID = "stealth/ox-alpha"  # Amendment-2 (2026-08-25): uniform re-pin after operator key reset restored ox-alpha quota
 TOKENIZER_ID = "o200k_base (tiktoken; glm-5.2 server tokenizer approximated for F/V split only; authoritative counts are provider usage fields)"
 PRICE_VECTOR = {"p_in_usd_per_token": 0.0,          # :free tier — published $0/$0
                 "p_out_usd_per_token": 0.0}         # => §1.4 $ endpoints degenerate (reported as such)

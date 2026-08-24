@@ -80,3 +80,55 @@ rule was applied once; transient congestion does not unselect the pinned slug.
 cd experiments && PYTHONDONTWRITEBYTECODE=1 ../.venv-e1/bin/python harness/chain_e1.py
 ```
 (or `harness/runner.py primary` alone; resume logic skips completed cells.)
+
+---
+
+# INTERRUPTION #3 — 2026-08-24 22:28 → 08-25 01:30 IST · WS-E1EXEC wait/analysis pass
+
+## What happened
+1. Watchdog respawned `chain_e1.py` 22:28 IST after a serving probe passed; second respawn at
+   00:44 IST. Between 22:28–01:14, workers completed 72 primary outcomes (raw_outputs verbatim),
+   pace 0–19 items/hour (z-ai/glm-5.2:free shared-pool congestion bursts).
+2. **FATAL OPERATIONAL DEFECT IDENTIFIED (evidence-based, root-caused):** `outcomes.csv` does not
+   exist despite >10 completed outcomes in EVERY pass tonight (87-item pass 1, 72-item pass 2).
+   Cause: `runner.py` `emit()` (L347-348) acquires the non-reentrant `threading.Lock` and then
+   calls `_flush()` (L352-356) which re-acquires the SAME lock ⇒ permanent deadlock the moment
+   the batch buffer reaches `BATCH_FLUSH=10`. Verified live via /proc: main thread futex-blocked,
+   both worker threads in socket poll. Consequences: CSV never flushed (final force-flush is
+   unreachable past the wedge); primary stage never exits; repl/h2/f3/make_results never launch;
+   every watchdog respawn re-runs all 600 jobs from scratch (resume reads ONLY the CSV that can
+   never be written). The chain as currently frozen can NEVER complete.
+3. Scored-data impact: NONE lost irrecoverably — every attempt is retained verbatim under
+   raw_outputs/<arm>/<family>/<item>.json including the full outcome dict; the CSV is a derived
+   index. No scoring/verdict was possible tonight (no analyzable outcomes.csv), so NO prediction
+   verdicts are issued here (pre-reg forbids verdicts without fixed-n data; none invented).
+
+## Classification
+Operational defect in transport/buffering infrastructure (DEV-8 pacing/checkpoint code path),
+external-abort class §8.1; NOT an arm-treatment, prompt, threshold, item, or scoring change.
+Written escalation per decision-record condition #2.
+
+## Required before any further scored dispatch (Director/operator ruling)
+(a) **One-line mechanical fix** (recommended): `lock = threading.Lock()` → `threading.RLock()`
+    in `run_batch` (equivalently: move the `_flush()` call outside the `with lock:` block).
+    Measurement-neutral; log as DEVIATIONS DEV-9 with hash refresh of runner.py only.
+(b) OPTIONAL salvage (avoids ~27 h re-run at observed 20–25 items/h): audited one-shot script to
+    rebuild `outcomes.csv` from raw_outputs JSONs (`outcome` field carries every OUT_FIELDS value;
+    `ts` from file mtime; `rerun` inferable from duplicate (arm,item,rep) presence + mtime order;
+    latest-mtime non-transport-fail reading wins per DEV-7). Rebuilt rows must be marked as
+    reconstructed in a ledger note. Otherwise accept full re-run.
+(c) After fix (+ optional rebuild): single restart of `chain_e1.py`; verify `[primary] …/600
+    flushed` lines appear within ~10 outcomes; stages then auto-chain through `make_results`.
+
+## State at 01:30 IST handoff
+- Processes ALIVE: chain gen-3 (bash 137322 / python 137651 / runner primary 137652, started
+  00:44) — wedged at buffer=10 since ~00:50; workers may keep rewriting raw_outputs until their
+  600-job queue drains, then hang harmlessly. Safe to kill before applying fix (a).
+- Primary progress on disk: 87 raw JSONs (pass 1) with 72 rewritten (pass 2); 0 CSV rows.
+- Watch cadence used: 16 × sleep-540 polls (protocol cap 18) 22:47–01:14 IST.
+
+## Prepared next-step artifacts (for the completing session)
+`E1_RESULTS_verdict_drafts.md` (this directory) holds: (i) mixed-batch header note text
+(pre/post key-reset calls pooled; same pin/seeds/temp-0), (ii) H3 reuse-gating verdict block,
+(iii) H5 paraphrase N/A note — the three additions `make_results.py` does not emit itself.
+After a clean make_results run: insert (i) after the P8 flag line, append (ii)+(iii) to §8.
