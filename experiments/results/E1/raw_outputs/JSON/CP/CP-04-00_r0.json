@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-04",
+  "item_id": "CP-04-00",
+  "rep": 0,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 29547,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_all_seated_once\": true, \"h2_host_seat1\": true, \"h3_not_adj_AB\": true, \"h4_not_adj_CD\": true, \"h5_adj_EF\": true, \"s1_GH_pref\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 238,
+  "v_out": 732,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"seating\":[\"A\",\"E\",\"F\",\"B\",\"C\",\"G\",\"D\",\"H\"]}",
+   "p_in": 627,
+   "p_out": 732,
+   "latency_ms": 29547,
+   "resp_id": "gen-1787616838-ugPsZQYXeqr8yhZ8STFs",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "seating"
+ ]
+}

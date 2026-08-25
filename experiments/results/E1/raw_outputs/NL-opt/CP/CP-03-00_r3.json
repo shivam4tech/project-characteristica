@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-00",
+  "rep": 3,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 56408,
+  "conv_lat_ms": 0,
+  "score": 0.5714,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 3, \"h1_branch_first\": true, \"h2_dry_before_tag\": false, \"h3_retry_bound\": false, \"h4_notes_after_tag\": false, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 245,
+  "v_out": 2035,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "**PLAN ARTIFACT**\n\n**Extraction**\n- release_version: v2.7.0\n- source_date: 2026-08-24\n- hard_precedences: branch_cut_after_PRs_landed; dry-run_before_tagging; release_notes_after_tagging; playbook_update_before_public_announcement\n- conditions: tag_only_if_dry_run_clean; legal_signoff_only_if_changelog_mentions_pricing\n- exclusions: no_public_announcement_before_playbook_update; max_one_dry_run_retry; current_changelog_draft_does_not_mention_pricing\n- explicit_step_dates: UNKNOWN (no calendar dates assigned to any checklist item; only relative ordering is given)\n\n**Ordered steps**\n- step_01: action=verify_all_merge-window_PRs_landed role=gate_for_branch_cut\n- step_02: action=cut_release_branch precondition=step_01_passed\n- step_03: action=run_migration_dry_run target=staging_snapshot constraint=must_precede_tagging\n- step_04: decision=is_dry_run_clean IF_yes\u2192step_06 IF_no\u2192step_05\n- step_05: action=fix_forward_then_retry_dry_run max_retries=1 constraint=no_second_retry condition=tag_permitted_only_if_retry_is_clean\n- step_06: action=tag_v2.7.0 precondition=dry_run_clean\n- step_07: action=publish_release_notes precondition=after_step_06\n- step_08: action=update_support_playbook\n- step_09: action=announce_publicly precondition=step_08_completed\n\n**Conditional/exclusion handling**\n- legal_signoff: NOT_REQUIRED \u2014 condition=needed_only_if_changelog_mentions_pricing; source states current changelog draft does NOT mention pricing\n- announcement_block: announce_publicly (step_09) MUST NOT execute until support playbook is updated (step_08); no exception stated\n- retry_limit: exactly one dry-run retry permitted after fix-forward; if retry is still unclean, tagging remains blocked (source specifies no further path)\n\n**Tool-use**\n- tool_use: none \u2014 no tool calls are specified or implied by the source text",
+   "p_in": 694,
+   "p_out": 2035,
+   "latency_ms": 56408,
+   "resp_id": "gen-1787622263-9WprUdasb0UVAfsGLbPh",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "steps"
+ ]
+}

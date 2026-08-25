@@ -1,0 +1,81 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-00",
+  "rep": 4,
+  "temperature": 0.7,
+  "n_attempts": 3,
+  "lat_total_ms": 31206,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 5, \"h1_sum_exact\": false, \"h2_infra_floor\": false, \"h3_training_cap\": false, \"h4_ev_tool_cap\": false, \"h5_veto\": false, \"s1_training_pref\": false, \"s2_events_headroom\": false, \"s3_infra_headroom\": false}",
+  "final_error": "",
+  "transport_fail": true,
+  "v_in": 0,
+  "v_out": 0,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10405,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 449
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10395,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 449
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 3,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10406,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

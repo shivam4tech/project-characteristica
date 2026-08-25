@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-00",
+  "rep": 1,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 25657,
+  "conv_lat_ms": 0,
+  "score": 0.8571,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 1, \"h1_branch_first\": true, \"h2_dry_before_tag\": true, \"h3_retry_bound\": false, \"h4_notes_after_tag\": true, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 238,
+  "v_out": 910,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"steps\":[\"Verify that all merge-window PRs have landed\",\"Cut the release branch for v2.7.0\",\"Run a migration dry-run against a staging snapshot\",\"If the dry-run is clean, proceed to tagging; otherwise fix forward and retry the dry-run once (maximum one retry)\",\"Tag v2.7.0 only if the latest dry-run result is clean\",\"Publish release notes after tagging\",\"Update the support playbook\",\"Announce publicly only after the support playbook has been updated\",\"Skip legal sign-off: obtain it only if the changelog mentions pricing, and the current changelog draft does not\"]}",
+   "p_in": 627,
+   "p_out": 910,
+   "latency_ms": 25657,
+   "resp_id": "gen-1787618325-iW8eA9RRoRaKF8gAejRa",
+   "transport_retries": 2,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "steps"
+ ]
+}

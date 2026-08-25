@@ -1,0 +1,54 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-02",
+  "rep": 2,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 64352,
+  "conv_lat_ms": 0,
+  "score": 0.7143,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 2, \"h1_branch_first\": true, \"h2_dry_before_tag\": false, \"h3_retry_bound\": true, \"h4_notes_after_tag\": true, \"h5_announce_after_playbook\": false, \"h6_legal_conditional\": true, \"h7_tag_gate\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 245,
+  "v_out": 2047,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "**PLAN ARTIFACT \u2014 v3.6.9 release checklist (ordered steps)**\n\n1: action=verify_merge_window_prs_landed scope=v3.6.9 purpose=gating_check_for_branch_cut\n2: action=cut_release_branch target=v3.6.9 precondition=all_merge_window_prs_landed\n3: action=migration_dry_run environment=staging_snapshot precondition=release_branch_cut constraint=must_precede_tagging\n4: action=evaluate_dry_run_result\n5a: condition=dry_run_clean \u2192 action=tag_release target=v3.6.9\n5b: condition=dry_run_not_clean \u2192 action=fix_forward; action=retry_migration_dry_run retries_max=1; re-evaluate: if retry_clean \u2192 tag_release target=v3.6.9; if retry_not_clean \u2192 next_step=UNKNOWN (source caps retries at one and specifies no further fallback)\n6: action=publish_release_notes target=v3.6.9 precondition=tagging_complete\n7: action=update_support_playbook constraint=must_precede_public_announcement\n8: action=announce_publicly precondition=support_playbook_updated\n\n**Conditional gates, exclusions, and exceptions**\n- gate: cut_release_branch permitted ONLY after all merge-window PRs have landed\n- gate: tag_release permitted ONLY IF migration dry-run is clean; retry_budget=1 (maximum one retry)\n- exclusion: public announcement FORBIDDEN until support playbook is updated\n- conditional_requirement: legal_signoff required ONLY IF changelog mentions pricing; current changelog draft does NOT mention pricing \u2192 legal_signoff not triggered under current state (skip; re-check if changelog content changes before publication)\n\n**Notes / UNKNOWNs**\n- unknown: disposition if the single permitted dry-run retry also fails (source is silent; no fabrication made)\n- unknown: legal_signoff placement in the sequence (source states the condition but not where it slots relative to other steps; moot under current changelog state)\n- scheduling: no dates, deadlines, times, or priority levels are stated in the source (header date 2026-08-24 anchors nothing further); all steps are unscheduled (start=null, end=null, priority=null)",
+   "p_in": 694,
+   "p_out": 2047,
+   "latency_ms": 64352,
+   "resp_id": "gen-1787620378-OEWk29UMfky16NxBt3af",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "steps"
+ ]
+}

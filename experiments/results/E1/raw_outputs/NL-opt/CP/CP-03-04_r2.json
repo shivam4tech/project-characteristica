@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-04",
+  "rep": 2,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 69063,
+  "conv_lat_ms": 0,
+  "score": 0.4286,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 4, \"h1_branch_first\": false, \"h2_dry_before_tag\": false, \"h3_retry_bound\": true, \"h4_notes_after_tag\": false, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 245,
+  "v_out": 2048,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "",
+   "p_in": 694,
+   "p_out": 2048,
+   "latency_ms": 69063,
+   "resp_id": "gen-1787620443-8jZSGZsd4SsSaMsvyDlp",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

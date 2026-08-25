@@ -1,0 +1,70 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-00",
+  "rep": 1,
+  "temperature": 0.7,
+  "n_attempts": 2,
+  "lat_total_ms": 115089,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_sum_exact\": true, \"h2_infra_floor\": true, \"h3_training_cap\": true, \"h4_ev_tool_cap\": true, \"h5_veto\": true, \"s1_training_pref\": true, \"s2_events_headroom\": true, \"s3_infra_headroom\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 267,
+  "v_out": 2048,
+  "f_tok": 389,
+  "r_in": 683,
+  "r_out": 784,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "",
+   "p_in": 656,
+   "p_out": 2048,
+   "latency_ms": 84491,
+   "resp_id": "gen-1787618918-ksR3FkEAC4dOPk4tIlIM",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"infra\":5000,\"tooling\":2250,\"training\":2500,\"events\":2250}",
+   "p_in": 683,
+   "p_out": 784,
+   "latency_ms": 30598,
+   "resp_id": "gen-1787619046-QecYzF72VBKRbKsTQEnT",
+   "transport_retries": 2,
+   "note": "parse: no JSON object found",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "events",
+  "infra",
+  "tooling",
+  "training"
+ ]
+}

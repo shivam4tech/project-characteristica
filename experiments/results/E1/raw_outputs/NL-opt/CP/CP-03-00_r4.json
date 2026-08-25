@@ -1,0 +1,81 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-03",
+  "item_id": "CP-03-00",
+  "rep": 4,
+  "temperature": 0.7,
+  "n_attempts": 3,
+  "lat_total_ms": 31227,
+  "conv_lat_ms": 0,
+  "score": 0.4286,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 4, \"h1_branch_first\": false, \"h2_dry_before_tag\": false, \"h3_retry_bound\": true, \"h4_notes_after_tag\": false, \"h5_announce_after_playbook\": true, \"h6_legal_conditional\": true, \"h7_tag_gate\": false}",
+  "final_error": "",
+  "transport_fail": true,
+  "v_in": 0,
+  "v_out": 0,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10408,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 449
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10405,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 449
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 3,
+   "block": "NL-opt",
+   "ok": false,
+   "content": "",
+   "p_in": 0,
+   "p_out": 0,
+   "latency_ms": 10414,
+   "error": "<HTTPError 429: 'Too Many Requests'>",
+   "transport_retries": 11,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}

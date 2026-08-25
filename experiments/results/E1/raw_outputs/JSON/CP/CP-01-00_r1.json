@@ -1,0 +1,67 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "CP",
+  "template": "CP-01",
+  "item_id": "CP-01-00",
+  "rep": 1,
+  "temperature": 0.7,
+  "n_attempts": 2,
+  "lat_total_ms": 112264,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_dur_a\": true, \"h2_projector_a\": true, \"h3_capacity\": true, \"h4_lunch\": true, \"h5_org_buffer\": true, \"h6_avail_b\": true, \"h7_precedence_d\": true, \"h8_grid\": true, \"h9_complete\": true, \"s1_quiet_c\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 307,
+  "v_out": 2048,
+  "f_tok": 389,
+  "r_in": 723,
+  "r_out": 1073,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "",
+   "p_in": 696,
+   "p_out": 2048,
+   "latency_ms": 79417,
+   "resp_id": "gen-1787617476-SiskhepdEtnf2zLEoGE2",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  },
+  {
+   "stage": "execute-repair",
+   "idx": 2,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"schedule\":[{\"meeting\":\"Sprint review\",\"room\":\"Cyrus\",\"start\":\"09:00\",\"end\":\"10:30\"},{\"meeting\":\"Vendor call\",\"room\":\"Borel\",\"start\":\"09:00\",\"end\":\"09:30\"},{\"meeting\":\"Incident retro\",\"room\":\"Atlas\",\"start\":\"10:30\",\"end\":\"11:30\"},{\"meeting\":\"1:1 Maya/Sam\",\"room\":\"Borel\",\"start\":\"11:00\",\"end\":\"11:30\"}]}",
+   "p_in": 723,
+   "p_out": 1073,
+   "latency_ms": 32847,
+   "resp_id": "gen-1787617556-Mqtjz0vqcGFJc1oB6E3b",
+   "transport_retries": 0,
+   "note": "parse: no JSON object found",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "schedule"
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-06",
+  "rep": 2,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 53960,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 5, \"h1_sum_exact\": false, \"h2_infra_floor\": false, \"h3_training_cap\": false, \"h4_ev_tool_cap\": false, \"h5_veto\": false, \"s1_training_pref\": false, \"s2_events_headroom\": false, \"s3_infra_headroom\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 274,
+  "v_out": 1961,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "**Extraction items**\n- reference_date: 2026-08-24 (Monday)\n- total_budget: \u20ac19,000\n- budget_lines: infra, tooling, training, events\n- hard_constraints: infra \u2265 \u20ac6,300; training \u2264 25% of total AND training \u2264 \u20ac4,800 (source states both; stricter effective bound = \u20ac4,750); events + tooling combined \u2264 \u20ac8,000; lines must sum to exactly \u20ac19,000; no single line > \u20ac9,500 (lead veto)\n- exclusion: no single line may exceed \u20ac9,500 \u2014 forbidden by lead veto\n- soft_preferences_ranked_lexicographic: 1) training \u2265 \u20ac2,400; 2) events+tooling unused headroom \u2265 \u20ac250 (combined \u2264 \u20ac7,750); 3) infra \u2264 \u20ac7,300\n- clarifying_note: source gives \"25% of the total\" (= \u20ac4,750) alongside an explicit \"(\u2264 \u20ac4,800)\"; the stricter bound (\u20ac4,750) is enforced so the result is valid under either reading.\n\n**Planning/scheduling items (allocation)**\n- infra: \u20ac7,000\n- tooling: \u20ac3,500\n- training: \u20ac4,500\n- events: \u20ac4,000\n\nConstraint check: sum = 7,000+3,500+4,500+4,000 = \u20ac19,000 exact \u2713; infra \u2208 [6,300, 7,300] \u2713; training \u2264 \u20ac4,750 (also \u2264 \u20ac4,800) and \u2265 \u20ac2,400 \u2713; events+tooling = \u20ac7,500 \u2264 \u20ac8,000 with \u20ac500 headroom (\u2265 \u20ac250) \u2713; max line \u20ac7,000 \u2264 \u20ac9,500 (no veto trigger) \u2713. All three soft preferences satisfied in rank order.\n\n**Tool-use items**\n- none required (pure computation from source; no external calls, nothing missing, nothing unavailable)\n\n**Requested JSON artifact**\n\n```json\n{\"infra\": 7000, \"tooling\": 3500, \"training\": 4500, \"events\": 4000}\n```",
+   "p_in": 723,
+   "p_out": 1961,
+   "latency_ms": 53960,
+   "resp_id": "gen-1787621143-HMZPmG1hD5efPagaRbgV",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "events",
+  "infra",
+  "steps",
+  "tooling",
+  "training"
+ ]
+}

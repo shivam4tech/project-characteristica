@@ -1,0 +1,58 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-05",
+  "item_id": "CP-05-00",
+  "rep": 0,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 51197,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 0, \"h1_sum_exact\": true, \"h2_infra_floor\": true, \"h3_training_cap\": true, \"h4_ev_tool_cap\": true, \"h5_veto\": true, \"s1_training_pref\": true, \"s2_events_headroom\": true, \"s3_infra_headroom\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 274,
+  "v_out": 1705,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "```json\n{\n  \"infra\": 5000,\n  \"tooling\": 2000,\n  \"training\": 2500,\n  \"events\": 2500\n}\n```\n\nConstraint check (all grounded in source):\n- Hard: infra \u2265 \u20ac4,000 \u2192 5,000 \u2713 | training \u2264 \u20ac3,000 \u2192 2,500 \u2713 | events+tooling = \u20ac4,500 \u2264 \u20ac5,000 \u2713 | sum = \u20ac12,000 exact \u2713 | no line > \u20ac6,000 \u2713\n- Soft (lexicographic): 1) training \u2265 \u20ac1,500 \u2713 | 2) events+tooling headroom = \u20ac500 \u2265 \u20ac250 \u2713 | 3) infra \u2264 \u20ac5,000 \u2713\n\nNote: the split between tooling and events is not individually pinned by any constraint beyond their \u20ac4,500 combined total; this artifact is one valid solution satisfying every hard constraint and all three soft preferences.",
+   "p_in": 723,
+   "p_out": 1705,
+   "latency_ms": 51197,
+   "resp_id": "gen-1787617130-jRec4CbV3DZt4qc0bvkX",
+   "transport_retries": 1,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw",
+  "events",
+  "infra",
+  "steps",
+  "tooling",
+  "training"
+ ]
+}

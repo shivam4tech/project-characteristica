@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "NL-opt",
+  "family": "CP",
+  "template": "CP-01",
+  "item_id": "CP-01-02",
+  "rep": 4,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 68866,
+  "conv_lat_ms": 0,
+  "score": 0.0,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"hard_violations\": 9, \"h1_dur_a\": false, \"h2_projector_a\": false, \"h3_capacity\": false, \"h4_lunch\": false, \"h5_org_buffer\": false, \"h6_avail_b\": false, \"h7_precedence_d\": false, \"h8_grid\": false, \"h9_complete\": false, \"s1_quiet_c\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 314,
+  "v_out": 2048,
+  "f_tok": 449,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 449,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "NL-opt",
+   "ok": true,
+   "content": "",
+   "p_in": 763,
+   "p_out": 2048,
+   "latency_ms": 68866,
+   "resp_id": "gen-1787623663-rywgsU8XglCsmkxazpzx",
+   "transport_retries": 4,
+   "note": "",
+   "f_tok": 449
+  }
+ ],
+ "artifact_keys": [
+  "_raw"
+ ]
+}
