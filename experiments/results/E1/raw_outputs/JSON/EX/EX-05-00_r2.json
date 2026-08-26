@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-05",
+  "item_id": "EX-05-00",
+  "rep": 2,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 33111,
+  "conv_lat_ms": 0,
+  "score": 0.8,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"category\": false, \"version\": true, \"symptom_condition\": true, \"tier\": true, \"seats\": true, \"deadline_day\": true, \"deadline_month\": false, \"mitigations_tried\": true, \"priority\": true, \"exec_visible\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 244,
+  "v_out": 1285,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"category\":\"invoice export failure\",\"version\":\"3.2.1\",\"symptom_condition\":\"feature spins forever on records over ~50 pages\",\"tier\":\"Enterprise\",\"seats\":200,\"deadline_day\":28,\"deadline_month\":\"August\",\"mitigations_tried\":[\"clearing cache\",\"switching from Safari to Chrome\"],\"priority\":\"urgent\",\"exec_visible\":true}}",
+   "p_in": 633,
+   "p_out": 1285,
+   "latency_ms": 33111,
+   "resp_id": "gen-1787674769-gRQMbs7KcK8iKSSpGJ6l",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

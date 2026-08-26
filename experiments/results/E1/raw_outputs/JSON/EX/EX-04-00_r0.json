@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-04",
+  "item_id": "EX-04-00",
+  "rep": 0,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 22024,
+  "conv_lat_ms": 0,
+  "score": 0.9375,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"ship_date\": true, \"pickup_start\": true, \"pickup_end\": true, \"cargo1_name\": true, \"cargo1_qty\": true, \"cargo1_unit\": true, \"cargo1_weight_each_kg\": true, \"cargo2_name\": true, \"cargo2_qty\": true, \"cargo2_unit\": true, \"cargo2_weight_total_kg\": true, \"handling_exclusion\": false, \"docs_deadline_date\": true, \"roll_to_date\": true, \"docs_filed_date\": true, \"condition_triggered\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 340,
+  "v_out": 807,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"ship_date\":\"2026-08-24\",\"pickup_start\":\"10:00\",\"pickup_end\":\"12:00\",\"cargo1_name\":\"tile\",\"cargo1_qty\":12,\"cargo1_unit\":\"crates\",\"cargo1_weight_each_kg\":240,\"cargo2_name\":\"grout\",\"cargo2_qty\":1,\"cargo2_unit\":\"pallet\",\"cargo2_weight_total_kg\":380,\"handling_exclusion\":\"stacking pallets\",\"docs_deadline_date\":\"2026-08-21\",\"roll_to_date\":\"2026-08-31\",\"docs_filed_date\":\"2026-08-19\",\"condition_triggered\":false}}",
+   "p_in": 729,
+   "p_out": 807,
+   "latency_ms": 22024,
+   "resp_id": "gen-1787673613-3zUzDUAute0DXPTnSJoS",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

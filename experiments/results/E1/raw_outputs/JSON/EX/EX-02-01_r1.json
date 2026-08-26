@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-02",
+  "item_id": "EX-02-01",
+  "rep": 1,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 58692,
+  "conv_lat_ms": 0,
+  "score": 0.8462,
+  "gate_pass": false,
+  "f0_ok": true,
+  "detail": "{\"incident_id\": true, \"service\": true, \"symptom\": true, \"t_open\": true, \"blast_region\": true, \"blast_share\": false, \"rollback_deploy_id\": true, \"rollback_time\": true, \"suspected_cause\": true, \"status_page_time\": true, \"enterprise_email_required\": true, \"exception_company\": true, \"exception_notify\": false}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 306,
+  "v_out": 1856,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"incident_id\":\"4920\",\"service\":\"auth-service\",\"symptom\":\"timing out\",\"t_open\":\"2026-08-13T11:05\",\"blast_region\":\"EU\",\"blast_share\":13,\"rollback_deploy_id\":\"2026-08-12.9\",\"rollback_time\":\"2026-08-13T11:24\",\"suspected_cause\":\"cache stampede on session lookup\",\"status_page_time\":\"2026-08-13T10:58\",\"enterprise_email_required\":false,\"exception_company\":\"Osaka Freight\",\"exception_notify\":\"account manager\"}}",
+   "p_in": 695,
+   "p_out": 1856,
+   "latency_ms": 58692,
+   "resp_id": "gen-1787672926-x2igXxHiby4PIYeJmZEY",
+   "transport_retries": 0,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}

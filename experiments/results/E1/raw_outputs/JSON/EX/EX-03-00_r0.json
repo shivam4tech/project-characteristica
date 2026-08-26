@@ -1,0 +1,53 @@
+{
+ "outcome": {
+  "arm": "JSON",
+  "family": "EX",
+  "template": "EX-03",
+  "item_id": "EX-03-00",
+  "rep": 0,
+  "temperature": 0.7,
+  "n_attempts": 1,
+  "lat_total_ms": 13029,
+  "conv_lat_ms": 0,
+  "score": 1.0,
+  "gate_pass": true,
+  "f0_ok": true,
+  "detail": "{\"rent_due_day\": true, \"fee_amount_usd\": true, \"fee_trigger_days\": true, \"prohibition_paint\": true, \"prohibition_sublet\": true, \"pet_weight_limit_kg\": true, \"consent_escape\": true, \"notice_hours\": true, \"notice_exception\": true}",
+  "final_error": "",
+  "transport_fail": false,
+  "v_in": 245,
+  "v_out": 455,
+  "f_tok": 389,
+  "r_in": 0,
+  "r_out": 0,
+  "k_in": 0,
+  "k_out": 0,
+  "k_rin": 0,
+  "k_rout": 0,
+  "n_conv_attempts": 0,
+  "f_conv_tok": 0,
+  "f_exec_tok": 389,
+  "conv_errors": "",
+  "kerr_flag": false,
+  "doc_valid": true
+ },
+ "attempts": [
+  {
+   "stage": "execute",
+   "idx": 1,
+   "block": "JSON",
+   "ok": true,
+   "content": "{\"fields\":{\"rent_due_day\":1,\"fee_amount_usd\":45,\"fee_trigger_days\":5,\"prohibition_paint\":true,\"prohibition_sublet\":true,\"pet_weight_limit_kg\":20,\"consent_escape\":true,\"notice_hours\":24,\"notice_exception\":\"emergencies\"}}",
+   "p_in": 634,
+   "p_out": 455,
+   "latency_ms": 13029,
+   "resp_id": "gen-1787673242-wCVfBpda2MWoOzv3iFNO",
+   "transport_retries": 4,
+   "note": "",
+   "f_tok": 389
+  }
+ ],
+ "artifact_keys": [
+  "fields"
+ ]
+}
