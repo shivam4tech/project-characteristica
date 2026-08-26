@@ -34,7 +34,7 @@ AMENDMENT_REF = "experiments/E1_AMENDMENT_1.md (W0f' 2026-08-24): D-2 revised to
 
 # ---------------- decoding params (identical all arms) -----------------------
 TEMPERATURE = 0.0
-MAX_TOKENS = 2048
+MAX_TOKENS = 8192             # A1 fix (2026-08-25): 2048 starved the SIR converter — 445/448 calls burned cap pre-output (empty content). Raised per A1_ROOT_CAUSE.md recommendation. Applies to re-run cells; primary matrix documented at 2048.
 SEED_PRIMARY = None          # provider seed param; set post-smoke if accepted
 GEN_SEED = 20260824          # item bank generator (pre-reg §2)
 BOOTSTRAP_SEED = 20260824    # §7 paired bootstrap

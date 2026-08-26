@@ -537,12 +537,17 @@ def run_f3():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["smoke", "primary", "h2", "repl", "f3"])
+    ap.add_argument("mode", choices=["smoke", "primary", "h2", "repl", "f3", "rerun_sir"])
     ap.add_argument("--comparator", default="JSON")
     ap.add_argument("--families", default="EX,TU")
     banks = load_banks()
     a = ap.parse_args()
-    if a.mode == "smoke":
+    if a.mode == "rerun_sir":
+        # Amendment-3: CSIR-SIR arm only, all families, temp=0, separate CSV
+        js = [{"arm": "CSIR-SIR", "item": it, "rep": None, "temp": 0.0}
+              for fam in CFG.FAMILIES for it in banks[fam]]
+        run_batch("rerun_sir", js, "RERUN-SIR")
+    elif a.mode == "smoke":
         jobs = [{"arm": ar, "item": it, "rep": None, "temp": 0.0}
                 for ar in ("NL-plain", "NL-opt", "JSON") for it in
                 (banks["EX"][0], banks["TU"][0])]
