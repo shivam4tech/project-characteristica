@@ -2,21 +2,21 @@
  "outcome": {
   "arm": "JSON",
   "family": "TU",
-  "template": "TU-03",
-  "item_id": "TU-03-00",
+  "template": "TU-05",
+  "item_id": "TU-05-00",
   "rep": 2,
   "temperature": 0.7,
   "n_attempts": 1,
-  "lat_total_ms": 16694,
+  "lat_total_ms": 65463,
   "conv_lat_ms": 0,
   "score": 1.0,
   "gate_pass": true,
   "f0_ok": true,
-  "detail": "{\"n_calls\": 3, \"asked\": true, \"recip\": true, \"content\": true}",
+  "detail": "{\"n_calls\": 2, \"order\": true, \"email\": true, \"status\": true, \"after\": true}",
   "final_error": "",
   "transport_fail": false,
-  "v_in": 269,
-  "v_out": 403,
+  "v_in": 271,
+  "v_out": 1602,
   "f_tok": 389,
   "r_in": 0,
   "r_out": 0,
@@ -37,11 +37,11 @@
    "idx": 1,
    "block": "JSON",
    "ok": true,
-   "content": "{\"clarify\":{\"missing\":[\"board recipient email address(es)\",\"quarterly numbers content or report attachment\"],\"question\":\"Which email address(es) should receive the message, and what are the quarterly numbers (or which document contains them) that should be sent to the board?\"}}",
-   "p_in": 658,
-   "p_out": 403,
-   "latency_ms": 16694,
-   "resp_id": "gen-1787726468-3EWxUT3Cu9I4bDnztxAu",
+   "content": "{\"calls\":[{\"tool\":\"orders.lookup\",\"args\":{\"customer_email\":\"gunnar@example.com\",\"status_filter\":\"processing\",\"placed_after\":\"2026-06-01\"}},{\"tool\":\"orders.cancel\",\"args\":{\"order_id\":\"$0.min_by(placed_at).order_id\",\"reason\":\"UNKNOWN\"}}]}",
+   "p_in": 660,
+   "p_out": 1602,
+   "latency_ms": 65463,
+   "resp_id": "gen-1787727111-R0rEtMyudMrbmT5vdFhh",
    "transport_retries": 0,
    "note": "",
    "f_tok": 389
@@ -49,7 +49,6 @@
  ],
  "artifact_keys": [
   "_raw",
-  "calls",
-  "clarify"
+  "calls"
  ]
 }
