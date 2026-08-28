@@ -70,3 +70,18 @@ Approximately hourly Director reports during active lab operation. Repository co
 - Language: inference-time interchange, KV-cache/F/N, K_reinj wall, UNL-replay, Pareto frontier — charter wording gates honored
 - Next: Cycle 6 Ship (commit & push, watchdog, final verify) — ~7.5h remaining /40h, 3.5h past 36h warning headroom
 
+
+### 2026-08-28 20:10 IST — Cycle 6 (60m) — 30m checkpoint
+- Staged 96 files → commit 07427a2 (Cycles 1-6: FINAL 600+300+180, P4 ACCEPT, VERDICT RED, ledger C-020..C-030, STATUS RED, foundation/STATUS)
+- Remaining snapshots committed: paper/_cycle2/3 (Cycle 2-3 durability)
+- Local commits ready — .hermes/ plan intentionally NOT pushed (local cycle discipline)
+- Next 30m: push to origin/main + watchdog status + final verify audit
+
+
+### 2026-08-28 20:45 IST — Cycle 6 (60m) — CLOSE — SHIPPED to origin/main
+- Push: 07427a2 + 4e85d6c → origin/main OK (b85c8f5..4e85d6c main->main)
+- Watchdog: characteristica-lab-watchdog 75a8ca76a1b4 [active] every 30m — kept active for CE-02 continuity (last run 18:12 ok, next 18:42)
+- Final audit: 17/17 checks PASS — ledger 30 rows, paper [DATA:]0 TODO0 interim0 351 ln 5 figs, P4 ACCEPT PLACEHOLDER0 G1-G8 15 PASS, FINAL 600 admitted, STATUS RED, foundation/STATUS exists, budget 32.5/40, origin/main synced (4e85d6c)
+- Remaining untracked: .hermes/ (local cycle plan, intentionally not pushed) — no action
+- CE-01 CLOSED: paper FINAL, P4 ACCEPT, VERDICT RED (H0 stands, H1 0/3, H3 falsified, P6 confirmed), publishable negative result with diagnostic K decomposition — ready for archival
+
