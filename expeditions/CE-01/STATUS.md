@@ -1,10 +1,10 @@
 # CE-01 Status Dashboard
 
-_Living document. Update after every substantive work session. Last updated: 2026-08-24 ~15:30 IST (Director session — P1 exit signed, P2 synthesis complete)._
+_Living document. Update after every substantive work session. Last updated: 2026-08-28 19:15 IST (Director session — P5 verdict RED, Cycles 1–5 complete, paper FINAL)._
 
 ## Current Phase
 
-**P2 — Synthesis** (entered 2026-08-24)
+**P5 — Verdict Synthesis → P6 Ship** (entered 2026-08-28) — P2 DONE, P3 DONE, P4 ACCEPT, P5 RED issued
 
 **P1 exit: SIGNED OFF 2026-08-24 by Research Director after direct inspection of all seven deliverable sets** (not on coordinator summary): `literature/leibniz_extraction.md` (716 ln, 12 primary passages w/ scan-verified GP page cites), `literature/pre_leibniz/gate_rulings.md` + 6 extraction files (289 ln), `literature/post_leibniz/formal_systems_extraction.md` (371 ln incl. §8), `literature/modern/prior_art_map.md` (196 ln, 16/16 domains), `benchmarks/MEASUREMENT_PLAN.md` (267 ln), `literature/modern/ir_analogy_assessment.md` (142 ln, FINAL). Verification performed: full read-through; placeholder sweep across literature/, benchmarks/, systems/ returned ZERO hits; spot-checked citations (Wilkins Essay pp. 23/395/404 scans; Descartes AT I 76–88 dating flag; Kircher letter properly quarantined Unresolved; Leibniz OCR-error bracketing discipline). Standards hold. One deficiency logged as blocked item (see below): LINGENIC_CRITICAL_ANALYSIS.md absent from repo contrary to directive description — does not gate P1 exit since Lingenic was never in the citation chain.
 
@@ -13,9 +13,9 @@ _Living document. Update after every substantive work session. Last updated: 202
 | Quantity | Value |
 |---|---|
 | Total budget | 40.0 agent-hours |
-| Elapsed (cumulative agent work) | 20.5 h |
-| Remaining | 19.5 h |
-| Hard-cap warning threshold | 36.0 h (no new workstreams past this point) |
+| Elapsed (cumulative agent work) | ~32.5 h (reconciled Cycles 1–5; ledger estimates include overnight orchestrator ~4 h + paper/P4/P5 ~6 h) |
+| Remaining | ~7.5 h |
+| Hard-cap warning threshold | 36.0 h (no new workstreams past this point — headroom 3.5 h) |
 
 Note: wall-clock time ≠ research budget. Multiple agents may run concurrently; hours are charged per agent-hour of substantive work. Dead batch `deleg_ff12b2e5` charged 0.0 h (see WORKERS.md incident log). Teardown batch `deleg_791e44c6` charged 1.0 h conservative (WORKERS.md incident log #2).
 
@@ -24,9 +24,10 @@ Note: wall-clock time ≠ research budget. Multiple agents may run concurrently;
 | P0 Setup & Registration | 3.0 | 0.0 |
 | P1 Parallel Reconnaissance | 14.0 | 14.8 |
 | P2 Synthesis | 6.0 | 1.7 |
-| P3 Pilot Experimentation | 9.0 | 2.5 |
-| P4 Adversarial Review | 4.0 | 0.0 |
-| P5 Verdict Synthesis | 4.0 | 0.0 |
+| P3 Pilot Experimentation | 9.0 | ~7.5 (incl. overnight ox-alpha 600+300+180 + 8192 sensitivity 70) |
+| P4 Adversarial Review | 4.0 | ~2.0 (P4_PREP + Cycle 4 recomputation, 15-cell + ALL-600 sweep, G1–G8) |
+| P5 Verdict Synthesis | 4.0 | ~1.5 (Cycle 5 verdict + ledger C-020–C-030, modern-technical rewrite) |
+| Paper FINAL | — | ~2.5 (Cycles 2–3, 351 ln + 5 figs) |
 
 (P1 spent exceeds its 14.0 allocation by 0.8 h due to two batch failures and re-dispatches; absorbed without expanding total budget.)
 
@@ -61,12 +62,12 @@ _None blocking P3 entry._ Registered non-blocking items (tracked in CLAIM_LEDGER
 
 | ID | Statement (abbrev.) | Status |
 |---|---|---|
-| H1 | An SIR beats strong NL prompting on some task classes net of conversion overhead | registered, untested |
-| H0 | Net of all overheads, SIR gives no meaningful general advantage | registered, untested |
-| H2 | Closed primitive vocabulary reduces output variance even at equal mean accuracy | registered (P2), untested |
-| H3 | Net SIR benefit is reuse-gated: non-positive at N=1, positive above break-even N* | registered (P2), untested |
-| H4 | Structured SIR shifts failures from silent-wrong to detected-and-flagged vs NL | registered (P2), untested |
-| H5 | Compressed/structured representations degrade more under paraphrase than plain NL | registered (P2), untested |
+| H1 | An SIR beats strong NL prompting on some task classes net of conversion overhead | **FALSIFIED — no support in any family (0/3): $ beat fails, F1 deficit 74/73/94 pts >δ, repl CP/TU True EX False moot, P4 ACCEPT)** |
+| H0 | Net of all overheads, SIR gives no meaningful general advantage | **SUPPORTED — stands, favored (0 families pass H1; SIR strictly dominated by JSON on F1 + tokens in every family)** |
+| H2 | Closed primitive vocabulary reduces output variance even at equal mean accuracy | **NOT-EVALUABLE, degenerate (within-SD 0.000 <0.119<0.144 but means 0.086/0.838/0.323 fail precondition)** |
+| H3 | Net SIR benefit is reuse-gated: non-positive at N=1, positive above break-even N* | **FALSIFIED via (a) Δ(N)≤0 ∀N (−9k..−11.5k tok, $≡0), no N* at any N** |
+| H4 | Structured SIR shifts failures from silent-wrong to detected-and-flagged vs NL | **FALSIFIED (CP SIR 100% vs JSON 21.4% bought by total rejection + 74-pt F1 collapse; falsifier fires)** |
+| H5 | Compressed/structured representations degrade more under paraphrase than plain NL | **DEFERRED to E2 (D-3, not tested in E1)** |
 
 See `hypotheses/REGISTRY.md`.
 
@@ -77,15 +78,20 @@ See `hypotheses/REGISTRY.md`.
 
 ## Experiments Completed
 
-_None._
+- **E1 primary** — 600/600 admitted (4×3×50, T=0, stealth/ox-alpha, 2026-08-25 01:32–05:22 IST, DEV-7 latest-TS, G1 PASS) — FINAL `E1_RESULTS_FINAL.md` §2–§9
+- **H2 variance** — 300/300 (3×20×5 @T0.7, seeds 101–105) — NOT-EVALUABLE degenerate
+- **Repl stochastic** — 180/180 (2×3×10×3 @T0.7, seeds 201–203) — CP/TU True, EX False
+- **Amendment-3 sensitivity** — 70/150 @8192 cap fast-closed, identical failure, not folded
+- **Fabrication sweep** — CLEAN over ALL 600 (P4 S2.4)
+- **Paper** — 351 ln FINAL, 5 figs FINAL (150 dpi, Okabe-Ito)
 
 ## Strongest Positive Signal
 
-_None yet._
+**JSON-schema control:** captures the guide-rail value without SIR — CP +49.6 pts vs NL-plain, TU +22 pts vs NL-plain, and the only economically efficient frontier (3,493 tok/success). Single valid CSIR doc (EX-04-05, 0.813) shows executor *can* consume CSIR when it emits — population, not representation, is the wall.
 
 ## Strongest Negative Signal
 
-_None yet._ (Historical base rate noted in P2_SYNTHESIS §3.1: every universal-language artifact died as language; survivors live as machinery. H0 remains fully live.)
+**Converter wall:** K=11,112 tok/item (K_reinj 66.7% deterministic repair waste), 1/150 valid docs (0.7%), SIR F1 0.082/0.071/0.000 vs JSON 0.826/0.806/0.940, Δ(N) −9k..−11.5k no break-even at any N (C-021, C-026). P6 TU adversarial CONFIRMED stronger than predicted (0 vs 0.940). (Historical base rate now measured.)
 
 ## Unresolved High-Priority Questions
 
@@ -95,9 +101,9 @@ OQ1/OQ2/OQ3 substantively answered by P1 + P2_SYNTHESIS mechanism map M-01…M-1
 
 ## Provisional Verdict
 
-**UNDECIDED**
+**RED — Discontinue CSIR/0 as specified (inference-time interchange with per-item neural converter)** — see `expeditions/CE-01/VERDICT.md` (Cycle 5, 2026-08-28).
 
-_Rationale: no experimental evidence collected. P2 produced a coherent candidate architecture and falsifiable predictions, but P1/P2 historical evidence alone mildly favors H0 as prior (conversion-economics wall recurs; no positive existence proof exists). E1 is the discriminator._
+_Rationale: P4 ACCEPT (8/8 gates PASS, fabrication CLEAN, TU verbatim PASS); H1 0/3 families (four-condition gate fails on 1+2 decisively); H3 falsified via (a) no N* at any N; P6 TU adversarial confirmed (stronger than registered); converter economics wall measured as Class-I per C-007/C-026 (K≈11.1k, 99.3% non-production). H0 stands, favored, scoped to stealth/ox-alpha at CE-01 power ceiling. Publishable negative result with diagnostic decomposition; no cheap lever identified (Amendment-3 sensitivity falsified MAX_TOKENS fix). Re-invest only via newly pre-registered expedition moving conversion off per-item hot path (distilled converter, checkpoint-contract framing, or programmatic synthesis)._
 
 ## Session Notes (Director)
 

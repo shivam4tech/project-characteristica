@@ -1,0 +1,1 @@
+{"cycle": 1, "title": "Repl integration", "started": "2026-08-28T15:32:00+05:30", "budget": "60m", "checkpoint_at": "30m", "inputs": ["outcomes.csv","h2_outcomes.csv","repl_outcomes.csv","manifest.json","E1_PRE_REGISTRATION.md"], "outputs": ["E1_RESULTS_FINAL.md §1/§7/§9","_repl_snapshot.json","analysis_state.json"], "rerun_policy": "fast-close frozen at 70/150"}

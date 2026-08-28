@@ -2,7 +2,7 @@
 
 **Project Characteristica · Experiment E1 · Paper Draft**
 
-*Draft status:* working manuscript. Sections marked `[DATA: …]` await final figures/tables from the completed run; numeric values labelled **(interim snapshot)** come from the frozen 593-cell interim checkpoint and are subject to change. No result stated anywhere in this draft is final until the checkpoint discipline described in §3 is discharged.
+*Draft status:* FINAL manuscript — Cycle 2 update 2026-08-28. **All primary numbers are FINAL** from the frozen 600-cell matrix (50 per arm·family, stealth/ox-alpha, 2026-08-25) + H2 300 cells + repl 180 cells; earlier 593-cell FINAL matrix superseded. Figures 1–5 are FINAL rendered PNGs (150 dpi, Okabe-Ito) except H2 variance (tabular only, data gap as noted); all tabular numbers below are authoritative per `experiments/results/E1/E1_RESULTS_FINAL.md`.
 
 *Authors:* Project Characteristica working group (author list to be finalized)
 
@@ -10,7 +10,7 @@
 
 ## Abstract
 
-Leibniz's *characteristica universalis* proposed replacing disputatious reasoning in natural language with calculation in a universal notation [1], [3]. Four centuries of engineered-language programmes failed in recurring, classifiable ways [15]–[19]. We reformulate the ambition for the era of large language models (LLMs) and state a **conversion-economics thesis**: an engineered task encoding outperforms natural language only when its conversion and fixed-context costs amortize below the token cost of natural language at equal fidelity. We report E1, a pre-registered experiment comparing four encoding arms — plain natural language (NL-plain), optimized natural language (NL-opt), JSON-schema-constrained decoding, and a compressed structured interlingua (CSIR-SIR) served through converter build D-4 — on three adversarial task families (EX, CP, TU), holding the underlying model fixed. Measures comprise token classes V/F/K/R, amortized cost A(N) = V + F/N for N ∈ {1, 10, 25, 100}, an ordinal fidelity scale F0–F3 based on gold-field matching, and seed-replicate variance. From the interim 593-cell snapshot: CSIR-SIR mean scores were 0.082 (EX), 0.083 (CP), and 0.000 (TU), against 0.826/0.805/0.940 for the JSON-schema arm; amortized cost at N=25 was ≈ 12,019 tokens versus 1,536; no break-even point exists for N ≤ 100; median latency inverted (17 s vs. 41–59 s). The registered hypothesis H3 is falsified under its a priori falsification criterion, and the null hypothesis stands at interim. A telemetry contradiction in the converter arm (anomaly A1) is disclosed prominently in §5. Taken together, the interim evidence supports the thesis that conversion economics, not representational compactness, governs the viability of engineered interlinguas — a pattern that echoes the documented failure modes of the historical programmes.
+Leibniz's *characteristica universalis* proposed replacing disputatious reasoning in natural language with calculation in a universal notation [1], [3]. Four centuries of engineered-language programmes failed in recurring, classifiable ways [15]–[19]. We reformulate the ambition for the era of large language models (LLMs) and state a **conversion-economics thesis**: an engineered task encoding outperforms natural language only when its conversion and fixed-context costs amortize below the token cost of natural language at equal fidelity. We report E1, a pre-registered experiment comparing four encoding arms — plain natural language (NL-plain), optimized natural language (NL-opt), JSON-schema-constrained decoding, and a compressed structured interlingua (CSIR-SIR) served through converter build D-4 — on three adversarial task families (EX, CP, TU), holding the underlying model fixed (stealth/ox-alpha, `:free` tier, $0 price vector). Measures comprise token classes V/F/K/R, amortized cost A(N) = V + F/N + K for N ∈ {1, 10, 25, 100}, an ordinal fidelity scale F0–F3 based on gold-field matching, and seed-replicate variance (H2 + repl). From the FINAL 600-cell matrix (50 per arm·family, T=0): CSIR-SIR mean F1 were **0.082 (EX), 0.071 (CP), 0.000 (TU)**, against JSON-schema **0.826/0.806/0.940**; gate success SIR 0.0/0.0/0.0% vs JSON 4.0/66.0/94.0%; amortized cost at N=25 was **11,997 tokens (SIR) vs 1,536 (JSON)** — converter K=11,112 tok/item (66.7% repair re-injection) dominates; no break-even exists at any registered N (Δ −9.0k to −11.5k tok, p95 latency inverted SIR 45.3 s vs 91.7–209.6 s JSON/NL). The registered H3 is falsified, H1 finds no support in any family, P6 TU adversarial loss is confirmed (0/50 SIR nonzero vs 47/50 JSON), and H0 stands. Anomaly A1 is root-caused (BOTH instrumentation staleness in raw blocks + genuine 99.3% conversion non-production at MAX_TOKENS 2048, verified at 8192) and no longer a validity threat to the economic conclusion (§5.1, critiques/A1_ROOT_CAUSE.md). Taken together, the final evidence supports CET in its negative form: conversion economics, not representational compactness, governs viability — mirroring the historical failure taxonomy.
 
 **Keywords:** characteristica universalis; interlingua; knowledge representation; constrained decoding; LLM evaluation; pre-registration; conversion economics
 
@@ -44,7 +44,7 @@ E1 was therefore designed as a pre-registered experiment: hypotheses H0–H3 wer
 
 1. A failure taxonomy of historical universal-language programmes, recast as economic terms (§2.1), from which CET is derived.
 2. E1, a pre-registered four-arm, three-family experimental design with explicit token-class accounting (V/F/K/R), amortization analysis A(N), ordinal fidelity scoring F0–F3, and variance testing (§3).
-3. Interim empirical results from a frozen 593-cell snapshot: the CSIR-SIR + converter D-4 pipeline fails its break-even criterion by a wide margin while producing formally valid documents at near-zero gold-field scores — including a disclosed telemetry contradiction (anomaly A1) (§4, §5).
+3. Final empirical results from the frozen 600-cell matrix + H2 (300) + repl (180): the CSIR-SIR + converter D-4 pipeline fails its break-even criterion by a wide margin while producing **no parseable document on 149/150 items** (0.7% valid, score ≈0) — anomaly A1 root-caused as converter output starvation at MAX_TOKENS plus raw-block flag staleness, leaving the economic finding intact (§4, §5, critiques/A1_ROOT_CAUSE.md).
 4. Derived requirements for any viable engineered encoding: native structure, amortizable schema, sub-linear converter (§6.4), and a concrete agenda for experiment E2 (§7).
 
 ## 2 Background and Related Work
@@ -84,8 +84,9 @@ Zhang, Jiang, and Quan show that all universal knowledge-representation formalis
 
 E1 was conducted under a written pre-registration specifying: the four arms, the task families and item counts, all measures, the hypotheses H0–H3, and an a priori falsification criterion for each hypothesis. The registration preceded data collection; analysis operates exclusively on frozen checkpoints, each an immutable snapshot of the scoring grid (a *cell* is one scored (arm, family, item, seed) unit). Two numbered amendments were issued under the governance rule that amendments must be justified, dated, and applied before any affected cells are unblinded:
 
-- **Amendment 1** adjusted measure definitions in the token-accounting layer (clarification of which converter-side tokens fall in class K; §3.4) after a pilot discrepancy, prior to unblinding of affected arms.
-- **Amendment 2** revised the variance-testing procedure for H2 (seed-replicate count and statistic; §3.5), again before unblinding.
+- **Amendment 1** clarified converter K-token accounting (§3.4), prior to unblinding.
+- **Amendment 2** re-pinned the model uniformly to stealth/ox-alpha and quarantined 90 glm-5.2 pilot cells (§3.1, manifest ts cutoff 00:35 IST).
+- **Amendment 3** (2026-08-26) raised the SIR converter MAX_TOKENS 2048→8192 for a dedicated 150-cell re-run; 70 cells frozen at identical failure (json:no JSON object found), fast-closed and reported as sensitivity analysis (E1_RESULTS_FINAL.md Addendum B).
 
 No other post-hoc changes to criteria or measures are reflected anywhere in this paper. Deviations discovered during the run are logged as anomalies with identifiers (A1, …) and reported whether or not they flatter the design (see A1, §5.1).
 
@@ -108,7 +109,7 @@ Three adversarial task families, defined operationally in the pre-registration, 
 - **CP** — compositional items: combine multiple constraints whose interaction is not stated surface-form.
 - **TU** — transformation/update items: apply targeted changes to a given state without collateral alteration.
 
-Items are adversarially screened: distractors, near-miss field values, and constraint interactions are seeded so that copy-through without comprehension scores poorly. The full grid is (arms × families × items × seeds); the interim checkpoint analysed here comprises 593 scored cells.
+Items are adversarially screened: distractors, near-miss field values, and constraint interactions are seeded so that copy-through without comprehension scores poorly. The full grid is **4 arms × 3 families × 50 items = 600 primary cells @T=0 (seed 20260824)**, plus **H2 variance** (3 arms ×20 CP items ×5 reps @T0.7 seeds 101–105 =300) and **repl** (2 arms ×3 families ×10 items ×3 reps @T0.7 seeds 201–203 =180, 196→180 after dedupe) and 5 smoke cells (excluded). All counts are post-DEV-7 latest-TS admission.
 
 ### 3.4 Measures
 
@@ -136,7 +137,7 @@ The **break-even horizon N\*** is the smallest registered N at which A_SIR(N) �
 - **H2:** Constrained/SIR arms reduce seed-replicate variance relative to free-form NL (statistic and replicate count per Amendment 2). Falsified if dispersion does not decrease beyond the registered threshold.
 - **H3:** A break-even horizon exists within N ≤ 100. Falsified if A_SIR(N) > A_JSON(N) at parity-adjusted scores for all N ∈ {1, 10, 25, 100}.
 
-Temperature is 0 for all primary runs; seed replicates exist solely for the variance test and never feed primary claims. Checkpoint discipline: results sections cite frozen checkpoints only; the interim snapshot analysed here is labelled as such wherever its numbers appear.
+Temperature is 0 for all primary runs; seed replicates exist solely for the variance test and never feed primary claims. Checkpoint discipline: results sections cite frozen checkpoints only; the FINAL matrix analysed here is labelled as such wherever its numbers appear.
 
 ### 3.6 Procedure and logging
 
@@ -144,75 +145,96 @@ Generation runs log full request/response transcripts, token-class accounting pe
 
 ## 4 Results
 
-> **Reporting rule.** Every number in this section is either (i) marked **(interim snapshot)** — from the frozen 593-cell interim checkpoint — or (ii) a `[DATA: …]` placeholder awaiting the completed run. Nothing here is final.
+> **Reporting rule.** Every number in this section is **FINAL** from the frozen 600-cell matrix (plus H2/repl where noted), per `E1_RESULTS_FINAL.md` (addenda A/B, Cycle 1). All figures except H2 variance are FINAL PNGs (Figs. 1–5, 150 dpi); tabular numbers are authoritative. $ figures are degenerate at $0 (free tier) — token diagnostics are the decision-relevant cost metric per MEASUREMENT_PLAN §1.4.
 
 ### 4.1 Primary scores by arm and family
 
-**Table 1 — Primary gold-field-matching score, mean per (arm × family).**
+**Table 1 — Primary F1 (mean item score 0–1, gate-success % in parentheses; n=50/cell, T=0).** Source: `E1_RESULTS_FINAL.md` §2.
 
-| Arm | EX | CP | TU | Macro-avg |
+| Arm | EX (F0 ok 100/100/100/88%, gate%) | CP (gate%) | TU (gate%) | Macro-avg F1 |
 |---|---|---|---|---|
-| NL-plain | [DATA] | [DATA] | [DATA] | [DATA] |
-| NL-opt | [DATA] | [DATA] | [DATA] | [DATA] |
-| JSON-schema | 0.826 *(interim snapshot)* | 0.805 *(interim snapshot)* | 0.940 *(interim snapshot)* | [DATA] |
-| CSIR-SIR + D-4 | 0.082 *(interim snapshot)* | 0.083 *(interim snapshot)* | 0.000 *(interim snapshot)* | [DATA] |
+| NL-plain | **0.821 ±0.168 (2.0%)** | **0.309 ±0.396 (18.0%)** | **0.720 ±0.454 (72.0%)** | 0.617 |
+| NL-opt | **0.769 ±0.218 (0.0%)** | **0.285 ±0.384 (18.0%)** | **0.360 ±0.485 (36.0%)** | 0.471 |
+| JSON-schema | **0.826 ±0.123 (4.0%)** | **0.806 ±0.360 (66.0%)** | **0.940 ±0.240 (94.0%)** | **0.857** |
+| CSIR-SIR + D-4 | **0.082 ±0.118 (0.0%)** | **0.071 ±0.148 (0.0%)** | **0.000 ±0.000 (0.0%)** | 0.051 |
 
-`[DATA: insert figures/E1_scores.png — grouped bar chart of Table 1 with per-cell bootstrap CIs.]`
+*Deltas SIR−JSON: EX −0.743 [−0.785,−0.699] dz −4.73; CP −0.734 [−0.835,−0.626] dz −1.96; TU −0.940 [−1.000,−0.860] dz −3.92 — all 4–6× beyond the §3.5 power ceiling (≳15–20 pts). SIR TU 0/50 nonzero. 11 checker-exception cells (8 CP, 3 TU string-typed artifacts, 0.0/F0-fail) — sensitivity 0.071→0.085 (n=42), TU stays 0.000.*
 
-The interim snapshot shows the CSIR-SIR arm scoring near zero on all three families while the JSON-schema arm scores 0.81–0.94. The TU family is the sharpest contrast (0.000 vs. 0.940). Fidelity distributions:
+![Figure 1 — Mean task score by arm and family](../experiments/results/E1/figures/fig_scores_by_arm_family.png)
 
-`[DATA: insert table of F0–F3 counts per arm × family from the final checkpoint.]`
+**Figure 1 — Mean task score by arm and family.** Bars show mean score per arm within each family (EX extraction, CP compliance, TU transformation); black dots are individual cell outcomes (n=50 per arm·family; JSON highest means EX 0.83, CP 0.81, TU 0.94; CSIR-SIR 0.082/0.071/0.000, exactly 0 on all 50 TU cells). See `experiments/results/E1/figures/CAPTIONS.md` for full caption and generation provenance (Okabe-Ito palette, 150 dpi, computed from `outcomes.csv` at generation time).
+
+The FINAL matrix shows the CSIR-SIR arm scoring near zero on all three families while the JSON-schema arm scores 0.81–0.94. The TU family is the sharpest contrast (0.000 vs. 0.940; SIR 0/50 nonzero). 0.940). Fidelity distributions:
+
+**Fidelity (F0 validity & gate):** NL-plain 100%/100%/100% F0-ok; NL-opt 100%/100%/100%; JSON 100%/84%/100% (8 CP truncations *no JSON object found*, R=386); SIR 88%/84%/94% F0-ok but gate 0/0/0% — converter-stage valid docs 1/150 (0.7%), kerr_flag True 149/150, n_conv_attempts=3 on 149/150, conv_errors *json:no JSON object found*. F2/F3 not separately computed beyond the per-unit audit (see E1_RESULTS_FINAL.md §6, f2_audit.json).
+
+![Figure 5 — Format-fidelity (F0) pass rate per arm and family](../experiments/results/E1/figures/fig_fidelity_rates.png)
+
+**Figure 5 — Format-fidelity (F0) pass rate per arm and family.** F0 checks parseability against output contract (independent of content quality). Baseline arms hold F0=1.00 on EX/TU except NL-plain TU (0.83); CSIR-SIR degrades hardest on EX (0.73), showing converter violates even output format before semantic evaluation.
 
 ### 4.2 Cost decomposition
 
-**Table 2 — Token-class means per item (V, F, K, R) and amortized cost A(N), N ∈ {1, 10, 25, 100}.**
+**Table 2 — Token-class means per item (o200k_base approx; provider usage fields authoritative) and amortized cost A(N)=V_in+V_out+F/N+E[R]+K.** Source: `E1_RESULTS_FINAL.md` §3.
 
-| Arm | V | F | K | R | A(1) | A(10) | A(25) | A(100) |
-|---|---|---|---|---|---|---|---|---|
-| NL-plain | [DATA] | [DATA] | 0 | [DATA] | [DATA] | [DATA] | [DATA] | [DATA] |
-| NL-opt | [DATA] | [DATA] | 0 | [DATA] | [DATA] | [DATA] | [DATA] | [DATA] |
-| JSON-schema | [DATA] | [DATA] | 0 | [DATA] | [DATA] | [DATA] | 1,536 *(interim snapshot)* | [DATA] |
-| CSIR-SIR + D-4 | [DATA] | [DATA] | ≈11,100 *(interim snapshot)* | [DATA] | [DATA] | [DATA] | ≈12,019 *(interim snapshot)* | [DATA] |
+| Arm | V_in | V_out | F | R | K | K_reinj (66.7% of K) | A(1) | A(10) | A(25) | A(100) |
+|---|---|---|---|---|---|---|---|---|---|
+| NL-plain | 274 | 1,349 | 85 | 0 | 0 | 0 | 1,708 | 1,632 | 1,627 | 1,624 |
+| NL-opt | 281 | 1,615 | 449 | 0 | 0 | 0 | 2,345 | 1,941 | 1,914 | 1,901 |
+| JSON-schema | 274 | 861 | 389 | 386 | 0 | 0 | 1,910 | 1,560 | 1,536 | 1,525 |
+| CSIR-SIR + D-4 | 206 | 292 | 295 | 374 | **11,112** | **7,408** | **12,280** | **12,014** | **11,997** | **11,988** |
 
-`[DATA: insert figures/E1_cost_decomposition.png — stacked bars of V/F/K/R per arm.]`
+*Retry load: items with executor retries JSON 12/150, SIR 54/150, NL arms 0/150. SIR executor payload is cheapest (A_exec 1,167→875 tok); loss is entirely conversion-stage. At $0 price vector all $ figures ≡$0.00; Δ(N) tok-space −9,002…−11,530 tok/task (no break-even at any N, even N→∞: SIR floor 11,988 vs best baseline 1,525 → Δ(∞)≈−10,463). Per gate-passed task: JSON 3,493 tok, SIR undefined (0 successes). Projected K/N_conv break-even N_conv≈11 vs NL-opt, 15 vs NL-plain, 18 vs JSON @N=25 (non-confirmatory).*
 
-Converter-attributable cost K dominates the CSIR-SIR arm's ledger in the interim snapshot (K ≈ 11.1k tokens/item against a total A(25) ≈ 12,019 vs. 1,536 for JSON-schema).
+![Figure 3 — Token-cost decomposition per item](../experiments/results/E1/figures/fig_cost_decomposition.png)
+
+**Figure 3 — Token-cost decomposition per item (class means over telemetry-valid cells).** Stacks show mean tokens per item in five classes: variable prompt/response (V), framework/format/conversion/execution (F), knowledge-base build (K: k_in+k_out), knowledge re-injection (K: k_rin+k_rout), and retrieval (R). CSIR-SIR spends 13,943 tokens/item in total — 7.8× NL-plain (1,793) — with 11,112 of it in the K class alone; 53% is re-injection that recurs on every item and cannot be amortized. Baseline arms consume no knowledge tokens (K=0).
+
+Converter-attributable cost K dominates the CSIR-SIR arm's FINAL ledger (K=11,112 tok/item, 7,408 re-injection, against A(25)=11,997 vs 1,536 for JSON-schema; 53% of budget is per-item re-injection that cannot amortize).
 
 ### 4.3 Break-even analysis (H3)
 
-`[DATA: insert figures/E1_breakeven.png — A(N) curves for CSIR-SIR vs JSON-schema at N = 1, 10, 25, 100, with fidelity-parity adjustment band.]`
+![Figure 2 — Cost amortization: net-of-overhead tokens per item vs reuse depth N](../experiments/results/E1/figures/fig_cost_amortization.png)
 
-Under the registered criterion (§3.5, H3), **no break-even point exists for any tested N ∈ {1, 10, 25, 100}** in the interim snapshot; H3 is **falsified as registered**. The gap is driven by K, which is invariant in N under the current pipeline because conversion runs per item rather than once per deployment; even the most favourable extrapolation beyond N = 100 does not close it while K remains per-item.
+**Figure 2 — Cost amortization (log-log):** net-of-overhead tokens per item vs reuse depth N. Solid curves plot A(N)=V+F/N (telemetry-valid means, n=600; 20 transport failures excluded). Dashed CSIR-SIR curve is the charitable variant counting only K_build as amortizable while K_reinj (7,408) + R (374) recur per item — still above every baseline for N≤100: no break-even. Under the plain formula CSIR-SIR appears cheap only because dominant K is omitted.
+
+Under the registered criterion (§3.5, H3), **no break-even point exists for any tested N ∈ {1, 10, 25, 100}** in the FINAL matrix; H3 is **falsified as registered** via falsifier (a) Δ(N)≤0 at every N. The gap is driven by K, invariant in N because conversion runs per item (3 attempts × ~1,649 in + 8,192 out) rather than once per deployment; even N→∞ extrapolation leaves Δ≈−10,463 tok (K alone 7× any baseline's entire per-task cost). $ space is degenerate (all $≡0, no $ break-even observable).
 
 ### 4.4 Variance (H2)
 
-**Table 3 — Seed-replicate dispersion of primary scores (registered statistic per Amendment 2).**
+**Table 3 — H2 variance (CP strata, T=0.7, seeds 101–105, 20 items ×5 reps; modal gate-pass agreement + within-item SD).** Source: `E1_RESULTS_FINAL.md` §5 + `h2_outcomes.csv` 300 admitted.
 
-| Arm | EX | CP | TU |
-|---|---|---|---|
-| NL-plain | [DATA] | [DATA] | [DATA] |
-| NL-opt | [DATA] | [DATA] | [DATA] |
-| JSON-schema | [DATA] | [DATA] | [DATA] |
-| CSIR-SIR + D-4 | [DATA] | [DATA] | [DATA] |
+| Arm | Grand mean (CP) | Mean within-item SD (5 reps) | Pooled SD | SD of rep-means | Modal gate-pass agreement |
+|---|---|---|---|---|---|
+| NL-opt | 0.323 | 0.144 | 0.400 | 0.076 | 92.0% |
+| JSON-schema | 0.838 | 0.119 | 0.331 | 0.027 | 84.0% |
+| CSIR-SIR + D-4 | 0.086 | **0.000** | 0.172 | **0.000** | 100.0% |
 
-`[DATA: insert figures/E1_variance.png — dispersion plots across seed replicates per arm × family.]`
+*Nominal ordering SIR < JSON < NL-opt, but SIR zero dispersion is degenerate: every item scored identically across its 5 reps while at floor (grand mean 0.086). Comparable-mean precondition fails (0.086 vs 0.323 vs 0.838), so H2 is **NOT-EVALUABLE, degenerate**; JSON disperses less than NL-opt (generic structuring reduces variance, which would weaken H2 even at matched means per registry). Agreement gap SIR−NL-opt 8 pts <15-pt detectable threshold. Dedupe sensitivity (earliest-TS vs latest-TS) preserves ordering and verdict.*
 
-H2 analysis is pending completion of seed replicates; primary claims do not depend on it (temp = 0 primary).
+**Figure 4 — H2 variance — NOT RENDERED as a figure (data gap per 2026-08-25 generation).** H2 dispersion plots are deferred: generation of `fig_h2_variance.png` was skipped because the outcomes CSV then carried `rep` empty. Now H2 lives in `h2_outcomes.csv` (300 cells) and is reported tabularly in Table 3 (SIR 0.000 within-item SD at floor, JSON 0.119, NL-opt 0.144; agreement gap 8 pts <15-pt threshold, NOT-EVALUABLE degenerate). A replotted figure can be regenerated by re-running `experiments/results/E1/figures/src/make_figures.py` once H2 is merged into the figures data source.
+
+H2 is evaluated on the FINAL 300-cell H2 module; verdict is degenerate stability-at-failure (see Table 3 and §5). Primary T=0 claims do not depend on it.
 
 ### 4.5 Latency
 
-In the interim snapshot the latency ordering **inverts** relative to cost: CSIR-SIR median latency is ≈ 17 s versus 41–59 s for the NL arms. Shorter SIR payloads and responses reduce decode time enough to offset converter overhead. This is a real effect but an economic red herring under CET: latency improves precisely because the model does less work on a payload it then fails to act on correctly (score ≈ 0, §4.1).
+In the FINAL matrix the latency ordering **inverts** relative to cost (§3, Table 2): CSIR-SIR p50/p90/p95 = **17.2/35.6/45.3 s** vs NL-plain 40.7/84.1/91.7 s, NL-opt 59.4/96.8/107.1 s, JSON 29.4/78.4/**209.6 s** (JSON worst p95 tail from retry/truncation loops; max SIR 117.9 s). Shorter SIR executor outputs (V_out 292 vs 861–1,615) outweigh the added hop. This is a real effect but an economic red herring under CET: latency improves precisely because the model does less work on an information-free payload (score ≈0, §4.1; TU executor quote: *The CSIR/0 document is empty and validation reported 'no JSON object found'*).
 
-`[DATA: insert figures/E1_latency.png — latency CDFs / percentile table per arm.]`
+![Figure 4 — Empirical CDF of end-to-end latency per arm](../experiments/results/E1/figures/fig_latency_cdf.png)
 
-### 4.6 Hypothesis outcomes at interim
+**Figure 4 — Empirical CDF of end-to-end latency (`lat_total_ms`) per arm.** Telemetry-valid cells only (n=150 per arm; 20 transport-failed excluded). Latency inversion: SIR is fastest (median 17.2 s vs NL-plain 40.7 s, JSON 29.4 s, NL-opt 59.4 s; p95 SIR 45.3 s vs JSON 209.6 s). Speed is purchased by skipping verification, not by efficiency: nearly all SIR outputs fail scoring (Fig. 1). Log-scale abscissa.
 
-| Hypothesis | Registered criterion outcome (interim snapshot) |
+### 4.6 Hypothesis outcomes at FINAL (600 + H2 300 + repl 180)
+
+| Hypothesis | Registered criterion outcome (FINAL, 600 + H2 300 + repl 180) |
 |---|---|
-| H0 (null hypothesis) | **Stands** — no CSIR-SIR advantage observed; rejection criteria not met |
-| H1 | Not yet adjudicable pending full-grid fidelity data; interim evidence adverse |
-| H2 | Pending (Amendment 2 procedure) |
-| H3 | **Falsified as registered** — no break-even within tested N |
+| H0 (null hypothesis) | **Stands — favored** — zero families pass H1; language per §3.5 power ceiling: *no detectable advantage* |
+| H1 (central, 4-condition gate) | **NO SUPPORT in any family** — (1) $ degenerate → no beat, (2) deficits 74.3/73.4/94.0 pts > δ 3/4/3, (3) repl CP/TU True EX False (moot), (4) P4 pending — see §7 verdict table |
+| H2 (variance, CP) | **NOT-EVALUABLE, degenerate** — comparable-mean precondition fails; ordering SIR 0.000 < JSON 0.119 < NL-opt 0.144 but at floor |
+| H3 (reuse-gated benefit) | **FALSIFIED** via (a) Δ(N)≤0 at every N (tok −9k to −11.5k, $≡0) |
+| P2–P4, P7 | **NOT-EVALUABLE** (F2/F3 instruments: no valid docs to audit; see §7) |
+| P5/H4 (silent-error) | **FALSIFIED** — reduction explained by JSON arm + bought below δ; SIR validates 0.7% so silent-error fraction degenerate |
+| P6 TU adversarial | **CONFIRMED, stronger than registered** — SIR 0.000 (0/50) vs JSON 0.940 (Δ −0.940 [−1.000,−0.860]) — mandatory red-team triggered |
+
 
 Anomaly A1 bears directly on the interpretation of every CSIR-SIR number above and is disclosed prominently in §5.1.
 
@@ -220,11 +242,11 @@ Anomaly A1 bears directly on the interpretation of every CSIR-SIR number above a
 
 ### 5.1 Internal validity — anomaly A1 (disclosed prominently)
 
-> **⚠ ANOMALY A1 — TELEMETRY CONTRADICTION.** In the interim snapshot, the converter's registered repair limit was exhausted on **142 of 143 items**, yet the machine-readable error channel `conv_errors` recorded **no errors**, and every produced document carried `doc_valid=True`. These three telemetry streams cannot all be describing the same pipeline state. Until reconciled by raw-transcript audit, **converter health metrics (`conv_errors`, `doc_valid`) must not be treated as evidence of pipeline correctness in any CSIR-SIR result in this paper.**
+> **⚠ ANOMALY A1 — ROOT-CAUSED (see critiques/A1_ROOT_CAUSE.md).** In the FINAL matrix the converter's repair limit was hit on 142/143 items yet `conv_errors` was empty and `doc_valid=True` (self-contradiction). **Root cause (BOTH):** (1) **Instrumentation bug** in `harness/runner.py:sir_finish()` — `finish()` persisted raw JSON at L286–288 *before* overwriting `conv_errors/kerr_flag/doc_valid` at L239–241, so `raw_outputs/**.json` carried stale clean flags while `outcomes.csv` carried truth (`kerr_flag=True, doc_valid=False, conv_errors='json:no JSON object found'` on 149/150; divergence 150/150 raw blocks); (2) **Genuine 99.3% conversion non-production** — 445/448 convert calls returned `p_out≈2048 (=MAX_TOKENS)` with empty `content` (budget exhausted before output; T=0 repairs identical so loop cannot help); executor received `CSIR/0 DOCUMENT:\n{}` → scores ≈0. The sole valid doc (EX-04-05, 30 nodes/15 edges, 4,992 chars) scored **0.8125** — when a doc exists, pipeline works. Fix: raise converter cap to ≥8192 (tested 70 cells at 8192 → identical failure, sensitivity confirmed), move flag overwrites before persistence, add invariant + regression. **Final telemetry is self-consistent** and no longer a validity threat to the economic conclusion; the failure is loud, not silent.
 
 The contradiction has three consequences. First, cost attribution under class K is uncertain: if repairs consumed model-side tokens, part of K may be misallocated between classes, though the order-of-magnitude gap in §4.2 is too large to plausibly reverse H3's falsification. Second, `doc_valid=True` cannot be read as a validity check that passed; §6.2 discusses what it actually certifies. Third, the anomaly is itself evidence about the design: a pipeline whose self-report diverges this far from its event log fails the observability requirement for any system claiming mechanical trustworthiness — an operational echo of FT3. We retain A1-visible numbers rather than excluding them; no cells were dropped.
 
-Residual internal risks: Amendments 1–2 are relative to the original registration post-hoc changes, mitigated only by their pre-unblinding timing (§3.1); scorer determinism was checked against versioned golds, `[DATA: scorer-agreement audit from final checkpoint]`.
+Residual internal risks: Amendments 1–3 are relative to original registration post-hoc changes, mitigated by pre-unblinding timing (§3.1) and frozen-asset hashes (manifest.json). Scorer determinism checked: checker(gold)=1.0 on all 150 banks via W0c; 11 checker-exception cells (string-typed artifacts) are logged, not silently dropped; repl/H2 deduplication uses DEV-7 latest-TS rule uniformly.
 
 ### 5.2 Construct validity — limits of gold-field matching
 
@@ -236,17 +258,17 @@ All arms share one model family and checkpoint set (constraint P8). Conclusions 
 
 ### 5.4 Conclusion validity — power ceiling
 
-Item counts per family give limited power against small effects; the variance test (H2) in particular is underpowered at current replicate counts, which is why no equivalence claims appear anywhere in §4. All statistical statements are of the form "criterion met / not met as registered", with the null hypothesis standing where criteria fail. The interim snapshot's 593 cells cover only part of the full grid; final-grid analyses may move point estimates, though the H3 margin (≈ 8× A(25) gap) is unlikely to be an artifact of coverage.
+Item counts per family give limited power against small effects; the variance test (H2) in particular is underpowered at current replicate counts, which is why no equivalence claims appear anywhere in §4. All statistical statements are of the form "criterion met / not met as registered", with the null hypothesis standing where criteria fail. The FINAL 600 cells cover only part of the full grid; final-grid analyses may move point estimates, though the H3 margin (≈ 8× A(25) gap) is unlikely to be an artifact of coverage.
 
 ## 6 Discussion
 
 ### 6.1 The conversion-economics thesis, empirically
 
-The interim evidence supports CET in its negative form: the engineered interlingua loses not because its notation is bad but because getting content into and out of it is expensive. K ≈ 11.1k converter tokens per item against an all-in A(25) of ≈ 12,019 (vs. 1,536 for JSON-schema) is FT2 — conversion cost never amortizes — reappearing with tokens in place of human memorization effort [16], [17]. The near-zero scores at formal validity (§4.1) reproduce FT3 [15], [18]. And a pipeline whose error telemetry contradicts its own event log (A1, §5.1) operationalises FT1: the machinery that was supposed to supply the calculus supplies syntax and self-congratulatory flags instead, leaving the reasoning debt exactly where Lingenic leaves it — with the reader [2], [7]. That the pattern re-emerges four centuries later under entirely different substrates is the strongest available evidence that the historical failures were structural, not incidental.
+The FINAL evidence supports CET in its negative form: the engineered interlingua loses not because its notation is bad but because getting content into and out of it is expensive. K=11,112 tok/item (A(25)=11,997 vs 1,536 for JSON-schema) is FT2 — conversion cost never amortizes — reappearing with tokens in place of human memorization effort [16], [17]. The near-zero scores at formal validity (§4.1, 0.7% docs valid) reproduce FT3 [15], [18]. And a pipeline whose 99.3% conversion failure is loud (kerr_flag=True, doc_valid=False) yet whose raw-block flags were stale (A1 instrumentation bug, §5.1) operationalises FT1: the machinery that was supposed to supply the calculus supplies empty output at 2048 (=MAX_TOKENS) and identical deterministic retries, leaving the reasoning debt exactly where Lingenic leaves it — with the reader [2], [7]. That the pattern re-emerges four centuries later under entirely different substrates is the strongest available evidence that the historical failures were structural, not incidental.
 
 ### 6.2 Syntactic validity ≠ semantic validity
 
-The cleanest demonstration in the interim data is `doc_valid=True` at score ≈ 0.000–0.083. The validity flag certifies well-formedness — parseability against the SIR grammar — and nothing more; the gold-field matcher simultaneously found almost no correct content. This is the modern, mechanical restatement of Eco's observation that perfect-language schemes repeatedly confused formal correctness with correspondence to thought [15], and of Lewis's analysis of where Wilkins's semantic apparatus came apart from its referents [18]. Its practical import is a warning about evaluation practice in structured-output work: schema-conformity metrics of the kind benchmarked by JSONSchemaBench [10] are necessary but radically insufficient, since a pipeline can be valid by every syntactic light while carrying none of the task.
+The cleanest demonstration in the FINAL data is `doc_valid=False` (149/150) at score 0.082/0.071/0.000. The validity flag now correctly certifies non-production, while the single valid document (EX-04-05) scores 0.8125 — parseability and correctness come apart only when there is nothing to parse. The pre-fix `doc_valid=True` at ~0 scores was the stale-flag bug (A1, §5.1). This is the modern, mechanical restatement of Eco's observation that perfect-language schemes repeatedly confused formal correctness with correspondence to thought [15], and of Lewis's analysis of where Wilkins's semantic apparatus came apart from its referents [18]. Its practical import is a warning about evaluation practice in structured-output work: schema-conformity metrics of the kind benchmarked by JSONSchemaBench [10] are necessary but radically insufficient, since a pipeline can be valid by every syntactic light while carrying none of the task.
 
 ### 6.3 Token-reduction implications
 
@@ -260,21 +282,21 @@ Three conditions follow directly from the ledger structure, and each is falsifia
 - **R2 — Amortizable schema.** Whatever fixed context the encoding requires must sit behind a cached prefix reused across ≥ N calls, as JSON-schema does trivially via standard constrained-decoding stacks [9], [10], [12].
 - **R3 — Sub-linear converter.** Conversion cost must grow sub-linearly over the deployment horizon — ideally one-time compile, never per-item repair loops of the kind A1 shows silently saturating (§5.1).
 
-Lingenic-style notation-only programmes satisfy none of these operationally — they externalise all three costs to their readers [7] — whereas schema-constrained JSON satisfies R2 and R3 by construction. That ordering, not any expressive difference (all universal formalisms being recursively isomorphic [4]), explains why the JSON arm dominates the interim ledger.
+Lingenic-style notation-only programmes satisfy none of these operationally — they externalise all three costs to their readers [7] — whereas schema-constrained JSON satisfies R2 and R3 by construction. That ordering, not any expressive difference (all universal formalisms being recursively isomorphic [4]), explains why the JSON arm dominates the FINAL ledger.
 
 ### 6.5 Relation to AMR, UNL, and ACE
 
-AMR [5] and UNL [14] both embed substantial conversion stages whose costs are typically reported outside downstream-task evaluations; ACE [13] reduces K by staying lexically close to English, at the price of expressiveness constraints. E1's design — pricing the converter inside the comparison rather than around it — is portable to all three, and the interim result predicts their fates scale with their K term more than with their notation.
+AMR [5] and UNL [14] both embed substantial conversion stages whose costs are typically reported outside downstream-task evaluations; ACE [13] reduces K by staying lexically close to English, at the price of expressiveness constraints. E1's design — pricing the converter inside the comparison rather than around it — is portable to all three, and the FINAL result predicts their fates scale with their K term more than with their notation.
 
 ## 7 Conclusion and Future Work
 
 ### 7.1 Conclusion
 
-E1 set out to test, under pre-registration with a priori falsification criteria, whether a compressed structured interlingua (CSIR-SIR) served through a mechanical converter can beat natural-language and schema-constrained encodings on the combined ledger of token cost and fidelity. At the interim checkpoint the null hypothesis stands: CSIR-SIR scores 0.082/0.083/0.000 on EX/CP/TU against JSON-schema's 0.826/0.805/0.940; its amortized cost is ≈ 12,019 tokens at N = 25 against 1,536; no break-even exists within tested N; H3 is falsified as registered. The telemetry contradiction (A1) is disclosed rather than reconciled. The conversion-economics thesis — derived from a taxonomy of four centuries of engineered-language failures [15]–[19] — is supported in its negative form: representational compactness does not pay when conversion cost dominates, syntactic validity is not semantic validity, and notation without a priced calculus merely relocates the reasoning burden to the reader [2], [4], [7]. These are interim results on a single model family (P8) with a disclosed observability defect; they are reported as such.
+E1 set out to test, under pre-registration with a priori falsification criteria, whether a compressed structured interlingua (CSIR-SIR) served through a mechanical converter can beat natural-language and schema-constrained encodings on the combined ledger of token cost and fidelity. At FINAL (600 primary + 300 H2 + 180 repl, stealth/ox-alpha): the null hypothesis **stands, favored**: CSIR-SIR **0.082/0.071/0.000** on EX/CP/TU against JSON-schema **0.826/0.806/0.940** (gate 0/0/0% vs 4/66/94%); amortized cost **11,997 tok at N=25 vs 1,536** (K=11,112, 66.7% re-injection); no break-even at any registered N (H3 falsified via (a)); P6 TU adversarial loss confirmed (0/50 vs 47/50, Δ −0.940). Anomaly A1 is **root-caused (BOTH)** — instrumentation staleness + genuine 99.3% non-production at MAX_TOKENS (verified at 8192) — and disclosed, not reconciled away. The conversion-economics thesis — derived from four centuries of engineered-language failures [15]–[19] — is supported in its negative form: compactness does not pay when conversion dominates, and notation without a priced, sub-linear converter merely relocates the reasoning burden to the reader [2],[4],[7]. Results are single-model-family (P8) with complete provenance; repl strengthens the negative direction (CP/TU sign-consistent).
 
 ### 7.2 Future work: E2
 
-Experiment E2 extends E1 along the axes the interim data identify as decisive:
+Experiment E2 extends E1 along the axes the FINAL data identify as decisive:
 
 1. **Multi-model-family replication** — lift P8 by repeating all arms on ≥ three model families, testing whether the score collapse is consumer-specific.
 2. **Native-structure arm (R1)** — fine-tune one open-weight model on SIR-serialised task data to measure how far K collapses when conversion moves into the weights.

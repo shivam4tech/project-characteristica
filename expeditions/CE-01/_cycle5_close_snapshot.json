@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-28T18:17:23.552201",
+  "cycle": 5,
+  "checkpoint": "60m CLOSE",
+  "verdict": "RED \u2014 Discontinue CSIR/0 as inference-time interchange (H0 stands, favored)",
+  "files_touched": [
+    "expeditions/CE-01/VERDICT.md (23k)",
+    "CLAIM_LEDGER.md C-020..C-030 (30 rows)",
+    "expeditions/CE-01/STATUS.md (RED, budget ~32.5/40)",
+    "hypotheses/REGISTRY.md (H1 falsified etc)",
+    "foundation/STATUS.md (new)",
+    "expeditions/CE-01/FINAL_REPORT.md (new)"
+  ],
+  "language": "modern technical (F/N amortization, KV-cache, converter K_reinj wall, UNL-replay)",
+  "next": "Cycle 6 Ship \u2014 commit & push to origin/main + watchdog + final verify"
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-28T15:30:39.555229",
+  "cycle": 1,
+  "checkpoint": "30m_fixed",
+  "repl_raw": 196,
+  "repl_admitted": 180,
+  "repl_per_cell": {
+    "JSON|EX": 30,
+    "CSIR-SIR|EX": 30,
+    "JSON|CP": 30,
+    "CSIR-SIR|CP": 30,
+    "JSON|TU": 30,
+    "CSIR-SIR|TU": 30
+  },
+  "h2_raw": 370,
+  "outcomes_raw": 620,
+  "rerun_raw": 70,
+  "manifest_model": "z-ai/glm-5.2:free",
+  "notes": "30m checkpoint \u2014 analysis pipeline OK, repl 196->180 admitted clean, next patch FINAL"
+}

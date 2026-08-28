@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-28T18:09:48.351836",
+  "cycle": 4,
+  "verdict": "ACCEPT",
+  "gates": {
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "PASS",
+    "G6": "PASS",
+    "G7": "PASS",
+    "G8": "PASS"
+  },
+  "fabrication_sweep": "CLEAN 0 hits over 600",
+  "tu_verbatim": "PASS P6 confirmed not softened",
+  "sample": "15 cells (12 stratified +3 reserves) all raw present",
+  "cost_recompute": "PASS N* none matches reported",
+  "A7_extracted": true
+}

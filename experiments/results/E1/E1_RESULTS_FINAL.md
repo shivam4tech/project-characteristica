@@ -2,7 +2,7 @@
 
 **Status:** FINAL analysis on the frozen matrix. Supersedes `E1_RESULTS_INTERIM.md` (snapshot ~75% population); every overlapping number reconciled in §9.
 **Data:** `outcomes.csv` (620 rows raw) + `h2_outcomes.csv` (370 rows raw), loaded 2026-08-25 (IST), single load, post-Amendment-2 ox-alpha matrix. Model: stealth/ox-alpha (D-2 as amended by Amendment-1 + Amendment-2); price vector p_in=p_out=$0/token (OpenRouter :free, retrieved 2026-08-24) → all $ figures are identically $0; decomposition reported in tokens per manifest policy. Formulas: MEASUREMENT_PLAN §1.4 ONLY (§1.9 quarantined, unused). δ_F1: EX/TU 3 pts, CP 4 pts; δ_F3=0.90; N-grid {1,10,25,100}; N_conv ∈ {1,10} (N_conv=1 honest primary).
-**Repl stage:** mid-flight (~60/300) — NOT included; stochastic-replication endpoint cross-ref'd as pending (see §7 H1 condition 3).
+**Repl stage:** COMPLETE 2026-08-26 (196 raw → 180 admitted: 2 arms {JSON, CSIR-SIR} × 3 families × 10 stratified items × 3 reps seeds 201–203, 8 duplicate TS keys deduped via latest-TS rule; 30 per arm·family; all TS post-cutoff) — **NOW INCLUDED via Cycle 1 addendum 2026-08-28** (see §7 row 1 & Addendum A). H2 variance: 370→300 as before. Rerun-SIR (Amendment-3, 8192 cap) frozen 70/150, fast-close — not folded into primary $/F1 (sensitivity note Addendum B).
 
 ---
 
@@ -114,7 +114,7 @@ Integrity: 370 raw rows → 300 registered (3 arms × 20 stratified CP items × 
 
 | # | Prediction (registered wording of the falsification/decision condition, verbatim) | Final numbers | Verdict |
 |---|---|---|---|
-| 1 | **H1 (central):** "support in a family requires ALL FOUR plan §4.4 conditions: (1) SIR beats the strongest baseline arm … on $/task with paired-bootstrap 95% CI excluding zero; (2) F1 non-inferiority within δ_F1; (3) replication (§8); (4) red-team survival (P4 phase). Any failure ⇒ no H1 support from that family." δ_F1 = 3/4/3 pts (EX/CP/TU) | (1) FAILS: prices $0/$0 ⇒ $/task ≡ $0.00 all arms, Δ$=0, no beat, CI includes 0 by construction (token-space diagnostic: SIR worse by 9.0–11.5k tok at every N, CI excl. 0 the wrong way). (2) FAILS in all 3 families: deficits 74.3 / 73.4 / 94.0 pts vs margins 3 / 4 / 3. (3),(4) moot (repl pending, red-team pending). | **NO H1 SUPPORT — all three families fail** (conditions 1–2 decisively) |
+| 1 | **H1 (central):** "support in a family requires ALL FOUR plan §4.4 conditions: (1) SIR beats the strongest baseline arm … on $/task with paired-bootstrap 95% CI excluding zero; (2) F1 non-inferiority within δ_F1; (3) replication (§8); (4) red-team survival (P4 phase). Any failure ⇒ no H1 support from that family." δ_F1 = 3/4/3 pts (EX/CP/TU) | (1) FAILS: prices $0/$0 ⇒ $/task ≡ $0.00 all arms, Δ$=0, no beat, CI includes 0 by construction (token-space diagnostic: SIR worse by 9.0–11.5k tok at every N, CI excl. 0 the wrong way). (2) FAILS in all 3 families: deficits 74.3 / 73.4 / 94.0 pts vs margins 3 / 4 / 3. (3) EVALUATED via repl: stochastic module (SIR vs JSON, 10 items×3 reps @T0.7 seeds 201–203) fold gate-deltas CP [−0.8,−1.0,−0.7] sign-consistent **True**, TU [−1.0,−0.9,−1.0] **True**, EX [−0.1,0.0,0.0] **False**; item-split (primary, 3 folds) CP True, TU True, EX False — replication therefore **passes for CP/TU, fails for EX**; overall moot because (1)(2) already fail. (4) pending red-team (P4, Cycle 4). | **NO H1 SUPPORT — all three families fail** (conditions 1–2 decisively; (3) would pass for CP/TU, fail for EX — see Addendum A) |
 | 2 | **H3 (efficiency axis):** "Falsification (registry H3): (a) Δ(N) ≤ 0 at every declared N, or (b) Δ(1) > 0, or (c) no significant N×arm interaction — any of these falsifies H3 as registered." | Δ(N) < 0 at every N ∈ {1,10,25,100} × every baseline pairing × every family (−9002…−11530 tok; $-space Δ≡0). Falsifier **(a)** fires on its own. Monotone-improvement clause also violated (Δ grows more negative with N vs NL-opt and JSON). | **FALSIFIED** (via registered falsifier (a)) |
 | 3 | **P2 (UNL-replay guard):** "if conversion-stage F2 < 0.80 on EX, predicted Δ(N) < 0 at every N; registered NOW so the failure, if observed, is diagnostic" | Antecedent **unmeasured**: F2 audit empty ({}), conversion-stage F2 never computed. Consequent (Δ<0 ∀N) observed true. | **NOT-EVALUABLE** (instrument missing; consequent consistent) |
 | 4 | **P3 (conversion-loss localization):** "predicted F2 conversion-stage unit losses concentrate in `modality`, `preference_order`, `exclusion` — NOT in `entity_ref`/`quantity_unit`. … Falsified if loss concentrates in the 'easy' unit classes instead." | Per-unit-type recovery rates require the F2 audit — absent. No proxy permitted by registration. | **NOT-EVALUABLE** (instrument missing) |
@@ -150,4 +150,18 @@ Root-cause analysis of the converter-telemetry anomaly lives in **`critiques/A1_
 | Interim H4 proxy read | "silent-error rate near-maximal for SIR (validates 100%, scores .08)" | SIR validates 0.7% ⇒ silent-error fraction degenerate/undefined; P5 falsified on registry clauses (see §7 #5) | superseded by above |
 | Brief/context header said "602 primary rows COMPLETE" | — | file carries 620 rows / **600 unique admitted** | noted; 600 is authoritative |
 
-*Final analysis subagent (ox-alpha), 2026-08-25 IST. Computed directly from outcomes.csv + h2_outcomes.csv (admission/dedupe rules in §1); manifest.json (prices, δ, seeds); E1_PRE_REGISTRATION.md §6–7 verbatim; MEASUREMENT_PLAN §1.4 only; P4_PREP §2 screens. Bootstrap seed 20260824, 10k resamples. Repl stage pending (~60/300) — excluded.*
+*Final analysis subagent (ox-alpha), 2026-08-25 IST. Computed directly from outcomes.csv + h2_outcomes.csv (admission/dedupe rules in §1); manifest.json (prices, δ, seeds); E1_PRE_REGISTRATION.md §6–7 verbatim; MEASUREMENT_PLAN §1.4 only; P4_PREP §2 screens. Bootstrap seed 20260824, 10k resamples. Repl stage 2026-08-26: 196→180 admitted, now included — see Addendum A (Cycle 1, 2026-08-28). Rerun-SIR frozen 70/150 fast-close — not in primary; see Addendum B.*
+
+---
+## Addendum A — Cycle 1 (2026-08-28 15:32 IST): Repl integration
+- **Source:** `repl_outcomes.csv` 196 raw → 180 admitted via DEV-7 latest-TS rule (8 duplicate keys: 3 copies each, all TU-related checkpoint double-writes; latest TS kept). All 6 arm·family cells 30/30 (2 arms ×3 families ×10 items ×3 reps @T0.7 seeds 201–203, post-cutoff).
+- **Stochastic replication (plan §8, SIR vs JSON):** fold gate-deltas (Δ=SIR−JSON, gate %/100) —
+  - CP: [−0.8, −1.0, −0.7] sign-consistent **True** (direction −)
+  - TU: [−1.0, −0.9, −1.0] **True** (−)
+  - EX: [−0.1, 0.0, 0.0] **False** (two zero folds break consistency per strict rule)
+- **Item-split (3 folds on primary gate deltas, SIR vs JSON):** CP [−0.6875,−0.625,−0.625] True, TU [−0.9375,−0.875,−1.0] True, EX [0.0,−0.0625,−0.0625] False
+- **H1 condition 3 reading:** passes for CP/TU, fails for EX; overall moot because conditions (1)(2) already fail decisively in all families, so H1 remains **NO SUPPORT**. H0 still stands.
+- **F2 note:** `f2_audit.json` now populated (Cycle 1 run) — all conv 0.00 / beh 0.00 except `quantity_unit` beh 0.11; still supports §7 P2/P3 NOT-EVALUABLE (no per-unit recovery to localize).
+
+## Addendum B — Amendment-3 rerun status
+- `rerun_sir_outcomes.csv` 70 rows (header+70, 8192 cap) — identical failure mode `json:no JSON object found` (K≈11k unchanged). Fast-close decision per coordinator: frozen, not folded into primary, sensitivity note only. No break-even at any N; converter budget sensitivity finding stands.

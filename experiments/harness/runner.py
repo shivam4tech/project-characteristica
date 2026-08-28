@@ -313,7 +313,8 @@ OUT_FIELDS = ["ts","arm","family","template","item_id","rep","temperature","n_at
 def run_batch(mode, jobs, tag):
     """jobs: list of dicts {arm,item,rep,temp}. Executes concurrently, flushes every 10."""
     out_csv = RESULTS / {"primary": "outcomes.csv", "h2": "h2_outcomes.csv",
-                         "repl": "repl_outcomes.csv", "smoke": "smoke_outcomes.csv"}[mode]
+                         "repl": "repl_outcomes.csv", "smoke": "smoke_outcomes.csv",
+                         "rerun_sir": "rerun_sir_outcomes.csv"}[mode]
     # ---- DEV-8 checkpoint-resume (pre-first-scored-call): a job whose (arm,item,
     # rep) already has a latest non-transport-fail reading in this mode's CSV is
     # skipped on restart; external-abort/cap-out resumes from the last state.

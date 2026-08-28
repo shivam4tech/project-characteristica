@@ -1,4 +1,66 @@
 {
- "f2_rates": {},
- "f2_unknown": {}
+ "f2_rates": {
+  "conditional_constraint": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 4
+  },
+  "designed_unknown_flag": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 2
+  },
+  "entity_ref": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 42
+  },
+  "exception_of_exclusion": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 2
+  },
+  "exclusion": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 10
+  },
+  "modality": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 8
+  },
+  "priority_preference": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 6
+  },
+  "quantity_unit": {
+   "conv": 0.0,
+   "beh": 0.1111111111111111,
+   "n": 18
+  },
+  "temporal_qualifier": {
+   "conv": 0.0,
+   "beh": 0.0,
+   "n": 26
+  }
+ },
+ "f2_unknown": {
+  "designed_unknown_flag": {
+   "handled": 0,
+   "n": 2,
+   "rate": 0.0
+  },
+  "entity_ref": {
+   "handled": 0,
+   "n": 2,
+   "rate": 0.0
+  },
+  "priority_preference": {
+   "handled": 0,
+   "n": 2,
+   "rate": 0.0
+  }
+ }
 }

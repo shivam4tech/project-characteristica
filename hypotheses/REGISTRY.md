@@ -14,8 +14,9 @@ Canonical registry of hypotheses. Statuses: `registered` → `under-investigatio
 - **Strongest competing explanation:** Any apparent advantage is explained by prompt engineering quality (the JSON/schema baseline captures everything an SIR offers), or by hidden overhead making net effect ≤ 0 once conversion is honestly counted.
 - **Discriminating experiments:** E1 efficiency/fidelity pilot (2–3 task families × 4 arms); E2 robustness/portability probe (paraphrase sets, ≥2 model families) if E1 shows signal.
 - **Scope caveat:** Falsification within CE-01 applies to tested task families and models only; generalization claims beyond them require new registration.
-- **Status:** `registered` (untested)
-- **Registered:** Expedition initialization (CE-01)
+- **Status:** `falsified` — 0/3 families pass H1 four-condition gate (E1 FINAL §7 #1, P4 ACCEPT). No detectable advantage at CE-01 scale; strictly dominated by JSON-schema control in every family.
+- **Discriminating experiments:** E1 primary 600 + repl 180 + P4 ACCEPT (2026-08-28)
+- **Registered:** Expedition initialization (CE-01) — verdict C-023/C-026; see VERDICT.md §3
 
 ## H0 — Null Hypothesis
 
@@ -26,7 +27,8 @@ Canonical registry of hypotheses. Statuses: `registered` → `under-investigatio
 - **Predicted outcomes if true:** All four arms statistically indistinguishable after overhead accounting; or apparent SIR gains fully absorbed by the optimized-JSON arm; conversion overhead ≥ savings in all conditions.
 - **Strongest competing explanation:** n/a (null), but its own strongest rival is that pilot scale (2–3 task families) lacks power to detect small real effects — hence verdict language must distinguish "no evidence of advantage at CE-01 scale" from "advantage impossible."
 - **Discriminating experiments:** shared with H1 (E1/E2).
-- **Status:** `registered` (untested)
+- **Status:** `supported` — stands, favored (H1 fails in all families; conversion-economics wall, Class-I per C-021/C-026; scoped to stealth/ox-alpha, CE-01 power ceiling).
+- **Discriminating experiments:** E1 FINAL 600 (2026-08-28)
 
 ---
 
@@ -44,8 +46,8 @@ Registered during P2 synthesis (Director, 2026-08-24) from cross-workstream mech
 - **Strongest competing explanation:** Any variance reduction is a generic structuring/formatting effect available to plain JSON schemas — nothing specifically "primitive-vocabulary-like" is needed.
 - **Discriminating experiments:** E1 (variance secondary endpoint); E2 if signal.
 - **Traceability:** C-001, C-003, C-004, C-009.
-- **Status:** `registered` (untested)
-- **Registered:** 2026-08-24 (P2 synthesis)
+- **Status:** `unresolved` → `not-evaluable, degenerate` — within-item SD 0.000<0.119<0.144 nominally but grand means 0.086/0.838/0.323 fail comparable-mean precondition; stability-at-failure (E1 FINAL §5, h2 300, P4 §4 A.7). Would weaken to 'generic structuring' even at matched means.
+- **Registered:** 2026-08-24 (P2 synthesis) — verdict C-028
 
 ### H3 — Reuse-gated net benefit
 
@@ -57,7 +59,7 @@ Registered during P2 synthesis (Director, 2026-08-24) from cross-workstream mech
 - **Strongest competing explanation:** Payload savings are illusory once tokenizer effects are normalized (C-012 ground 1–3), so no N makes Δ positive; or converter costs dominate at all practical N.
 - **Discriminating experiments:** E1 primary efficiency endpoints at N ∈ {1, 25}; full curve reported regardless.
 - **Traceability:** C-007, C-010, C-012.
-- **Status:** `registered` (untested)
+- **Status:** `falsified` — Falsifier (a) fires: Δ(N)≤0 ∀N (−9k..−11.5k tok, $≡0), no N* at any N while K≈11.1k stands (E1 FINAL §3/§7#2, C-024).
 - **Registered:** 2026-08-24 (P2 synthesis)
 
 ### H4 — Self-detecting malformation (guide-rail effect)
@@ -70,7 +72,7 @@ Registered during P2 synthesis (Director, 2026-08-24) from cross-workstream mech
 - **Strongest competing explanation:** Modern LLMs already self-monitor well enough that explicit structure adds no incremental error detection beyond what JSON schemas provide.
 - **Discriminating experiments:** E1 (all families log parse/validation outcomes per MEASUREMENT_PLAN §4.3; analysis splits silent vs detected failures).
 - **Traceability:** C-001, C-011, C-018, C-019.
-- **Status:** `registered` (untested)
+- **Status:** `falsified` — CP SIR 100% silent-error vs JSON 21.4% bought by total rejection (valid-doc denom ≈1) + 74-pt F1 collapse >δ; TU no SIR-over-JSON edge (E1 FINAL §7#5, C-025).
 - **Registered:** 2026-08-24 (P2 synthesis)
 
 ### H5 — Redundancy trade-off under paraphrase (robustness cost of compression)
